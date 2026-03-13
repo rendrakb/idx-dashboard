@@ -1764,6 +1764,82 @@ function renderMetricsTab(data) {
     }
   }));
 
+  // Chart 3b: Top 20 Investors by AUM - horizontal bar (with tooltip stock codes + click + hover cursor)
+  const investorAUM = new Map();
+  for (const rec of data) {
+    const price = PRICE_DATA[rec.share_code]?.p || 0;
+    const value = rec.total_holding_shares * price;
+    if (!investorAUM.has(rec.investor_name)) investorAUM.set(rec.investor_name, { aum: 0, codes: new Set() });
+    investorAUM.get(rec.investor_name).aum += value;
+    investorAUM.get(rec.investor_name).codes.add(rec.share_code);
+  }
+  const top20AUM = [...investorAUM.entries()]
+    .map(([name, data]) => ({ name, aum: data.aum, codes: [...data.codes].sort() }))
+    .sort((a, b) => b.aum - a.aum)
+    .slice(0, 20)
+    .reverse(); // reverse for horizontal bar (bottom to top)
+
+  const ctx3b = document.getElementById('chartTop20InvestorsAUM');
+  metricsCharts.push(new Chart(ctx3b, {
+    type: 'bar',
+    data: {
+      labels: top20AUM.map(d => d.name),
+      datasets: [{
+        data: top20AUM.map(d => d.aum),
+        backgroundColor: colors.accent,
+        borderRadius: 3
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      indexAxis: 'y',
+      onClick: function(event, elements) {
+        if (elements.length > 0) {
+          const idx = elements[0].index;
+          const investorName = top20AUM[idx].name;
+          navigateToInvestor(investorName);
+        }
+      },
+      onHover: function(event, elements) {
+        event.native.target.style.cursor = elements.length > 0 ? 'pointer' : 'default';
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: colors.bgCard,
+          titleColor: colors.textPrimary,
+          bodyColor: colors.textSecondary,
+          borderColor: colors.gridColor,
+          borderWidth: 1,
+          callbacks: {
+            title: function(items) { return items[0].label; },
+            label: function(ctx) { return ` ${fmtNum(ctx.parsed.x)} IDR`; },
+            afterBody: function(items) {
+              const idx = items[0].dataIndex;
+              const codes = top20AUM[idx].codes;
+              const lines = ['', 'Saham:'];
+              for (let i = 0; i < codes.length; i += 6) {
+                lines.push(codes.slice(i, i+6).join(', '));
+              }
+              return lines;
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { color: colors.gridColor },
+          ticks: { color: colors.textMuted, font: { size: 11, family: "'Inter', sans-serif" }, callback: function(value) { return fmtNum(value); } }
+        },
+        y: {
+          grid: { display: false },
+          ticks: { color: colors.textSecondary, font: { size: 10, family: "'Inter', sans-serif" }, autoSkip: false }
+        }
+      }
+    }
+  }));
+
   // Chart 4: Country breakdown - horizontal bar
   const normalizeMap = {
     'INDONESIA': 'Indonesia', 'INDONESIAN': 'Indonesia',
