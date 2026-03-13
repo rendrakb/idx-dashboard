@@ -1,675 +1,592 @@
 const PEP_DATA = {
   "SANDIAGA SALAHUDDIN UNO": {
-    "roles": [
+    roles: [
       "Menteri Pariwisata & Ekonomi Kreatif RI",
       "Ex-Wagub DKI Jakarta",
-      "Ex-Cawapres 2019"
-    ]
+      "Ex-Cawapres 2019",
+    ],
   },
   "HARY TANOESOEDIBJO": {
-    "roles": [
+    roles: [
       "Pendiri & Ketua MPP Partai Perindo",
       "Ex-Cawapres 2014",
-      "Founder MNC Group"
+      "Founder MNC Group",
     ],
-    "group": "MNC Group"
+    group: "MNC Group",
   },
   "B.RUDIJANTO TANOESOEDIBJO": {
-    "roles": [
+    roles: [
       "Kakak Hary Tanoesoedibjo (Ketua Partai Perindo)",
-      "CEO Trinity Health Care"
+      "CEO Trinity Health Care",
     ],
-    "group": "MNC Group"
+    group: "MNC Group",
   },
   "RATNA ENDANG SOELISTYAWATI": {
-    "roles": [
+    roles: [
       "Presiden Komisaris MNC Investama Tbk (BHIT)",
       "Komisaris MNC Land (KPIG)",
-      "Keluarga Tanoesoedibjo"
+      "Keluarga Tanoesoedibjo",
     ],
-    "group": "MNC Group"
+    group: "MNC Group",
   },
   "H HUTOMO MANDALA PUTRA": {
-    "roles": [
-      "Putra Presiden ke-2 RI Soeharto",
-      "Tommy Suharto"
-    ]
+    roles: ["Putra Presiden ke-2 RI Soeharto", "Tommy Suharto"],
   },
   "SUJAYA SOEKARNO PUTRA": {
-    "roles": [
+    roles: [
       "Keluarga Presiden ke-1 RI Soekarno",
-      "Direktur Utama Newport Marine Services (BOAT)"
+      "Direktur Utama Newport Marine Services (BOAT)",
     ],
-    "group": "Keluarga Soekarno"
+    group: "Keluarga Soekarno",
   },
   "SURYA SOEKARNO PUTRA": {
-    "roles": [
+    roles: [
       "Keluarga Presiden ke-1 RI Soekarno",
-      "Direktur Newport Marine Services (BOAT)"
+      "Direktur Newport Marine Services (BOAT)",
     ],
-    "group": "Keluarga Soekarno"
+    group: "Keluarga Soekarno",
   },
   "DHARMAWATI DJUHANA": {
-    "roles": [
+    roles: [
       "Komisaris Utama Newport Marine Services (BOAT)",
-      "Pengendali akhir BOAT bersama keluarga Soekarno Putra"
+      "Pengendali akhir BOAT bersama keluarga Soekarno Putra",
     ],
-    "group": "Keluarga Soekarno"
+    group: "Keluarga Soekarno",
   },
   "GARIBALDI THOHIR": {
-    "roles": [
-      "Kakak Menteri BUMN Erick Thohir",
-      "CEO Adaro Energy"
-    ],
-    "group": "Thohir Family"
+    roles: ["Kakak Menteri BUMN Erick Thohir", "CEO Adaro Energy"],
+    group: "Thohir Family",
   },
   "GAMMA ABDURRAHMAN THOHIR": {
-    "roles": [
-      "Putra Garibaldi Thohir",
-      "Keponakan Menteri BUMN Erick Thohir"
-    ],
-    "group": "Thohir Family"
+    roles: ["Putra Garibaldi Thohir", "Keponakan Menteri BUMN Erick Thohir"],
+    group: "Thohir Family",
   },
   "SOLIHIN JUSUF KALLA": {
-    "roles": [
+    roles: [
       "Putra Wapres ke-10 & 12 RI Jusuf Kalla",
       "Ketua Bidang Kewiraswastaan DPP Partai Golkar",
-      "Presiden Direktur Kalla Group"
+      "Presiden Direktur Kalla Group",
     ],
-    "group": "Kalla Group"
+    group: "Kalla Group",
   },
   "IR ACHMAD KALLA": {
-    "roles": [
-      "Saudara Wapres Jusuf Kalla",
-      "Co-founder Bukaka Teknik Utama"
-    ],
-    "group": "Kalla Group"
+    roles: ["Saudara Wapres Jusuf Kalla", "Co-founder Bukaka Teknik Utama"],
+    group: "Kalla Group",
   },
   "DRS SUHAELI KALLA": {
-    "roles": [
+    roles: [
       "Saudara Wapres Jusuf Kalla",
-      "Komisaris Utama Bukaka Teknik Utama"
+      "Komisaris Utama Bukaka Teknik Utama",
     ],
-    "group": "Kalla Group"
+    group: "Kalla Group",
   },
   "SUHAELLY KALLA": {
-    "roles": [
-      "Saudara Wapres Jusuf Kalla",
-      "Keluarga Kalla Group"
-    ],
-    "group": "Kalla Group"
+    roles: ["Saudara Wapres Jusuf Kalla", "Keluarga Kalla Group"],
+    group: "Kalla Group",
   },
   "ANINDITHA ANESTYA BAKRIE": {
-    "roles": [
+    roles: [
       "Putri Aburizal Bakrie",
       "Aburizal Bakrie: Ex-Menko Perekonomian, Ex-Ketum Partai Golkar",
-      "Keluarga Bakrie Group"
+      "Keluarga Bakrie Group",
     ],
-    "group": "Bakrie Group"
+    group: "Bakrie Group",
   },
   "MARUARAR SIRAIT": {
-    "roles": [
+    roles: [
       "Ex-Anggota DPR RI (3 periode: 2004–2019)",
       "Kader PDIP / Ex-Ketua DPP PDIP",
-      "Putra politikus senior Sabam Sirait"
-    ]
+      "Putra politikus senior Sabam Sirait",
+    ],
   },
-  "HAPSORO": {
-    "roles": [
+  HAPSORO: {
+    roles: [
       "Suami Puan Maharani (Ketua DPR RI)",
       "Menantu Ex-Presiden Megawati Soekarnoputri",
-      "Pengusaha (RAJA, ARKO, UANG, SINI, MINA)"
+      "Pengusaha (RAJA, ARKO, UANG, SINI, MINA)",
     ],
-    "group": "Keluarga Soekarno"
+    group: "Keluarga Soekarno",
   },
   "FUAD HASAN MASYHUR": {
-    "roles": [
+    roles: [
       "Ketua DPP Partai Golkar",
       "Wakil Ketua Umum MPN Pemuda Pancasila",
-      "Politikus senior Partai Golkar"
-    ]
+      "Politikus senior Partai Golkar",
+    ],
   },
   "EDDY HARIYANTO": {
-    "roles": [
+    roles: [
       "Ex-Perwira Polisi (Kepolisian RI)",
-      "Pemegang saham ASLI (Asri Karya Lestari)"
-    ]
+      "Pemegang saham ASLI (Asri Karya Lestari)",
+    ],
   },
   "HJ MEGAWATI TAUFIQ": {
-    "roles": [
+    roles: [
       "Megawati Soekarnoputri",
       "Presiden ke-5 RI (2001–2004)",
       "Ketua Umum PDI Perjuangan",
-      "Taufiq = nama suami (Taufiq Kiemas, Alm.)"
+      "Taufiq = nama suami (Taufiq Kiemas, Alm.)",
     ],
-    "group": "Keluarga Soekarno"
-  }
+    group: "Keluarga Soekarno",
+  },
 };
 
 const CONGLO_DATA = {
   "PRAJOGO PANGESTU": {
-    "roles": [
+    roles: [
       "Founder & Chairman Barito Pacific Group",
       "Orang terkaya Indonesia (#1 Forbes)",
-      "Petrochemical, geothermal, energy"
+      "Petrochemical, geothermal, energy",
     ],
-    "group": "Barito Pacific"
+    group: "Barito Pacific",
   },
   "LOW TUCK KWONG": {
-    "roles": [
+    roles: [
       "Founder & President Director Bayan Resources",
-      "Coal tycoon, #4 Forbes Indonesia"
+      "Coal tycoon, #4 Forbes Indonesia",
     ],
-    "group": "Bayan Resources"
+    group: "Bayan Resources",
   },
   "ELAINE LOW": {
-    "roles": [
-      "Putri Low Tuck Kwong",
-      "Pemegang 22% saham Bayan Resources"
-    ],
-    "group": "Bayan Resources"
+    roles: ["Putri Low Tuck Kwong", "Pemegang 22% saham Bayan Resources"],
+    group: "Bayan Resources",
   },
   "LOW YI NGO": {
-    "roles": [
+    roles: [
       "Putra Low Tuck Kwong",
-      "Director Sales & Marketing Bayan Resources"
+      "Director Sales & Marketing Bayan Resources",
     ],
-    "group": "Bayan Resources"
+    group: "Bayan Resources",
   },
   "JENNY QUANTERO": {
-    "roles": [
+    roles: [
       "Director Corporate Affairs Bayan Resources",
-      "Co-founder Bayan Resources bersama suami Engki Wibowo"
+      "Co-founder Bayan Resources bersama suami Engki Wibowo",
     ],
-    "group": "Bayan Resources"
+    group: "Bayan Resources",
   },
   "ANTHONI SALIM": {
-    "roles": [
+    roles: [
       "Chairman Salim Group",
       "CEO Indofood (Indomie)",
-      "#5 Forbes Indonesia"
+      "#5 Forbes Indonesia",
     ],
-    "group": "Salim Group"
+    group: "Salim Group",
   },
   "EDWIN SOERYADJAYA": {
-    "roles": [
+    roles: [
       "Founder Saratoga Investama Sedaya",
-      "Putra pendiri Astra International (William Soeryadjaya)"
+      "Putra pendiri Astra International (William Soeryadjaya)",
     ],
-    "group": "Saratoga"
+    group: "Saratoga",
   },
   "RD EDDY K SARIAATMADJA": {
-    "roles": [
+    roles: [
       "Founder Elang Mahkota Teknologi (EMTEK)",
       "Pemilik SCTV, Indosiar, Vidio",
-      "Media & tech conglomerate"
+      "Media & tech conglomerate",
     ],
-    "group": "EMTEK Group"
+    group: "EMTEK Group",
   },
   "RD FOFO SARIAATMADJA": {
-    "roles": [
-      "Keluarga Sariaatmadja",
-      "EMTEK Group"
-    ],
-    "group": "EMTEK Group"
+    roles: ["Keluarga Sariaatmadja", "EMTEK Group"],
+    group: "EMTEK Group",
   },
   "IR. SUSANTO SUWARTO": {
-    "roles": [
-      "Co-founder EMTEK",
-      "Presiden Komisaris Emtek Group"
-    ],
-    "group": "EMTEK Group"
+    roles: ["Co-founder EMTEK", "Presiden Komisaris Emtek Group"],
+    group: "EMTEK Group",
   },
   "PIET YAURY": {
-    "roles": [
-      "Pemegang saham 8-9% Emtek (EMTK)",
-      "Ex-Komisaris Emtek"
-    ],
-    "group": "EMTEK Group"
+    roles: ["Pemegang saham 8-9% Emtek (EMTK)", "Ex-Komisaris Emtek"],
+    group: "EMTEK Group",
   },
   "INAWATI NINGSIH JUWONO": {
-    "roles": [
-      "Pemegang saham Emtek (EMTK)",
-      "Lingkaran pendiri Emtek Group"
-    ],
-    "group": "EMTEK Group"
+    roles: ["Pemegang saham Emtek (EMTK)", "Lingkaran pendiri Emtek Group"],
+    group: "EMTEK Group",
   },
   "WILLIAM TANUWIJAYA": {
-    "roles": [
+    roles: [
       "Co-founder Tokopedia / GoTo Group",
-      "Young Global Leader, World Economic Forum"
+      "Young Global Leader, World Economic Forum",
     ],
-    "group": "GoTo Group"
+    group: "GoTo Group",
   },
   "SABANA PRAWIRA WIDJAJA": {
-    "roles": [
+    roles: [
       "Presiden Direktur PT Ultrajaya Milk (Ultra Milk)",
-      "Keluarga pendiri Ultrajaya"
+      "Keluarga pendiri Ultrajaya",
     ],
-    "group": "Ultrajaya"
+    group: "Ultrajaya",
   },
   "SAMUDERA PRAWIRAWIDJAJA": {
-    "roles": [
+    roles: [
       "Putra Sabana Prawirawidjaja",
-      "Operations Director Ultrajaya, Presdir Campina"
+      "Operations Director Ultrajaya, Presdir Campina",
     ],
-    "group": "Ultrajaya"
+    group: "Ultrajaya",
   },
   "SUHENDRA PRAWIRAWIDJAJA": {
-    "roles": [
-      "Putra Sabana Prawirawidjaja",
-      "Komisaris Ultrajaya (ULTJ)"
-    ],
-    "group": "Ultrajaya"
+    roles: ["Putra Sabana Prawirawidjaja", "Komisaris Ultrajaya (ULTJ)"],
+    group: "Ultrajaya",
   },
   "IR. T. PERMADI RACHMAT": {
-    "roles": [
+    roles: [
       "Founder Triputra Group",
       "Ex-CEO Astra International",
-      "Shareholder Adaro Energy"
+      "Shareholder Adaro Energy",
     ],
-    "group": "Triputra Group"
+    group: "Triputra Group",
   },
   "NY. T. P. RACHMAT L. R. IMANTO": {
-    "roles": [
+    roles: [
       "Istri T.P. Rachmat (Triputra Group)",
-      "Pengendali Triputra Agro Persada (TAPG)"
+      "Pengendali Triputra Agro Persada (TAPG)",
     ],
-    "group": "Triputra Group"
+    group: "Triputra Group",
   },
   "SUDHAMEK AGOENG WASPODO S": {
-    "roles": [
+    roles: [
       "Chairman GarudaFood / Tudung Group",
-      "Pendiri Kacang Garuda, Gery, Suntory Garuda"
+      "Pendiri Kacang Garuda, Gery, Suntory Garuda",
     ],
-    "group": "GarudaFood"
+    group: "GarudaFood",
   },
   "KUSUMODEWININGRUM SUNJOTO": {
-    "roles": [
+    roles: [
       "Pemegang saham 7-9% GarudaFood (GOOD)",
-      "Keluarga Soenjoto (pendiri GarudaFood)"
+      "Keluarga Soenjoto (pendiri GarudaFood)",
     ],
-    "group": "GarudaFood"
+    group: "GarudaFood",
   },
   "PANGAYOMAN ADI SOENJOTO": {
-    "roles": [
+    roles: [
       "Komisaris GarudaFood Putra Putri Jaya (GOOD)",
-      "Keluarga Soenjoto (pendiri GarudaFood)"
+      "Keluarga Soenjoto (pendiri GarudaFood)",
     ],
-    "group": "GarudaFood"
+    group: "GarudaFood",
   },
   "RAHAJOE DEWININGROEM SOENJOTO": {
-    "roles": [
+    roles: [
       "Ex-Presiden Direktur GarudaFood",
-      "Keluarga Soenjoto (pendiri GarudaFood)"
+      "Keluarga Soenjoto (pendiri GarudaFood)",
     ],
-    "group": "GarudaFood"
+    group: "GarudaFood",
   },
   "LESTARI SANTOSO SOENJOTO": {
-    "roles": [
-      "Ex-Komisaris GarudaFood",
-      "Keluarga Soenjoto (Tudung Group)"
-    ],
-    "group": "GarudaFood"
+    roles: ["Ex-Komisaris GarudaFood", "Keluarga Soenjoto (Tudung Group)"],
+    group: "GarudaFood",
   },
   "DARMO PRANOTO SOENJOTO": {
-    "roles": [
+    roles: [
       "Keluarga Soenjoto (pendiri GarudaFood)",
-      "Pemegang saham GarudaFood (GOOD)"
+      "Pemegang saham GarudaFood (GOOD)",
     ],
-    "group": "GarudaFood"
+    group: "GarudaFood",
   },
   "PRODJO HANDOJO SUNJOTO": {
-    "roles": [
+    roles: [
       "Pemegang saham 6-9% GarudaFood (GOOD)",
-      "Keluarga Soenjoto (Tudung Group)"
+      "Keluarga Soenjoto (Tudung Group)",
     ],
-    "group": "GarudaFood"
+    group: "GarudaFood",
   },
-  "JUNIASTUTI": {
-    "roles": [
-      "Pemegang saham 5%+ GarudaFood (GOOD)",
-      "Keluarga Tudung Group"
-    ],
-    "group": "GarudaFood"
+  JUNIASTUTI: {
+    roles: ["Pemegang saham 5%+ GarudaFood (GOOD)", "Keluarga Tudung Group"],
+    group: "GarudaFood",
   },
   "UNTUNG RAHARDJO": {
-    "roles": [
+    roles: [
       "Ex-Komisaris GarudaFood (GOOD)",
-      "Keluarga Soenjoto (Tudung Group)"
+      "Keluarga Soenjoto (Tudung Group)",
     ],
-    "group": "GarudaFood"
+    group: "GarudaFood",
   },
-  "TAHIR": {
-    "roles": [
-      "Founder Mayapada Group",
-      "Billionaire banking & property"
-    ],
-    "group": "Mayapada Group"
+  TAHIR: {
+    roles: ["Founder Mayapada Group", "Billionaire banking & property"],
+    group: "Mayapada Group",
   },
   "JONATHAN TAHIR": {
-    "roles": [
-      "Putra Dato Sri Tahir",
-      "Mayapada Group"
-    ],
-    "group": "Mayapada Group"
+    roles: ["Putra Dato Sri Tahir", "Mayapada Group"],
+    group: "Mayapada Group",
   },
   "DJOKO SUSANTO": {
-    "roles": [
+    roles: [
       "Pendiri Alfamart (AlfaCorp)",
       "#14 Forbes Indonesia",
-      "Alfamart, Alfamidi, DAN+DAN, Lawson"
+      "Alfamart, Alfamidi, DAN+DAN, Lawson",
     ],
-    "group": "Alfa Group"
+    group: "Alfa Group",
   },
   "TRIHATMA KUSUMA HALIMAN": {
-    "roles": [
+    roles: [
       "CEO Agung Podomoro Group",
       "Developer terbesar Indonesia",
-      "Senayan City, Central Park, Thamrin City"
+      "Senayan City, Central Park, Thamrin City",
     ],
-    "group": "Agung Podomoro"
+    group: "Agung Podomoro",
   },
   "JUNI SETIAWATI WONOWIDJOJO": {
-    "roles": [
+    roles: [
       "Presiden Komisaris PT Gudang Garam Tbk",
-      "Keluarga Wonowidjojo (Gudang Garam)"
+      "Keluarga Wonowidjojo (Gudang Garam)",
     ],
-    "group": "Gudang Garam"
+    group: "Gudang Garam",
   },
   "SIGID SUMARGO WONOWIDJOJO": {
-    "roles": [
+    roles: [
       "Putra Surya Wonowidjojo (pendiri Gudang Garam)",
-      "Ex-Director Marketing Gudang Garam"
+      "Ex-Director Marketing Gudang Garam",
     ],
-    "group": "Gudang Garam"
+    group: "Gudang Garam",
   },
   "HARTADI ANGKOSUBROTO": {
-    "roles": [
+    roles: [
       "Gunung Sewu Group (Great Giant Foods)",
-      "Putra Dasuki Angkosubroto (pendiri)"
+      "Putra Dasuki Angkosubroto (pendiri)",
     ],
-    "group": "Gunung Sewu"
+    group: "Gunung Sewu",
   },
   "PIETER TANURI": {
-    "roles": [
+    roles: [
       "Pemilik Bali United (BOLA)",
       "Presiden Direktur Multistrada Arah Sarana",
-      "Founder Trimegah Securities"
+      "Founder Trimegah Securities",
     ],
-    "group": "Tanuri Group"
+    group: "Tanuri Group",
   },
   "YABES TANURI": {
-    "roles": [
+    roles: [
       "Adik Pieter Tanuri",
       "CEO Bali United (BOLA)",
-      "Pemilik lisensi perantara pedagang efek"
+      "Pemilik lisensi perantara pedagang efek",
     ],
-    "group": "Tanuri Group"
+    group: "Tanuri Group",
   },
   "VERONICA COLONDAM": {
-    "roles": [
+    roles: [
       "Pemegang saham Bali United (BOLA), CARS, Trimegah (TRIM)",
-      "Lingkaran Tanuri Group"
+      "Lingkaran Tanuri Group",
     ],
-    "group": "Tanuri Group"
+    group: "Tanuri Group",
   },
   "LO KHENG  HONG. DRS": {
-    "roles": [
-      "\"Warren Buffett of Indonesia\"",
+    roles: [
+      '"Warren Buffett of Indonesia"',
       "Value investor legendaris",
-      "Portofolio saham senilai ~Rp2 triliun"
-    ]
+      "Portofolio saham senilai ~Rp2 triliun",
+    ],
   },
   "ACHMAD ZAKY SYAIFUDIN": {
-    "roles": [
-      "Founder Bukalapak",
-      "Founder Init 6 (venture capital)"
-    ],
-    "group": "Bukalapak"
+    roles: ["Founder Bukalapak", "Founder Init 6 (venture capital)"],
+    group: "Bukalapak",
   },
   "MU MIN ALI GUNAWAN": {
-    "roles": [
+    roles: [
       "Founder Panin Group (Bank Panin)",
-      "Banking tycoon, net worth ~US$1.3B"
+      "Banking tycoon, net worth ~US$1.3B",
     ],
-    "group": "Panin Group"
+    group: "Panin Group",
   },
   "OTTO TOTO SUGIRI": {
-    "roles": [
+    roles: [
       "Founder DCI Indonesia (data center terbesar RI)",
-      "Founder Sigma Cipta Caraka & Telkomsigma"
+      "Founder Sigma Cipta Caraka & Telkomsigma",
     ],
-    "group": "DCI Indonesia"
+    group: "DCI Indonesia",
   },
   "TANDEAN RUSTANDY": {
-    "roles": [
+    roles: [
       "Founder & CEO Arwana Citramulia (ARNA)",
-      "Produsen keramik terbesar Indonesia"
+      "Produsen keramik terbesar Indonesia",
     ],
-    "group": "Arwana Group"
+    group: "Arwana Group",
   },
   "SUGIMAN HALIM": {
-    "roles": [
+    roles: [
       "Konglomerat & investor saham besar",
-      "Pemegang saham besar di BRMS, BOAT, DOSS"
-    ]
+      "Pemegang saham besar di BRMS, BOAT, DOSS",
+    ],
   },
   "BAMBANG SUTANTIO": {
-    "roles": [
+    roles: [
       "Founder & Presiden Komisaris Cimory Group",
-      "Billionaire (Forbes Indonesia)"
+      "Billionaire (Forbes Indonesia)",
     ],
-    "group": "Cimory Group"
+    group: "Cimory Group",
   },
   "FARELL GRANDISURI": {
-    "roles": [
-      "CEO & Presiden Direktur Cimory Group",
-      "Putra Bambang Sutantio"
-    ],
-    "group": "Cimory Group"
+    roles: ["CEO & Presiden Direktur Cimory Group", "Putra Bambang Sutantio"],
+    group: "Cimory Group",
   },
   "STELLA ISABELLA DJOHAN": {
-    "roles": [
-      "Pemilik Sentul City (BKSL)",
-      "Konglomerat properti"
-    ]
+    roles: ["Pemilik Sentul City (BKSL)", "Konglomerat properti"],
   },
   "SUZANNA TANOJO": {
-    "roles": [
+    roles: [
       "Pemilik Victoria Group (banking, finance, securities)",
-      "Putri keluarga Wings Group"
+      "Putri keluarga Wings Group",
     ],
-    "group": "Victoria Group"
+    group: "Victoria Group",
   },
   "JIMMY BUDIARTO": {
-    "roles": [
+    roles: [
       "Founder & Chairman J Resources Asia Pasifik (PSAB)",
-      "Major gold mining conglomerate"
+      "Major gold mining conglomerate",
     ],
-    "group": "J Resources"
+    group: "J Resources",
   },
   "SUNGKONO HONORIS": {
-    "roles": [
+    roles: [
       "Presiden Direktur PT Modern Internasional (MDRN)",
-      "Keluarga Honoris (Modern Group)"
+      "Keluarga Honoris (Modern Group)",
     ],
-    "group": "Modern Group"
+    group: "Modern Group",
   },
   "WINATO KARTONO": {
-    "roles": [
+    roles: [
       "Founder Provident Capital Indonesia",
-      "Presiden Komisaris Merdeka Battery Materials (MBMA)"
+      "Presiden Komisaris Merdeka Battery Materials (MBMA)",
     ],
-    "group": "Provident Capital"
+    group: "Provident Capital",
   },
   "HARDI WIJAYA LIONG": {
-    "roles": [
+    roles: [
       "Founding Partner Provident Capital",
       "CEO Tower Bersama Infrastructure",
-      "Direktur Merdeka Copper Gold"
+      "Direktur Merdeka Copper Gold",
     ],
-    "group": "Provident Capital"
+    group: "Provident Capital",
   },
   "CHRISTOPHER SUMASTO TJIA": {
-    "roles": [
+    roles: [
       "Owner PAM Group (property, mining, hospitality)",
-      "Presiden Direktur Bima Sakti Pertiwi (PAMG)"
+      "Presiden Direktur Bima Sakti Pertiwi (PAMG)",
     ],
-    "group": "PAM Group"
+    group: "PAM Group",
   },
   "CLARISSA ADY SUMASTO TJIA": {
-    "roles": [
+    roles: [
       "Komisaris Wulandari Bangun Laksana (BSBK)",
-      "Keluarga Sumasto Tjia (PAM Group)"
+      "Keluarga Sumasto Tjia (PAM Group)",
     ],
-    "group": "PAM Group"
+    group: "PAM Group",
   },
   "HETTY SOETIKNO, DRA": {
-    "roles": [
+    roles: [
       "Co-founder Dexa Medica Group",
-      "Controlling shareholder Medela Potentia (MDLA)"
+      "Controlling shareholder Medela Potentia (MDLA)",
     ],
-    "group": "Dexa Group"
+    group: "Dexa Group",
   },
   "HARYANTO TJIPTODIHARDJO": {
-    "roles": [
+    roles: [
       "Presiden Direktur Impack Pratama Industri (IMPC)",
-      "Billionaire, top 10 Forbes Indonesia"
+      "Billionaire, top 10 Forbes Indonesia",
     ],
-    "group": "Impack Group"
+    group: "Impack Group",
   },
   "DRA MEDYA LENGKEY S.": {
-    "roles": [
+    roles: [
       "Pemegang saham 16,6% Metrodata Electronics (MTDL)",
-      "Istri Hiskak Secakusuma (Pembangunan Jaya Group)"
+      "Istri Hiskak Secakusuma (Pembangunan Jaya Group)",
     ],
-    "group": "Pembangunan Jaya"
+    group: "Pembangunan Jaya",
   },
   "MOH.A.R.P.MANGKUNINGRAT": {
-    "roles": [
-      "Presiden Direktur Indika Energy",
-      "Chairman KADIN Indonesia"
-    ],
-    "group": "Indika Energy"
+    roles: ["Presiden Direktur Indika Energy", "Chairman KADIN Indonesia"],
+    group: "Indika Energy",
   },
   "CHANDER VINOD LAROYA": {
-    "roles": [
+    roles: [
       "Founder Akraya International",
-      "Vice Presiden Komisaris ESSA Industries Indonesia"
+      "Vice Presiden Komisaris ESSA Industries Indonesia",
     ],
-    "group": "Akraya Group"
+    group: "Akraya Group",
   },
   "DIAH ASRININGPURI SUGIANTO": {
-    "roles": [
+    roles: [
       "Putri Eddy Sugianto",
-      "Komisaris Prima Andalan Mandiri (Mandiri Coal)"
+      "Komisaris Prima Andalan Mandiri (Mandiri Coal)",
     ],
-    "group": "Mandiri Coal"
+    group: "Mandiri Coal",
   },
   "RUDI TANOKO": {
-    "roles": [
+    roles: [
       "Pemegang saham Avia Avian (AVIA)",
-      "Keluarga Tanoko (Tancorp / Avian Group)"
+      "Keluarga Tanoko (Tancorp / Avian Group)",
     ],
-    "group": "Avian Group"
+    group: "Avian Group",
   },
   "PHILIP SUWARDI PURNAMA": {
-    "roles": [
+    roles: [
       "Pemegang saham ~3% Merdeka Battery Materials",
-      "Ex-Direktur Indofood & Trimegah Securities"
-    ]
+      "Ex-Direktur Indofood & Trimegah Securities",
+    ],
   },
   "FRANKY OESMAN WIDJAJA": {
-    "roles": [
+    roles: [
       "Putra Eka Tjipta Widjaja (pendiri Sinar Mas)",
       "CEO/Chairman Golden Agri-Resources",
-      "Konglomerat agribisnis & telekomunikasi"
+      "Konglomerat agribisnis & telekomunikasi",
     ],
-    "group": "Sinar Mas"
+    group: "Sinar Mas",
   },
   "MUKTAR WIDJAJA": {
-    "roles": [
+    roles: [
       "Putra Eka Tjipta Widjaja (pendiri Sinar Mas)",
       "Executive Director Golden Agri-Resources",
-      "CEO Sinarmas Land"
+      "CEO Sinarmas Land",
     ],
-    "group": "Sinar Mas"
+    group: "Sinar Mas",
   },
   "SANDIAGA SALAHUDDIN UNO": {
-    "roles": [
-      "Co-founder Saratoga Investama Sedaya",
-      "Investor & entrepreneur"
-    ],
-    "group": "Saratoga"
+    roles: ["Co-founder Saratoga Investama Sedaya", "Investor & entrepreneur"],
+    group: "Saratoga",
   },
   "GARIBALDI THOHIR": {
-    "roles": [
+    roles: [
       "CEO & Co-founder Adaro Energy",
-      "Pendiri Saratoga bersama Edwin Soeryadjaya"
+      "Pendiri Saratoga bersama Edwin Soeryadjaya",
     ],
-    "group": "Adaro / Thohir Family"
+    group: "Adaro / Thohir Family",
   },
   "GAMMA ABDURRAHMAN THOHIR": {
-    "roles": [
-      "Putra Garibaldi Thohir",
-      "Pemegang saham CARS"
-    ],
-    "group": "Adaro / Thohir Family"
+    roles: ["Putra Garibaldi Thohir", "Pemegang saham CARS"],
+    group: "Adaro / Thohir Family",
   },
   "HARY TANOESOEDIBJO": {
-    "roles": [
-      "Founder MNC Group",
-      "Pemilik RCTI, MNC TV, GTV, iNews"
-    ],
-    "group": "MNC Group"
+    roles: ["Founder MNC Group", "Pemilik RCTI, MNC TV, GTV, iNews"],
+    group: "MNC Group",
   },
   "B.RUDIJANTO TANOESOEDIBJO": {
-    "roles": [
-      "Kakak Hary Tanoesoedibjo",
-      "CEO Trinity Health Care, MNC Group"
-    ],
-    "group": "MNC Group"
+    roles: ["Kakak Hary Tanoesoedibjo", "CEO Trinity Health Care, MNC Group"],
+    group: "MNC Group",
   },
   "RATNA ENDANG SOELISTYAWATI": {
-    "roles": [
+    roles: [
       "Presiden Komisaris MNC Investama (BHIT)",
-      "Keluarga Tanoesoedibjo"
+      "Keluarga Tanoesoedibjo",
     ],
-    "group": "MNC Group"
+    group: "MNC Group",
   },
   "SOLIHIN JUSUF KALLA": {
-    "roles": [
-      "Presiden Direktur Kalla Group",
-      "Putra Wapres Jusuf Kalla"
-    ],
-    "group": "Kalla Group"
+    roles: ["Presiden Direktur Kalla Group", "Putra Wapres Jusuf Kalla"],
+    group: "Kalla Group",
   },
   "IR ACHMAD KALLA": {
-    "roles": [
-      "Co-founder Bukaka Teknik Utama",
-      "Keluarga Kalla"
-    ],
-    "group": "Kalla Group"
+    roles: ["Co-founder Bukaka Teknik Utama", "Keluarga Kalla"],
+    group: "Kalla Group",
   },
   "DRS SUHAELI KALLA": {
-    "roles": [
-      "Komisaris Utama Bukaka Teknik Utama",
-      "Keluarga Kalla"
-    ],
-    "group": "Kalla Group"
+    roles: ["Komisaris Utama Bukaka Teknik Utama", "Keluarga Kalla"],
+    group: "Kalla Group",
   },
   "SUHAELLY KALLA": {
-    "roles": [
-      "Keluarga Kalla Group"
-    ],
-    "group": "Kalla Group"
+    roles: ["Keluarga Kalla Group"],
+    group: "Kalla Group",
   },
   "ANINDITHA ANESTYA BAKRIE": {
-    "roles": [
-      "Putri Aburizal Bakrie",
-      "Keluarga Bakrie Group"
-    ],
-    "group": "Bakrie Group"
-  }
+    roles: ["Putri Aburizal Bakrie", "Keluarga Bakrie Group"],
+    group: "Bakrie Group",
+  },
 };

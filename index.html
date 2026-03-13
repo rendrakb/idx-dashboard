@@ -1,820 +1,1909 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="id" data-theme="dark">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IDX 1% Ownership — Data Kepemilikan Saham</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="main.css">
-<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
-</head>
-<body>
-
-<div class="dashboard" id="app">
-
-  <!-- HEADER -->
-  <header class="header">
-    <div class="header-brand">
-      <div class="brand-text">
-        <span class="brand-ksei">IDX</span>
-        <span class="brand-dot">·</span>
-        <span class="brand-ownership">1% Ownership</span>
-      </div>
-      <button class="guide-btn" id="guideBtn" onclick="openGuide()">
-        <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 1.5h4c1.1 0 2 .9 2 2v11c0-.83-.67-1.5-1.5-1.5H2v-11zM14 1.5h-4c-1.1 0-2 .9-2 2v11c0-.83.67-1.5 1.5-1.5H14v-11z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span>Guide</span>
-      </button>
-    </div>
-    <div class="header-right">
-      <span class="date-info">Per 27 Feb 2026 &nbsp;·&nbsp; Sumber: KSEI &nbsp;·&nbsp; Harga: 14 Mar 2026</span>
-      <button class="kbd-help-btn" id="kbdHelpBtn" title="Keyboard shortcuts" aria-label="Keyboard shortcuts">?</button>
-      <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle light/dark mode">
-        <svg id="themeIcon" width="15" height="15" viewBox="0 0 15 15" fill="none">
-          <path d="M7.5 1.5V0M7.5 15v-1.5M1.5 7.5H0M15 7.5h-1.5M3 3L2 2M13 13l-1-1M12 3l1-1M2 13l1-1M10.5 7.5a3 3 0 11-6 0 3 3 0 016 0z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-        </svg>
-      </button>
-    </div>
-  </header>
-
-
-  <!-- TAB BAR -->
-  <div class="tab-bar" id="tabBar">
-    <button class="tab-btn active" id="tabBtnSummary" data-tab="summary">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 3h12M2 6.5h8M2 10h10M2 13.5h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-      Ringkasan Saham
-    </button>
-    <button class="tab-btn" id="tabBtnInvestor" data-tab="investor">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 7a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM3 14c0-2.76 2.24-5 5-5s5 2.24 5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      Per Investor
-    </button>
-    <button class="tab-btn" id="tabBtnKonglo" data-tab="konglo">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 2h5v5H2zM9 2h5v5H9zM2 9h5v5H2zM9 9h5v5H9" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      Konglo Stocks
-    </button>
-    <button class="tab-btn" id="tabBtnMetrics" data-tab="metrics">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="8" width="3" height="6" rx="0.5" stroke="currentColor" stroke-width="1.3"/><rect x="6" y="5" width="3" height="9" rx="0.5" stroke="currentColor" stroke-width="1.3"/><rect x="11" y="2" width="3" height="12" rx="0.5" stroke="currentColor" stroke-width="1.3"/></svg>
-      Metrik
-    </button>
-    <button class="tab-btn" id="tabBtnChangelog" data-tab="changelog">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1v6h6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 8A6 6 0 1 1 8 2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
-      Changelog
-    </button>
-  </div>
-
-  <!-- TAB: RINGKASAN SAHAM -->
-  <div id="tabSummary">
-
-  <!-- TOOLBAR + FILTERS (combined) -->
-  <div class="toolbar toolbar-combined" id="toolbar">
-    <div class="search-wrap">
-      <svg class="search-icon" viewBox="0 0 14 14" fill="none">
-        <circle cx="6" cy="6" r="4.5" stroke="currentColor" stroke-width="1.4"/>
-        <path d="M9.5 9.5L13 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-      </svg>
-      <input type="search" class="search-input" id="searchInput"
-        placeholder="Cari kode saham, emiten, atau pemegang saham..." autocomplete="off" spellcheck="false">
-      <button class="search-clear" id="searchClear" aria-label="Clear search">✕</button>
-    </div>
-    <button class="mobile-filter-toggle" id="summaryMobileFilterToggle">
-      <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-      Filter
-    </button>
-    <div class="filter-sep"></div>
-    <div class="filter-group">
-      <span class="filter-label">Free Float</span>
-      <div class="range-input-wrap">
-        <input type="number" class="range-num-input" id="ffMin" placeholder="0%" min="0" max="100" step="0.1">
-        <span class="range-dash">–</span>
-        <input type="number" class="range-num-input" id="ffMax" placeholder="100%" min="0" max="100" step="0.1">
-      </div>
-      <div class="range-slider-wrap" id="rangeSliderWrap">
-        <div class="range-slider-track"></div>
-        <div class="range-slider-fill" id="rangeSliderFill"></div>
-        <input type="range" id="rangeMin" min="0" max="100" step="0.5" value="0">
-        <input type="range" id="rangeMax" min="0" max="100" step="0.5" value="100">
-      </div>
-    </div>
-    <div class="filter-sep"></div>
-    <div class="filter-group sort-group-wrap">
-      <span class="filter-label">Urutkan</span>
-      <div class="sort-group">
-        <button class="sort-btn active" id="sortTicker" data-sort="ticker" data-dir="asc">Ticker <span class="sort-arrow">↑</span></button>
-        <button class="sort-btn" id="sortFF" data-sort="freefloat" data-dir="">Free Float <span class="sort-arrow"></span></button>
-        <button class="sort-btn" id="sortHHI" data-sort="hhi" data-dir="">CCS <span class="sort-arrow"></span></button>
-      </div>
-    </div>
-    <div class="filter-sep"></div>
-    <div class="filter-group">
-      <span class="filter-label">Sektor</span>
-      <select class="sector-select" id="sectorFilter">
-        <option value="">Semua Sektor</option>
-      </select>
-    </div>
-    <button class="filter-reset" id="filterReset" title="Reset filter">›</button>
-    <div class="toolbar-right">
-      <span class="results-count" id="resultsCount"></span>
-      <button class="compare-toggle-btn" id="compareToggleBtn" title="Bandingkan saham">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 3h5v5M8 3H3v5M3 16v5h5M21 16v5h-5"/></svg>
-        Bandingkan
-      </button>
-      <button class="expand-all-btn" id="expandAllBtn">
-        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-          <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-        Buka Semua
-      </button>
-      <button class="export-csv-btn" id="exportCsvStock" title="Export CSV">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-      </button>
-    </div>
-  </div>
-
-  <!-- MAIN -->
-  <main class="main" id="mainContent">
-    <div class="loading-state" id="loadingState">
-      <div class="loading-spinner"></div>
-      <span style="font-size:var(--text-sm);color:var(--text-muted)">Memuat data...</span>
-    </div>
-    <div id="groupList" class="group-list" style="display:none"></div>
-    <div class="empty-state" id="emptyState" style="display:none">
-      <div class="empty-icon">ðŸ”</div>
-      <div class="empty-text">Tidak ada hasil yang ditemukan. Coba ubah filter atau kata kunci pencarian.</div>
-    </div>
-    <div id="scrollSentinel" class="scroll-sentinel"></div>
-    <div id="scrollStatus"></div>
-  </main>
-
-  </div><!-- end #tabSummary -->
-
-  <!-- TAB: PER INVESTOR -->
-  <div id="tabInvestor" class="hidden">
-
-  <!-- INVESTOR TOOLBAR + FILTERS (combined) -->
-  <div class="toolbar toolbar-combined" id="invToolbar">
-    <div class="search-wrap">
-      <svg class="search-icon" viewBox="0 0 14 14" fill="none">
-        <circle cx="6" cy="6" r="4.5" stroke="currentColor" stroke-width="1.4"/>
-        <path d="M9.5 9.5L13 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-      </svg>
-      <input type="search" class="search-input" id="invSearchInput"
-        placeholder="Cari nama investor, kode saham, atau emiten..." autocomplete="off" spellcheck="false">
-      <button class="search-clear" id="invSearchClear" aria-label="Clear search">✕</button>
-    </div>
-    <button class="mobile-filter-toggle" id="invMobileFilterToggle">
-      <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-      Filter
-    </button>
-    <div class="filter-sep"></div>
-    <div class="filter-group">
-      <span class="filter-label">Label</span>
-      <select class="filter-select" id="invLabelSelect">
-        <option value="all">Semua</option>
-        <option value="pep">PEP</option>
-        <option value="conglo">Konglo</option>
-        <option value="pep_conglo">PEP + Konglo</option>
-      </select>
-    </div>
-    <div class="filter-sep"></div>
-    <div class="filter-group">
-      <span class="filter-label">Tipe</span>
-      <div class="multi-select-dropdown" id="invTypeDropdown">
-        <button class="multi-select-btn" id="invTypeBtn" type="button">Semua <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M3 5l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
-        <div class="multi-select-panel" id="invTypePanel">
-          <div class="multi-select-option" data-type="ID"><span class="ms-check"></span>Individu</div>
-          <div class="multi-select-option" data-type="CP"><span class="ms-check"></span>Korporasi</div>
-          <div class="multi-select-option" data-type="MF"><span class="ms-check"></span>Reksa Dana</div>
-          <div class="multi-select-option" data-type="IB"><span class="ms-check"></span>Bank</div>
-          <div class="multi-select-option" data-type="SC"><span class="ms-check"></span>Sekuritas</div>
-          <div class="multi-select-option" data-type="IS"><span class="ms-check"></span>Asuransi</div>
-          <div class="multi-select-option" data-type="PF"><span class="ms-check"></span>Dana Pensiun</div>
-          <div class="multi-select-option" data-type="OT"><span class="ms-check"></span>Lainnya</div>
-        </div>
-      </div>
-    </div>
-    <div class="filter-sep"></div>
-    <div class="filter-group">
-      <span class="filter-label">Asal</span>
-      <select class="filter-select" id="invOriginSelect">
-        <option value="all">Semua</option>
-        <option value="D">Lokal</option>
-        <option value="F">Asing</option>
-      </select>
-    </div>
-    <div class="filter-sep"></div>
-    <div class="filter-group sort-group-wrap">
-      <span class="filter-label">Urutkan</span>
-      <div class="sort-group">
-        <button class="sort-btn" id="invSortName" data-sort="name" data-dir="">Nama <span class="sort-arrow"></span></button>
-        <button class="sort-btn active" id="invSortStocks" data-sort="stocks" data-dir="desc">Total Saham <span class="sort-arrow">↓</span></button>
-        <button class="sort-btn" id="invSortAUM" data-sort="aum" data-dir="">Total AUM <span class="sort-arrow"></span></button>
-      </div>
-    </div>
-    <button class="filter-reset" id="invFilterReset" title="Reset filter">›</button>
-    <div class="toolbar-right">
-      <span class="results-count" id="invResultsCount"></span>
-      <button class="expand-all-btn" id="invExpandAllBtn">
-        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-          <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-        Buka Semua
-      </button>
-      <button class="export-csv-btn" id="exportCsvInvestor" title="Export CSV">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-      </button>
-    </div>
-  </div>
-
-  <!-- INVESTOR MAIN -->
-  <main class="main" id="invMainContent">
-    <div class="loading-state" id="invLoadingState">
-      <div class="loading-spinner"></div>
-      <span style="font-size:var(--text-sm);color:var(--text-muted)">Memuat data investor...</span>
-    </div>
-    <div id="invGroupList" class="group-list" style="display:none"></div>
-    <div class="empty-state" id="invEmptyState" style="display:none">
-      <div class="empty-icon">ðŸ”</div>
-      <div class="empty-text">Tidak ada investor yang ditemukan. Coba ubah filter atau kata kunci pencarian.</div>
-    </div>
-    <div id="invScrollSentinel" class="scroll-sentinel"></div>
-    <div id="invScrollStatus"></div>
-  </main>
-
-  </div><!-- end #tabInvestor -->
-
-  <!-- TAB: KONGLO STOCKS -->
-  <div id="tabKonglo" class="hidden">
-
-  <!-- KONGLO TOOLBAR + FILTERS (combined) -->
-  <div class="toolbar toolbar-combined konglo-toolbar-always" id="kongloToolbar">
-    <div class="search-wrap">
-      <svg class="search-icon" viewBox="0 0 14 14" fill="none">
-        <circle cx="6" cy="6" r="4.5" stroke="currentColor" stroke-width="1.4"/>
-        <path d="M9.5 9.5L13 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-      </svg>
-      <input type="search" class="search-input" id="kongloSearchInput"
-        placeholder="Cari grup konglo atau kode saham..." autocomplete="off" spellcheck="false">
-      <button class="search-clear" id="kongloSearchClear" aria-label="Clear search">✕</button>
-    </div>
-    <button class="mobile-filter-toggle" id="kongloMobileFilterToggle">
-      <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-      Filter
-    </button>
-    <div class="filter-sep"></div>
-    <div class="filter-group sort-group-wrap">
-      <span class="filter-label">Urutkan</span>
-      <div class="sort-group">
-        <button class="sort-btn active" id="kongloSortName" data-sort="name" data-dir="asc">Nama <span class="sort-arrow">↑</span></button>
-        <button class="sort-btn" id="kongloSortStockCount" data-sort="stockcount">Jumlah Saham <span class="sort-arrow"></span></button>
-      </div>
-    </div>
-    <button class="filter-reset" id="kongloFilterReset" title="Reset filter">›</button>
-    <div class="toolbar-right">
-      <span class="results-count" id="kongloResultsCount"></span>
-      <button class="expand-all-btn" id="kongloExpandAllBtn">
-        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-          <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-        Buka Semua
-      </button>
-      <button class="export-csv-btn" id="exportCsvKonglo" title="Export CSV">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-      </button>
-    </div>
-  </div>
-  <!-- KONGLO LEGEND (separate row) -->
-  <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:11px;color:var(--text-muted);padding:4px 20px;background:var(--bg-card);border-bottom:1px solid var(--border)">
-    <span style="display:inline-flex;align-items:center;gap:4px"><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:#15803d"></span><strong>Main</strong>: UBO + MCap &gt; 10T</span>
-    <span style="display:inline-flex;align-items:center;gap:4px"><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:#d97706"></span><strong>Small/Micro</strong>: MCap &lt; 10T</span>
-    <span style="display:inline-flex;align-items:center;gap:4px"><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:var(--text-muted)"></span><strong>Sharing</strong>: Investee/Sharing Control</span>
-    <span style="display:inline-flex;align-items:center;gap:4px"><span style="display:inline-block;padding:0 4px;border-radius:5px;font-size:8px;font-weight:600;background:rgba(139,92,246,0.15);color:#8b5cf6;line-height:1.5">shared</span>multi-grup</span>
-  </div>
-
-  <!-- KONGLO MAIN -->
-  <main class="main" id="kongloMainContent">
-    <div class="loading-state" id="kongloLoadingState">
-      <div class="loading-spinner"></div>
-      <span style="font-size:var(--text-sm);color:var(--text-muted)">Memuat data konglo...</span>
-    </div>
-    <div id="kongloGroupList" class="group-list" style="display:none"></div>
-    <div class="empty-state" id="kongloEmptyState" style="display:none">
-      <div class="empty-icon">ðŸ”</div>
-      <div class="empty-text">Tidak ada grup konglomerat yang ditemukan. Coba ubah kata kunci pencarian.</div>
-    </div>
-  </main>
-
-  </div><!-- end #tabKonglo -->
-
-  <!-- TAB: METRIK -->
-  <div id="tabMetrics" class="hidden">
-
-  <main class="main" id="metricsMainContent">
-    <div class="metrics-content">
-      <div class="metrics-bento" id="metricsBento">
-        <!-- Row 1: 4 KPI cards -->
-        <div class="metrics-kpi-card">
-          <div class="mkpi-label">Total Emiten</div>
-          <div class="mkpi-value num" id="mKpiIssuers">—</div>
-        </div>
-        <div class="metrics-kpi-card">
-          <div class="mkpi-label">Total Pemegang Saham</div>
-          <div class="mkpi-value num" id="mKpiInvestors">—</div>
-        </div>
-        <div class="metrics-kpi-card kpi-foreign">
-          <div class="mkpi-label">Asing (Foreign)</div>
-          <div class="mkpi-value num" id="mKpiForeign">—</div>
-          <div class="mkpi-sub" id="mKpiForeignPct"></div>
-        </div>
-        <div class="metrics-kpi-card kpi-local">
-          <div class="mkpi-label">Lokal (Local)</div>
-          <div class="mkpi-value num" id="mKpiLocal">—</div>
-          <div class="mkpi-sub" id="mKpiLocalPct"></div>
-        </div>
-
-        <!-- Row 2: Tidak Terklasifikasi + Multi-Saham + Maks Saham + Unik Investor -->
-        <div class="metrics-kpi-card kpi-unclass">
-          <div class="mkpi-label">Tidak Terklasifikasi</div>
-          <div class="mkpi-value num" id="mKpiUnclass">—</div>
-          <div class="mkpi-sub" id="mKpiUnclassPct"></div>
-        </div>
-        <div class="metrics-kpi-card">
-          <div class="mkpi-label">Investor Unik</div>
-          <div class="mkpi-value num" id="mKpiUniqueInv">—</div>
-          <div class="mkpi-sub">nama berbeda</div>
-        </div>
-        <div class="metrics-kpi-card">
-          <div class="mkpi-label">Multi-Saham</div>
-          <div class="mkpi-value num" id="mInvKpiMulti">—</div>
-          <div class="mkpi-sub">investor di 2+ saham</div>
-        </div>
-        <div class="metrics-kpi-card">
-          <div class="mkpi-label">Maks Saham</div>
-          <div class="mkpi-value num" id="mInvKpiMax">—</div>
-          <div class="mkpi-sub" id="mInvKpiMaxSub">paling banyak</div>
-        </div>
-
-        <!-- Row 3: Two pie charts side by side -->
-        <div class="metrics-chart-card span-2">
-          <div class="metrics-chart-title">Lokal vs Asing</div>
-          <div class="metrics-chart-wrap" style="max-width:320px;margin:0 auto;">
-            <canvas id="chartLokalAsing"></canvas>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDX 1% Ownership — Data Kepemilikan Saham</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  </head>
+  <body>
+    <div class="dashboard" id="app">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="header-brand">
+          <div class="brand-text">
+            <span class="brand-ksei">IDX</span>
+            <span class="brand-dot">·</span>
+            <span class="brand-ownership">1% Ownership</span>
           </div>
+          <button class="guide-btn" id="guideBtn" onclick="openGuide()">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+              <path
+                d="M2 1.5h4c1.1 0 2 .9 2 2v11c0-.83-.67-1.5-1.5-1.5H2v-11zM14 1.5h-4c-1.1 0-2 .9-2 2v11c0-.83.67-1.5 1.5-1.5H14v-11z"
+                stroke="currentColor"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span>Guide</span>
+          </button>
         </div>
-        <div class="metrics-chart-card span-2">
-          <div class="metrics-chart-title">Tipe Investor</div>
-          <div class="metrics-chart-wrap" style="max-width:320px;margin:0 auto;">
-            <canvas id="chartInvestorType"></canvas>
-          </div>
+        <div class="header-right">
+          <span class="date-info"
+            >Per 27 Feb 2026 &nbsp;·&nbsp; Sumber: KSEI &nbsp;·&nbsp; Harga: 14
+            Mar 2026</span
+          >
+          <button
+            class="kbd-help-btn"
+            id="kbdHelpBtn"
+            title="Keyboard shortcuts"
+            aria-label="Keyboard shortcuts"
+          >
+            ?
+          </button>
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            title="Toggle theme"
+            aria-label="Toggle light/dark mode"
+          >
+            <svg
+              id="themeIcon"
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+            >
+              <path
+                d="M7.5 1.5V0M7.5 15v-1.5M1.5 7.5H0M15 7.5h-1.5M3 3L2 2M13 13l-1-1M12 3l1-1M2 13l1-1M10.5 7.5a3 3 0 11-6 0 3 3 0 016 0z"
+                stroke="currentColor"
+                stroke-width="1.3"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
         </div>
+      </header>
 
-        <!-- Row 4: Top 20 Investor bar chart (full width) -->
-        <div class="metrics-chart-card span-4">
-          <div class="metrics-chart-title">Top 20 Investor Terbanyak</div>
-          <div class="metrics-chart-wrap" style="height:600px;">
-            <canvas id="chartTop20Investors"></canvas>
-          </div>
-        </div>
-
-        <!-- Row 4b: Top 20 Investor by AUM bar chart (full width) -->
-        <div class="metrics-chart-card span-4">
-          <div class="metrics-chart-title">Top 20 Investor Terbesar</div>
-          <div class="metrics-chart-wrap" style="height:600px;">
-            <canvas id="chartTop20InvestorsAUM"></canvas>
-          </div>
-        </div>
-
-        <!-- Row 5: Country breakdown (full width) -->
-        <div class="metrics-chart-card span-4">
-          <div class="metrics-chart-title">Sebaran Negara Investor</div>
-          <div class="metrics-chart-wrap" style="height:500px;">
-            <canvas id="chartCountryBreakdown"></canvas>
-          </div>
-        </div>
-
-        <!-- Row 6: Distribusi Kepemilikan + Top 10 Saham Paling Banyak Investor -->
-        <div class="metrics-chart-card span-2">
-          <div class="metrics-chart-title">Distribusi Kepemilikan</div>
-          <div class="metrics-chart-wrap" style="height:300px;">
-            <canvas id="chartOwnershipDist"></canvas>
-          </div>
-        </div>
-        <div class="metrics-chart-card span-2">
-          <div class="metrics-chart-title">Top 10 Saham Paling Banyak Investor</div>
-          <div class="metrics-chart-wrap" style="height:300px;">
-            <canvas id="chartTop10Stocks"></canvas>
-          </div>
-        </div>
-
-        <!-- Row 7: Jejak Konglo & PEP -->
-        <div class="metrics-chart-card span-2">
-          <div class="metrics-chart-title">Jejak Konglo & PEP di Pasar</div>
-          <div class="metrics-chart-sub">Top 20 grup berdasarkan jumlah saham. <span style="color:#d97706;font-weight:600">■</span> PEP &nbsp;<span style="color:var(--accent);font-weight:600">■</span> Konglo</div>
-          <div class="metrics-chart-wrap" style="height:380px;">
-            <canvas id="chartCongloPepFootprint"></canvas>
-          </div>
-        </div>
-
-        <!-- Row 7b: Bubble — Diversifikasi Investor -->
-        <div class="metrics-chart-card span-2">
-          <div class="metrics-chart-title">Diversifikasi Investor</div>
-          <div class="metrics-chart-sub">Top 50 investor terbanyak. X = jumlah saham, Y = rata-rata kepemilikan (%), ukuran = total saham berbeda</div>
-          <div class="metrics-chart-wrap" style="height:380px;">
-            <canvas id="chartDiversificationBubble"></canvas>
-          </div>
-        </div>
-
-        <!-- Row 8: Top 20 Saham Konglo Tertinggi (bar) -->
-        <div class="metrics-chart-card span-2">
-          <div class="metrics-chart-title">Top 20 Saham Kepemilikan Konglo Tertinggi</div>
-          <div class="metrics-chart-sub">Saham dengan total akumulasi kepemilikan konglo/PEP paling tinggi</div>
-          <div class="metrics-chart-wrap" style="height:380px;">
-            <canvas id="chartTopKongloStocks"></canvas>
-          </div>
-        </div>
-
-        <!-- Row 8b: Total Kepemilikan Konglo (bar) -->
-        <div class="metrics-chart-card span-2">
-          <div class="metrics-chart-title">Total Kepemilikan per Grup Konglo</div>
-          <div class="metrics-chart-sub">Akumulasi kepemilikan (%) di seluruh saham per grup konglomerat</div>
-          <div class="metrics-chart-wrap" style="height:380px;">
-            <canvas id="chartKongloTotalOwnership"></canvas>
-          </div>
-        </div>
-
-        <!-- Row 9: Sector Distribution + HHI Distribution -->
-        <div class="metrics-chart-card span-2">
-          <div class="metrics-chart-title">Distribusi Sektor</div>
-          <div class="metrics-chart-sub">Jumlah emiten per sektor (dari data Yahoo Finance)</div>
-          <div class="metrics-chart-wrap" style="height:380px;">
-            <canvas id="chartSectorDist"></canvas>
-          </div>
-        </div>
-        <div class="metrics-chart-card span-2">
-          <div class="metrics-chart-title">Distribusi CCS (Konsentrasi Kepemilikan)</div>
-          <div class="metrics-chart-sub">Composite Concentration Score (0&ndash;100) per emiten</div>
-          <div class="metrics-chart-wrap" style="height:380px;">
-            <canvas id="chartHHIDist"></canvas>
-          </div>
-        </div>
-
-        <!-- Row 10: Avg CCS per Sector (bar) -->
-        <div class="metrics-chart-card span-4">
-          <div class="metrics-chart-title">Rata-rata CCS per Sektor</div>
-          <div class="metrics-chart-sub">Sektor mana yang paling terkonsentrasi? <span style="color:#16a34a;font-weight:600">●</span> Rendah (≤25) <span style="color:#d97706;font-weight:600">●</span> Sedang (26–55) <span style="color:#dc2626;font-weight:600">●</span> Tinggi (>55)</div>
-          <div class="metrics-chart-wrap" style="height:400px;">
-            <canvas id="chartSectorHHI"></canvas>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </main>
-
-  </div><!-- end #tabMetrics -->
-
-  <!-- TAB: CHANGELOG -->
-  <div id="tabChangelog" class="hidden">
-    <main class="main changelog-main" id="changelogMainContent">
-      <div id="changelogContent"></div>
-    </main>
-  </div><!-- end #tabChangelog -->
-
-</div>
-
-<!-- FEATURE 3: KEYBOARD SHORTCUTS MODAL -->
-<div class="kbd-modal-overlay" id="kbdModalOverlay">
-  <div class="kbd-modal">
-    <h3>Pintasan Keyboard</h3>
-    <div class="kbd-modal-row"><span>Fokus pencarian</span><div class="kbd-modal-keys"><span class="kbd-key">/</span><span style="color:var(--text-muted);font-size:11px">atau</span><span class="kbd-key">Ctrl</span><span class="kbd-key">K</span></div></div>
-    <div class="kbd-modal-row"><span>Ringkasan Saham</span><div class="kbd-modal-keys"><span class="kbd-key">1</span></div></div>
-    <div class="kbd-modal-row"><span>Per Investor</span><div class="kbd-modal-keys"><span class="kbd-key">2</span></div></div>
-    <div class="kbd-modal-row"><span>Konglo Stocks</span><div class="kbd-modal-keys"><span class="kbd-key">3</span></div></div>
-    <div class="kbd-modal-row"><span>Metrik</span><div class="kbd-modal-keys"><span class="kbd-key">4</span></div></div>
-    <div class="kbd-modal-row"><span>Changelog</span><div class="kbd-modal-keys"><span class="kbd-key">5</span></div></div>
-    <div class="kbd-modal-row"><span>Bersihkan pencarian</span><div class="kbd-modal-keys"><span class="kbd-key">Esc</span></div></div>
-  </div>
-</div>
-
-<!-- GUIDE MODAL -->
-<div class="guide-overlay" id="guideOverlay">
-  <div class="guide-panel">
-    <div class="guide-panel-header">
-      <h2>
-        <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M2 1.5h4c1.1 0 2 .9 2 2v11c0-.83-.67-1.5-1.5-1.5H2v-11zM14 1.5h-4c-1.1 0-2 .9-2 2v11c0-.83.67-1.5 1.5-1.5H14v-11z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Panduan Penggunaan
-      </h2>
-      <button class="guide-close-btn" onclick="closeGuide()">&times;</button>
-    </div>
-    <div class="guide-body">
-
-      <!-- ===== OVERVIEW ===== -->
-      <div class="guide-section">
-        <div class="guide-section-header">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
-          <h3>Overview</h3>
-        </div>
-        <p>Dashboard ini nge-track semua <strong>pemegang saham dengan kepemilikan 1% ke atas</strong> di seluruh emiten yang listed di Bursa Efek Indonesia (IDX). Data bersumber dari laporan resmi KSEI.</p>
-        <div class="guide-feature-grid">
-          <div class="guide-feature-card"><strong>Cek Major Shareholders</strong><span>Lihat siapa aja yang hold &ge;1% di setiap emiten</span></div>
-          <div class="guide-feature-card"><strong>Track Across Stocks</strong><span>Satu investor, berapa saham yang dia pegang?</span></div>
-          <div class="guide-feature-card"><strong>Network Graph</strong><span>Explore connection antara investor &amp; saham secara visual</span></div>
-          <div class="guide-feature-card"><strong>Compare Side-by-Side</strong><span>Bandingkan up to 6 saham, spot overlapping investors</span></div>
-          <div class="guide-feature-card"><strong>Konglo &amp; PEP Mapping</strong><span>Deep dive ownership patterns konglomerat &amp; politisi</span></div>
-          <div class="guide-feature-card"><strong>Changelog &amp; Tracking</strong><span>Track perubahan data antar periode &mdash; saham baru, investor keluar/masuk</span></div>
-        </div>
-      </div>
-
-      <!-- ===== CARA BACA DATA ===== -->
-      <div class="guide-section">
-        <div class="guide-section-header">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-          <h3>Cara Baca Datanya</h3>
-        </div>
-        <div class="guide-feature-grid">
-          <div class="guide-feature-card"><strong>Kepemilikan (%)</strong><span>Percentage of total listed shares. Misal 5,25% = investor hold 5,25% dari seluruh saham yang beredar.</span></div>
-          <div class="guide-feature-card"><strong>Total Saham</strong><span>Jumlah lembar saham (in shares, bukan lot). Raw number dari report KSEI.</span></div>
-          <div class="guide-feature-card"><strong>Lokal vs Asing</strong><span>Classification KSEI. Lokal = domestic investor, Asing = foreign.</span></div>
-          <div class="guide-feature-card"><strong>Tipe Investor</strong><span>Kategori entity: Corporate, Bank, Individual, Mutual Fund, Pension Fund, Securities, Foundation, dll.</span></div>
-        </div>
-        <div class="guide-callout"><strong>Free Float</strong> &mdash; 100% minus total kepemilikan semua investor 1%+. Bukan "true" free float, tapi indikator seberapa terkonsentrasi ownership. Makin rendah, makin concentrated ke few big holders.</div>
-      </div>
-
-      <!-- ===== KONSENTRASI & METRIK ===== -->
-      <div class="guide-section">
-        <div class="guide-section-header">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9"/><path d="M21 3v6h-6"/></svg>
-          <h3>CCS &amp; Metrik Konsentrasi</h3>
-        </div>
-        <p>Dashboard menampilkan <strong>Composite Concentration Score (CCS)</strong> &mdash; skor 0&ndash;100 yang menggabungkan beberapa metrik untuk mengukur konsentrasi kepemilikan secara menyeluruh.</p>
-
-        <div class="guide-callout" style="border-left-color:var(--accent)">
-          <strong>Formula CCS</strong><br>
-          <code style="font-size:11px;display:block;margin:6px 0">CCS = (HHI &times; 0,45) + (CR3 &times; 0,35) + (Holder &times; 0,20)</code>
-          <span style="font-size:var(--text-xs);color:var(--text-muted)">HHI = Herfindahl-Hirschman (dinormalisasi 0&ndash;1), CR3 = konsentrasi top 3 (dinormalisasi), Holder = inverse jumlah pemegang saham</span>
-        </div>
-
-        <div class="guide-feature-grid">
-          <div class="guide-feature-card">
-            <strong>HHI (45%)</strong>
-            <span>Herfindahl-Hirschman Index &mdash; jumlah kuadrat persentase setiap holder. Sensitif ke holder yang sangat dominan.</span>
-          </div>
-          <div class="guide-feature-card">
-            <strong>CR3 (35%)</strong>
-            <span>Concentration Ratio top 3 &mdash; berapa % total yang dikuasai 3 holder terbesar. Indikator oligopoli.</span>
-          </div>
-          <div class="guide-feature-card">
-            <strong>Jumlah Holder (20%)</strong>
-            <span>Inverse holder count &mdash; makin sedikit holder, makin terkonsentrasi. 1 holder = skor maks, 20+ = minimal.</span>
-          </div>
-          <div class="guide-feature-card">
-            <strong>Tipe Kepemilikan</strong>
-            <span>Auto-classified: <strong>Mayoritas</strong> (CR1 &ge;50%), <strong>Oligopoli</strong> (CR3 &ge;60%), <strong>Terkonsentrasi</strong> (total &ge;70%), <strong>Moderat</strong>, atau <strong>Tersebar</strong> (total &le;40%).</span>
-          </div>
-        </div>
-
-        <p style="margin-top:var(--sp-3)"><strong>Threshold CCS:</strong></p>
-        <div style="display:flex;gap:var(--sp-3);flex-wrap:wrap;margin:var(--sp-2) 0">
-          <div style="display:flex;align-items:center;gap:6px"><span class="hhi-pill hhi-low" style="pointer-events:none">CCS 0&ndash;25</span> <span style="font-size:var(--text-sm);color:var(--text-secondary)">Rendah &mdash; tersebar</span></div>
-          <div style="display:flex;align-items:center;gap:6px"><span class="hhi-pill hhi-med" style="pointer-events:none">CCS 26&ndash;55</span> <span style="font-size:var(--text-sm);color:var(--text-secondary)">Sedang &mdash; moderate</span></div>
-          <div style="display:flex;align-items:center;gap:6px"><span class="hhi-pill hhi-high" style="pointer-events:none">CCS 56&ndash;100</span> <span style="font-size:var(--text-sm);color:var(--text-secondary)">Tinggi &mdash; terkonsentrasi</span></div>
-        </div>
-
-        <div class="guide-callout">
-          <strong>Kenapa CCS, bukan HHI saja?</strong><br>
-          HHI klasik hanya menghitung kuadrat persentase &mdash; bisa misleading kalau semua holder punya share mirip. CCS menambahkan CR3 (siapa 3 terbesar) dan jumlah holder (diversitas) supaya hasilnya lebih mencerminkan realitas konsentrasi di pasar IDX. Hover pill CCS di setiap card untuk lihat breakdown lengkap.
-        </div>
-      </div>
-
-      <!-- ===== TAB: RINGKASAN SAHAM ===== -->
-      <div class="guide-section">
-        <div class="guide-section-header">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
-          <h3>Tab: Ringkasan Saham</h3>
-        </div>
-        <p>Landing page utama. Semua emiten ditampilkan as cards, masing-masing dengan list pemegang saham 1%+.</p>
-        <ul>
-          <li><strong>Search</strong> &mdash; Ketik ticker atau nama emiten. Shortcut: <span class="guide-kbd">/</span></li>
-          <li><strong>Sort</strong> &mdash; Klik header kolom per card untuk sort. Toolbar sort: Ticker, Free Float, CCS.</li>
-          <li><strong>Filter</strong> &mdash; Lokal/Asing, free float range slider, dan dropdown sektor industri.</li>
-          <li><strong>Klik nama investor</strong> &mdash; Jump ke tab Per Investor, auto-scroll ke investor itu.</li>
-          <li><strong>Compare mode</strong> &mdash; Pilih 2&ndash;6 saham untuk side-by-side comparison.</li>
-          <li><strong>Network graph</strong> &mdash; Interactive force-directed graph per emiten.</li>
-          <li><strong>CCS pill</strong> &mdash; Badge konsentrasi di card header. Hover untuk detail CR1, CR3, HHI, tipe.</li>
-          <li><strong>Indikator perubahan</strong> &mdash; Badge <span style="background:linear-gradient(135deg,#6366f1,#818cf8);color:#fff;font-weight:700;font-size:10px;padding:2px 8px;border-radius:10px;letter-spacing:0.5px">New</span> pada saham dan investor baru.</li>
-        </ul>
-      </div>
-
-      <!-- ===== TAB: PER INVESTOR ===== -->
-      <div class="guide-section">
-        <div class="guide-section-header">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          <h3>Tab: Per Investor</h3>
-        </div>
-        <p>Reverse view &mdash; per-investor. Setiap investor yang hold &ge;1% di minimal satu emiten.</p>
-        <ul>
-          <li><strong>Filter PEP &amp; Konglo</strong> &mdash; Toggle filter <span class="guide-badge guide-badge-pep">PEP</span> atau <span class="guide-badge guide-badge-conglo">Konglo</span>.</li>
-          <li><strong>Filter jumlah saham</strong> &mdash; Set minimum stocks held. "3+" untuk yang diversified.</li>
-          <li><strong>Klik ticker</strong> &mdash; Jump balik ke Ringkasan Saham.</li>
-          <li><strong>Network graph</strong> &mdash; Starting point dari investor: semua saham + co-investors.</li>
-        </ul>
-      </div>
-
-      <!-- ===== TAB: KONGLO STOCKS ===== -->
-      <div class="guide-section">
-        <div class="guide-section-header">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-          <h3>Tab: Konglo Stocks</h3>
-        </div>
-        <p>Grouping saham by konglomerat besar Indonesia.</p>
-        <div class="guide-feature-grid">
-          <div class="guide-feature-card"><strong>Main</strong><span>Core holdings, saham utama closely associated dengan grup</span></div>
-          <div class="guide-feature-card"><strong>Small/Micro</strong><span>Smaller cap stocks yang juga part of the group</span></div>
-          <div class="guide-feature-card"><strong>Investor Sharing</strong><span>Bukan "milik" grup, tapi punya significant overlapping investors</span></div>
-          <div class="guide-feature-card"><strong>Color Coding</strong><span>Berwarna = ada data KSEI. Abu-abu = no ownership data available</span></div>
-        </div>
-      </div>
-
-      <!-- ===== TAB: METRIK ===== -->
-      <div class="guide-section">
-        <div class="guide-section-header">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
-          <h3>Tab: Metrik</h3>
-        </div>
-        <p>Analytics dashboard &mdash; the bigger picture dari ownership landscape IDX.</p>
-        <div class="guide-feature-grid">
-          <div class="guide-feature-card"><strong>Lokal vs Asing</strong><span>Pie chart domestic vs foreign investors</span></div>
-          <div class="guide-feature-card"><strong>Investor Type</strong><span>Breakdown by entity type (corporate, individual, dll.)</span></div>
-          <div class="guide-feature-card"><strong>Top 20 Investor</strong><span>Ranked by jumlah stocks held</span></div>
-          <div class="guide-feature-card"><strong>Sebaran Negara</strong><span>Origin country breakdown foreign investors</span></div>
-          <div class="guide-feature-card"><strong>Jejak Konglo &amp; PEP</strong><span>Mapping konglo groups &amp; PEP yang hold &ge;1%</span></div>
-          <div class="guide-feature-card"><strong>Konglo Tertinggi</strong><span>Top 20 saham dengan total kepemilikan konglo/PEP terbesar</span></div>
-          <div class="guide-feature-card"><strong>Distribusi CCS</strong><span>Histogram konsentrasi per emiten (0&ndash;100)</span></div>
-          <div class="guide-feature-card"><strong>CCS per Sektor</strong><span>Rata-rata CCS per sektor, color-coded</span></div>
-        </div>
-        <p style="color:var(--text-muted);font-size:var(--text-xs)">Semua chart interactive &mdash; hover untuk tooltip details.</p>
-      </div>
-
-      <!-- ===== TAB: CHANGELOG ===== -->
-      <div class="guide-section">
-        <div class="guide-section-header">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-          <h3>Tab: Changelog</h3>
-        </div>
-        <p>Tracking perubahan data antar periode KSEI. Membandingkan data terbaru dengan sebelumnya.</p>
-        <div class="guide-feature-grid">
-          <div class="guide-feature-card">
-            <strong>Saham Baru</strong>
-            <span>Emiten yang baru muncul di data KSEI periode terbaru. Klik ticker untuk langsung ke detail.</span>
-          </div>
-          <div class="guide-feature-card">
-            <strong>Saham Dihapus</strong>
-            <span>Emiten yang ada di periode sebelumnya tapi tidak lagi di periode terbaru.</span>
-          </div>
-          <div class="guide-feature-card">
-            <strong>Investor Baru Masuk</strong>
-            <span>Investor yang baru hold &ge;1%. Ditandai badge <span style="background:linear-gradient(135deg,#6366f1,#818cf8);color:#fff;font-weight:700;font-size:10px;padding:2px 8px;border-radius:10px;letter-spacing:0.5px">New</span> di Ringkasan Saham.</span>
-          </div>
-          <div class="guide-feature-card">
-            <strong>Investor Keluar</strong>
-            <span>Investor yang kepemilikannya turun di bawah 1% (tidak lagi muncul).</span>
-          </div>
-        </div>
-        <div class="guide-callout">
-          <strong>Popup Notifikasi</strong> &mdash; Setiap kali halaman dimuat, popup ringkasan perubahan muncul otomatis dengan KPI summary. Klik "Lihat Detail" untuk langsung ke tab Changelog, atau "Tutup" untuk dismiss.
-        </div>
-        <ul>
-          <li><strong>KPI bar</strong> &mdash; Di bagian atas tab: total saham baru, dihapus, berubah, investor masuk/keluar.</li>
-          <li><strong>Expandable cards</strong> &mdash; Klik card saham untuk lihat detail investor mana yang berubah.</li>
-          <li><strong>Badge "New"</strong> &mdash; Muncul di card header dan baris investor baru di tab Ringkasan Saham.</li>
-        </ul>
-      </div>
-
-      <!-- ===== BADGE: PEP & KONGLO ===== -->
-      <div class="guide-section">
-        <div class="guide-section-header">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          <h3>Badge: PEP &amp; Konglo</h3>
-        </div>
-        <div class="guide-feature-grid">
-          <div class="guide-feature-card">
-            <strong><span class="guide-badge guide-badge-pep">PEP</span> Politically Exposed Person</strong>
-            <span>Orang dengan political position significant &mdash; menteri, DPR/DPD, gubernur, atau keluarga langsung.</span>
-          </div>
-          <div class="guide-feature-card">
-            <strong><span class="guide-badge guide-badge-conglo">Konglo</span> Konglomerat / Tycoon</strong>
-            <span>Pengusaha besar, taipans, founders, dan controlling families behind major business groups.</span>
-          </div>
-        </div>
-        <div class="guide-callout">PEP &ne; Konglo. PEP soal political connections, Konglo soal business empire. Dua kategori terpisah, walaupun kadang overlap. Hover badge untuk detail.</div>
-      </div>
-
-      <!-- ===== SEKTOR ===== -->
-      <div class="guide-section">
-        <div class="guide-section-header">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h6"/></svg>
-          <h3>Data Sektor</h3>
-        </div>
-        <p>Data sektor dari Yahoo Finance (907 dari 955 emiten). Badge di card header. Hover untuk sub-industri. Filter via dropdown di toolbar.</p>
-      </div>
-
-      <!-- ===== KEYBOARD SHORTCUTS ===== -->
-      <div class="guide-section">
-        <div class="guide-section-header">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h.01M10 8h.01"/><path d="M6 12h12M6 16h8"/></svg>
-          <h3>Keyboard Shortcuts</h3>
-        </div>
-        <div class="guide-kbd-grid">
-          <div class="keys"><span class="guide-kbd">/</span> <span style="color:var(--text-muted);font-size:11px">atau</span> <span class="guide-kbd">Ctrl</span><span class="guide-kbd">K</span></div>
-          <div class="desc">Focus search bar</div>
-          <div class="keys"><span class="guide-kbd">1</span><span class="guide-kbd">2</span><span class="guide-kbd">3</span><span class="guide-kbd">4</span><span class="guide-kbd">5</span></div>
-          <div class="desc">Switch tab (Ringkasan, Investor, Konglo, Metrik, Changelog)</div>
-          <div class="keys"><span class="guide-kbd">Esc</span></div>
-          <div class="desc">Clear search / close modal or graph</div>
-        </div>
-      </div>
-
-      <!-- ===== SUMBER DATA ===== -->
-      <div class="guide-section">
-        <div class="guide-section-header">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4a2 2 0 0 1 2-2h8.5L20 7.5V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3"/><polyline points="14 2 14 8 20 8"/><path d="M4 15h9"/><path d="M10 12l3 3-3 3"/></svg>
-          <h3>Sumber Data</h3>
-        </div>
-        <div class="guide-source-box">
-          <p style="margin-bottom:var(--sp-2)"><strong>KSEI (Kustodian Sentral Efek Indonesia)</strong></p>
-          <p style="margin-bottom:var(--sp-2)">Semua ownership data dari laporan bulanan KSEI &mdash; the official central securities depository.</p>
-          <p style="margin-bottom:var(--sp-2)">Periode data: <strong>Per 12 Maret 2026</strong> &middot; Dibandingkan dengan: <strong>3 Maret 2026</strong></p>
-          <p style="margin-bottom:0">Official site: <a href="https://www.ksei.co.id" target="_blank" rel="noopener">www.ksei.co.id</a></p>
-        </div>
-        <p style="margin-top:var(--sp-3);color:var(--text-muted);font-size:var(--text-xs)">Data PEP &amp; Konglo di-curate independently dari public sources. Data harga &amp; market cap dari Yahoo Finance. Purely for reference.</p>
-      </div>
-
-    </div>
-  </div>
-</div>
-<div class="toast-container" id="toastContainer"></div>
-
-<!-- CHANGELOG NOTIFICATION MODAL -->
-<div class="cl-notif-overlay" id="clNotifOverlay">
-  <div class="cl-notif-panel">
-    <div class="cl-notif-banner">
-      <div class="cl-notif-banner-top">
-        <div style="display:flex;align-items:center;gap:12px">
-          <div class="cl-notif-banner-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-          </div>
-          <div>
-            <h3>Data Update</h3>
-            <div class="cl-notif-date" id="clNotifDate"></div>
-          </div>
-        </div>
-        <button class="cl-notif-close" onclick="dismissChangelogNotif()" aria-label="Tutup">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      <!-- TAB BAR -->
+      <div class="tab-bar" id="tabBar">
+        <button class="tab-btn active" id="tabBtnSummary" data-tab="summary">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path
+              d="M2 3h12M2 6.5h8M2 10h10M2 13.5h6"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+          </svg>
+          Ringkasan Saham
+        </button>
+        <button class="tab-btn" id="tabBtnInvestor" data-tab="investor">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path
+              d="M8 7a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM3 14c0-2.76 2.24-5 5-5s5 2.24 5 5"
+              stroke="currentColor"
+              stroke-width="1.4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Per Investor
+        </button>
+        <button class="tab-btn" id="tabBtnKonglo" data-tab="konglo">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path
+              d="M2 2h5v5H2zM9 2h5v5H9zM2 9h5v5H2zM9 9h5v5H9"
+              stroke="currentColor"
+              stroke-width="1.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Konglo Stocks
+        </button>
+        <button class="tab-btn" id="tabBtnMetrics" data-tab="metrics">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <rect
+              x="1"
+              y="8"
+              width="3"
+              height="6"
+              rx="0.5"
+              stroke="currentColor"
+              stroke-width="1.3"
+            />
+            <rect
+              x="6"
+              y="5"
+              width="3"
+              height="9"
+              rx="0.5"
+              stroke="currentColor"
+              stroke-width="1.3"
+            />
+            <rect
+              x="11"
+              y="2"
+              width="3"
+              height="12"
+              rx="0.5"
+              stroke="currentColor"
+              stroke-width="1.3"
+            />
+          </svg>
+          Metrik
+        </button>
+        <button class="tab-btn" id="tabBtnChangelog" data-tab="changelog">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path
+              d="M8 1v6h6"
+              stroke="currentColor"
+              stroke-width="1.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M14 8A6 6 0 1 1 8 2"
+              stroke="currentColor"
+              stroke-width="1.3"
+              stroke-linecap="round"
+            />
+          </svg>
+          Changelog
         </button>
       </div>
-    </div>
-    <div class="cl-notif-kpi-row" id="clNotifKpiRow"></div>
-    <div class="cl-notif-body" id="clNotifBody"></div>
-    <div class="cl-notif-footer">
-      <button class="cl-notif-btn" onclick="dismissChangelogNotif()">Tutup</button>
-      <button class="cl-notif-btn primary" onclick="dismissChangelogNotif(); switchTab('changelog');">Lihat Detail &rarr;</button>
-    </div>
-  </div>
-</div>
 
-<!-- FEATURE 5&6: COMPARE FLOATING BAR -->
-<div class="compare-floating-bar" id="compareFloatingBar">
-  <div class="compare-selected-tickers" id="compareSelectedTickers"></div>
-  <button class="compare-action-btn" onclick="openComparePanel()">Bandingkan</button>
-</div>
+      <!-- TAB: RINGKASAN SAHAM -->
+      <div id="tabSummary">
+        <!-- TOOLBAR + FILTERS (combined) -->
+        <div class="toolbar toolbar-combined" id="toolbar">
+          <div class="search-wrap">
+            <svg class="search-icon" viewBox="0 0 14 14" fill="none">
+              <circle
+                cx="6"
+                cy="6"
+                r="4.5"
+                stroke="currentColor"
+                stroke-width="1.4"
+              />
+              <path
+                d="M9.5 9.5L13 13"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+              />
+            </svg>
+            <input
+              type="search"
+              class="search-input"
+              id="searchInput"
+              placeholder="Cari kode saham, emiten, atau pemegang saham..."
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <button
+              class="search-clear"
+              id="searchClear"
+              aria-label="Clear search"
+            >
+              ✕
+            </button>
+          </div>
+          <button class="mobile-filter-toggle" id="summaryMobileFilterToggle">
+            <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
+              <path
+                d="M2 4l4 4 4-4"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+            Filter
+          </button>
+          <div class="filter-sep"></div>
+          <div class="filter-group">
+            <span class="filter-label">Free Float</span>
+            <div class="range-input-wrap">
+              <input
+                type="number"
+                class="range-num-input"
+                id="ffMin"
+                placeholder="0%"
+                min="0"
+                max="100"
+                step="0.1"
+              />
+              <span class="range-dash">–</span>
+              <input
+                type="number"
+                class="range-num-input"
+                id="ffMax"
+                placeholder="100%"
+                min="0"
+                max="100"
+                step="0.1"
+              />
+            </div>
+            <div class="range-slider-wrap" id="rangeSliderWrap">
+              <div class="range-slider-track"></div>
+              <div class="range-slider-fill" id="rangeSliderFill"></div>
+              <input
+                type="range"
+                id="rangeMin"
+                min="0"
+                max="100"
+                step="0.5"
+                value="0"
+              />
+              <input
+                type="range"
+                id="rangeMax"
+                min="0"
+                max="100"
+                step="0.5"
+                value="100"
+              />
+            </div>
+          </div>
+          <div class="filter-sep"></div>
+          <div class="filter-group sort-group-wrap">
+            <span class="filter-label">Urutkan</span>
+            <div class="sort-group">
+              <button
+                class="sort-btn active"
+                id="sortTicker"
+                data-sort="ticker"
+                data-dir="asc"
+              >
+                Ticker <span class="sort-arrow">↑</span>
+              </button>
+              <button
+                class="sort-btn"
+                id="sortFF"
+                data-sort="freefloat"
+                data-dir=""
+              >
+                Free Float <span class="sort-arrow"></span>
+              </button>
+              <button class="sort-btn" id="sortHHI" data-sort="hhi" data-dir="">
+                CCS <span class="sort-arrow"></span>
+              </button>
+            </div>
+          </div>
+          <div class="filter-sep"></div>
+          <div class="filter-group">
+            <span class="filter-label">Sektor</span>
+            <select class="sector-select" id="sectorFilter">
+              <option value="">Semua Sektor</option>
+            </select>
+          </div>
+          <button class="filter-reset" id="filterReset" title="Reset filter">
+            ›
+          </button>
+          <div class="toolbar-right">
+            <span class="results-count" id="resultsCount"></span>
+            <button
+              class="compare-toggle-btn"
+              id="compareToggleBtn"
+              title="Bandingkan saham"
+            >
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              >
+                <path d="M16 3h5v5M8 3H3v5M3 16v5h5M21 16v5h-5" />
+              </svg>
+              Bandingkan
+            </button>
+            <button class="expand-all-btn" id="expandAllBtn">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path
+                  d="M2 4l4 4 4-4"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+              Buka Semua
+            </button>
+            <button
+              class="export-csv-btn"
+              id="exportCsvStock"
+              title="Export CSV"
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
 
-<!-- FEATURE 5&6: COMPARE PANEL OVERLAY -->
-<div class="compare-panel-overlay" id="comparePanelOverlay">
-  <div class="compare-panel" id="comparePanel">
-    <div class="compare-panel-header">
-      <h3>Perbandingan Saham</h3>
-      <button class="compare-panel-close" onclick="closeComparePanel()">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        <!-- MAIN -->
+        <main class="main" id="mainContent">
+          <div class="loading-state" id="loadingState">
+            <div class="loading-spinner"></div>
+            <span style="font-size: var(--text-sm); color: var(--text-muted)"
+              >Memuat data...</span
+            >
+          </div>
+          <div id="groupList" class="group-list" style="display: none"></div>
+          <div class="empty-state" id="emptyState" style="display: none">
+            <div class="empty-icon">ðŸ”</div>
+            <div class="empty-text">
+              Tidak ada hasil yang ditemukan. Coba ubah filter atau kata kunci
+              pencarian.
+            </div>
+          </div>
+          <div id="scrollSentinel" class="scroll-sentinel"></div>
+          <div id="scrollStatus"></div>
+        </main>
+      </div>
+      <!-- end #tabSummary -->
+
+      <!-- TAB: PER INVESTOR -->
+      <div id="tabInvestor" class="hidden">
+        <!-- INVESTOR TOOLBAR + FILTERS (combined) -->
+        <div class="toolbar toolbar-combined" id="invToolbar">
+          <div class="search-wrap">
+            <svg class="search-icon" viewBox="0 0 14 14" fill="none">
+              <circle
+                cx="6"
+                cy="6"
+                r="4.5"
+                stroke="currentColor"
+                stroke-width="1.4"
+              />
+              <path
+                d="M9.5 9.5L13 13"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+              />
+            </svg>
+            <input
+              type="search"
+              class="search-input"
+              id="invSearchInput"
+              placeholder="Cari nama investor, kode saham, atau emiten..."
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <button
+              class="search-clear"
+              id="invSearchClear"
+              aria-label="Clear search"
+            >
+              ✕
+            </button>
+          </div>
+          <button class="mobile-filter-toggle" id="invMobileFilterToggle">
+            <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
+              <path
+                d="M2 4l4 4 4-4"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+            Filter
+          </button>
+          <div class="filter-sep"></div>
+          <div class="filter-group">
+            <span class="filter-label">Label</span>
+            <select class="filter-select" id="invLabelSelect">
+              <option value="all">Semua</option>
+              <option value="pep">PEP</option>
+              <option value="conglo">Konglo</option>
+              <option value="pep_conglo">PEP + Konglo</option>
+            </select>
+          </div>
+          <div class="filter-sep"></div>
+          <div class="filter-group">
+            <span class="filter-label">Tipe</span>
+            <div class="multi-select-dropdown" id="invTypeDropdown">
+              <button class="multi-select-btn" id="invTypeBtn" type="button">
+                Semua
+                <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
+                  <path
+                    d="M3 5l3 3 3-3"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+              <div class="multi-select-panel" id="invTypePanel">
+                <div class="multi-select-option" data-type="ID">
+                  <span class="ms-check"></span>Individu
+                </div>
+                <div class="multi-select-option" data-type="CP">
+                  <span class="ms-check"></span>Korporasi
+                </div>
+                <div class="multi-select-option" data-type="MF">
+                  <span class="ms-check"></span>Reksa Dana
+                </div>
+                <div class="multi-select-option" data-type="IB">
+                  <span class="ms-check"></span>Bank
+                </div>
+                <div class="multi-select-option" data-type="SC">
+                  <span class="ms-check"></span>Sekuritas
+                </div>
+                <div class="multi-select-option" data-type="IS">
+                  <span class="ms-check"></span>Asuransi
+                </div>
+                <div class="multi-select-option" data-type="PF">
+                  <span class="ms-check"></span>Dana Pensiun
+                </div>
+                <div class="multi-select-option" data-type="OT">
+                  <span class="ms-check"></span>Lainnya
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-sep"></div>
+          <div class="filter-group">
+            <span class="filter-label">Asal</span>
+            <select class="filter-select" id="invOriginSelect">
+              <option value="all">Semua</option>
+              <option value="D">Lokal</option>
+              <option value="F">Asing</option>
+            </select>
+          </div>
+          <div class="filter-sep"></div>
+          <div class="filter-group sort-group-wrap">
+            <span class="filter-label">Urutkan</span>
+            <div class="sort-group">
+              <button
+                class="sort-btn"
+                id="invSortName"
+                data-sort="name"
+                data-dir=""
+              >
+                Nama <span class="sort-arrow"></span>
+              </button>
+              <button
+                class="sort-btn active"
+                id="invSortStocks"
+                data-sort="stocks"
+                data-dir="desc"
+              >
+                Total Saham <span class="sort-arrow">↓</span>
+              </button>
+              <button
+                class="sort-btn"
+                id="invSortAUM"
+                data-sort="aum"
+                data-dir=""
+              >
+                Total AUM <span class="sort-arrow"></span>
+              </button>
+            </div>
+          </div>
+          <button class="filter-reset" id="invFilterReset" title="Reset filter">
+            ›
+          </button>
+          <div class="toolbar-right">
+            <span class="results-count" id="invResultsCount"></span>
+            <button class="expand-all-btn" id="invExpandAllBtn">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path
+                  d="M2 4l4 4 4-4"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+              Buka Semua
+            </button>
+            <button
+              class="export-csv-btn"
+              id="exportCsvInvestor"
+              title="Export CSV"
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- INVESTOR MAIN -->
+        <main class="main" id="invMainContent">
+          <div class="loading-state" id="invLoadingState">
+            <div class="loading-spinner"></div>
+            <span style="font-size: var(--text-sm); color: var(--text-muted)"
+              >Memuat data investor...</span
+            >
+          </div>
+          <div id="invGroupList" class="group-list" style="display: none"></div>
+          <div class="empty-state" id="invEmptyState" style="display: none">
+            <div class="empty-icon">ðŸ”</div>
+            <div class="empty-text">
+              Tidak ada investor yang ditemukan. Coba ubah filter atau kata
+              kunci pencarian.
+            </div>
+          </div>
+          <div id="invScrollSentinel" class="scroll-sentinel"></div>
+          <div id="invScrollStatus"></div>
+        </main>
+      </div>
+      <!-- end #tabInvestor -->
+
+      <!-- TAB: KONGLO STOCKS -->
+      <div id="tabKonglo" class="hidden">
+        <!-- KONGLO TOOLBAR + FILTERS (combined) -->
+        <div
+          class="toolbar toolbar-combined konglo-toolbar-always"
+          id="kongloToolbar"
+        >
+          <div class="search-wrap">
+            <svg class="search-icon" viewBox="0 0 14 14" fill="none">
+              <circle
+                cx="6"
+                cy="6"
+                r="4.5"
+                stroke="currentColor"
+                stroke-width="1.4"
+              />
+              <path
+                d="M9.5 9.5L13 13"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+              />
+            </svg>
+            <input
+              type="search"
+              class="search-input"
+              id="kongloSearchInput"
+              placeholder="Cari grup konglo atau kode saham..."
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <button
+              class="search-clear"
+              id="kongloSearchClear"
+              aria-label="Clear search"
+            >
+              ✕
+            </button>
+          </div>
+          <button class="mobile-filter-toggle" id="kongloMobileFilterToggle">
+            <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
+              <path
+                d="M2 4l4 4 4-4"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+            Filter
+          </button>
+          <div class="filter-sep"></div>
+          <div class="filter-group sort-group-wrap">
+            <span class="filter-label">Urutkan</span>
+            <div class="sort-group">
+              <button
+                class="sort-btn active"
+                id="kongloSortName"
+                data-sort="name"
+                data-dir="asc"
+              >
+                Nama <span class="sort-arrow">↑</span>
+              </button>
+              <button
+                class="sort-btn"
+                id="kongloSortStockCount"
+                data-sort="stockcount"
+              >
+                Jumlah Saham <span class="sort-arrow"></span>
+              </button>
+            </div>
+          </div>
+          <button
+            class="filter-reset"
+            id="kongloFilterReset"
+            title="Reset filter"
+          >
+            ›
+          </button>
+          <div class="toolbar-right">
+            <span class="results-count" id="kongloResultsCount"></span>
+            <button class="expand-all-btn" id="kongloExpandAllBtn">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path
+                  d="M2 4l4 4 4-4"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+              Buka Semua
+            </button>
+            <button
+              class="export-csv-btn"
+              id="exportCsvKonglo"
+              title="Export CSV"
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- KONGLO LEGEND (separate row) -->
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            font-size: 11px;
+            color: var(--text-muted);
+            padding: 4px 20px;
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+          "
+        >
+          <span style="display: inline-flex; align-items: center; gap: 4px"
+            ><span
+              style="
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 2px;
+                background: #15803d;
+              "
+            ></span
+            ><strong>Main</strong>: UBO + MCap &gt; 10T</span
+          >
+          <span style="display: inline-flex; align-items: center; gap: 4px"
+            ><span
+              style="
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 2px;
+                background: #d97706;
+              "
+            ></span
+            ><strong>Small/Micro</strong>: MCap &lt; 10T</span
+          >
+          <span style="display: inline-flex; align-items: center; gap: 4px"
+            ><span
+              style="
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 2px;
+                background: var(--text-muted);
+              "
+            ></span
+            ><strong>Sharing</strong>: Investee/Sharing Control</span
+          >
+          <span style="display: inline-flex; align-items: center; gap: 4px"
+            ><span
+              style="
+                display: inline-block;
+                padding: 0 4px;
+                border-radius: 5px;
+                font-size: 8px;
+                font-weight: 600;
+                background: rgba(139, 92, 246, 0.15);
+                color: #8b5cf6;
+                line-height: 1.5;
+              "
+              >shared</span
+            >multi-grup</span
+          >
+        </div>
+
+        <!-- KONGLO MAIN -->
+        <main class="main" id="kongloMainContent">
+          <div class="loading-state" id="kongloLoadingState">
+            <div class="loading-spinner"></div>
+            <span style="font-size: var(--text-sm); color: var(--text-muted)"
+              >Memuat data konglo...</span
+            >
+          </div>
+          <div
+            id="kongloGroupList"
+            class="group-list"
+            style="display: none"
+          ></div>
+          <div class="empty-state" id="kongloEmptyState" style="display: none">
+            <div class="empty-icon">ðŸ”</div>
+            <div class="empty-text">
+              Tidak ada grup konglomerat yang ditemukan. Coba ubah kata kunci
+              pencarian.
+            </div>
+          </div>
+        </main>
+      </div>
+      <!-- end #tabKonglo -->
+
+      <!-- TAB: METRIK -->
+      <div id="tabMetrics" class="hidden">
+        <main class="main" id="metricsMainContent">
+          <div class="metrics-content">
+            <div class="metrics-bento" id="metricsBento">
+              <!-- Row 1: 4 KPI cards -->
+              <div class="metrics-kpi-card">
+                <div class="mkpi-label">Total Emiten</div>
+                <div class="mkpi-value num" id="mKpiIssuers">—</div>
+              </div>
+              <div class="metrics-kpi-card">
+                <div class="mkpi-label">Total Pemegang Saham</div>
+                <div class="mkpi-value num" id="mKpiInvestors">—</div>
+              </div>
+              <div class="metrics-kpi-card kpi-foreign">
+                <div class="mkpi-label">Asing (Foreign)</div>
+                <div class="mkpi-value num" id="mKpiForeign">—</div>
+                <div class="mkpi-sub" id="mKpiForeignPct"></div>
+              </div>
+              <div class="metrics-kpi-card kpi-local">
+                <div class="mkpi-label">Lokal (Local)</div>
+                <div class="mkpi-value num" id="mKpiLocal">—</div>
+                <div class="mkpi-sub" id="mKpiLocalPct"></div>
+              </div>
+
+              <!-- Row 2: Tidak Terklasifikasi + Multi-Saham + Maks Saham + Unik Investor -->
+              <div class="metrics-kpi-card kpi-unclass">
+                <div class="mkpi-label">Tidak Terklasifikasi</div>
+                <div class="mkpi-value num" id="mKpiUnclass">—</div>
+                <div class="mkpi-sub" id="mKpiUnclassPct"></div>
+              </div>
+              <div class="metrics-kpi-card">
+                <div class="mkpi-label">Investor Unik</div>
+                <div class="mkpi-value num" id="mKpiUniqueInv">—</div>
+                <div class="mkpi-sub">nama berbeda</div>
+              </div>
+              <div class="metrics-kpi-card">
+                <div class="mkpi-label">Multi-Saham</div>
+                <div class="mkpi-value num" id="mInvKpiMulti">—</div>
+                <div class="mkpi-sub">investor di 2+ saham</div>
+              </div>
+              <div class="metrics-kpi-card">
+                <div class="mkpi-label">Maks Saham</div>
+                <div class="mkpi-value num" id="mInvKpiMax">—</div>
+                <div class="mkpi-sub" id="mInvKpiMaxSub">paling banyak</div>
+              </div>
+
+              <!-- Row 3: Two pie charts side by side -->
+              <div class="metrics-chart-card span-2">
+                <div class="metrics-chart-title">Lokal vs Asing</div>
+                <div
+                  class="metrics-chart-wrap"
+                  style="max-width: 320px; margin: 0 auto"
+                >
+                  <canvas id="chartLokalAsing"></canvas>
+                </div>
+              </div>
+              <div class="metrics-chart-card span-2">
+                <div class="metrics-chart-title">Tipe Investor</div>
+                <div
+                  class="metrics-chart-wrap"
+                  style="max-width: 320px; margin: 0 auto"
+                >
+                  <canvas id="chartInvestorType"></canvas>
+                </div>
+              </div>
+
+              <!-- Row 4: Top 20 Investor bar chart (full width) -->
+              <div class="metrics-chart-card span-4">
+                <div class="metrics-chart-title">Top 20 Investor Terbanyak</div>
+                <div class="metrics-chart-wrap" style="height: 600px">
+                  <canvas id="chartTop20Investors"></canvas>
+                </div>
+              </div>
+
+              <!-- Row 4b: Top 20 Investor by AUM bar chart (full width) -->
+              <div class="metrics-chart-card span-4">
+                <div class="metrics-chart-title">Top 20 Investor Terbesar</div>
+                <div class="metrics-chart-wrap" style="height: 600px">
+                  <canvas id="chartTop20InvestorsAUM"></canvas>
+                </div>
+              </div>
+
+              <!-- Row 5: Country breakdown (full width) -->
+              <div class="metrics-chart-card span-4">
+                <div class="metrics-chart-title">Sebaran Negara Investor</div>
+                <div class="metrics-chart-wrap" style="height: 500px">
+                  <canvas id="chartCountryBreakdown"></canvas>
+                </div>
+              </div>
+
+              <!-- Row 6: Distribusi Kepemilikan + Top 10 Saham Paling Banyak Investor -->
+              <div class="metrics-chart-card span-2">
+                <div class="metrics-chart-title">Distribusi Kepemilikan</div>
+                <div class="metrics-chart-wrap" style="height: 300px">
+                  <canvas id="chartOwnershipDist"></canvas>
+                </div>
+              </div>
+              <div class="metrics-chart-card span-2">
+                <div class="metrics-chart-title">
+                  Top 10 Saham Paling Banyak Investor
+                </div>
+                <div class="metrics-chart-wrap" style="height: 300px">
+                  <canvas id="chartTop10Stocks"></canvas>
+                </div>
+              </div>
+
+              <!-- Row 7: Jejak Konglo & PEP -->
+              <div class="metrics-chart-card span-2">
+                <div class="metrics-chart-title">
+                  Jejak Konglo & PEP di Pasar
+                </div>
+                <div class="metrics-chart-sub">
+                  Top 20 grup berdasarkan jumlah saham.
+                  <span style="color: #d97706; font-weight: 600">■</span> PEP
+                  &nbsp;<span style="color: var(--accent); font-weight: 600"
+                    >■</span
+                  >
+                  Konglo
+                </div>
+                <div class="metrics-chart-wrap" style="height: 380px">
+                  <canvas id="chartCongloPepFootprint"></canvas>
+                </div>
+              </div>
+
+              <!-- Row 7b: Bubble — Diversifikasi Investor -->
+              <div class="metrics-chart-card span-2">
+                <div class="metrics-chart-title">Diversifikasi Investor</div>
+                <div class="metrics-chart-sub">
+                  Top 50 investor terbanyak. X = jumlah saham, Y = rata-rata
+                  kepemilikan (%), ukuran = total saham berbeda
+                </div>
+                <div class="metrics-chart-wrap" style="height: 380px">
+                  <canvas id="chartDiversificationBubble"></canvas>
+                </div>
+              </div>
+
+              <!-- Row 8: Top 20 Saham Konglo Tertinggi (bar) -->
+              <div class="metrics-chart-card span-2">
+                <div class="metrics-chart-title">
+                  Top 20 Saham Kepemilikan Konglo Tertinggi
+                </div>
+                <div class="metrics-chart-sub">
+                  Saham dengan total akumulasi kepemilikan konglo/PEP paling
+                  tinggi
+                </div>
+                <div class="metrics-chart-wrap" style="height: 380px">
+                  <canvas id="chartTopKongloStocks"></canvas>
+                </div>
+              </div>
+
+              <!-- Row 8b: Total Kepemilikan Konglo (bar) -->
+              <div class="metrics-chart-card span-2">
+                <div class="metrics-chart-title">
+                  Total Kepemilikan per Grup Konglo
+                </div>
+                <div class="metrics-chart-sub">
+                  Akumulasi kepemilikan (%) di seluruh saham per grup
+                  konglomerat
+                </div>
+                <div class="metrics-chart-wrap" style="height: 380px">
+                  <canvas id="chartKongloTotalOwnership"></canvas>
+                </div>
+              </div>
+
+              <!-- Row 9: Sector Distribution + HHI Distribution -->
+              <div class="metrics-chart-card span-2">
+                <div class="metrics-chart-title">Distribusi Sektor</div>
+                <div class="metrics-chart-sub">
+                  Jumlah emiten per sektor (dari data Yahoo Finance)
+                </div>
+                <div class="metrics-chart-wrap" style="height: 380px">
+                  <canvas id="chartSectorDist"></canvas>
+                </div>
+              </div>
+              <div class="metrics-chart-card span-2">
+                <div class="metrics-chart-title">
+                  Distribusi CCS (Konsentrasi Kepemilikan)
+                </div>
+                <div class="metrics-chart-sub">
+                  Composite Concentration Score (0&ndash;100) per emiten
+                </div>
+                <div class="metrics-chart-wrap" style="height: 380px">
+                  <canvas id="chartHHIDist"></canvas>
+                </div>
+              </div>
+
+              <!-- Row 10: Avg CCS per Sector (bar) -->
+              <div class="metrics-chart-card span-4">
+                <div class="metrics-chart-title">Rata-rata CCS per Sektor</div>
+                <div class="metrics-chart-sub">
+                  Sektor mana yang paling terkonsentrasi?
+                  <span style="color: #16a34a; font-weight: 600">●</span> Rendah
+                  (≤25)
+                  <span style="color: #d97706; font-weight: 600">●</span> Sedang
+                  (26–55)
+                  <span style="color: #dc2626; font-weight: 600">●</span> Tinggi
+                  (>55)
+                </div>
+                <div class="metrics-chart-wrap" style="height: 400px">
+                  <canvas id="chartSectorHHI"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <!-- end #tabMetrics -->
+
+      <!-- TAB: CHANGELOG -->
+      <div id="tabChangelog" class="hidden">
+        <main class="main changelog-main" id="changelogMainContent">
+          <div id="changelogContent"></div>
+        </main>
+      </div>
+      <!-- end #tabChangelog -->
+    </div>
+
+    <!-- FEATURE 3: KEYBOARD SHORTCUTS MODAL -->
+    <div class="kbd-modal-overlay" id="kbdModalOverlay">
+      <div class="kbd-modal">
+        <h3>Pintasan Keyboard</h3>
+        <div class="kbd-modal-row">
+          <span>Fokus pencarian</span>
+          <div class="kbd-modal-keys">
+            <span class="kbd-key">/</span
+            ><span style="color: var(--text-muted); font-size: 11px">atau</span
+            ><span class="kbd-key">Ctrl</span><span class="kbd-key">K</span>
+          </div>
+        </div>
+        <div class="kbd-modal-row">
+          <span>Ringkasan Saham</span>
+          <div class="kbd-modal-keys"><span class="kbd-key">1</span></div>
+        </div>
+        <div class="kbd-modal-row">
+          <span>Per Investor</span>
+          <div class="kbd-modal-keys"><span class="kbd-key">2</span></div>
+        </div>
+        <div class="kbd-modal-row">
+          <span>Konglo Stocks</span>
+          <div class="kbd-modal-keys"><span class="kbd-key">3</span></div>
+        </div>
+        <div class="kbd-modal-row">
+          <span>Metrik</span>
+          <div class="kbd-modal-keys"><span class="kbd-key">4</span></div>
+        </div>
+        <div class="kbd-modal-row">
+          <span>Changelog</span>
+          <div class="kbd-modal-keys"><span class="kbd-key">5</span></div>
+        </div>
+        <div class="kbd-modal-row">
+          <span>Bersihkan pencarian</span>
+          <div class="kbd-modal-keys"><span class="kbd-key">Esc</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GUIDE MODAL -->
+    <div class="guide-overlay" id="guideOverlay">
+      <div class="guide-panel">
+        <div class="guide-panel-header">
+          <h2>
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
+              <path
+                d="M2 1.5h4c1.1 0 2 .9 2 2v11c0-.83-.67-1.5-1.5-1.5H2v-11zM14 1.5h-4c-1.1 0-2 .9-2 2v11c0-.83.67-1.5 1.5-1.5H14v-11z"
+                stroke="currentColor"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Panduan Penggunaan
+          </h2>
+          <button class="guide-close-btn" onclick="closeGuide()">
+            &times;
+          </button>
+        </div>
+        <div class="guide-body">
+          <!-- ===== OVERVIEW ===== -->
+          <div class="guide-section">
+            <div class="guide-section-header">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 16v-4M12 8h.01" />
+              </svg>
+              <h3>Overview</h3>
+            </div>
+            <p>
+              Dashboard ini nge-track semua
+              <strong>pemegang saham dengan kepemilikan 1% ke atas</strong> di
+              seluruh emiten yang listed di Bursa Efek Indonesia (IDX). Data
+              bersumber dari laporan resmi KSEI.
+            </p>
+            <div class="guide-feature-grid">
+              <div class="guide-feature-card">
+                <strong>Cek Major Shareholders</strong
+                ><span>Lihat siapa aja yang hold &ge;1% di setiap emiten</span>
+              </div>
+              <div class="guide-feature-card">
+                <strong>Track Across Stocks</strong
+                ><span>Satu investor, berapa saham yang dia pegang?</span>
+              </div>
+              <div class="guide-feature-card">
+                <strong>Network Graph</strong
+                ><span
+                  >Explore connection antara investor &amp; saham secara
+                  visual</span
+                >
+              </div>
+              <div class="guide-feature-card">
+                <strong>Compare Side-by-Side</strong
+                ><span
+                  >Bandingkan up to 6 saham, spot overlapping investors</span
+                >
+              </div>
+              <div class="guide-feature-card">
+                <strong>Konglo &amp; PEP Mapping</strong
+                ><span
+                  >Deep dive ownership patterns konglomerat &amp; politisi</span
+                >
+              </div>
+              <div class="guide-feature-card">
+                <strong>Changelog &amp; Tracking</strong
+                ><span
+                  >Track perubahan data antar periode &mdash; saham baru,
+                  investor keluar/masuk</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== CARA BACA DATA ===== -->
+          <div class="guide-section">
+            <div class="guide-section-header">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+              </svg>
+              <h3>Cara Baca Datanya</h3>
+            </div>
+            <div class="guide-feature-grid">
+              <div class="guide-feature-card">
+                <strong>Kepemilikan (%)</strong
+                ><span
+                  >Percentage of total listed shares. Misal 5,25% = investor
+                  hold 5,25% dari seluruh saham yang beredar.</span
+                >
+              </div>
+              <div class="guide-feature-card">
+                <strong>Total Saham</strong
+                ><span
+                  >Jumlah lembar saham (in shares, bukan lot). Raw number dari
+                  report KSEI.</span
+                >
+              </div>
+              <div class="guide-feature-card">
+                <strong>Lokal vs Asing</strong
+                ><span
+                  >Classification KSEI. Lokal = domestic investor, Asing =
+                  foreign.</span
+                >
+              </div>
+              <div class="guide-feature-card">
+                <strong>Tipe Investor</strong
+                ><span
+                  >Kategori entity: Corporate, Bank, Individual, Mutual Fund,
+                  Pension Fund, Securities, Foundation, dll.</span
+                >
+              </div>
+            </div>
+            <div class="guide-callout">
+              <strong>Free Float</strong> &mdash; 100% minus total kepemilikan
+              semua investor 1%+. Bukan "true" free float, tapi indikator
+              seberapa terkonsentrasi ownership. Makin rendah, makin
+              concentrated ke few big holders.
+            </div>
+          </div>
+
+          <!-- ===== KONSENTRASI & METRIK ===== -->
+          <div class="guide-section">
+            <div class="guide-section-header">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 12a9 9 0 1 1-9-9" />
+                <path d="M21 3v6h-6" />
+              </svg>
+              <h3>CCS &amp; Metrik Konsentrasi</h3>
+            </div>
+            <p>
+              Dashboard menampilkan
+              <strong>Composite Concentration Score (CCS)</strong> &mdash; skor
+              0&ndash;100 yang menggabungkan beberapa metrik untuk mengukur
+              konsentrasi kepemilikan secara menyeluruh.
+            </p>
+
+            <div class="guide-callout" style="border-left-color: var(--accent)">
+              <strong>Formula CCS</strong><br />
+              <code style="font-size: 11px; display: block; margin: 6px 0"
+                >CCS = (HHI &times; 0,45) + (CR3 &times; 0,35) + (Holder &times;
+                0,20)</code
+              >
+              <span style="font-size: var(--text-xs); color: var(--text-muted)"
+                >HHI = Herfindahl-Hirschman (dinormalisasi 0&ndash;1), CR3 =
+                konsentrasi top 3 (dinormalisasi), Holder = inverse jumlah
+                pemegang saham</span
+              >
+            </div>
+
+            <div class="guide-feature-grid">
+              <div class="guide-feature-card">
+                <strong>HHI (45%)</strong>
+                <span
+                  >Herfindahl-Hirschman Index &mdash; jumlah kuadrat persentase
+                  setiap holder. Sensitif ke holder yang sangat dominan.</span
+                >
+              </div>
+              <div class="guide-feature-card">
+                <strong>CR3 (35%)</strong>
+                <span
+                  >Concentration Ratio top 3 &mdash; berapa % total yang
+                  dikuasai 3 holder terbesar. Indikator oligopoli.</span
+                >
+              </div>
+              <div class="guide-feature-card">
+                <strong>Jumlah Holder (20%)</strong>
+                <span
+                  >Inverse holder count &mdash; makin sedikit holder, makin
+                  terkonsentrasi. 1 holder = skor maks, 20+ = minimal.</span
+                >
+              </div>
+              <div class="guide-feature-card">
+                <strong>Tipe Kepemilikan</strong>
+                <span
+                  >Auto-classified: <strong>Mayoritas</strong> (CR1 &ge;50%),
+                  <strong>Oligopoli</strong> (CR3 &ge;60%),
+                  <strong>Terkonsentrasi</strong> (total &ge;70%),
+                  <strong>Moderat</strong>, atau
+                  <strong>Tersebar</strong> (total &le;40%).</span
+                >
+              </div>
+            </div>
+
+            <p style="margin-top: var(--sp-3)">
+              <strong>Threshold CCS:</strong>
+            </p>
+            <div
+              style="
+                display: flex;
+                gap: var(--sp-3);
+                flex-wrap: wrap;
+                margin: var(--sp-2) 0;
+              "
+            >
+              <div style="display: flex; align-items: center; gap: 6px">
+                <span class="hhi-pill hhi-low" style="pointer-events: none"
+                  >CCS 0&ndash;25</span
+                >
+                <span
+                  style="
+                    font-size: var(--text-sm);
+                    color: var(--text-secondary);
+                  "
+                  >Rendah &mdash; tersebar</span
+                >
+              </div>
+              <div style="display: flex; align-items: center; gap: 6px">
+                <span class="hhi-pill hhi-med" style="pointer-events: none"
+                  >CCS 26&ndash;55</span
+                >
+                <span
+                  style="
+                    font-size: var(--text-sm);
+                    color: var(--text-secondary);
+                  "
+                  >Sedang &mdash; moderate</span
+                >
+              </div>
+              <div style="display: flex; align-items: center; gap: 6px">
+                <span class="hhi-pill hhi-high" style="pointer-events: none"
+                  >CCS 56&ndash;100</span
+                >
+                <span
+                  style="
+                    font-size: var(--text-sm);
+                    color: var(--text-secondary);
+                  "
+                  >Tinggi &mdash; terkonsentrasi</span
+                >
+              </div>
+            </div>
+
+            <div class="guide-callout">
+              <strong>Kenapa CCS, bukan HHI saja?</strong><br />
+              HHI klasik hanya menghitung kuadrat persentase &mdash; bisa
+              misleading kalau semua holder punya share mirip. CCS menambahkan
+              CR3 (siapa 3 terbesar) dan jumlah holder (diversitas) supaya
+              hasilnya lebih mencerminkan realitas konsentrasi di pasar IDX.
+              Hover pill CCS di setiap card untuk lihat breakdown lengkap.
+            </div>
+          </div>
+
+          <!-- ===== TAB: RINGKASAN SAHAM ===== -->
+          <div class="guide-section">
+            <div class="guide-section-header">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="3" width="7" height="7" rx="1" />
+                <rect x="14" y="3" width="7" height="7" rx="1" />
+                <rect x="3" y="14" width="7" height="7" rx="1" />
+                <rect x="14" y="14" width="7" height="7" rx="1" />
+              </svg>
+              <h3>Tab: Ringkasan Saham</h3>
+            </div>
+            <p>
+              Landing page utama. Semua emiten ditampilkan as cards,
+              masing-masing dengan list pemegang saham 1%+.
+            </p>
+            <ul>
+              <li>
+                <strong>Search</strong> &mdash; Ketik ticker atau nama emiten.
+                Shortcut: <span class="guide-kbd">/</span>
+              </li>
+              <li>
+                <strong>Sort</strong> &mdash; Klik header kolom per card untuk
+                sort. Toolbar sort: Ticker, Free Float, CCS.
+              </li>
+              <li>
+                <strong>Filter</strong> &mdash; Lokal/Asing, free float range
+                slider, dan dropdown sektor industri.
+              </li>
+              <li>
+                <strong>Klik nama investor</strong> &mdash; Jump ke tab Per
+                Investor, auto-scroll ke investor itu.
+              </li>
+              <li>
+                <strong>Compare mode</strong> &mdash; Pilih 2&ndash;6 saham
+                untuk side-by-side comparison.
+              </li>
+              <li>
+                <strong>Network graph</strong> &mdash; Interactive
+                force-directed graph per emiten.
+              </li>
+              <li>
+                <strong>CCS pill</strong> &mdash; Badge konsentrasi di card
+                header. Hover untuk detail CR1, CR3, HHI, tipe.
+              </li>
+              <li>
+                <strong>Indikator perubahan</strong> &mdash; Badge
+                <span
+                  style="
+                    background: linear-gradient(135deg, #6366f1, #818cf8);
+                    color: #fff;
+                    font-weight: 700;
+                    font-size: 10px;
+                    padding: 2px 8px;
+                    border-radius: 10px;
+                    letter-spacing: 0.5px;
+                  "
+                  >New</span
+                >
+                pada saham dan investor baru.
+              </li>
+            </ul>
+          </div>
+
+          <!-- ===== TAB: PER INVESTOR ===== -->
+          <div class="guide-section">
+            <div class="guide-section-header">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+              <h3>Tab: Per Investor</h3>
+            </div>
+            <p>
+              Reverse view &mdash; per-investor. Setiap investor yang hold
+              &ge;1% di minimal satu emiten.
+            </p>
+            <ul>
+              <li>
+                <strong>Filter PEP &amp; Konglo</strong> &mdash; Toggle filter
+                <span class="guide-badge guide-badge-pep">PEP</span> atau
+                <span class="guide-badge guide-badge-conglo">Konglo</span>.
+              </li>
+              <li>
+                <strong>Filter jumlah saham</strong> &mdash; Set minimum stocks
+                held. "3+" untuk yang diversified.
+              </li>
+              <li>
+                <strong>Klik ticker</strong> &mdash; Jump balik ke Ringkasan
+                Saham.
+              </li>
+              <li>
+                <strong>Network graph</strong> &mdash; Starting point dari
+                investor: semua saham + co-investors.
+              </li>
+            </ul>
+          </div>
+
+          <!-- ===== TAB: KONGLO STOCKS ===== -->
+          <div class="guide-section">
+            <div class="guide-section-header">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
+              </svg>
+              <h3>Tab: Konglo Stocks</h3>
+            </div>
+            <p>Grouping saham by konglomerat besar Indonesia.</p>
+            <div class="guide-feature-grid">
+              <div class="guide-feature-card">
+                <strong>Main</strong
+                ><span
+                  >Core holdings, saham utama closely associated dengan
+                  grup</span
+                >
+              </div>
+              <div class="guide-feature-card">
+                <strong>Small/Micro</strong
+                ><span>Smaller cap stocks yang juga part of the group</span>
+              </div>
+              <div class="guide-feature-card">
+                <strong>Investor Sharing</strong
+                ><span
+                  >Bukan "milik" grup, tapi punya significant overlapping
+                  investors</span
+                >
+              </div>
+              <div class="guide-feature-card">
+                <strong>Color Coding</strong
+                ><span
+                  >Berwarna = ada data KSEI. Abu-abu = no ownership data
+                  available</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== TAB: METRIK ===== -->
+          <div class="guide-section">
+            <div class="guide-section-header">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M18 20V10" />
+                <path d="M12 20V4" />
+                <path d="M6 20v-6" />
+              </svg>
+              <h3>Tab: Metrik</h3>
+            </div>
+            <p>
+              Analytics dashboard &mdash; the bigger picture dari ownership
+              landscape IDX.
+            </p>
+            <div class="guide-feature-grid">
+              <div class="guide-feature-card">
+                <strong>Lokal vs Asing</strong
+                ><span>Pie chart domestic vs foreign investors</span>
+              </div>
+              <div class="guide-feature-card">
+                <strong>Investor Type</strong
+                ><span
+                  >Breakdown by entity type (corporate, individual, dll.)</span
+                >
+              </div>
+              <div class="guide-feature-card">
+                <strong>Top 20 Investor</strong
+                ><span>Ranked by jumlah stocks held</span>
+              </div>
+              <div class="guide-feature-card">
+                <strong>Sebaran Negara</strong
+                ><span>Origin country breakdown foreign investors</span>
+              </div>
+              <div class="guide-feature-card">
+                <strong>Jejak Konglo &amp; PEP</strong
+                ><span>Mapping konglo groups &amp; PEP yang hold &ge;1%</span>
+              </div>
+              <div class="guide-feature-card">
+                <strong>Konglo Tertinggi</strong
+                ><span
+                  >Top 20 saham dengan total kepemilikan konglo/PEP
+                  terbesar</span
+                >
+              </div>
+              <div class="guide-feature-card">
+                <strong>Distribusi CCS</strong
+                ><span>Histogram konsentrasi per emiten (0&ndash;100)</span>
+              </div>
+              <div class="guide-feature-card">
+                <strong>CCS per Sektor</strong
+                ><span>Rata-rata CCS per sektor, color-coded</span>
+              </div>
+            </div>
+            <p style="color: var(--text-muted); font-size: var(--text-xs)">
+              Semua chart interactive &mdash; hover untuk tooltip details.
+            </p>
+          </div>
+
+          <!-- ===== TAB: CHANGELOG ===== -->
+          <div class="guide-section">
+            <div class="guide-section-header">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+              </svg>
+              <h3>Tab: Changelog</h3>
+            </div>
+            <p>
+              Tracking perubahan data antar periode KSEI. Membandingkan data
+              terbaru dengan sebelumnya.
+            </p>
+            <div class="guide-feature-grid">
+              <div class="guide-feature-card">
+                <strong>Saham Baru</strong>
+                <span
+                  >Emiten yang baru muncul di data KSEI periode terbaru. Klik
+                  ticker untuk langsung ke detail.</span
+                >
+              </div>
+              <div class="guide-feature-card">
+                <strong>Saham Dihapus</strong>
+                <span
+                  >Emiten yang ada di periode sebelumnya tapi tidak lagi di
+                  periode terbaru.</span
+                >
+              </div>
+              <div class="guide-feature-card">
+                <strong>Investor Baru Masuk</strong>
+                <span
+                  >Investor yang baru hold &ge;1%. Ditandai badge
+                  <span
+                    style="
+                      background: linear-gradient(135deg, #6366f1, #818cf8);
+                      color: #fff;
+                      font-weight: 700;
+                      font-size: 10px;
+                      padding: 2px 8px;
+                      border-radius: 10px;
+                      letter-spacing: 0.5px;
+                    "
+                    >New</span
+                  >
+                  di Ringkasan Saham.</span
+                >
+              </div>
+              <div class="guide-feature-card">
+                <strong>Investor Keluar</strong>
+                <span
+                  >Investor yang kepemilikannya turun di bawah 1% (tidak lagi
+                  muncul).</span
+                >
+              </div>
+            </div>
+            <div class="guide-callout">
+              <strong>Popup Notifikasi</strong> &mdash; Setiap kali halaman
+              dimuat, popup ringkasan perubahan muncul otomatis dengan KPI
+              summary. Klik "Lihat Detail" untuk langsung ke tab Changelog, atau
+              "Tutup" untuk dismiss.
+            </div>
+            <ul>
+              <li>
+                <strong>KPI bar</strong> &mdash; Di bagian atas tab: total saham
+                baru, dihapus, berubah, investor masuk/keluar.
+              </li>
+              <li>
+                <strong>Expandable cards</strong> &mdash; Klik card saham untuk
+                lihat detail investor mana yang berubah.
+              </li>
+              <li>
+                <strong>Badge "New"</strong> &mdash; Muncul di card header dan
+                baris investor baru di tab Ringkasan Saham.
+              </li>
+            </ul>
+          </div>
+
+          <!-- ===== BADGE: PEP & KONGLO ===== -->
+          <div class="guide-section">
+            <div class="guide-section-header">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+              <h3>Badge: PEP &amp; Konglo</h3>
+            </div>
+            <div class="guide-feature-grid">
+              <div class="guide-feature-card">
+                <strong
+                  ><span class="guide-badge guide-badge-pep">PEP</span>
+                  Politically Exposed Person</strong
+                >
+                <span
+                  >Orang dengan political position significant &mdash; menteri,
+                  DPR/DPD, gubernur, atau keluarga langsung.</span
+                >
+              </div>
+              <div class="guide-feature-card">
+                <strong
+                  ><span class="guide-badge guide-badge-conglo">Konglo</span>
+                  Konglomerat / Tycoon</strong
+                >
+                <span
+                  >Pengusaha besar, taipans, founders, dan controlling families
+                  behind major business groups.</span
+                >
+              </div>
+            </div>
+            <div class="guide-callout">
+              PEP &ne; Konglo. PEP soal political connections, Konglo soal
+              business empire. Dua kategori terpisah, walaupun kadang overlap.
+              Hover badge untuk detail.
+            </div>
+          </div>
+
+          <!-- ===== SEKTOR ===== -->
+          <div class="guide-section">
+            <div class="guide-section-header">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 6h16M4 12h10M4 18h6" />
+              </svg>
+              <h3>Data Sektor</h3>
+            </div>
+            <p>
+              Data sektor dari Yahoo Finance (907 dari 955 emiten). Badge di
+              card header. Hover untuk sub-industri. Filter via dropdown di
+              toolbar.
+            </p>
+          </div>
+
+          <!-- ===== KEYBOARD SHORTCUTS ===== -->
+          <div class="guide-section">
+            <div class="guide-section-header">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="M6 8h.01M10 8h.01" />
+                <path d="M6 12h12M6 16h8" />
+              </svg>
+              <h3>Keyboard Shortcuts</h3>
+            </div>
+            <div class="guide-kbd-grid">
+              <div class="keys">
+                <span class="guide-kbd">/</span>
+                <span style="color: var(--text-muted); font-size: 11px"
+                  >atau</span
+                >
+                <span class="guide-kbd">Ctrl</span
+                ><span class="guide-kbd">K</span>
+              </div>
+              <div class="desc">Focus search bar</div>
+              <div class="keys">
+                <span class="guide-kbd">1</span><span class="guide-kbd">2</span
+                ><span class="guide-kbd">3</span><span class="guide-kbd">4</span
+                ><span class="guide-kbd">5</span>
+              </div>
+              <div class="desc">
+                Switch tab (Ringkasan, Investor, Konglo, Metrik, Changelog)
+              </div>
+              <div class="keys"><span class="guide-kbd">Esc</span></div>
+              <div class="desc">Clear search / close modal or graph</div>
+            </div>
+          </div>
+
+          <!-- ===== SUMBER DATA ===== -->
+          <div class="guide-section">
+            <div class="guide-section-header">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4 7V4a2 2 0 0 1 2-2h8.5L20 7.5V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3"
+                />
+                <polyline points="14 2 14 8 20 8" />
+                <path d="M4 15h9" />
+                <path d="M10 12l3 3-3 3" />
+              </svg>
+              <h3>Sumber Data</h3>
+            </div>
+            <div class="guide-source-box">
+              <p style="margin-bottom: var(--sp-2)">
+                <strong>KSEI (Kustodian Sentral Efek Indonesia)</strong>
+              </p>
+              <p style="margin-bottom: var(--sp-2)">
+                Semua ownership data dari laporan bulanan KSEI &mdash; the
+                official central securities depository.
+              </p>
+              <p style="margin-bottom: var(--sp-2)">
+                Periode data: <strong>Per 12 Maret 2026</strong> &middot;
+                Dibandingkan dengan: <strong>3 Maret 2026</strong>
+              </p>
+              <p style="margin-bottom: 0">
+                Official site:
+                <a href="https://www.ksei.co.id" target="_blank" rel="noopener"
+                  >www.ksei.co.id</a
+                >
+              </p>
+            </div>
+            <p
+              style="
+                margin-top: var(--sp-3);
+                color: var(--text-muted);
+                font-size: var(--text-xs);
+              "
+            >
+              Data PEP &amp; Konglo di-curate independently dari public sources.
+              Data harga &amp; market cap dari Yahoo Finance. Purely for
+              reference.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- CHANGELOG NOTIFICATION MODAL -->
+    <div class="cl-notif-overlay" id="clNotifOverlay">
+      <div class="cl-notif-panel">
+        <div class="cl-notif-banner">
+          <div class="cl-notif-banner-top">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <div class="cl-notif-banner-icon">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                  />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                  <polyline points="10 9 9 9 8 9" />
+                </svg>
+              </div>
+              <div>
+                <h3>Data Update</h3>
+                <div class="cl-notif-date" id="clNotifDate"></div>
+              </div>
+            </div>
+            <button
+              class="cl-notif-close"
+              onclick="dismissChangelogNotif()"
+              aria-label="Tutup"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+              >
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="cl-notif-kpi-row" id="clNotifKpiRow"></div>
+        <div class="cl-notif-body" id="clNotifBody"></div>
+        <div class="cl-notif-footer">
+          <button class="cl-notif-btn" onclick="dismissChangelogNotif()">
+            Tutup
+          </button>
+          <button
+            class="cl-notif-btn primary"
+            onclick="
+              dismissChangelogNotif();
+              switchTab('changelog');
+            "
+          >
+            Lihat Detail &rarr;
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURE 5&6: COMPARE FLOATING BAR -->
+    <div class="compare-floating-bar" id="compareFloatingBar">
+      <div class="compare-selected-tickers" id="compareSelectedTickers"></div>
+      <button class="compare-action-btn" onclick="openComparePanel()">
+        Bandingkan
       </button>
     </div>
-    <div class="compare-panel-body" id="comparePanelBody"></div>
-  </div>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
-<script src="data.js"></script>
-<script src="pep_data.js"></script>
-<script src="konglo_data.js"></script>
-<script src="sector_data.js"></script>
-<script src="price_data.js"></script>
-<script src="changelog_data.js"></script>
-<script src="main.js"></script>
+    <!-- FEATURE 5&6: COMPARE PANEL OVERLAY -->
+    <div class="compare-panel-overlay" id="comparePanelOverlay">
+      <div class="compare-panel" id="comparePanel">
+        <div class="compare-panel-header">
+          <h3>Perbandingan Saham</h3>
+          <button class="compare-panel-close" onclick="closeComparePanel()">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+        <div class="compare-panel-body" id="comparePanelBody"></div>
+      </div>
+    </div>
 
-<footer class="site-footer">
-  <div class="footer-credit">
-    <span class="footer-copyright">© 2026 · Sumber data: KSEI</span>
-  </div>
-</footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+    <script src="data.js"></script>
+    <script src="pep_data.js"></script>
+    <script src="konglo_data.js"></script>
+    <script src="sector_data.js"></script>
+    <script src="price_data.js"></script>
+    <script src="changelog_data.js"></script>
+    <script src="main.js"></script>
 
-</body>
+    <footer class="site-footer">
+      <div class="footer-credit">
+        <span class="footer-copyright">© 2026 · Sumber data: KSEI</span>
+      </div>
+    </footer>
+  </body>
 </html>
