@@ -158,7 +158,7 @@ const KSEI_DATA = [
   {
     share_code: "ABBA",
     issuer_name: "MAHAKA MEDIA Tbk",
-    investor_name: "PT. Beyond Media",
+    investor_name: "PT Beyond Media",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -249,7 +249,7 @@ const KSEI_DATA = [
   {
     share_code: "ABBA",
     issuer_name: "MAHAKA MEDIA Tbk",
-    investor_name: "PT.Grid One Media",
+    investor_name: "PTGrid One Media",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -522,7 +522,7 @@ const KSEI_DATA = [
   {
     share_code: "ACST",
     issuer_name: "ACSET INDONUSA Tbk",
-    investor_name: "PT. KARYA SUPRA PERKASA",
+    investor_name: "PT KARYA SUPRA PERKASA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -535,7 +535,7 @@ const KSEI_DATA = [
   {
     share_code: "ADCP",
     issuer_name: "ADHI COMMUTER PROPERTI Tbk",
-    investor_name: "ADHI KARYA PERSERO TBK PT.",
+    investor_name: "ADHI KARYA PERSERO TBK PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -601,7 +601,7 @@ const KSEI_DATA = [
   {
     share_code: "ADHI",
     issuer_name: "ADHI KARYA (PERSERO) Tbk",
-    investor_name: "PT. MITRACOMM EKASARANA",
+    investor_name: "PT MITRACOMM EKASARANA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -679,7 +679,7 @@ const KSEI_DATA = [
   {
     share_code: "ADMG",
     issuer_name: "POLYCHEM INDONESIA Tbk",
-    investor_name: "GAJAH TUNGGAL, TbK. PT.",
+    investor_name: "GAJAH TUNGGAL, TbK. PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -978,7 +978,7 @@ const KSEI_DATA = [
   {
     share_code: "AGAR",
     issuer_name: "ASIA SEJAHTERA MINA Tbk",
-    investor_name: "PT. INDO KREASI PRATAMA",
+    investor_name: "PT INDO KREASI PRATAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -991,7 +991,7 @@ const KSEI_DATA = [
   {
     share_code: "AGAR",
     issuer_name: "ASIA SEJAHTERA MINA Tbk",
-    investor_name: "PT. SINAR TERANG ASIA RAYA",
+    investor_name: "PT SINAR TERANG ASIA RAYA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -1004,7 +1004,7 @@ const KSEI_DATA = [
   {
     share_code: "AGAR",
     issuer_name: "ASIA SEJAHTERA MINA Tbk",
-    investor_name: "PT. BENGAWAN TIMUR LAJU",
+    investor_name: "PT BENGAWAN TIMUR LAJU",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -1108,7 +1108,7 @@ const KSEI_DATA = [
   {
     share_code: "AGII",
     issuer_name: "SAMATOR INDO GAS Tbk",
-    investor_name: "PT. ANEKA MEGA ENERGI",
+    investor_name: "PT ANEKA MEGA ENERGI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -1355,7 +1355,7 @@ const KSEI_DATA = [
   {
     share_code: "AISA",
     issuer_name: "FKS FOOD SEJAHTERA Tbk",
-    investor_name: "PT. PANGAN SEJAHTERA INVESTAMA",
+    investor_name: "PT PANGAN SEJAHTERA INVESTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -1433,7 +1433,7 @@ const KSEI_DATA = [
   {
     share_code: "AKKU",
     issuer_name: "ANUGERAH KAGUM KARYA UTAMA Tbk",
-    investor_name: "PT. RENALDIJAYA EKAINTI",
+    investor_name: "PT RENALDIJAYA EKAINTI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -1472,7 +1472,7 @@ const KSEI_DATA = [
   {
     share_code: "AKKU",
     issuer_name: "ANUGERAH KAGUM KARYA UTAMA Tbk",
-    investor_name: "PT. KOREK API GUNA MANDIRI",
+    investor_name: "PT KOREK API GUNA MANDIRI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -1511,7 +1511,7 @@ const KSEI_DATA = [
   {
     share_code: "AKKU",
     issuer_name: "ANUGERAH KAGUM KARYA UTAMA Tbk",
-    investor_name: "PT. RELBI JAYA EKA INTI",
+    investor_name: "PT RELBI JAYA EKA INTI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -1563,7 +1563,7 @@ const KSEI_DATA = [
   {
     share_code: "AKKU",
     issuer_name: "ANUGERAH KAGUM KARYA UTAMA Tbk",
-    investor_name: "PT. KAGUM KARYA UTAMA",
+    investor_name: "PT KAGUM KARYA UTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -1576,7 +1576,7 @@ const KSEI_DATA = [
   {
     share_code: "AKKU",
     issuer_name: "ANUGERAH KAGUM KARYA UTAMA Tbk",
-    investor_name: "PT. KAGUM MAKMUR UTAMA",
+    investor_name: "PT KAGUM MAKMUR UTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -1589,7 +1589,7 @@ const KSEI_DATA = [
   {
     share_code: "AKKU",
     issuer_name: "ANUGERAH KAGUM KARYA UTAMA Tbk",
-    investor_name: "PT. KAGUM JAYA EKA INTI",
+    investor_name: "PT KAGUM JAYA EKA INTI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -1628,7 +1628,7 @@ const KSEI_DATA = [
   {
     share_code: "AKKU",
     issuer_name: "ANUGERAH KAGUM KARYA UTAMA Tbk",
-    investor_name: "PT. RESTI JAYA EKA INTI",
+    investor_name: "PT RESTI JAYA EKA INTI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -1641,7 +1641,7 @@ const KSEI_DATA = [
   {
     share_code: "AKKU",
     issuer_name: "ANUGERAH KAGUM KARYA UTAMA Tbk",
-    investor_name: "PT. RENA JAYA EKA INTI",
+    investor_name: "PT RENA JAYA EKA INTI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -1784,7 +1784,7 @@ const KSEI_DATA = [
   {
     share_code: "AKPI",
     issuer_name: "ARGHA KARYA PRIMA INDUSTRY Tbk",
-    investor_name: "PT. TIARA INTIMAHKOTA",
+    investor_name: "PT TIARA INTIMAHKOTA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -2031,7 +2031,7 @@ const KSEI_DATA = [
   {
     share_code: "ALDO",
     issuer_name: "ALKINDO NARATAMA Tbk",
-    investor_name: "PT.GOLDEN ARISTA INTERNATIONAL",
+    investor_name: "PTGOLDEN ARISTA INTERNATIONAL",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -2200,7 +2200,7 @@ const KSEI_DATA = [
   {
     share_code: "ALII",
     issuer_name: "ANCARA LOGISTICS INDONESIA Tbk",
-    investor_name: "PT. GRAHA ADIKA NIAGA",
+    investor_name: "PT GRAHA ADIKA NIAGA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -2343,7 +2343,7 @@ const KSEI_DATA = [
   {
     share_code: "ALKA",
     issuer_name: "ALAKASA INDUSTRINDO Tbk",
-    investor_name: "PT. SELARAS INVESTAMA GLOBALINDO",
+    investor_name: "PT SELARAS INVESTAMA GLOBALINDO",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -2603,7 +2603,7 @@ const KSEI_DATA = [
   {
     share_code: "ALTO",
     issuer_name: "TRI BANYAN TIRTA Tbk",
-    investor_name: "PT.TUDUNG BERSAMA TIRTA",
+    investor_name: "PTTUDUNG BERSAMA TIRTA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -2850,7 +2850,7 @@ const KSEI_DATA = [
   {
     share_code: "AMAR",
     issuer_name: "BANK AMAR INDONESIA Tbk",
-    investor_name: "PT. MARVEL INVESTAMA ASIA",
+    investor_name: "PT MARVEL INVESTAMA ASIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -2876,7 +2876,7 @@ const KSEI_DATA = [
   {
     share_code: "AMFG",
     issuer_name: "ASAHIMAS FLAT GLASS Tbk",
-    investor_name: "PT. RODAMAS",
+    investor_name: "PT RODAMAS",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -3357,7 +3357,7 @@ const KSEI_DATA = [
   {
     share_code: "AMRT",
     issuer_name: "SUMBER ALFARIA TRIJAYA Tbk",
-    investor_name: "PT. AMANDA CIPTA PERSADA",
+    investor_name: "PT AMANDA CIPTA PERSADA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -3436,7 +3436,7 @@ const KSEI_DATA = [
   {
     share_code: "ANDI",
     issuer_name: "ANDIRA AGRO Tbk",
-    investor_name: "PT. ANUGERAH PERKASA SEMESTA",
+    investor_name: "PT ANUGERAH PERKASA SEMESTA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -3788,7 +3788,7 @@ const KSEI_DATA = [
   {
     share_code: "APIC",
     issuer_name: "PACIFIC STRATEGIC FINANCIAL Tbk",
-    investor_name: "PT. BARA SEJAHTERA SUKSES",
+    investor_name: "PT BARA SEJAHTERA SUKSES",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -3840,7 +3840,7 @@ const KSEI_DATA = [
   {
     share_code: "APIC",
     issuer_name: "PACIFIC STRATEGIC FINANCIAL Tbk",
-    investor_name: "PT. ALANA CIPTA SELARAS",
+    investor_name: "PT ALANA CIPTA SELARAS",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -3879,7 +3879,7 @@ const KSEI_DATA = [
   {
     share_code: "APIC",
     issuer_name: "PACIFIC STRATEGIC FINANCIAL Tbk",
-    investor_name: "PT. MEGAH ANGKASA PERKASA",
+    investor_name: "PT MEGAH ANGKASA PERKASA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -3905,7 +3905,7 @@ const KSEI_DATA = [
   {
     share_code: "APIC",
     issuer_name: "PACIFIC STRATEGIC FINANCIAL Tbk",
-    investor_name: "PT. Askar Pelangi Abadi",
+    investor_name: "PT Askar Pelangi Abadi",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -3944,7 +3944,7 @@ const KSEI_DATA = [
   {
     share_code: "APIC",
     issuer_name: "PACIFIC STRATEGIC FINANCIAL Tbk",
-    investor_name: "PT.Pacific Indocorpora Indonesia",
+    investor_name: "PTPacific Indocorpora Indonesia",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -4126,7 +4126,7 @@ const KSEI_DATA = [
   {
     share_code: "APLI",
     issuer_name: "ASIAPLAST INDUSTRIES Tbk",
-    investor_name: "PT. HOKI INVESTASI SEJATI",
+    investor_name: "PT HOKI INVESTASI SEJATI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -4217,7 +4217,7 @@ const KSEI_DATA = [
   {
     share_code: "AREA",
     issuer_name: "DUNIA VIRTUAL ONLINE Tbk",
-    investor_name: "PT. DWI TUNGGAL PUTRA",
+    investor_name: "PT DWI TUNGGAL PUTRA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -4256,7 +4256,7 @@ const KSEI_DATA = [
   {
     share_code: "AREA",
     issuer_name: "DUNIA VIRTUAL ONLINE Tbk",
-    investor_name: "PT. MITRA NIAGA PALAPA",
+    investor_name: "PT MITRA NIAGA PALAPA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -4269,7 +4269,7 @@ const KSEI_DATA = [
   {
     share_code: "AREA",
     issuer_name: "DUNIA VIRTUAL ONLINE Tbk",
-    investor_name: "PT. SENTRA MAHAJAYA PELITA",
+    investor_name: "PT SENTRA MAHAJAYA PELITA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -4282,7 +4282,7 @@ const KSEI_DATA = [
   {
     share_code: "AREA",
     issuer_name: "DUNIA VIRTUAL ONLINE Tbk",
-    investor_name: "PT. BARAKARSA KREASI BANGSA",
+    investor_name: "PT BARAKARSA KREASI BANGSA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -4295,7 +4295,7 @@ const KSEI_DATA = [
   {
     share_code: "AREA",
     issuer_name: "DUNIA VIRTUAL ONLINE Tbk",
-    investor_name: "PT. SKALA GARUDA UTAMA",
+    investor_name: "PT SKALA GARUDA UTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -4438,7 +4438,7 @@ const KSEI_DATA = [
   {
     share_code: "ARII",
     issuer_name: "ATLAS RESOURCES Tbk",
-    investor_name: "PT. CALORIE VIVA UTAMA",
+    investor_name: "PT CALORIE VIVA UTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -4477,7 +4477,7 @@ const KSEI_DATA = [
   {
     share_code: "ARII",
     issuer_name: "ATLAS RESOURCES Tbk",
-    investor_name: "PT. SUMBER DAYA KEMILAU",
+    investor_name: "PT SUMBER DAYA KEMILAU",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -4490,7 +4490,7 @@ const KSEI_DATA = [
   {
     share_code: "ARII",
     issuer_name: "ATLAS RESOURCES Tbk",
-    investor_name: "PT. SUMBER DAYA KUMALA",
+    investor_name: "PT SUMBER DAYA KUMALA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -4503,7 +4503,7 @@ const KSEI_DATA = [
   {
     share_code: "ARII",
     issuer_name: "ATLAS RESOURCES Tbk",
-    investor_name: "PT. INFRA ALPHA INVESTINDO",
+    investor_name: "PT INFRA ALPHA INVESTINDO",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -4516,7 +4516,7 @@ const KSEI_DATA = [
   {
     share_code: "ARII",
     issuer_name: "ATLAS RESOURCES Tbk",
-    investor_name: "PT. INFRA ALPHA ENERGI",
+    investor_name: "PT INFRA ALPHA ENERGI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -4568,7 +4568,7 @@ const KSEI_DATA = [
   {
     share_code: "ARII",
     issuer_name: "ATLAS RESOURCES Tbk",
-    investor_name: "PT. CIPTA SELARAS PARAHYANGAN",
+    investor_name: "PT CIPTA SELARAS PARAHYANGAN",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -4633,7 +4633,7 @@ const KSEI_DATA = [
   {
     share_code: "ARKA",
     issuer_name: "ARKHA JAYANTI PERSADA Tbk",
-    investor_name: "PT. ARKHA TANTO PRIMA",
+    investor_name: "PT ARKHA TANTO PRIMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -4815,7 +4815,7 @@ const KSEI_DATA = [
   {
     share_code: "ARMY",
     issuer_name: "ARMIDIAN KARYATAMA Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -4894,7 +4894,7 @@ const KSEI_DATA = [
   {
     share_code: "ARMY",
     issuer_name: "ARMIDIAN KARYATAMA Tbk",
-    investor_name: "PT. PANCA GLOBAL KAPITAL TBK",
+    investor_name: "PT PANCA GLOBAL KAPITAL TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -5024,7 +5024,7 @@ const KSEI_DATA = [
   {
     share_code: "ARMY",
     issuer_name: "ARMIDIAN KARYATAMA Tbk",
-    investor_name: "PT. Sejahtera Mahkota Persada",
+    investor_name: "PT Sejahtera Mahkota Persada",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -5037,7 +5037,7 @@ const KSEI_DATA = [
   {
     share_code: "ARMY",
     issuer_name: "ARMIDIAN KARYATAMA Tbk",
-    investor_name: "PT. VICTORIA MANAJEMEN INVESTASI",
+    investor_name: "PT VICTORIA MANAJEMEN INVESTASI",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -5167,7 +5167,7 @@ const KSEI_DATA = [
   {
     share_code: "ARNA",
     issuer_name: "ARWANA CITRAMULIA Tbk",
-    investor_name: "PT. AIA FINANCIAL",
+    investor_name: "PT AIA FINANCIAL",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -5245,7 +5245,7 @@ const KSEI_DATA = [
   {
     share_code: "ARTA",
     issuer_name: "ARTHAVEST Tbk",
-    investor_name: "PT. HANDAL CIPTA PERKASA",
+    investor_name: "PT HANDAL CIPTA PERKASA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -5297,7 +5297,7 @@ const KSEI_DATA = [
   {
     share_code: "ARTA",
     issuer_name: "ARTHAVEST Tbk",
-    investor_name: "PT. PUTRA MAS ANUGERAH",
+    investor_name: "PT PUTRA MAS ANUGERAH",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -5336,7 +5336,7 @@ const KSEI_DATA = [
   {
     share_code: "ARTI",
     issuer_name: "RATU PRABU ENERGI Tbk",
-    investor_name: "PT. ASURANSI JIWA IFG",
+    investor_name: "PT ASURANSI JIWA IFG",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -5531,7 +5531,7 @@ const KSEI_DATA = [
   {
     share_code: "ASBI",
     issuer_name: "ASURANSI BINTANG Tbk",
-    investor_name: "PT.WARISAN KASIH BUNDA",
+    investor_name: "PTWARISAN KASIH BUNDA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -5544,7 +5544,7 @@ const KSEI_DATA = [
   {
     share_code: "ASBI",
     issuer_name: "ASURANSI BINTANG Tbk",
-    investor_name: "PT. ASURANSI BANGUN ASKRIDA",
+    investor_name: "PT ASURANSI BANGUN ASKRIDA",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -5557,7 +5557,7 @@ const KSEI_DATA = [
   {
     share_code: "ASBI",
     issuer_name: "ASURANSI BINTANG Tbk",
-    investor_name: "PT. Kosa Ikibari Wira",
+    investor_name: "PT Kosa Ikibari Wira",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -5609,7 +5609,7 @@ const KSEI_DATA = [
   {
     share_code: "ASDM",
     issuer_name: "ASURANSI DAYIN MITRA Tbk",
-    investor_name: "EQUITY DEVELOPMENT INVESTMENT, PT.",
+    investor_name: "EQUITY DEVELOPMENT INVESTMENT, PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -5622,7 +5622,7 @@ const KSEI_DATA = [
   {
     share_code: "ASDM",
     issuer_name: "ASURANSI DAYIN MITRA Tbk",
-    investor_name: "PT. ARTHAVEST Tbk",
+    investor_name: "PT ARTHAVEST Tbk",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -5635,7 +5635,7 @@ const KSEI_DATA = [
   {
     share_code: "ASDM",
     issuer_name: "ASURANSI DAYIN MITRA Tbk",
-    investor_name: "PRIMA TUNAS INVESTAMA, PT.",
+    investor_name: "PRIMA TUNAS INVESTAMA, PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -5674,7 +5674,7 @@ const KSEI_DATA = [
   {
     share_code: "ASDM",
     issuer_name: "ASURANSI DAYIN MITRA Tbk",
-    investor_name: "PT. HANDAL CIPTA PERKASA",
+    investor_name: "PT HANDAL CIPTA PERKASA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -5804,7 +5804,7 @@ const KSEI_DATA = [
   {
     share_code: "ASHA",
     issuer_name: "CILACAP SAMUDERA FISHING INDUSTRY Tbk",
-    investor_name: "PT. TIBURON PERKASA CORPORA",
+    investor_name: "PT TIBURON PERKASA CORPORA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -5999,7 +5999,7 @@ const KSEI_DATA = [
   {
     share_code: "ASJT",
     issuer_name: "ASURANSI JASA TANIA Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -6168,7 +6168,7 @@ const KSEI_DATA = [
   {
     share_code: "ASLI",
     issuer_name: "ASRI KARYA LESTARI Tbk",
-    investor_name: "PT. BIBIT BERKAH INVESTAMA",
+    investor_name: "PT BIBIT BERKAH INVESTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -6311,7 +6311,7 @@ const KSEI_DATA = [
   {
     share_code: "ASMI",
     issuer_name: "ASURANSI MAXIMUS GRAHA PERSADA Tbk",
-    investor_name: "PT. KRESNA ASSET MANAGEMENT S/A PT KRESNA USAHA KREATIF",
+    investor_name: "PT KRESNA ASSET MANAGEMENT S/A PT KRESNA USAHA KREATIF",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -6636,7 +6636,7 @@ const KSEI_DATA = [
   {
     share_code: "ASRI",
     issuer_name: "ALAM SUTERA REALTY Tbk",
-    investor_name: "PT. TANGERANG FAJAR INDUSTRIAL ESTATE",
+    investor_name: "PT TANGERANG FAJAR INDUSTRIAL ESTATE",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -6675,7 +6675,7 @@ const KSEI_DATA = [
   {
     share_code: "ASRI",
     issuer_name: "ALAM SUTERA REALTY Tbk",
-    investor_name: "PT. TUNAS KORALINDO",
+    investor_name: "PT TUNAS KORALINDO",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -6701,7 +6701,7 @@ const KSEI_DATA = [
   {
     share_code: "ASRI",
     issuer_name: "ALAM SUTERA REALTY Tbk",
-    investor_name: "PT. ARGO MANUNGGAL INTERNATIONAL",
+    investor_name: "PT ARGO MANUNGGAL INTERNATIONAL",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -6727,7 +6727,7 @@ const KSEI_DATA = [
   {
     share_code: "ASRI",
     issuer_name: "ALAM SUTERA REALTY Tbk",
-    investor_name: "PT. RAWA INTAN",
+    investor_name: "PT RAWA INTAN",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -6922,7 +6922,7 @@ const KSEI_DATA = [
   {
     share_code: "ASSA",
     issuer_name: "ADI SARANA ARMADA Tbk",
-    investor_name: "TRIKIRANA INVESTINDO PRIMA PT.",
+    investor_name: "TRIKIRANA INVESTINDO PRIMA PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -7156,7 +7156,7 @@ const KSEI_DATA = [
   {
     share_code: "ATIC",
     issuer_name: "ANABATIC TECHNOLOGIES Tbk",
-    investor_name: "PT. SAM INVESTAMA",
+    investor_name: "PT SAM INVESTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -7169,7 +7169,7 @@ const KSEI_DATA = [
   {
     share_code: "ATIC",
     issuer_name: "ANABATIC TECHNOLOGIES Tbk",
-    investor_name: "CAHAYA FAJAR MENTARI PT.",
+    investor_name: "CAHAYA FAJAR MENTARI PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -7221,7 +7221,7 @@ const KSEI_DATA = [
   {
     share_code: "ATIC",
     issuer_name: "ANABATIC TECHNOLOGIES Tbk",
-    investor_name: "INTI GLOBAL RESOURCES INDONESIA PT.",
+    investor_name: "INTI GLOBAL RESOURCES INDONESIA PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -7611,7 +7611,7 @@ const KSEI_DATA = [
   {
     share_code: "AYAM",
     issuer_name: "JANU PUTRA SEJAHTERA Tbk",
-    investor_name: "PT. HENING HIMPUN BERKAT",
+    investor_name: "PT HENING HIMPUN BERKAT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -7793,7 +7793,7 @@ const KSEI_DATA = [
   {
     share_code: "BACA",
     issuer_name: "BANK CAPITAL INDONESIA Tbk",
-    investor_name: "PT. CAPITAL GLOBAL INVESTAMA",
+    investor_name: "PT CAPITAL GLOBAL INVESTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -7845,7 +7845,7 @@ const KSEI_DATA = [
   {
     share_code: "BACA",
     issuer_name: "BANK CAPITAL INDONESIA Tbk",
-    investor_name: "PT. ALANA CIPTA SELARAS",
+    investor_name: "PT ALANA CIPTA SELARAS",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -8196,7 +8196,7 @@ const KSEI_DATA = [
   {
     share_code: "BALI",
     issuer_name: "BALI TOWERINDO SENTRA Tbk",
-    investor_name: "PT. BANGUN KELOLA SWADAYA",
+    investor_name: "PT BANGUN KELOLA SWADAYA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -8417,7 +8417,7 @@ const KSEI_DATA = [
   {
     share_code: "BANK",
     issuer_name: "BANK ALADIN SYARIAH Tbk",
-    investor_name: "PT. SHINTA UTAMA",
+    investor_name: "PT SHINTA UTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -8443,7 +8443,7 @@ const KSEI_DATA = [
   {
     share_code: "BAPA",
     issuer_name: "BEKASI ASRI PEMULA Tbk",
-    investor_name: "PT.Papua Timber Jaya",
+    investor_name: "PTPapua Timber Jaya",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "",
@@ -8716,7 +8716,7 @@ const KSEI_DATA = [
   {
     share_code: "BATR",
     issuer_name: "BENTENG API TECHNIC Tbk",
-    investor_name: "PT. BENTENG API TECHNIC TBK",
+    investor_name: "PT BENTENG API TECHNIC TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -8781,7 +8781,7 @@ const KSEI_DATA = [
   {
     share_code: "BAYU",
     issuer_name: "BAYU BUANA Tbk",
-    investor_name: "PT. GRAHA SENTOSA PERSADA",
+    investor_name: "PT GRAHA SENTOSA PERSADA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -8913,7 +8913,7 @@ const KSEI_DATA = [
   {
     share_code: "BAYU",
     issuer_name: "BAYU BUANA Tbk",
-    investor_name: "PT. SELARAS DWIPANTARA PRIMAMUKTI",
+    investor_name: "PT SELARAS DWIPANTARA PRIMAMUKTI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -9108,7 +9108,7 @@ const KSEI_DATA = [
   {
     share_code: "BBHI",
     issuer_name: "ALLO BANK INDONESIA Tbk",
-    investor_name: "PT. CT CORPORA",
+    investor_name: "PT CT CORPORA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -9160,7 +9160,7 @@ const KSEI_DATA = [
   {
     share_code: "BBLD",
     issuer_name: "BUANA FINANCE Tbk",
-    investor_name: "PT. SARI DASA KARSA",
+    investor_name: "PT SARI DASA KARSA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -9225,7 +9225,7 @@ const KSEI_DATA = [
   {
     share_code: "BBLD",
     issuer_name: "BUANA FINANCE Tbk",
-    investor_name: "PT. SING LING PERKASA",
+    investor_name: "PT SING LING PERKASA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -9238,7 +9238,7 @@ const KSEI_DATA = [
   {
     share_code: "BBLD",
     issuer_name: "BUANA FINANCE Tbk",
-    investor_name: "PT. GRAHA SENTOSA PERSADA",
+    investor_name: "PT GRAHA SENTOSA PERSADA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -9474,7 +9474,7 @@ const KSEI_DATA = [
   {
     share_code: "BBRM",
     issuer_name: "PELAYARAN NASIONAL BINA BUANA RAYA Tbk",
-    investor_name: "PT. MARCO POLO INDONESIA",
+    investor_name: "PT MARCO POLO INDONESIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -9500,7 +9500,7 @@ const KSEI_DATA = [
   {
     share_code: "BBRM",
     issuer_name: "PELAYARAN NASIONAL BINA BUANA RAYA Tbk",
-    investor_name: "PT. SINAR BINTANG MAKMUR",
+    investor_name: "PT SINAR BINTANG MAKMUR",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -9565,7 +9565,7 @@ const KSEI_DATA = [
   {
     share_code: "BBSI",
     issuer_name: "KROM BANK INDONESIA Tbk",
-    investor_name: "PT. SUN ANTARNUSA INVESTMENT",
+    investor_name: "PT SUN ANTARNUSA INVESTMENT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -9879,7 +9879,7 @@ const KSEI_DATA = [
   {
     share_code: "BCAP",
     issuer_name: "MNC KAPITAL INDONESIA Tbk",
-    investor_name: "PT. MNC ASIA HOLDING TBK",
+    investor_name: "PT MNC ASIA HOLDING TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -10061,7 +10061,7 @@ const KSEI_DATA = [
   {
     share_code: "BCIC",
     issuer_name: "BANK JTRUST INDONESIA Tbk",
-    investor_name: "PT. JTRUST INVESTMENTS INDONESIA",
+    investor_name: "PT JTRUST INVESTMENTS INDONESIA",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -10087,7 +10087,7 @@ const KSEI_DATA = [
   {
     share_code: "BCIP",
     issuer_name: "BUMI CITRA PERMAI Tbk",
-    investor_name: "PT. BENTENG TERANG SEJAHTERA",
+    investor_name: "PT BENTENG TERANG SEJAHTERA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -10113,7 +10113,7 @@ const KSEI_DATA = [
   {
     share_code: "BCIP",
     issuer_name: "BUMI CITRA PERMAI Tbk",
-    investor_name: "PT. Laba Sekuritas Indonesia",
+    investor_name: "PT Laba Sekuritas Indonesia",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -10217,7 +10217,7 @@ const KSEI_DATA = [
   {
     share_code: "BCIP",
     issuer_name: "BUMI CITRA PERMAI Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -10230,7 +10230,7 @@ const KSEI_DATA = [
   {
     share_code: "BCIP",
     issuer_name: "BUMI CITRA PERMAI Tbk",
-    investor_name: "PT. Askar Pelangi Abadi",
+    investor_name: "PT Askar Pelangi Abadi",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -10308,7 +10308,7 @@ const KSEI_DATA = [
   {
     share_code: "BDKR",
     issuer_name: "BERDIKARI PONDASI PERKASA Tbk",
-    investor_name: "PT. YONATAMA PERDANA ABADI",
+    investor_name: "PT YONATAMA PERDANA ABADI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -10321,7 +10321,7 @@ const KSEI_DATA = [
   {
     share_code: "BDKR",
     issuer_name: "BERDIKARI PONDASI PERKASA Tbk",
-    investor_name: "PT. BERDIKARI PONDASI PERKASA TBK",
+    investor_name: "PT BERDIKARI PONDASI PERKASA TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -10334,7 +10334,7 @@ const KSEI_DATA = [
   {
     share_code: "BDKR",
     issuer_name: "BERDIKARI PONDASI PERKASA Tbk",
-    investor_name: "PT. MASTER PONDASI RAYA",
+    investor_name: "PT MASTER PONDASI RAYA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -10490,7 +10490,7 @@ const KSEI_DATA = [
   {
     share_code: "BEBS",
     issuer_name: "BERKAH BETON SADAYA Tbk",
-    investor_name: "PT.CIPTA IHYA NUSANTARA",
+    investor_name: "PTCIPTA IHYA NUSANTARA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -10659,7 +10659,7 @@ const KSEI_DATA = [
   {
     share_code: "BEER",
     issuer_name: "JOBUBU JARUM MINAHASA Tbk",
-    investor_name: "PT. MAJU MINUMAN MINAHASA",
+    investor_name: "PT MAJU MINUMAN MINAHASA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -10685,7 +10685,7 @@ const KSEI_DATA = [
   {
     share_code: "BEER",
     issuer_name: "JOBUBU JARUM MINAHASA Tbk",
-    investor_name: "PT. SATIVA BHUMI INVESTAMA",
+    investor_name: "PT SATIVA BHUMI INVESTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -10789,7 +10789,7 @@ const KSEI_DATA = [
   {
     share_code: "BELI",
     issuer_name: "GLOBAL DIGITAL NIAGA Tbk",
-    investor_name: "PT. LINGKARMULIA INDAH",
+    investor_name: "PT LINGKARMULIA INDAH",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -10854,7 +10854,7 @@ const KSEI_DATA = [
   {
     share_code: "BELL",
     issuer_name: "TRISULA TEXTILE INDUSTRIES Tbk",
-    investor_name: "PT.TRITIRTA INTI MANDIRI",
+    investor_name: "PTTRITIRTA INTI MANDIRI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -10880,7 +10880,7 @@ const KSEI_DATA = [
   {
     share_code: "BESS",
     issuer_name: "BATULICIN NUSANTARA MARITIM Tbk",
-    investor_name: "PT. Mega Asta Raya",
+    investor_name: "PT Mega Asta Raya",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -10893,7 +10893,7 @@ const KSEI_DATA = [
   {
     share_code: "BESS",
     issuer_name: "BATULICIN NUSANTARA MARITIM Tbk",
-    investor_name: "PT. Lestari Dharma Raya",
+    investor_name: "PT Lestari Dharma Raya",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -11218,7 +11218,7 @@ const KSEI_DATA = [
   {
     share_code: "BGTG",
     issuer_name: "BANK GANESHA Tbk",
-    investor_name: "EQUITY DEVELOPMENT INVESTMENT, PT.",
+    investor_name: "EQUITY DEVELOPMENT INVESTMENT, PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -11257,7 +11257,7 @@ const KSEI_DATA = [
   {
     share_code: "BGTG",
     issuer_name: "BANK GANESHA Tbk",
-    investor_name: "PT. GEMILANG PERSADA PROPERTI",
+    investor_name: "PT GEMILANG PERSADA PROPERTI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -11270,7 +11270,7 @@ const KSEI_DATA = [
   {
     share_code: "BGTG",
     issuer_name: "BANK GANESHA Tbk",
-    investor_name: "PT. KEMILAU CAHAYA SAKTI",
+    investor_name: "PT KEMILAU CAHAYA SAKTI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -11296,7 +11296,7 @@ const KSEI_DATA = [
   {
     share_code: "BGTG",
     issuer_name: "BANK GANESHA Tbk",
-    investor_name: "PRIMA TUNAS INVESTAMA, PT.",
+    investor_name: "PRIMA TUNAS INVESTAMA, PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -11309,7 +11309,7 @@ const KSEI_DATA = [
   {
     share_code: "BGTG",
     issuer_name: "BANK GANESHA Tbk",
-    investor_name: "PT. BUANA PERSADA PROPERTI",
+    investor_name: "PT BUANA PERSADA PROPERTI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -11387,7 +11387,7 @@ const KSEI_DATA = [
   {
     share_code: "BGTG",
     issuer_name: "BANK GANESHA Tbk",
-    investor_name: "PT. TIRTA BUMI DWIKARYA",
+    investor_name: "PT TIRTA BUMI DWIKARYA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -11413,7 +11413,7 @@ const KSEI_DATA = [
   {
     share_code: "BHAT",
     issuer_name: "BHAKTI MULTI ARTHA Tbk",
-    investor_name: "PT. Surya Duta Mas",
+    investor_name: "PT Surya Duta Mas",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -11569,7 +11569,7 @@ const KSEI_DATA = [
   {
     share_code: "BHAT",
     issuer_name: "BHAKTI MULTI ARTHA Tbk",
-    investor_name: "PT. ALANA CIPTA SELARAS",
+    investor_name: "PT ALANA CIPTA SELARAS",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -11621,7 +11621,7 @@ const KSEI_DATA = [
   {
     share_code: "BHAT",
     issuer_name: "BHAKTI MULTI ARTHA Tbk",
-    investor_name: "PT. MEGAH ANGKASA PERKASA",
+    investor_name: "PT MEGAH ANGKASA PERKASA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -11634,7 +11634,7 @@ const KSEI_DATA = [
   {
     share_code: "BHAT",
     issuer_name: "BHAKTI MULTI ARTHA Tbk",
-    investor_name: "PT. CAPITAL ASSET MANAGEMENT",
+    investor_name: "PT CAPITAL ASSET MANAGEMENT",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -11881,7 +11881,7 @@ const KSEI_DATA = [
   {
     share_code: "BHIT",
     issuer_name: "MNC ASIA HOLDING Tbk",
-    investor_name: "PT. MNC ASIA HOLDING TBK",
+    investor_name: "PT MNC ASIA HOLDING TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -12245,7 +12245,7 @@ const KSEI_DATA = [
   {
     share_code: "BINA",
     issuer_name: "BANK INA PERDANA Tbk",
-    investor_name: "PT. INDOLIFE PENSIONTAMA",
+    investor_name: "PT INDOLIFE PENSIONTAMA",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -12258,7 +12258,7 @@ const KSEI_DATA = [
   {
     share_code: "BINA",
     issuer_name: "BANK INA PERDANA Tbk",
-    investor_name: "PT. Samudra Biru",
+    investor_name: "PT Samudra Biru",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -12440,7 +12440,7 @@ const KSEI_DATA = [
   {
     share_code: "BIPI",
     issuer_name: "ASTRINDO NUSANTARA INFRASTRUKTUR Tbk",
-    investor_name: "PT. KB VALBURY SEKURITAS",
+    investor_name: "PT KB VALBURY SEKURITAS",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -12635,7 +12635,7 @@ const KSEI_DATA = [
   {
     share_code: "BIPP",
     issuer_name: "BHUWANATALA INDAH PERMAI Tbk",
-    investor_name: "PT. Victoria Investama Tbk",
+    investor_name: "PT Victoria Investama Tbk",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -12674,7 +12674,7 @@ const KSEI_DATA = [
   {
     share_code: "BIPP",
     issuer_name: "BHUWANATALA INDAH PERMAI Tbk",
-    investor_name: "PT. BINTANG MITRA SEMESTARAYA TBK",
+    investor_name: "PT BINTANG MITRA SEMESTARAYA TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -12726,7 +12726,7 @@ const KSEI_DATA = [
   {
     share_code: "BIRD",
     issuer_name: "BLUE BIRD Tbk",
-    investor_name: "PT. PUSAKA CITRA DJOKOSOETONO",
+    investor_name: "PT PUSAKA CITRA DJOKOSOETONO",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -13129,7 +13129,7 @@ const KSEI_DATA = [
   {
     share_code: "BJBR",
     issuer_name: "BANK JABAR BANTEN Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -13142,7 +13142,7 @@ const KSEI_DATA = [
   {
     share_code: "BJBR",
     issuer_name: "BANK JABAR BANTEN Tbk",
-    investor_name: "PT. ASURANSI JIWA IFG",
+    investor_name: "PT ASURANSI JIWA IFG",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -13402,7 +13402,7 @@ const KSEI_DATA = [
   {
     share_code: "BKDP",
     issuer_name: "BUKIT DARMO PROPERTY Tbk",
-    investor_name: "ADHIBALARAJA, PT.",
+    investor_name: "ADHIBALARAJA, PT",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -13415,7 +13415,7 @@ const KSEI_DATA = [
   {
     share_code: "BKDP",
     issuer_name: "BUKIT DARMO PROPERTY Tbk",
-    investor_name: "PRIMANTARA WISESA SEJAHTERA ,PT",
+    investor_name: "PT PRIMANTARA WISESA SEJAHTERA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -13753,7 +13753,7 @@ const KSEI_DATA = [
   {
     share_code: "BLOG",
     issuer_name: "TRIMITRA TRANS PERSADA Tbk",
-    investor_name: "PT. AMANDA CIPTA PERSADA",
+    investor_name: "PT AMANDA CIPTA PERSADA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -14078,7 +14078,7 @@ const KSEI_DATA = [
   {
     share_code: "BLUE",
     issuer_name: "BERKAH PRIMA PERKASA Tbk",
-    investor_name: "PT. INDO CAPITAL SEKURITAS",
+    investor_name: "PT INDO CAPITAL SEKURITAS",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -14156,7 +14156,7 @@ const KSEI_DATA = [
   {
     share_code: "BMBL",
     issuer_name: "LAVENDER BINA CENDIKIA Tbk",
-    investor_name: "PT. AMMAR AL AMANAH",
+    investor_name: "PT AMMAR AL AMANAH",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -14286,7 +14286,7 @@ const KSEI_DATA = [
   {
     share_code: "BMHS",
     issuer_name: "BUNDAMEDIK Tbk",
-    investor_name: "PT. BUNDA INVESTAMA INDONESIA",
+    investor_name: "PT BUNDA INVESTAMA INDONESIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -14599,7 +14599,7 @@ const KSEI_DATA = [
   {
     share_code: "BMSR",
     issuer_name: "BINTANG MITRA SEMESTARAYA Tbk",
-    investor_name: "PT. Victoria Investama Tbk",
+    investor_name: "PT Victoria Investama Tbk",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -14638,7 +14638,7 @@ const KSEI_DATA = [
   {
     share_code: "BMTR",
     issuer_name: "GLOBAL MEDIACOM Tbk",
-    investor_name: "PT. MNC ASIA HOLDING TBK",
+    investor_name: "PT MNC ASIA HOLDING TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -14781,7 +14781,7 @@ const KSEI_DATA = [
   {
     share_code: "BMTR",
     issuer_name: "GLOBAL MEDIACOM Tbk",
-    investor_name: "PT. GLOBAL TRANSPORT SERVICES",
+    investor_name: "PT GLOBAL TRANSPORT SERVICES",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -14976,7 +14976,7 @@ const KSEI_DATA = [
   {
     share_code: "BNBR",
     issuer_name: "BAKRIE AND BROTHERS Tbk",
-    investor_name: "PT. PRIMA ELOK MAKMUR",
+    investor_name: "PT PRIMA ELOK MAKMUR",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -15171,7 +15171,7 @@ const KSEI_DATA = [
   {
     share_code: "BNLI",
     issuer_name: "BANK PERMATA Tbk",
-    investor_name: "PT. ASURANSI JIWA SEQUIS LIFE",
+    investor_name: "PT ASURANSI JIWA SEQUIS LIFE",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -15496,7 +15496,7 @@ const KSEI_DATA = [
   {
     share_code: "BOGA",
     issuer_name: "APOLLO GLOBAL INTERACTIVE Tbk",
-    investor_name: "PT. BARA SEJAHTERA SUKSES",
+    investor_name: "PT BARA SEJAHTERA SUKSES",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -15535,7 +15535,7 @@ const KSEI_DATA = [
   {
     share_code: "BOGA",
     issuer_name: "APOLLO GLOBAL INTERACTIVE Tbk",
-    investor_name: "PT. ALANA CIPTA SELARAS",
+    investor_name: "PT ALANA CIPTA SELARAS",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -15574,7 +15574,7 @@ const KSEI_DATA = [
   {
     share_code: "BOGA",
     issuer_name: "APOLLO GLOBAL INTERACTIVE Tbk",
-    investor_name: "PT.Pacific Indocorpora Indonesia",
+    investor_name: "PTPacific Indocorpora Indonesia",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -15587,7 +15587,7 @@ const KSEI_DATA = [
   {
     share_code: "BOGA",
     issuer_name: "APOLLO GLOBAL INTERACTIVE Tbk",
-    investor_name: "PT. Askar Pelangi Abadi",
+    investor_name: "PT Askar Pelangi Abadi",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -15639,7 +15639,7 @@ const KSEI_DATA = [
   {
     share_code: "BOGA",
     issuer_name: "APOLLO GLOBAL INTERACTIVE Tbk",
-    investor_name: "PT. CAPITAL ASSET MANAGEMENT",
+    investor_name: "PT CAPITAL ASSET MANAGEMENT",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -15821,7 +15821,7 @@ const KSEI_DATA = [
   {
     share_code: "BOLA",
     issuer_name: "BALI BINTANG SEJAHTERA Tbk",
-    investor_name: "PT. INDOLIFE PENSIONTAMA",
+    investor_name: "PT INDOLIFE PENSIONTAMA",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -16264,7 +16264,7 @@ const KSEI_DATA = [
   {
     share_code: "BOSS",
     issuer_name: "BORNEO OLAH SARANA SUKSES Tbk",
-    investor_name: "PT. TANJUNG INTI AGRO",
+    investor_name: "PT TANJUNG INTI AGRO",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -16303,7 +16303,7 @@ const KSEI_DATA = [
   {
     share_code: "BPFI",
     issuer_name: "WOORI FINANCE INDONESIA Tbk",
-    investor_name: "PT. BATAVIA PROSPERINDO INTERNASIONAL, TBK",
+    investor_name: "PT BATAVIA PROSPERINDO INTERNASIONAL, TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -16342,7 +16342,7 @@ const KSEI_DATA = [
   {
     share_code: "BPFI",
     issuer_name: "WOORI FINANCE INDONESIA Tbk",
-    investor_name: "PT. Victoria Investama Tbk",
+    investor_name: "PT Victoria Investama Tbk",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -16355,7 +16355,7 @@ const KSEI_DATA = [
   {
     share_code: "BPFI",
     issuer_name: "WOORI FINANCE INDONESIA Tbk",
-    investor_name: "PT. BINTANG MITRA SEMESTARAYA TBK",
+    investor_name: "PT BINTANG MITRA SEMESTARAYA TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -16407,7 +16407,7 @@ const KSEI_DATA = [
   {
     share_code: "BPTR",
     issuer_name: "BATAVIA PROSPERINDO TRANS Tbk",
-    investor_name: "PT. BATAVIA PROSPERINDO INTERNASIONAL, TBK",
+    investor_name: "PT BATAVIA PROSPERINDO INTERNASIONAL, TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -16420,7 +16420,7 @@ const KSEI_DATA = [
   {
     share_code: "BPTR",
     issuer_name: "BATAVIA PROSPERINDO TRANS Tbk",
-    investor_name: "PT. Victoria Investama Tbk",
+    investor_name: "PT Victoria Investama Tbk",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -16550,7 +16550,7 @@ const KSEI_DATA = [
   {
     share_code: "BRAM",
     issuer_name: "INDO KORDSA Tbk",
-    investor_name: "PT. MITRASARI KARTIKATAMA",
+    investor_name: "PT MITRASARI KARTIKATAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -16888,7 +16888,7 @@ const KSEI_DATA = [
   {
     share_code: "BRMS",
     issuer_name: "BUMI RESOURCES MINERALS Tbk",
-    investor_name: "PT. INDOLIFE PENSIONTAMA",
+    investor_name: "PT INDOLIFE PENSIONTAMA",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -17343,7 +17343,7 @@ const KSEI_DATA = [
   {
     share_code: "BSDE",
     issuer_name: "BUMI SERPONG DAMAI Tbk",
-    investor_name: "PT. PARAGA ARTA MIDA",
+    investor_name: "PT PARAGA ARTA MIDA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -17369,7 +17369,7 @@ const KSEI_DATA = [
   {
     share_code: "BSDE",
     issuer_name: "BUMI SERPONG DAMAI Tbk",
-    investor_name: "PT. SIMAS TUNGGAL CENTER",
+    investor_name: "PT SIMAS TUNGGAL CENTER",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -17447,7 +17447,7 @@ const KSEI_DATA = [
   {
     share_code: "BSIM",
     issuer_name: "BANK SINAR MAS Tbk",
-    investor_name: "PT. SHINTA UTAMA",
+    investor_name: "PT SHINTA UTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -17603,7 +17603,7 @@ const KSEI_DATA = [
   {
     share_code: "BSIM",
     issuer_name: "BANK SINAR MAS Tbk",
-    investor_name: "PT. ARARA ABADI",
+    investor_name: "PT ARARA ABADI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -17889,7 +17889,7 @@ const KSEI_DATA = [
   {
     share_code: "BSWD",
     issuer_name: "BANK OF INDIA INDONESIA Tbk",
-    investor_name: "PT. PANCA MANTRA JAYA",
+    investor_name: "PT PANCA MANTRA JAYA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -17928,7 +17928,7 @@ const KSEI_DATA = [
   {
     share_code: "BTEK",
     issuer_name: "BUMI TEKNOKULTURA UNGGUL Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -18019,7 +18019,7 @@ const KSEI_DATA = [
   {
     share_code: "BTEL",
     issuer_name: "BAKRIE TELECOM Tbk",
-    investor_name: "PT. HUAWEI TECH INVESTMENT",
+    investor_name: "PT HUAWEI TECH INVESTMENT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -18058,7 +18058,7 @@ const KSEI_DATA = [
   {
     share_code: "BTEL",
     issuer_name: "BAKRIE TELECOM Tbk",
-    investor_name: "PT. Bakrie Global Ventura",
+    investor_name: "PT Bakrie Global Ventura",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -18125,7 +18125,7 @@ const KSEI_DATA = [
   {
     share_code: "BTEL",
     issuer_name: "BAKRIE TELECOM Tbk",
-    investor_name: "PT. ASURANSI JIWA IFG",
+    investor_name: "PT ASURANSI JIWA IFG",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -18998,7 +18998,7 @@ const KSEI_DATA = [
   {
     share_code: "BULL",
     issuer_name: "BUANA LINTAS LAUTAN Tbk",
-    investor_name: "PT. KB VALBURY SEKURITAS",
+    investor_name: "PT KB VALBURY SEKURITAS",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -19375,7 +19375,7 @@ const KSEI_DATA = [
   {
     share_code: "BVIC",
     issuer_name: "BANK VICTORIA INTERNATIONAL Tbk",
-    investor_name: "PT. Victoria Investama Tbk",
+    investor_name: "PT Victoria Investama Tbk",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -19427,7 +19427,7 @@ const KSEI_DATA = [
   {
     share_code: "BVIC",
     issuer_name: "BANK VICTORIA INTERNATIONAL Tbk",
-    investor_name: "PT. BINTANG MITRA SEMESTARAYA TBK",
+    investor_name: "PT BINTANG MITRA SEMESTARAYA TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -19545,7 +19545,7 @@ const KSEI_DATA = [
   {
     share_code: "BWPT",
     issuer_name: "EAGLE HIGH PLANTATIONS, Tbk",
-    investor_name: "PT. EAGLE HIGH PLANTATIONS, TBK",
+    investor_name: "PT EAGLE HIGH PLANTATIONS, TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -19792,7 +19792,7 @@ const KSEI_DATA = [
   {
     share_code: "CANI",
     issuer_name: "CAPITOL NUSANTARA INDONESIA Tbk",
-    investor_name: "PT. ANUGRAH SEMESTA LANGGENG",
+    investor_name: "PT ANUGRAH SEMESTA LANGGENG",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -19935,7 +19935,7 @@ const KSEI_DATA = [
   {
     share_code: "CARE",
     issuer_name: "METRO HEALTHCARE INDONESIA Tbk",
-    investor_name: "PT. Sejahtera Mahkota Persada",
+    investor_name: "PT Sejahtera Mahkota Persada",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -19987,7 +19987,7 @@ const KSEI_DATA = [
   {
     share_code: "CARE",
     issuer_name: "METRO HEALTHCARE INDONESIA Tbk",
-    investor_name: "PT. ALANA CIPTA SELARAS",
+    investor_name: "PT ALANA CIPTA SELARAS",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -20169,7 +20169,7 @@ const KSEI_DATA = [
   {
     share_code: "CARS",
     issuer_name: "INDUSTRI DAN PERDAGANGAN BINTRACO DHARMA Tbk",
-    investor_name: "PT. BALI BINTANG SEJAHTERA",
+    investor_name: "PT BALI BINTANG SEJAHTERA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -20286,7 +20286,7 @@ const KSEI_DATA = [
   {
     share_code: "CARS",
     issuer_name: "INDUSTRI DAN PERDAGANGAN BINTRACO DHARMA Tbk",
-    investor_name: "PT. MITRA PERDANA CITRA",
+    investor_name: "PT MITRA PERDANA CITRA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -20481,7 +20481,7 @@ const KSEI_DATA = [
   {
     share_code: "CASA",
     issuer_name: "CAPITAL FINANCIAL INDONESIA Tbk",
-    investor_name: "PT.Pacific Indocorpora Indonesia",
+    investor_name: "PTPacific Indocorpora Indonesia",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -20507,7 +20507,7 @@ const KSEI_DATA = [
   {
     share_code: "CASA",
     issuer_name: "CAPITAL FINANCIAL INDONESIA Tbk",
-    investor_name: "PT. Sejahtera Mahkota Persada",
+    investor_name: "PT Sejahtera Mahkota Persada",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -20533,7 +20533,7 @@ const KSEI_DATA = [
   {
     share_code: "CASA",
     issuer_name: "CAPITAL FINANCIAL INDONESIA Tbk",
-    investor_name: "PT. BARA SEJAHTERA SUKSES",
+    investor_name: "PT BARA SEJAHTERA SUKSES",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -20936,7 +20936,7 @@ const KSEI_DATA = [
   {
     share_code: "CBPE",
     issuer_name: "CITRA BUANA PRASIDA Tbk",
-    investor_name: "PT. EKANUSA SANDHITHAMA PERSADHA",
+    investor_name: "PT EKANUSA SANDHITHAMA PERSADHA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -21014,7 +21014,7 @@ const KSEI_DATA = [
   {
     share_code: "CBRE",
     issuer_name: "CAKRA BUANA RESOURCES ENERGI Tbk",
-    investor_name: "PT. KAMPUS SAHAM INDONESIA",
+    investor_name: "PT KAMPUS SAHAM INDONESIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -21158,7 +21158,7 @@ const KSEI_DATA = [
   {
     share_code: "CCSI",
     issuer_name: "COMMUNICATION CABLE SYSTEMS INDONESIA Tbk",
-    investor_name: "SAPTADAYA BUMITAMA PERSADA PT.",
+    investor_name: "SAPTADAYA BUMITAMA PERSADA PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -21860,7 +21860,7 @@ const KSEI_DATA = [
   {
     share_code: "CINT",
     issuer_name: "CHITOSE INTERNASIONAL Tbk",
-    investor_name: "PT.TRITIRTA INTI MANDIRI",
+    investor_name: "PTTRITIRTA INTI MANDIRI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -21990,7 +21990,7 @@ const KSEI_DATA = [
   {
     share_code: "CINT",
     issuer_name: "CHITOSE INTERNASIONAL Tbk",
-    investor_name: "PT. TRIMEX SARANA TRISULA",
+    investor_name: "PT TRIMEX SARANA TRISULA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -22380,7 +22380,7 @@ const KSEI_DATA = [
   {
     share_code: "CLEO",
     issuer_name: "SARIGUNA PRIMATIRTA Tbk",
-    investor_name: "PT. TANCORP GLOBAL ABADI",
+    investor_name: "PT TANCORP GLOBAL ABADI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -22419,7 +22419,7 @@ const KSEI_DATA = [
   {
     share_code: "CLEO",
     issuer_name: "SARIGUNA PRIMATIRTA Tbk",
-    investor_name: "PT. MULIA PRIMA TUNGGAL",
+    investor_name: "PT MULIA PRIMA TUNGGAL",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -22458,7 +22458,7 @@ const KSEI_DATA = [
   {
     share_code: "CLPI",
     issuer_name: "COLORPAK INDONESIA Tbk",
-    investor_name: "PT. INK COLOR INT PTE.LTD WM CLIENT",
+    investor_name: "PT INK COLOR INT PTE.LTD WM CLIENT",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "SINGAPORE",
@@ -22471,7 +22471,7 @@ const KSEI_DATA = [
   {
     share_code: "CLPI",
     issuer_name: "COLORPAK INDONESIA Tbk",
-    investor_name: "PT. BUKIT JAYA SEMESTA",
+    investor_name: "PT BUKIT JAYA SEMESTA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -22848,7 +22848,7 @@ const KSEI_DATA = [
   {
     share_code: "CMPP",
     issuer_name: "AIRASIA INDONESIA Tbk",
-    investor_name: "PT. FERSINDO NUSAPERKASA",
+    investor_name: "PT FERSINDO NUSAPERKASA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -23031,7 +23031,7 @@ const KSEI_DATA = [
   {
     share_code: "CNMA",
     issuer_name: "NUSANTARA SEJAHTERA RAYA Tbk",
-    investor_name: "PT. HARKATJAYA BUMIPERSADA",
+    investor_name: "PT HARKATJAYA BUMIPERSADA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -23057,7 +23057,7 @@ const KSEI_DATA = [
   {
     share_code: "CNMA",
     issuer_name: "NUSANTARA SEJAHTERA RAYA Tbk",
-    investor_name: "PT. ADI PRATAMA NUSANTARA",
+    investor_name: "PT ADI PRATAMA NUSANTARA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -23317,7 +23317,7 @@ const KSEI_DATA = [
   {
     share_code: "COCO",
     issuer_name: "WAHANA INTERFOOD NUSANTARA Tbk",
-    investor_name: "PT. PURI DAMAI SEJAHTERA",
+    investor_name: "PT PURI DAMAI SEJAHTERA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -23343,7 +23343,7 @@ const KSEI_DATA = [
   {
     share_code: "COCO",
     issuer_name: "WAHANA INTERFOOD NUSANTARA Tbk",
-    investor_name: "PT. INTER JAYA CORPORA",
+    investor_name: "PT INTER JAYA CORPORA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -23551,7 +23551,7 @@ const KSEI_DATA = [
   {
     share_code: "COIN",
     issuer_name: "INDOKRIPTO KOIN SEMESTA Tbk",
-    investor_name: "PT. WASAMAS INVESTAMA NUSANTARA",
+    investor_name: "PT WASAMAS INVESTAMA NUSANTARA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -24084,7 +24084,7 @@ const KSEI_DATA = [
   {
     share_code: "CRSN",
     issuer_name: "CARSURIN Tbk",
-    investor_name: "PT. ATLAS ORION INTEGRITAS",
+    investor_name: "PT ATLAS ORION INTEGRITAS",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -24097,7 +24097,7 @@ const KSEI_DATA = [
   {
     share_code: "CRSN",
     issuer_name: "CARSURIN Tbk",
-    investor_name: "PT. MONTEZUMA AQUARIUS UTAMA",
+    investor_name: "PT MONTEZUMA AQUARIUS UTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -24136,7 +24136,7 @@ const KSEI_DATA = [
   {
     share_code: "CSAP",
     issuer_name: "CATUR SENTOSA ADIPRANA Tbk",
-    investor_name: "PT.BUANATATA ADISENTOSA",
+    investor_name: "PTBUANATATA ADISENTOSA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -24318,7 +24318,7 @@ const KSEI_DATA = [
   {
     share_code: "CSRA",
     issuer_name: "CISADANE SAWIT RAYA Tbk",
-    investor_name: "PT. VERDAN SAWIT LESTARI",
+    investor_name: "PT VERDAN SAWIT LESTARI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -24370,7 +24370,7 @@ const KSEI_DATA = [
   {
     share_code: "CSRA",
     issuer_name: "CISADANE SAWIT RAYA Tbk",
-    investor_name: "PT. SAWIT INTI PERKASA",
+    investor_name: "PT SAWIT INTI PERKASA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -24501,7 +24501,7 @@ const KSEI_DATA = [
   {
     share_code: "CTRA",
     issuer_name: "CIPUTRA DEVELOPMENT Tbk",
-    investor_name: "PT. SANG PELOPOR",
+    investor_name: "PT SANG PELOPOR",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -24553,7 +24553,7 @@ const KSEI_DATA = [
   {
     share_code: "CTRA",
     issuer_name: "CIPUTRA DEVELOPMENT Tbk",
-    investor_name: "PT. ARENABINA MAKARTI",
+    investor_name: "PT ARENABINA MAKARTI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -25088,7 +25088,7 @@ const KSEI_DATA = [
   {
     share_code: "DART",
     issuer_name: "DUTA ANGGADA REALTY Tbk",
-    investor_name: "PT. DUTA ANGGADA",
+    investor_name: "PT DUTA ANGGADA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -25374,7 +25374,7 @@ const KSEI_DATA = [
   {
     share_code: "DCII",
     issuer_name: "DCI INDONESIA Tbk",
-    investor_name: "PT. GRAHA SENTOSA ADITAMA MAJU",
+    investor_name: "PT GRAHA SENTOSA ADITAMA MAJU",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -25387,7 +25387,7 @@ const KSEI_DATA = [
   {
     share_code: "DEAL",
     issuer_name: "DEWATA FREIGHTINTERNATIONAL Tbk",
-    investor_name: "PT. BIMADA PARAMITA ADHYANA",
+    investor_name: "PT BIMADA PARAMITA ADHYANA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -25452,7 +25452,7 @@ const KSEI_DATA = [
   {
     share_code: "DEAL",
     issuer_name: "DEWATA FREIGHTINTERNATIONAL Tbk",
-    investor_name: "PT. BERSAMA NGRUWAT BONDO",
+    investor_name: "PT BERSAMA NGRUWAT BONDO",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -25621,7 +25621,7 @@ const KSEI_DATA = [
   {
     share_code: "DEFI",
     issuer_name: "DANASUPRA ERAPACIFIC Tbk",
-    investor_name: "PT. KRESNA ASSET MANAGEMENT S/A PT. M CASH INTEGRASI TBK",
+    investor_name: "PT KRESNA ASSET MANAGEMENT S/A PT M CASH INTEGRASI TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -25686,7 +25686,7 @@ const KSEI_DATA = [
   {
     share_code: "DEPO",
     issuer_name: "CATURKARDA DEPO BANGUNAN Tbk",
-    investor_name: "PT.BUANATATA ADISENTOSA",
+    investor_name: "PTBUANATATA ADISENTOSA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -25842,7 +25842,7 @@ const KSEI_DATA = [
   {
     share_code: "DEWA",
     issuer_name: "DARMA HENWA Tbk",
-    investor_name: "PT. KB VALBURY SEKURITAS",
+    investor_name: "PT KB VALBURY SEKURITAS",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -25855,7 +25855,7 @@ const KSEI_DATA = [
   {
     share_code: "DEWA",
     issuer_name: "DARMA HENWA Tbk",
-    investor_name: "PT. BCA SEKURITAS",
+    investor_name: "PT BCA SEKURITAS",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -26050,7 +26050,7 @@ const KSEI_DATA = [
   {
     share_code: "DFAM",
     issuer_name: "DAFAM PROPERTY INDONESIA Tbk",
-    investor_name: "PT. DAFAM",
+    investor_name: "PT DAFAM",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -26323,7 +26323,7 @@ const KSEI_DATA = [
   {
     share_code: "DGNS",
     issuer_name: "DIAGNOS LABORATORIUM UTAMA Tbk",
-    investor_name: "PT. BUNDA INVESTAMA INDONESIA",
+    investor_name: "PT BUNDA INVESTAMA INDONESIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -26414,7 +26414,7 @@ const KSEI_DATA = [
   {
     share_code: "DGWG",
     issuer_name: "DELTA GIRI WACANA Tbk",
-    investor_name: "PT. BERKSHIRE MULTI INVESTAMA",
+    investor_name: "PT BERKSHIRE MULTI INVESTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -26674,7 +26674,7 @@ const KSEI_DATA = [
   {
     share_code: "DIVA",
     issuer_name: "DISTRIBUSI VOUCHER NUSANTARA Tbk",
-    investor_name: "PT. 1 INTI DOT COM",
+    investor_name: "PT 1 INTI DOT COM",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -26739,7 +26739,7 @@ const KSEI_DATA = [
   {
     share_code: "DIVA",
     issuer_name: "DISTRIBUSI VOUCHER NUSANTARA Tbk",
-    investor_name: "PT. LOGITEK DIGITAL NUSANTARA",
+    investor_name: "PT LOGITEK DIGITAL NUSANTARA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -26973,7 +26973,7 @@ const KSEI_DATA = [
   {
     share_code: "DMMX",
     issuer_name: "DIGITAL MEDIATAMA MAXIMA Tbk",
-    investor_name: "PT. JAYA DISTRIBUSI RITEL",
+    investor_name: "PT JAYA DISTRIBUSI RITEL",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -27012,7 +27012,7 @@ const KSEI_DATA = [
   {
     share_code: "DMMX",
     issuer_name: "DIGITAL MEDIATAMA MAXIMA Tbk",
-    investor_name: "PT. DIGITAL MEDIATAMA MAXIMA TBK",
+    investor_name: "PT DIGITAL MEDIATAMA MAXIMA TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -27285,7 +27285,7 @@ const KSEI_DATA = [
   {
     share_code: "DNET",
     issuer_name: "INDORITEL MAKMUR INTERNASIONAL Tbk",
-    investor_name: "PT. INDOLIFE PENSIONTAMA",
+    investor_name: "PT INDOLIFE PENSIONTAMA",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -27493,7 +27493,7 @@ const KSEI_DATA = [
   {
     share_code: "DOOH",
     issuer_name: "ERA MEDIA SEJAHTERA Tbk",
-    investor_name: "PT. PRAMBANAN INVESTASI SUKSES",
+    investor_name: "PT PRAMBANAN INVESTASI SUKSES",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -27819,7 +27819,7 @@ const KSEI_DATA = [
   {
     share_code: "DPUM",
     issuer_name: "DUA PUTRA UTAMA MAKMUR Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -28197,7 +28197,7 @@ const KSEI_DATA = [
   {
     share_code: "DSNG",
     issuer_name: "DHARMA SATYA NUSANTARA Tbk",
-    investor_name: "PT. WAHANA ADHIKENCANA",
+    investor_name: "PT WAHANA ADHIKENCANA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -28379,7 +28379,7 @@ const KSEI_DATA = [
   {
     share_code: "DUCK",
     issuer_name: "JAYA BERSAMA INDO Tbk",
-    investor_name: "PT. ASURANSI JIWA PROLIFE INDONESIA",
+    investor_name: "PT ASURANSI JIWA PROLIFE INDONESIA",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -28666,7 +28666,7 @@ const KSEI_DATA = [
   {
     share_code: "DWGL",
     issuer_name: "DWI GUNA LAKSANA Tbk",
-    investor_name: "PT. RIZKI LANCAR SENTOSA",
+    investor_name: "PT RIZKI LANCAR SENTOSA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -28679,7 +28679,7 @@ const KSEI_DATA = [
   {
     share_code: "DWGL",
     issuer_name: "DWI GUNA LAKSANA Tbk",
-    investor_name: "PT. NARINDO SOLUSI TELEKOMUNIKASI",
+    investor_name: "PT NARINDO SOLUSI TELEKOMUNIKASI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -28692,7 +28692,7 @@ const KSEI_DATA = [
   {
     share_code: "DWGL",
     issuer_name: "DWI GUNA LAKSANA Tbk",
-    investor_name: "PT. BERAU BARA ENERGI",
+    investor_name: "PT BERAU BARA ENERGI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -29109,7 +29109,7 @@ const KSEI_DATA = [
   {
     share_code: "ECII",
     issuer_name: "ELECTRONIC CITY INDONESIA Tbk",
-    investor_name: "PT. Graha Surya Kirana",
+    investor_name: "PT Graha Surya Kirana",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -29122,7 +29122,7 @@ const KSEI_DATA = [
   {
     share_code: "ECII",
     issuer_name: "ELECTRONIC CITY INDONESIA Tbk",
-    investor_name: "PT. Artha Graha Network",
+    investor_name: "PT Artha Graha Network",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -29226,7 +29226,7 @@ const KSEI_DATA = [
   {
     share_code: "EKAD",
     issuer_name: "EKADHARMA INTERNATIONAL Tbk",
-    investor_name: "PT. EKADHARMA INTI PERKASA",
+    investor_name: "PT EKADHARMA INTI PERKASA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -29330,7 +29330,7 @@ const KSEI_DATA = [
   {
     share_code: "ELIT",
     issuer_name: "DATA SINERGITAMA JAYA Tbk",
-    investor_name: "PT. INOTECH",
+    investor_name: "PT INOTECH",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -29395,7 +29395,7 @@ const KSEI_DATA = [
   {
     share_code: "ELPI",
     issuer_name: "PELAYARAN NASIONAL EKALYA PURNAMASARI Tbk",
-    investor_name: "PT. CITRA PRIMA LOKA",
+    investor_name: "PT CITRA PRIMA LOKA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -29408,7 +29408,7 @@ const KSEI_DATA = [
   {
     share_code: "ELPI",
     issuer_name: "PELAYARAN NASIONAL EKALYA PURNAMASARI Tbk",
-    investor_name: "PT. GLOBAL BERKAT SOLUSINDO",
+    investor_name: "PT GLOBAL BERKAT SOLUSINDO",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -29733,7 +29733,7 @@ const KSEI_DATA = [
   {
     share_code: "ELTY",
     issuer_name: "BAKRIELAND DEVELOPMENT Tbk",
-    investor_name: "PT. NARINDO SOLUSI TELEKOMUNIKASI",
+    investor_name: "PT NARINDO SOLUSI TELEKOMUNIKASI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -30188,7 +30188,7 @@ const KSEI_DATA = [
   {
     share_code: "ENAK",
     issuer_name: "CHAMP RESTO INDONESIA Tbk",
-    investor_name: "PT. ALBA CIPTA RASA",
+    investor_name: "PT ALBA CIPTA RASA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -30435,7 +30435,7 @@ const KSEI_DATA = [
   {
     share_code: "ENRG",
     issuer_name: "ENERGI MEGA PERSADA Tbk",
-    investor_name: "PT. KB VALBURY SEKURITAS",
+    investor_name: "PT KB VALBURY SEKURITAS",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -31190,7 +31190,7 @@ const KSEI_DATA = [
   {
     share_code: "ESTA",
     issuer_name: "ESTA MULTI USAHA Tbk",
-    investor_name: "PT. Esta Utama Corpora",
+    investor_name: "PT Esta Utama Corpora",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -31736,7 +31736,7 @@ const KSEI_DATA = [
   {
     share_code: "FAPA",
     issuer_name: "FAP AGRI Tbk",
-    investor_name: "PT. FANGIONO PERKASA SEJATI",
+    investor_name: "PT FANGIONO PERKASA SEJATI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -31827,7 +31827,7 @@ const KSEI_DATA = [
   {
     share_code: "FAST",
     issuer_name: "FAST FOOD INDONESIA Tbk",
-    investor_name: "PT. INDORITEL MAKMUR INTERNASIONAL TBK",
+    investor_name: "PT INDORITEL MAKMUR INTERNASIONAL TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -31866,7 +31866,7 @@ const KSEI_DATA = [
   {
     share_code: "FAST",
     issuer_name: "FAST FOOD INDONESIA Tbk",
-    investor_name: "PT. INDOLIFE PENSIONTAMA",
+    investor_name: "PT INDOLIFE PENSIONTAMA",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -32061,7 +32061,7 @@ const KSEI_DATA = [
   {
     share_code: "FIMP",
     issuer_name: "FIMPERKASA UTAMA Tbk",
-    investor_name: "PT. BANGUN BUMI UTAMA",
+    investor_name: "PT BANGUN BUMI UTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -32074,7 +32074,7 @@ const KSEI_DATA = [
   {
     share_code: "FIMP",
     issuer_name: "FIMPERKASA UTAMA Tbk",
-    investor_name: "PT. KARYA BERKAH INVESTAMA",
+    investor_name: "PT KARYA BERKAH INVESTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -32360,7 +32360,7 @@ const KSEI_DATA = [
   {
     share_code: "FIRE",
     issuer_name: "ALFA ENERGI INVESTAMA Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -32438,7 +32438,7 @@ const KSEI_DATA = [
   {
     share_code: "FISH",
     issuer_name: "FKS MULTI AGRO Tbk",
-    investor_name: "PT.FKS CORPORINDO INDONESIA",
+    investor_name: "PTFKS CORPORINDO INDONESIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -32802,7 +32802,7 @@ const KSEI_DATA = [
   {
     share_code: "FMII",
     issuer_name: "FORTUNE MATE INDONESIA Tbk",
-    investor_name: "PT. INDO CAPITAL SEKURITAS",
+    investor_name: "PT INDO CAPITAL SEKURITAS",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -32828,7 +32828,7 @@ const KSEI_DATA = [
   {
     share_code: "FOLK",
     issuer_name: "MULTI GARAM UTAMA Tbk",
-    investor_name: "PT. SUMBER GARAM PRATAMA",
+    investor_name: "PT SUMBER GARAM PRATAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -32854,7 +32854,7 @@ const KSEI_DATA = [
   {
     share_code: "FOLK",
     issuer_name: "MULTI GARAM UTAMA Tbk",
-    investor_name: "PT. USAHAGUNA MITRAPERSADA",
+    investor_name: "PT USAHAGUNA MITRAPERSADA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -33478,7 +33478,7 @@ const KSEI_DATA = [
   {
     share_code: "GAMA",
     issuer_name: "AKSARA GLOBAL DEVELOPMENT Tbk",
-    investor_name: "PT.GADING INVESTMENTS",
+    investor_name: "PTGADING INVESTMENTS",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -33504,7 +33504,7 @@ const KSEI_DATA = [
   {
     share_code: "GAMA",
     issuer_name: "AKSARA GLOBAL DEVELOPMENT Tbk",
-    investor_name: "PT. MEGAH ANGKASA PERKASA",
+    investor_name: "PT MEGAH ANGKASA PERKASA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -33543,7 +33543,7 @@ const KSEI_DATA = [
   {
     share_code: "GAMA",
     issuer_name: "AKSARA GLOBAL DEVELOPMENT Tbk",
-    investor_name: "PT. ALANA CIPTA SELARAS",
+    investor_name: "PT ALANA CIPTA SELARAS",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -33569,7 +33569,7 @@ const KSEI_DATA = [
   {
     share_code: "GAMA",
     issuer_name: "AKSARA GLOBAL DEVELOPMENT Tbk",
-    investor_name: "PT. BARA SEJAHTERA SUKSES",
+    investor_name: "PT BARA SEJAHTERA SUKSES",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -33595,7 +33595,7 @@ const KSEI_DATA = [
   {
     share_code: "GAMA",
     issuer_name: "AKSARA GLOBAL DEVELOPMENT Tbk",
-    investor_name: "PT. Askar Pelangi Abadi",
+    investor_name: "PT Askar Pelangi Abadi",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -33621,7 +33621,7 @@ const KSEI_DATA = [
   {
     share_code: "GAMA",
     issuer_name: "AKSARA GLOBAL DEVELOPMENT Tbk",
-    investor_name: "PT.Pacific Indocorpora Indonesia",
+    investor_name: "PTPacific Indocorpora Indonesia",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -33804,7 +33804,7 @@ const KSEI_DATA = [
   {
     share_code: "GDST",
     issuer_name: "GUNAWAN DIANJAYA STEEL Tbk",
-    investor_name: "PT. BETON JAYA MANUNGGAL TBK",
+    investor_name: "PT BETON JAYA MANUNGGAL TBK",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -33882,7 +33882,7 @@ const KSEI_DATA = [
   {
     share_code: "GEMA",
     issuer_name: "GEMA GRAHASARANA Tbk",
-    investor_name: "PT. VIRUCCI INDOGRIYA SARANA",
+    investor_name: "PT VIRUCCI INDOGRIYA SARANA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -33947,7 +33947,7 @@ const KSEI_DATA = [
   {
     share_code: "GEMS",
     issuer_name: "GOLDEN ENERGY MINES Tbk",
-    investor_name: "PT. RADHIKA JANANTA RAYA",
+    investor_name: "PT RADHIKA JANANTA RAYA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -34051,7 +34051,7 @@ const KSEI_DATA = [
   {
     share_code: "GGRM",
     issuer_name: "GUDANG GARAM Tbk",
-    investor_name: "PT.LAKTA UTAMA",
+    investor_name: "PTLAKTA UTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -34300,7 +34300,7 @@ const KSEI_DATA = [
   {
     share_code: "GIAA",
     issuer_name: "GARUDA INDONESIA (PERSERO) Tbk",
-    investor_name: "PT. TRANS AIRWAYS",
+    investor_name: "PT TRANS AIRWAYS",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -34444,7 +34444,7 @@ const KSEI_DATA = [
   {
     share_code: "GLVA",
     issuer_name: "GALVA TECHNOLOGIES Tbk",
-    investor_name: "PT. ELSISCOM PRIMA KARYA",
+    investor_name: "PT ELSISCOM PRIMA KARYA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -34600,7 +34600,7 @@ const KSEI_DATA = [
   {
     share_code: "GLVA",
     issuer_name: "GALVA TECHNOLOGIES Tbk",
-    investor_name: "PT. ELIFE DIGITAL ECOSYSTEM",
+    investor_name: "PT ELIFE DIGITAL ECOSYSTEM",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -34730,7 +34730,7 @@ const KSEI_DATA = [
   {
     share_code: "GMTD",
     issuer_name: "GOWA MAKASSAR TOURISM DEVELOPMENT Tbk",
-    investor_name: "FAJAR USAHA SEMESTA, PT.",
+    investor_name: "FAJAR USAHA SEMESTA, PT",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -34743,7 +34743,7 @@ const KSEI_DATA = [
   {
     share_code: "GMTD",
     issuer_name: "GOWA MAKASSAR TOURISM DEVELOPMENT Tbk",
-    investor_name: "FAJAR RAYA CEMERLANG, PT.",
+    investor_name: "FAJAR RAYA CEMERLANG, PT",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -34756,7 +34756,7 @@ const KSEI_DATA = [
   {
     share_code: "GMTD",
     issuer_name: "GOWA MAKASSAR TOURISM DEVELOPMENT Tbk",
-    investor_name: "ARESTA PERMATA UTAMA, PT.",
+    investor_name: "ARESTA PERMATA UTAMA, PT",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -34769,7 +34769,7 @@ const KSEI_DATA = [
   {
     share_code: "GMTD",
     issuer_name: "GOWA MAKASSAR TOURISM DEVELOPMENT Tbk",
-    investor_name: "FAJAR ABADI ADITAMA, PT.",
+    investor_name: "FAJAR ABADI ADITAMA, PT",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -34782,7 +34782,7 @@ const KSEI_DATA = [
   {
     share_code: "GMTD",
     issuer_name: "GOWA MAKASSAR TOURISM DEVELOPMENT Tbk",
-    investor_name: "DWISINDO JAYA, PT.",
+    investor_name: "DWISINDO JAYA, PT",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -34795,7 +34795,7 @@ const KSEI_DATA = [
   {
     share_code: "GMTD",
     issuer_name: "GOWA MAKASSAR TOURISM DEVELOPMENT Tbk",
-    investor_name: "KEMANGPARAGON MALL, PT.",
+    investor_name: "KEMANGPARAGON MALL, PT",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -34808,7 +34808,7 @@ const KSEI_DATA = [
   {
     share_code: "GMTD",
     issuer_name: "GOWA MAKASSAR TOURISM DEVELOPMENT Tbk",
-    investor_name: "SENTRA DWIMANDIRI, PT.",
+    investor_name: "SENTRA DWIMANDIRI, PT",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -34860,7 +34860,7 @@ const KSEI_DATA = [
   {
     share_code: "GOLD",
     issuer_name: "VISI TELEKOMUNIKASI INFRASTRUKTUR Tbk",
-    investor_name: ", PT   TOWER BERSAMA INFRASTRUCTURE, TBK, PT",
+    investor_name: "PTTOWER BERSAMA INFRASTRUCTURE, TBK, PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -34873,7 +34873,7 @@ const KSEI_DATA = [
   {
     share_code: "GOLD",
     issuer_name: "VISI TELEKOMUNIKASI INFRASTRUKTUR Tbk",
-    investor_name: ", PT   PT. AMANDA CIPTA PERSADA",
+    investor_name: "PT. AMANDA CIPTA PERSADA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -34886,7 +34886,7 @@ const KSEI_DATA = [
   {
     share_code: "GOLD",
     issuer_name: "VISI TELEKOMUNIKASI INFRASTRUKTUR Tbk",
-    investor_name: ", PT   MULIA SUKSES MANDIRI, PT",
+    investor_name: "PTMULIA SUKSES MANDIRI, PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -34899,7 +34899,7 @@ const KSEI_DATA = [
   {
     share_code: "GOLD",
     issuer_name: "VISI TELEKOMUNIKASI INFRASTRUKTUR Tbk",
-    investor_name: ", PT   PT TRIMEGAH SEKURITAS INDONESIA TBK",
+    investor_name: "PT TRIMEGAH SEKURITAS INDONESIA TBK",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -34912,7 +34912,7 @@ const KSEI_DATA = [
   {
     share_code: "GOLD",
     issuer_name: "VISI TELEKOMUNIKASI INFRASTRUKTUR Tbk",
-    investor_name: ", PT   SCAVINO VENTURES LIMITED",
+    investor_name: "PTSCAVINO VENTURES LIMITED",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "VIRGIN ISLANDS, BRITISH",
@@ -34925,7 +34925,7 @@ const KSEI_DATA = [
   {
     share_code: "GOLD",
     issuer_name: "VISI TELEKOMUNIKASI INFRASTRUKTUR Tbk",
-    investor_name: ", PT   PT LANCAR DISTRINDO",
+    investor_name: "PT LANCAR DISTRINDO",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -34938,7 +34938,7 @@ const KSEI_DATA = [
   {
     share_code: "GOLD",
     issuer_name: "VISI TELEKOMUNIKASI INFRASTRUKTUR Tbk",
-    investor_name: ", PT   SUKSES PRIMA SAKTI, PT",
+    investor_name: "PTSUKSES PRIMA SAKTI, PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -34964,7 +34964,7 @@ const KSEI_DATA = [
   {
     share_code: "GOLF",
     issuer_name: "INTRA GOLFLINK RESORTS Tbk",
-    investor_name: "PT. BUMINDO ANUGERAH PERKASA",
+    investor_name: "PT BUMINDO ANUGERAH PERKASA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -34977,7 +34977,7 @@ const KSEI_DATA = [
   {
     share_code: "GOLF",
     issuer_name: "INTRA GOLFLINK RESORTS Tbk",
-    investor_name: "PT. SAMUDERA UNGGUL SENTOSA",
+    investor_name: "PT SAMUDERA UNGGUL SENTOSA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -35003,7 +35003,7 @@ const KSEI_DATA = [
   {
     share_code: "GOLF",
     issuer_name: "INTRA GOLFLINK RESORTS Tbk",
-    investor_name: "PT. MITRA BAHANA SOLUSINDO",
+    investor_name: "PT MITRA BAHANA SOLUSINDO",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -35016,7 +35016,7 @@ const KSEI_DATA = [
   {
     share_code: "GOLF",
     issuer_name: "INTRA GOLFLINK RESORTS Tbk",
-    investor_name: "PT. FAJAR ARTHA PRABU",
+    investor_name: "PT FAJAR ARTHA PRABU",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -35237,7 +35237,7 @@ const KSEI_DATA = [
   {
     share_code: "GOOD",
     issuer_name: "GARUDAFOOD PUTRA PUTRI JAYA Tbk",
-    investor_name: "PT. CITRA SEJATI SENTOSA",
+    investor_name: "PT CITRA SEJATI SENTOSA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -35731,7 +35731,7 @@ const KSEI_DATA = [
   {
     share_code: "GPRA",
     issuer_name: "PERDANA GAPURAPRIMA Tbk",
-    investor_name: "PT. GAPURA INTI SEJAHTERA",
+    investor_name: "PT GAPURA INTI SEJAHTERA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -36004,7 +36004,7 @@ const KSEI_DATA = [
   {
     share_code: "GRPH",
     issuer_name: "GRIPTHA PUTRA PERSADA Tbk",
-    investor_name: "PT. MULIA JAYA PALMA",
+    investor_name: "PT MULIA JAYA PALMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -36095,7 +36095,7 @@ const KSEI_DATA = [
   {
     share_code: "GSMF",
     issuer_name: "EQUITY DEVELOPMENT INVESTMENT Tbk",
-    investor_name: "MANNING DEVELOPMENT, PT.",
+    investor_name: "MANNING DEVELOPMENT, PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -36108,7 +36108,7 @@ const KSEI_DATA = [
   {
     share_code: "GSMF",
     issuer_name: "EQUITY DEVELOPMENT INVESTMENT Tbk",
-    investor_name: "PT. BINTANGPUSPITA DWIKARYA",
+    investor_name: "PT BINTANGPUSPITA DWIKARYA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -36134,7 +36134,7 @@ const KSEI_DATA = [
   {
     share_code: "GSMF",
     issuer_name: "EQUITY DEVELOPMENT INVESTMENT Tbk",
-    investor_name: "PT. POLYCHEM INDONESIA TBK",
+    investor_name: "PT POLYCHEM INDONESIA TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -36173,7 +36173,7 @@ const KSEI_DATA = [
   {
     share_code: "GSMF",
     issuer_name: "EQUITY DEVELOPMENT INVESTMENT Tbk",
-    investor_name: "PRIMA TUNAS INVESTAMA, PT.",
+    investor_name: "PRIMA TUNAS INVESTAMA, PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -36394,7 +36394,7 @@ const KSEI_DATA = [
   {
     share_code: "GULA",
     issuer_name: "AMAN AGRINDO Tbk",
-    investor_name: "PT. AMAN RESOURCES INDONESIA",
+    investor_name: "PT AMAN RESOURCES INDONESIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -36602,7 +36602,7 @@ const KSEI_DATA = [
   {
     share_code: "GUNA",
     issuer_name: "GUNANUSA ERAMANDIRI Tbk",
-    investor_name: "PT. ADHIKARI SWARA MAHARDHIKA",
+    investor_name: "PT ADHIKARI SWARA MAHARDHIKA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -36615,7 +36615,7 @@ const KSEI_DATA = [
   {
     share_code: "GUNA",
     issuer_name: "GUNANUSA ERAMANDIRI Tbk",
-    investor_name: "PT. ARTHA SAMRIDDHI DHANESWARA",
+    investor_name: "PT ARTHA SAMRIDDHI DHANESWARA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -36628,7 +36628,7 @@ const KSEI_DATA = [
   {
     share_code: "GUNA",
     issuer_name: "GUNANUSA ERAMANDIRI Tbk",
-    investor_name: "PT. NISKALA GANA SIDDHI",
+    investor_name: "PT NISKALA GANA SIDDHI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -36641,7 +36641,7 @@ const KSEI_DATA = [
   {
     share_code: "GUNA",
     issuer_name: "GUNANUSA ERAMANDIRI Tbk",
-    investor_name: "PT. ADHILIMO MENGARSA ASASTA",
+    investor_name: "PT ADHILIMO MENGARSA ASASTA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -36758,7 +36758,7 @@ const KSEI_DATA = [
   {
     share_code: "GZCO",
     issuer_name: "GOZCO PLANTATIONS Tbk",
-    investor_name: "PT. GOLDEN ZAGA INDONESIA",
+    investor_name: "PT GOLDEN ZAGA INDONESIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -36797,7 +36797,7 @@ const KSEI_DATA = [
   {
     share_code: "GZCO",
     issuer_name: "GOZCO PLANTATIONS Tbk",
-    investor_name: "PT. GOZCO PLANTATIONS TBK",
+    investor_name: "PT GOZCO PLANTATIONS TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -36810,7 +36810,7 @@ const KSEI_DATA = [
   {
     share_code: "GZCO",
     issuer_name: "GOZCO PLANTATIONS Tbk",
-    investor_name: "PT. JABAR UTAMA WOOD INDUSTRY",
+    investor_name: "PT JABAR UTAMA WOOD INDUSTRY",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -36823,7 +36823,7 @@ const KSEI_DATA = [
   {
     share_code: "GZCO",
     issuer_name: "GOZCO PLANTATIONS Tbk",
-    investor_name: "PT. INDO CAPITAL SEKURITAS",
+    investor_name: "PT INDO CAPITAL SEKURITAS",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -36862,7 +36862,7 @@ const KSEI_DATA = [
   {
     share_code: "HADE",
     issuer_name: "HIMALAYA ENERGI PERKASA Tbk",
-    investor_name: "PT. MAXIMA FINANCINDO",
+    investor_name: "PT MAXIMA FINANCINDO",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -37109,7 +37109,7 @@ const KSEI_DATA = [
   {
     share_code: "HAIS",
     issuer_name: "HASNUR INTERNASIONAL SHIPPING Tbk",
-    investor_name: "PT. HASNUR JAYA ENERGI",
+    investor_name: "PT HASNUR JAYA ENERGI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -37122,7 +37122,7 @@ const KSEI_DATA = [
   {
     share_code: "HAIS",
     issuer_name: "HASNUR INTERNASIONAL SHIPPING Tbk",
-    investor_name: "PT. HASNUR JAYA TAMBANG",
+    investor_name: "PT HASNUR JAYA TAMBANG",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -37187,7 +37187,7 @@ const KSEI_DATA = [
   {
     share_code: "HAJJ",
     issuer_name: "ARSY BUANA TRAVELINDO Tbk",
-    investor_name: "PT. INVESTINDO JAYA ANUGERAH",
+    investor_name: "PT INVESTINDO JAYA ANUGERAH",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -37512,7 +37512,7 @@ const KSEI_DATA = [
   {
     share_code: "HDFA",
     issuer_name: "RADANA BHASKARA FINANCE Tbk",
-    investor_name: "PT. INDULCE NUSA INVESTAMA",
+    investor_name: "PT INDULCE NUSA INVESTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -37902,7 +37902,7 @@ const KSEI_DATA = [
   {
     share_code: "HELI",
     issuer_name: "JAYA TRISHINDO Tbk",
-    investor_name: "PT. AVIA NUSANTARA KHATULISTIWA",
+    investor_name: "PT AVIA NUSANTARA KHATULISTIWA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -38319,7 +38319,7 @@ const KSEI_DATA = [
   {
     share_code: "HITS",
     issuer_name: "HUMPUSS INTERMODA TRANSPORTASI Tbk",
-    investor_name: "PT.MENARA CAKRA BUANA",
+    investor_name: "PTMENARA CAKRA BUANA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -38345,7 +38345,7 @@ const KSEI_DATA = [
   {
     share_code: "HITS",
     issuer_name: "HUMPUSS INTERMODA TRANSPORTASI Tbk",
-    investor_name: "PT.JOYO AGUNG PERMATA",
+    investor_name: "PTJOYO AGUNG PERMATA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -38397,7 +38397,7 @@ const KSEI_DATA = [
   {
     share_code: "HKMU",
     issuer_name: "HK METALS UTAMA Tbk",
-    investor_name: "PT. NUGRAHA KENCANA BHUMI",
+    investor_name: "PT NUGRAHA KENCANA BHUMI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -38646,7 +38646,7 @@ const KSEI_DATA = [
   {
     share_code: "HOME",
     issuer_name: "HOTEL MANDARINE REGENCY Tbk",
-    investor_name: "PT. PANCA GLOBAL KAPITAL TBK",
+    investor_name: "PT PANCA GLOBAL KAPITAL TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -38750,7 +38750,7 @@ const KSEI_DATA = [
   {
     share_code: "HOME",
     issuer_name: "HOTEL MANDARINE REGENCY Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -38802,7 +38802,7 @@ const KSEI_DATA = [
   {
     share_code: "HOMI",
     issuer_name: "GRAND HOUSE MULIA Tbk",
-    investor_name: "PT. GRAHA MULIA INDOTAMA",
+    investor_name: "PT GRAHA MULIA INDOTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -38945,7 +38945,7 @@ const KSEI_DATA = [
   {
     share_code: "HOPE",
     issuer_name: "HARAPAN DUTA PERTIWI Tbk",
-    investor_name: "PT. HARAPAN GROUP SUKSES",
+    investor_name: "PT HARAPAN GROUP SUKSES",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -38971,7 +38971,7 @@ const KSEI_DATA = [
   {
     share_code: "HOPE",
     issuer_name: "HARAPAN DUTA PERTIWI Tbk",
-    investor_name: "PT. MERANTI SAMUDRA PERKASA",
+    investor_name: "PT MERANTI SAMUDRA PERKASA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -39257,7 +39257,7 @@ const KSEI_DATA = [
   {
     share_code: "HRTA",
     issuer_name: "HARTADINATA ABADI Tbk",
-    investor_name: "PT. TERANG ANUGRAH ABADI",
+    investor_name: "PT TERANG ANUGRAH ABADI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -39543,7 +39543,7 @@ const KSEI_DATA = [
   {
     share_code: "IATA",
     issuer_name: "MNC ENERGY INVESTMENTS Tbk",
-    investor_name: "PT. KARYA PACIFIC INVESTAMA",
+    investor_name: "PT KARYA PACIFIC INVESTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -39556,7 +39556,7 @@ const KSEI_DATA = [
   {
     share_code: "IATA",
     issuer_name: "MNC ENERGY INVESTMENTS Tbk",
-    investor_name: "PT. MNC ASIA HOLDING TBK",
+    investor_name: "PT MNC ASIA HOLDING TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -39634,7 +39634,7 @@ const KSEI_DATA = [
   {
     share_code: "IBFN",
     issuer_name: "INTAN BARU PRANA Tbk",
-    investor_name: "PT. INTRACO PENTA . TBK",
+    investor_name: "PT INTRACO PENTA . TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -39725,7 +39725,7 @@ const KSEI_DATA = [
   {
     share_code: "IBOS",
     issuer_name: "INDO BOGA SUKSES Tbk",
-    investor_name: "PT. GOLDMAN INVESTINDO SEDAYA",
+    investor_name: "PT GOLDMAN INVESTINDO SEDAYA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -39985,7 +39985,7 @@ const KSEI_DATA = [
   {
     share_code: "ICON",
     issuer_name: "ISLAND CONCEPTS INDONESIA Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -40115,7 +40115,7 @@ const KSEI_DATA = [
   {
     share_code: "IDEA",
     issuer_name: "IDEA INDONESIA AKADEMI Tbk",
-    investor_name: "PT. Idea Asia Investama",
+    investor_name: "PT Idea Asia Investama",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -40271,7 +40271,7 @@ const KSEI_DATA = [
   {
     share_code: "IFII",
     issuer_name: "INDONESIA FIBREBOARD INDUSTRY Tbk",
-    investor_name: "PT. SELARAS NUSANTARA CEMERLANG",
+    investor_name: "PT SELARAS NUSANTARA CEMERLANG",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -40362,7 +40362,7 @@ const KSEI_DATA = [
   {
     share_code: "IFSH",
     issuer_name: "IFISHDECO Tbk",
-    investor_name: "PT. IFISHDECO TBK",
+    investor_name: "PT IFISHDECO TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -40440,7 +40440,7 @@ const KSEI_DATA = [
   {
     share_code: "IIKP",
     issuer_name: "INTI AGRI RESOURCES Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -40467,7 +40467,7 @@ const KSEI_DATA = [
   {
     share_code: "IIKP",
     issuer_name: "INTI AGRI RESOURCES Tbk",
-    investor_name: "PT. ASURANSI JIWA IFG",
+    investor_name: "PT ASURANSI JIWA IFG",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -40688,7 +40688,7 @@ const KSEI_DATA = [
   {
     share_code: "IKAI",
     issuer_name: "INTIKERAMIK ALAMASRI INDUSTRI Tbk",
-    investor_name: "MAHKOTA PROPERTI INDO PT.",
+    investor_name: "MAHKOTA PROPERTI INDO PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -40818,7 +40818,7 @@ const KSEI_DATA = [
   {
     share_code: "IKBI",
     issuer_name: "SUMI INDO KABEL Tbk",
-    investor_name: "PT. Naditama Trancy Logistics Indonesia",
+    investor_name: "PT Naditama Trancy Logistics Indonesia",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -40831,7 +40831,7 @@ const KSEI_DATA = [
   {
     share_code: "IKBI",
     issuer_name: "SUMI INDO KABEL Tbk",
-    investor_name: "PT. Perdanamulia Ekasakti",
+    investor_name: "PT Perdanamulia Ekasakti",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -40909,7 +40909,7 @@ const KSEI_DATA = [
   {
     share_code: "IKPM",
     issuer_name: "IKAPHARMINDO PUTRAMAS Tbk",
-    investor_name: "PT. KASIH ANUGRAH INVESTA",
+    investor_name: "PT KASIH ANUGRAH INVESTA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -40987,7 +40987,7 @@ const KSEI_DATA = [
   {
     share_code: "IMAS",
     issuer_name: "INDOMOBIL SUKSES INTERNASIONAL Tbk",
-    investor_name: "PT. INDOLIFE PENSIONTAMA",
+    investor_name: "PT INDOLIFE PENSIONTAMA",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -41026,7 +41026,7 @@ const KSEI_DATA = [
   {
     share_code: "IMJS",
     issuer_name: "INDOMOBIL MULTI JASA Tbk",
-    investor_name: "PT. INDOMOBIL SUKSES INTERNASIONAL TBK",
+    investor_name: "PT INDOMOBIL SUKSES INTERNASIONAL TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -41039,7 +41039,7 @@ const KSEI_DATA = [
   {
     share_code: "IMPC",
     issuer_name: "IMPACK PRATAMA INDUSTRI Tbk",
-    investor_name: "PT. HARIMAS TUNGGAL PERKASA",
+    investor_name: "PT HARIMAS TUNGGAL PERKASA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -41117,7 +41117,7 @@ const KSEI_DATA = [
   {
     share_code: "INAF",
     issuer_name: "INDOFARMA Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -41221,7 +41221,7 @@ const KSEI_DATA = [
   {
     share_code: "INAI",
     issuer_name: "INDAL ALUMINIUM INDUSTRY Tbk",
-    investor_name: "HUSIN INVESTAMA, PT.",
+    investor_name: "HUSIN INVESTAMA, PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -41247,7 +41247,7 @@ const KSEI_DATA = [
   {
     share_code: "INAI",
     issuer_name: "INDAL ALUMINIUM INDUSTRY Tbk",
-    investor_name: "PT. Alumindo Industrial Estate",
+    investor_name: "PT Alumindo Industrial Estate",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -41976,7 +41976,7 @@ const KSEI_DATA = [
   {
     share_code: "INDY",
     issuer_name: "INDIKA ENERGY Tbk",
-    investor_name: "PT. AIA FINANCIAL",
+    investor_name: "PT AIA FINANCIAL",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -42652,7 +42652,7 @@ const KSEI_DATA = [
   {
     share_code: "INPS",
     issuer_name: "INDAH PRAKASA SENTOSA Tbk",
-    investor_name: "PT. SURYA PERKASA SENTOSA",
+    investor_name: "PT SURYA PERKASA SENTOSA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -42665,7 +42665,7 @@ const KSEI_DATA = [
   {
     share_code: "INPS",
     issuer_name: "INDAH PRAKASA SENTOSA Tbk",
-    investor_name: "PT. SINAR RATU SENTOSA",
+    investor_name: "PT SINAR RATU SENTOSA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -42769,7 +42769,7 @@ const KSEI_DATA = [
   {
     share_code: "INTA",
     issuer_name: "INTRACO PENTA Tbk",
-    investor_name: "PT. SHALUMINDO INVESTAMA",
+    investor_name: "PT SHALUMINDO INVESTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -42899,7 +42899,7 @@ const KSEI_DATA = [
   {
     share_code: "INTA",
     issuer_name: "INTRACO PENTA Tbk",
-    investor_name: "PT. HP CAPITAL RESOURCES",
+    investor_name: "PT HP CAPITAL RESOURCES",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -43068,7 +43068,7 @@ const KSEI_DATA = [
   {
     share_code: "INTP",
     issuer_name: "INDOCEMENT TUNGGAL PRAKARSA Tbk",
-    investor_name: "PT. Indocement Tunggal Prakarsa Tbk",
+    investor_name: "PT Indocement Tunggal Prakarsa Tbk",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -43289,7 +43289,7 @@ const KSEI_DATA = [
   {
     share_code: "IPCC",
     issuer_name: "INDONESIA KENDARAAN TERMINAL Tbk",
-    investor_name: "PT. PELABUHAN INDONESIA INVESTAMA",
+    investor_name: "PT PELABUHAN INDONESIA INVESTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -43328,7 +43328,7 @@ const KSEI_DATA = [
   {
     share_code: "IPCM",
     issuer_name: "JASA ARMADA INDONESIA Tbk",
-    investor_name: "PT. PELABUHAN INDONESIA INVESTAMA",
+    investor_name: "PT PELABUHAN INDONESIA INVESTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -43406,7 +43406,7 @@ const KSEI_DATA = [
   {
     share_code: "IPOL",
     issuer_name: "INDOPOLY SWAKARSA INDUSTRY Tbk",
-    investor_name: "PT. HOKI INVESTASI SEJATI",
+    investor_name: "PT HOKI INVESTASI SEJATI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -43432,7 +43432,7 @@ const KSEI_DATA = [
   {
     share_code: "IPOL",
     issuer_name: "INDOPOLY SWAKARSA INDUSTRY Tbk",
-    investor_name: "PT.MITRA SUKSES BERSAMA MANDIRI",
+    investor_name: "PTMITRA SUKSES BERSAMA MANDIRI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -43562,7 +43562,7 @@ const KSEI_DATA = [
   {
     share_code: "IPPE",
     issuer_name: "INDO PURECO PRATAMA Tbk",
-    investor_name: "PT.CIPTA IHYA NUSANTARA",
+    investor_name: "PTCIPTA IHYA NUSANTARA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -43822,7 +43822,7 @@ const KSEI_DATA = [
   {
     share_code: "ISAP",
     issuer_name: "ISRA PRESISI INDONESIA Tbk",
-    investor_name: "PT. DUA PUTRA BERSINERGI",
+    investor_name: "PT DUA PUTRA BERSINERGI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -44083,7 +44083,7 @@ const KSEI_DATA = [
   {
     share_code: "ISSP",
     issuer_name: "STEEL PIPE INDUSTRY OF INDONESIA Tbk",
-    investor_name: "PT. STEEL PIPE INDUSTRY OF INDONESIA Tbk",
+    investor_name: "PT STEEL PIPE INDUSTRY OF INDONESIA Tbk",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -44773,7 +44773,7 @@ const KSEI_DATA = [
   {
     share_code: "JECC",
     issuer_name: "JEMBO CABLE COMPANY Tbk",
-    investor_name: "PT. INDOLIFE PENSIONTAMA",
+    investor_name: "PT INDOLIFE PENSIONTAMA",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -45163,7 +45163,7 @@ const KSEI_DATA = [
   {
     share_code: "JKON",
     issuer_name: "JAYA KONSTRUKSI MANGGALA PRATAMA Tbk",
-    investor_name: "PT. PEMBANGUNAN JAYA",
+    investor_name: "PT PEMBANGUNAN JAYA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -45176,7 +45176,7 @@ const KSEI_DATA = [
   {
     share_code: "JKON",
     issuer_name: "JAYA KONSTRUKSI MANGGALA PRATAMA Tbk",
-    investor_name: "PT. JAYA JASA NIAGA",
+    investor_name: "PT JAYA JASA NIAGA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -45579,7 +45579,7 @@ const KSEI_DATA = [
   {
     share_code: "JRPT",
     issuer_name: "JAYA REAL PROPERTY Tbk",
-    investor_name: "PT. PEMBANGUNAN JAYA",
+    investor_name: "PT PEMBANGUNAN JAYA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -45618,7 +45618,7 @@ const KSEI_DATA = [
   {
     share_code: "JRPT",
     issuer_name: "JAYA REAL PROPERTY Tbk",
-    investor_name: "PT. JAYA JASA NIAGA",
+    investor_name: "PT JAYA JASA NIAGA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -45710,7 +45710,7 @@ const KSEI_DATA = [
   {
     share_code: "JSKY",
     issuer_name: "SKY ENERGY INDONESIA Tbk",
-    investor_name: "PT. TRINITAN GLOBAL PASIFIK",
+    investor_name: "PT TRINITAN GLOBAL PASIFIK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -45945,7 +45945,7 @@ const KSEI_DATA = [
   {
     share_code: "JTPE",
     issuer_name: "JASUINDO TIGA PERKASA Tbk",
-    investor_name: "PT. Jasuindo Multi Investama",
+    investor_name: "PT Jasuindo Multi Investama",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -46127,7 +46127,7 @@ const KSEI_DATA = [
   {
     share_code: "KAEF",
     issuer_name: "KIMIA FARMA Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -46140,7 +46140,7 @@ const KSEI_DATA = [
   {
     share_code: "KAQI",
     issuer_name: "JANTRA GRUPO INDONESIA Tbk",
-    investor_name: "PT. TAHTRA KERTAJAYA INDONESIA",
+    investor_name: "PT TAHTRA KERTAJAYA INDONESIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -46361,7 +46361,7 @@ const KSEI_DATA = [
   {
     share_code: "KBLI",
     issuer_name: "KMI Wire and Cable Tbk",
-    investor_name: "PT.OMEDATA ELECTRONICS",
+    investor_name: "PTOMEDATA ELECTRONICS",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -46517,7 +46517,7 @@ const KSEI_DATA = [
   {
     share_code: "KBLM",
     issuer_name: "KABELINDO MURNI Tbk",
-    investor_name: "PT. SIBALEC",
+    investor_name: "PT SIBALEC",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -46530,7 +46530,7 @@ const KSEI_DATA = [
   {
     share_code: "KBLM",
     issuer_name: "KABELINDO MURNI Tbk",
-    investor_name: "PT. MESINDO AGUNG NUSANTARA",
+    investor_name: "PT MESINDO AGUNG NUSANTARA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -46856,7 +46856,7 @@ const KSEI_DATA = [
   {
     share_code: "KDSI",
     issuer_name: "KEDAWUNG SETIA INDUSTRIAL Tbk",
-    investor_name: "PT. HOKI INVESTASI SEJATI",
+    investor_name: "PT HOKI INVESTASI SEJATI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -47142,7 +47142,7 @@ const KSEI_DATA = [
   {
     share_code: "KEJU",
     issuer_name: "MULIA BOGA RAYA Tbk",
-    investor_name: "PT. CITRA SEJATI SENTOSA",
+    investor_name: "PT CITRA SEJATI SENTOSA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -47233,7 +47233,7 @@ const KSEI_DATA = [
   {
     share_code: "KIAS",
     issuer_name: "KERAMIKA INDONESIA ASSOSIASI Tbk",
-    investor_name: "PT. HP CAPITAL RESOURCES",
+    investor_name: "PT HP CAPITAL RESOURCES",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -47428,7 +47428,7 @@ const KSEI_DATA = [
   {
     share_code: "KIJA",
     issuer_name: "KAWASAN INDUSTRI JABABEKA Tbk",
-    investor_name: "PT. KINOLOGI SEMESTA NUSANTARA",
+    investor_name: "PT KINOLOGI SEMESTA NUSANTARA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -47493,7 +47493,7 @@ const KSEI_DATA = [
   {
     share_code: "KIJA",
     issuer_name: "KAWASAN INDUSTRI JABABEKA Tbk",
-    investor_name: "PT. BERKAT MITRA SEMESTA",
+    investor_name: "PT BERKAT MITRA SEMESTA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -47597,7 +47597,7 @@ const KSEI_DATA = [
   {
     share_code: "KING",
     issuer_name: "HOFFMEN CLEANINDO Tbk",
-    investor_name: "PT. ADITHANA KARYA SENTOSA",
+    investor_name: "PT ADITHANA KARYA SENTOSA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -47623,7 +47623,7 @@ const KSEI_DATA = [
   {
     share_code: "KINO",
     issuer_name: "KINO INDONESIA Tbk",
-    investor_name: "PT. KINO INVESTINDO",
+    investor_name: "PT KINO INVESTINDO",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -47727,7 +47727,7 @@ const KSEI_DATA = [
   {
     share_code: "KIOS",
     issuer_name: "KIOSON KOMERSIAL INDONESIA Tbk",
-    investor_name: "PT. PRAMBANAN INVESTASI SUKSES",
+    investor_name: "PT PRAMBANAN INVESTASI SUKSES",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -47766,7 +47766,7 @@ const KSEI_DATA = [
   {
     share_code: "KIOS",
     issuer_name: "KIOSON KOMERSIAL INDONESIA Tbk",
-    investor_name: "PT. SEMESTA DAYA MAKMUR",
+    investor_name: "PT SEMESTA DAYA MAKMUR",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -48065,7 +48065,7 @@ const KSEI_DATA = [
   {
     share_code: "KKGI",
     issuer_name: "RESOURCE ALAM INDONESIA Tbk",
-    investor_name: "PT. SEJAHTERA JAYA CITA",
+    investor_name: "PT SEJAHTERA JAYA CITA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -48312,7 +48312,7 @@ const KSEI_DATA = [
   {
     share_code: "KLIN",
     issuer_name: "KLINKO KARYA IMAJI Tbk",
-    investor_name: "PT. SAMICO CAPITAL UTAMA MULIA",
+    investor_name: "PT SAMICO CAPITAL UTAMA MULIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -48325,7 +48325,7 @@ const KSEI_DATA = [
   {
     share_code: "KLIN",
     issuer_name: "KLINKO KARYA IMAJI Tbk",
-    investor_name: "PT. WIDJAJA BERKAT GEMILANG",
+    investor_name: "PT WIDJAJA BERKAT GEMILANG",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -48494,7 +48494,7 @@ const KSEI_DATA = [
   {
     share_code: "KMTR",
     issuer_name: "KIRANA MEGATARA Tbk",
-    investor_name: "TRIPUTRA PERSADA MEGATARA PT.",
+    investor_name: "TRIPUTRA PERSADA MEGATARA PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -48884,7 +48884,7 @@ const KSEI_DATA = [
   {
     share_code: "KONI",
     issuer_name: "PERDANA BANGUN PUSAKA Tbk",
-    investor_name: "PT. INDOLIFE PENSIONTAMA",
+    investor_name: "PT INDOLIFE PENSIONTAMA",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -48936,7 +48936,7 @@ const KSEI_DATA = [
   {
     share_code: "KOPI",
     issuer_name: "MITRA ENERGI PERSADA Tbk",
-    investor_name: "PT. Mulya Tara Mandiri",
+    investor_name: "PT Mulya Tara Mandiri",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -48962,7 +48962,7 @@ const KSEI_DATA = [
   {
     share_code: "KOPI",
     issuer_name: "MITRA ENERGI PERSADA Tbk",
-    investor_name: "PT. GLOBAL PERKASA INVESTINDO",
+    investor_name: "PT GLOBAL PERKASA INVESTINDO",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -49040,7 +49040,7 @@ const KSEI_DATA = [
   {
     share_code: "KOTA",
     issuer_name: "DMS PROPERTINDO Tbk",
-    investor_name: "PT. ANARGYA ASET MANAJEMEN",
+    investor_name: "PT ANARGYA ASET MANAJEMEN",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -49079,7 +49079,7 @@ const KSEI_DATA = [
   {
     share_code: "KOTA",
     issuer_name: "DMS PROPERTINDO Tbk",
-    investor_name: "PT. Flying Fox Nusantara",
+    investor_name: "PT Flying Fox Nusantara",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -49092,7 +49092,7 @@ const KSEI_DATA = [
   {
     share_code: "KOTA",
     issuer_name: "DMS PROPERTINDO Tbk",
-    investor_name: "PT. Askar Pelangi Abadi",
+    investor_name: "PT Askar Pelangi Abadi",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -49105,7 +49105,7 @@ const KSEI_DATA = [
   {
     share_code: "KOTA",
     issuer_name: "DMS PROPERTINDO Tbk",
-    investor_name: "PT. INDO PANCA BENUA",
+    investor_name: "PT INDO PANCA BENUA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -49131,7 +49131,7 @@ const KSEI_DATA = [
   {
     share_code: "KOTA",
     issuer_name: "DMS PROPERTINDO Tbk",
-    investor_name: "PT. SITRADE COAL",
+    investor_name: "PT SITRADE COAL",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -49170,7 +49170,7 @@ const KSEI_DATA = [
   {
     share_code: "KPIG",
     issuer_name: "MNC LAND Tbk",
-    investor_name: "PT. MNC ASIA HOLDING TBK",
+    investor_name: "PT MNC ASIA HOLDING TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -49209,7 +49209,7 @@ const KSEI_DATA = [
   {
     share_code: "KPIG",
     issuer_name: "MNC LAND Tbk",
-    investor_name: "PT. MNC SEKURITAS",
+    investor_name: "PT MNC SEKURITAS",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -49405,7 +49405,7 @@ const KSEI_DATA = [
   {
     share_code: "KRAS",
     issuer_name: "KRAKATAU STEEL Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -49587,7 +49587,7 @@ const KSEI_DATA = [
   {
     share_code: "KREN",
     issuer_name: "QUANTUM CLOVERA INVESTAMA Tbk",
-    investor_name: "PT. KINGSLAND INTERNATIONAL",
+    investor_name: "PT KINGSLAND INTERNATIONAL",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -49808,7 +49808,7 @@ const KSEI_DATA = [
   {
     share_code: "KUAS",
     issuer_name: "ACE OLDFIELDS Tbk",
-    investor_name: "PT. ANUGRAH PRIMA INVESTAMA",
+    investor_name: "PT ANUGRAH PRIMA INVESTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -49821,7 +49821,7 @@ const KSEI_DATA = [
   {
     share_code: "KUAS",
     issuer_name: "ACE OLDFIELDS Tbk",
-    investor_name: "PT. BONA DEKA JAVA",
+    investor_name: "PT BONA DEKA JAVA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -49834,7 +49834,7 @@ const KSEI_DATA = [
   {
     share_code: "KUAS",
     issuer_name: "ACE OLDFIELDS Tbk",
-    investor_name: "PT. MDR RUKUN DAMAI MANDIRI",
+    investor_name: "PT MDR RUKUN DAMAI MANDIRI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -49860,7 +49860,7 @@ const KSEI_DATA = [
   {
     share_code: "KUAS",
     issuer_name: "ACE OLDFIELDS Tbk",
-    investor_name: "PT. JATRA JAYA SENA",
+    investor_name: "PT JATRA JAYA SENA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -49886,7 +49886,7 @@ const KSEI_DATA = [
   {
     share_code: "KUAS",
     issuer_name: "ACE OLDFIELDS Tbk",
-    investor_name: "PT. PURNAMA PRADANA USAHA",
+    investor_name: "PT PURNAMA PRADANA USAHA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -49925,7 +49925,7 @@ const KSEI_DATA = [
   {
     share_code: "LABA",
     issuer_name: "GREEN POWER GROUP Tbk",
-    investor_name: "PT. Longping Investasi Indonesia",
+    investor_name: "PT Longping Investasi Indonesia",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -50055,7 +50055,7 @@ const KSEI_DATA = [
   {
     share_code: "LAND",
     issuer_name: "TRIMITRA PROPERTINDO Tbk",
-    investor_name: "PT. GRAHA MULIA INDOTAMA",
+    investor_name: "PT GRAHA MULIA INDOTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -50068,7 +50068,7 @@ const KSEI_DATA = [
   {
     share_code: "LAND",
     issuer_name: "TRIMITRA PROPERTINDO Tbk",
-    investor_name: "PT. TRIDAYA BANGUN CIPTA",
+    investor_name: "PT TRIDAYA BANGUN CIPTA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -50224,7 +50224,7 @@ const KSEI_DATA = [
   {
     share_code: "LCGP",
     issuer_name: "EUREKA PRIMA JAKARTA Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -50289,7 +50289,7 @@ const KSEI_DATA = [
   {
     share_code: "LCGP",
     issuer_name: "EUREKA PRIMA JAKARTA Tbk",
-    investor_name: "PT. Fajar Indah Makmur Jaya",
+    investor_name: "PT Fajar Indah Makmur Jaya",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -50302,7 +50302,7 @@ const KSEI_DATA = [
   {
     share_code: "LCGP",
     issuer_name: "EUREKA PRIMA JAKARTA Tbk",
-    investor_name: "PT. ASURANSI JIWA IFG",
+    investor_name: "PT ASURANSI JIWA IFG",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -50419,7 +50419,7 @@ const KSEI_DATA = [
   {
     share_code: "LCGP",
     issuer_name: "EUREKA PRIMA JAKARTA Tbk",
-    investor_name: "PT. SATA SAMUDRA INTERNASIONAL",
+    investor_name: "PT SATA SAMUDRA INTERNASIONAL",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -50836,7 +50836,7 @@ const KSEI_DATA = [
   {
     share_code: "LIFE",
     issuer_name: "MSIG LIFE INSURANCE INDONESIA Tbk",
-    investor_name: "PT.TIMUR SUBUR",
+    investor_name: "PTTIMUR SUBUR",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -51070,7 +51070,7 @@ const KSEI_DATA = [
   {
     share_code: "LIVE",
     issuer_name: "HOMECO VICTORIA MAKMUR Tbk",
-    investor_name: "PT. HOMECO GLOBAL INVESTASI",
+    investor_name: "PT HOMECO GLOBAL INVESTASI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -51774,7 +51774,7 @@ const KSEI_DATA = [
   {
     share_code: "LPCK",
     issuer_name: "LIPPO CIKARANG Tbk",
-    investor_name: "KEMUNING SATIATAMA, PT.",
+    investor_name: "KEMUNING SATIATAMA, PT",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -51814,7 +51814,7 @@ const KSEI_DATA = [
   {
     share_code: "LPGI",
     issuer_name: "LIPPO GENERAL INSURANCE Tbk",
-    investor_name: "PT. HANWHA LIFE INSURANCE INDONESIA",
+    investor_name: "PT HANWHA LIFE INSURANCE INDONESIA",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -51840,7 +51840,7 @@ const KSEI_DATA = [
   {
     share_code: "LPIN",
     issuer_name: "MULTI PRIMA SEJAHTERA Tbk",
-    investor_name: "PT. MULTIPOLAR TBK",
+    investor_name: "PT MULTIPOLAR TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -52010,7 +52010,7 @@ const KSEI_DATA = [
   {
     share_code: "LPKR",
     issuer_name: "LIPPO KARAWACI Tbk",
-    investor_name: "PT. MULTIPOLAR TBK",
+    investor_name: "PT MULTIPOLAR TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -52206,7 +52206,7 @@ const KSEI_DATA = [
   {
     share_code: "LPPF",
     issuer_name: "MATAHARI DEPARTMENT STORE Tbk",
-    investor_name: "PT. MULTIPOLAR TBK",
+    investor_name: "PT MULTIPOLAR TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -52989,7 +52989,7 @@ const KSEI_DATA = [
   {
     share_code: "MABA",
     issuer_name: "MARGA ABHINAYA ABADI Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -53054,7 +53054,7 @@ const KSEI_DATA = [
   {
     share_code: "MABA",
     issuer_name: "MARGA ABHINAYA ABADI Tbk",
-    investor_name: "PT. Sejahtera Mahkota Persada",
+    investor_name: "PT Sejahtera Mahkota Persada",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -53132,7 +53132,7 @@ const KSEI_DATA = [
   {
     share_code: "MAGP",
     issuer_name: "MULTI AGRO GEMILANG PLANTATION Tbk",
-    investor_name: "PT. Santika Griya Persada",
+    investor_name: "PT Santika Griya Persada",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -53783,7 +53783,7 @@ const KSEI_DATA = [
   {
     share_code: "MAPB",
     issuer_name: "MAP BOGA ADIPERKASA Tbk",
-    investor_name: "PT. LUMBUNG ALAM SENTOSA",
+    investor_name: "PT LUMBUNG ALAM SENTOSA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -53913,7 +53913,7 @@ const KSEI_DATA = [
   {
     share_code: "MARI",
     issuer_name: "MAHAKA RADIO INTEGRA Tbk",
-    investor_name: "PT. Beyond Media",
+    investor_name: "PT Beyond Media",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -54472,7 +54472,7 @@ const KSEI_DATA = [
   {
     share_code: "MBMA",
     issuer_name: "MERDEKA BATTERY MATERIALS Tbk",
-    investor_name: "PT. ALAM PERMAI",
+    investor_name: "PT ALAM PERMAI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -54576,7 +54576,7 @@ const KSEI_DATA = [
   {
     share_code: "MBMA",
     issuer_name: "MERDEKA BATTERY MATERIALS Tbk",
-    investor_name: "PT. SUWARNA ARTA MANDIRI",
+    investor_name: "PT SUWARNA ARTA MANDIRI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -54732,7 +54732,7 @@ const KSEI_DATA = [
   {
     share_code: "MCAS",
     issuer_name: "M CASH INTEGRASI Tbk",
-    investor_name: "PT. 1 INTI DOT COM",
+    investor_name: "PT 1 INTI DOT COM",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -54823,7 +54823,7 @@ const KSEI_DATA = [
   {
     share_code: "MCAS",
     issuer_name: "M CASH INTEGRASI Tbk",
-    investor_name: "PT. KRESNA ASSET MANAGEMENT S/A PT KRESNA USAHA KREATIF",
+    investor_name: "PT KRESNA ASSET MANAGEMENT S/A PT KRESNA USAHA KREATIF",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -54979,7 +54979,7 @@ const KSEI_DATA = [
   {
     share_code: "MCOL",
     issuer_name: "PRIMA ANDALAN MANDIRI Tbk",
-    investor_name: "PT. PRIMA ANDALAN UTAMA",
+    investor_name: "PT PRIMA ANDALAN UTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -55005,7 +55005,7 @@ const KSEI_DATA = [
   {
     share_code: "MCOL",
     issuer_name: "PRIMA ANDALAN MANDIRI Tbk",
-    investor_name: "PT. KARYA TEKNIK INVESTAMA",
+    investor_name: "PT KARYA TEKNIK INVESTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -55096,7 +55096,7 @@ const KSEI_DATA = [
   {
     share_code: "MCOR",
     issuer_name: "BANK CHINA CONSTRUCTION BANK INDONESIA Tbk",
-    investor_name: "PT.TIMUR SUBUR",
+    investor_name: "PTTIMUR SUBUR",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -55318,7 +55318,7 @@ const KSEI_DATA = [
   {
     share_code: "MDKA",
     issuer_name: "MERDEKA COPPER GOLD Tbk",
-    investor_name: "PT. SUWARNA ARTA MANDIRI",
+    investor_name: "PT SUWARNA ARTA MANDIRI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -55761,7 +55761,7 @@ const KSEI_DATA = [
   {
     share_code: "MDLN",
     issuer_name: "MODERNLAND REALTY Tbk",
-    investor_name: "PT. BUMI PERKASA PERMAI",
+    investor_name: "PT BUMI PERKASA PERMAI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -55839,7 +55839,7 @@ const KSEI_DATA = [
   {
     share_code: "MDLN",
     issuer_name: "MODERNLAND REALTY Tbk",
-    investor_name: "PT. AMAN LANGGENG SENTOSA",
+    investor_name: "PT AMAN LANGGENG SENTOSA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -55982,7 +55982,7 @@ const KSEI_DATA = [
   {
     share_code: "MEDC",
     issuer_name: "MEDCO ENERGI INTERNASIONAL Tbk",
-    investor_name: "PT. MEDCO DAYA ABADI LESTARI",
+    investor_name: "PT MEDCO DAYA ABADI LESTARI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -56229,7 +56229,7 @@ const KSEI_DATA = [
   {
     share_code: "MEGA",
     issuer_name: "BANK MEGA Tbk",
-    investor_name: "PT. SALIM CHEMICALS CORPORA",
+    investor_name: "PT SALIM CHEMICALS CORPORA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -56346,7 +56346,7 @@ const KSEI_DATA = [
   {
     share_code: "MENN",
     issuer_name: "MENN TEKNOLOGI INDONESIA Tbk",
-    investor_name: "PT. NEGARA MAJU MAKMUR",
+    investor_name: "PT NEGARA MAJU MAKMUR",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -56814,7 +56814,7 @@ const KSEI_DATA = [
   {
     share_code: "MGNA",
     issuer_name: "MAGNA INVESTAMA MANDIRI Tbk",
-    investor_name: "PT. Victoria Investama Tbk",
+    investor_name: "PT Victoria Investama Tbk",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -56827,7 +56827,7 @@ const KSEI_DATA = [
   {
     share_code: "MGNA",
     issuer_name: "MAGNA INVESTAMA MANDIRI Tbk",
-    investor_name: "PT. REGIS PRATAMA INDONESIA",
+    investor_name: "PT REGIS PRATAMA INDONESIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -56840,7 +56840,7 @@ const KSEI_DATA = [
   {
     share_code: "MGNA",
     issuer_name: "MAGNA INVESTAMA MANDIRI Tbk",
-    investor_name: "PT. BINTANG MITRA SEMESTARAYA TBK",
+    investor_name: "PT BINTANG MITRA SEMESTARAYA TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -56866,7 +56866,7 @@ const KSEI_DATA = [
   {
     share_code: "MGNA",
     issuer_name: "MAGNA INVESTAMA MANDIRI Tbk",
-    investor_name: "PT. Askar Pelangi Abadi",
+    investor_name: "PT Askar Pelangi Abadi",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -56957,7 +56957,7 @@ const KSEI_DATA = [
   {
     share_code: "MGRO",
     issuer_name: "MAHKOTA GROUP Tbk",
-    investor_name: "PT. MAHKOTA GROUP",
+    investor_name: "PT MAHKOTA GROUP",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -57022,7 +57022,7 @@ const KSEI_DATA = [
   {
     share_code: "MHKI",
     issuer_name: "MULTI HANNA KREASINDO Tbk",
-    investor_name: "PT. MULTI HANNA SINERGITAMA",
+    investor_name: "PT MULTI HANNA SINERGITAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -57074,7 +57074,7 @@ const KSEI_DATA = [
   {
     share_code: "MICE",
     issuer_name: "MULTI INDOCITRA Tbk",
-    investor_name: "PT. BUANA GRAHA UTAMA",
+    investor_name: "PT BUANA GRAHA UTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -57100,7 +57100,7 @@ const KSEI_DATA = [
   {
     share_code: "MICE",
     issuer_name: "MULTI INDOCITRA Tbk",
-    investor_name: "PT. HOKI INVESTASI SEJATI",
+    investor_name: "PT HOKI INVESTASI SEJATI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -57555,7 +57555,7 @@ const KSEI_DATA = [
   {
     share_code: "MIRA",
     issuer_name: "MITRA INTERNATIONAL RESOURCES Tbk",
-    investor_name: "PT. INTI KENCANA PRANAJATI",
+    investor_name: "PT INTI KENCANA PRANAJATI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "",
@@ -57568,7 +57568,7 @@ const KSEI_DATA = [
   {
     share_code: "MIRA",
     issuer_name: "MITRA INTERNATIONAL RESOURCES Tbk",
-    investor_name: "PT. MITRA MURNI EXPRESSINDO",
+    investor_name: "PT MITRA MURNI EXPRESSINDO",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -57607,7 +57607,7 @@ const KSEI_DATA = [
   {
     share_code: "MIRA",
     issuer_name: "MITRA INTERNATIONAL RESOURCES Tbk",
-    investor_name: "PT. GANDA KARYA MAKMUR",
+    investor_name: "PT GANDA KARYA MAKMUR",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -57763,7 +57763,7 @@ const KSEI_DATA = [
   {
     share_code: "MITI",
     issuer_name: "MITRA INVESTINDO Tbk",
-    investor_name: "PT. PRIME ASIA CAPITAL",
+    investor_name: "PT PRIME ASIA CAPITAL",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -57841,7 +57841,7 @@ const KSEI_DATA = [
   {
     share_code: "MKAP",
     issuer_name: "MULTIKARYA ASIA PASIFIK RAYA Tbk",
-    investor_name: "PT. INTERNATIONAL SAWO RESOURCES",
+    investor_name: "PT INTERNATIONAL SAWO RESOURCES",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -57919,7 +57919,7 @@ const KSEI_DATA = [
   {
     share_code: "MKNT",
     issuer_name: "MITRA KOMUNIKASI NUSANTARA Tbk",
-    investor_name: "PT. SUN INTERNATIONAL CAPITAL",
+    investor_name: "PT SUN INTERNATIONAL CAPITAL",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -57958,7 +57958,7 @@ const KSEI_DATA = [
   {
     share_code: "MKNT",
     issuer_name: "MITRA KOMUNIKASI NUSANTARA Tbk",
-    investor_name: "PT. MEGAH ANGKASA PERKASA",
+    investor_name: "PT MEGAH ANGKASA PERKASA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -58036,7 +58036,7 @@ const KSEI_DATA = [
   {
     share_code: "MKNT",
     issuer_name: "MITRA KOMUNIKASI NUSANTARA Tbk",
-    investor_name: "PT. Askar Pelangi Abadi",
+    investor_name: "PT Askar Pelangi Abadi",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -58140,7 +58140,7 @@ const KSEI_DATA = [
   {
     share_code: "MKPI",
     issuer_name: "METROPOLITAN KENTJANA Tbk",
-    investor_name: "PT.Karuna Paramita Propertindo",
+    investor_name: "PTKaruna Paramita Propertindo",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -58179,7 +58179,7 @@ const KSEI_DATA = [
   {
     share_code: "MKPI",
     issuer_name: "METROPOLITAN KENTJANA Tbk",
-    investor_name: "PT. PENTA COSMOPOLITAN",
+    investor_name: "PT PENTA COSMOPOLITAN",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -58426,7 +58426,7 @@ const KSEI_DATA = [
   {
     share_code: "MLIA",
     issuer_name: "MULIA INDUSTRINDO Tbk",
-    investor_name: "PT. EKA GUNATAMA MANDIRI",
+    investor_name: "PT EKA GUNATAMA MANDIRI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -58439,7 +58439,7 @@ const KSEI_DATA = [
   {
     share_code: "MLIA",
     issuer_name: "MULIA INDUSTRINDO Tbk",
-    investor_name: "PT. MULIA GRAHAPERMAI",
+    investor_name: "PT MULIA GRAHAPERMAI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -58517,7 +58517,7 @@ const KSEI_DATA = [
   {
     share_code: "MLIA",
     issuer_name: "MULIA INDUSTRINDO Tbk",
-    investor_name: "KAWAN ALAM BERSAMA,PT.",
+    investor_name: "KAWAN ALAM BERSAMA,PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -58648,7 +58648,7 @@ const KSEI_DATA = [
   {
     share_code: "MLPT",
     issuer_name: "MULTIPOLAR TECHNOLOGY Tbk",
-    investor_name: "PT. MULTIPOLAR TBK",
+    investor_name: "PT MULTIPOLAR TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -58726,7 +58726,7 @@ const KSEI_DATA = [
   {
     share_code: "MMIX",
     issuer_name: "MULTI MEDIKA INTERNASIONAL Tbk",
-    investor_name: "PT. MULTI INTI USAHA",
+    investor_name: "PT MULTI INTI USAHA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -58817,7 +58817,7 @@ const KSEI_DATA = [
   {
     share_code: "MMIX",
     issuer_name: "MULTI MEDIKA INTERNASIONAL Tbk",
-    investor_name: "PT. SUMBER CAHAYA SINERGI",
+    investor_name: "PT SUMBER CAHAYA SINERGI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -58895,7 +58895,7 @@ const KSEI_DATA = [
   {
     share_code: "MMLP",
     issuer_name: "MEGA MANUNGGAL PROPERTY Tbk",
-    investor_name: "PT. INTIMANUNGGAL MULTI DEVELOPMENT",
+    investor_name: "PT INTIMANUNGGAL MULTI DEVELOPMENT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -58973,7 +58973,7 @@ const KSEI_DATA = [
   {
     share_code: "MNCN",
     issuer_name: "MEDIA NUSANTARA CITRA Tbk",
-    investor_name: "PT. MNC ASIA HOLDING TBK",
+    investor_name: "PT MNC ASIA HOLDING TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -59103,7 +59103,7 @@ const KSEI_DATA = [
   {
     share_code: "MOLI",
     issuer_name: "MADUSARI MURNI INDAH Tbk",
-    investor_name: "PT. SEJAHTERA INVESTAMA INDAH",
+    investor_name: "PT SEJAHTERA INVESTAMA INDAH",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -59571,7 +59571,7 @@ const KSEI_DATA = [
   {
     share_code: "MPPA",
     issuer_name: "MATAHARI PUTRA PRIMA Tbk",
-    investor_name: "PT. MULTIPOLAR TBK",
+    investor_name: "PT MULTIPOLAR TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -59649,7 +59649,7 @@ const KSEI_DATA = [
   {
     share_code: "MPRO",
     issuer_name: "MAHA PROPERTI INDONESIA Tbk",
-    investor_name: "PT. BINTANG EXPRESS SARANA",
+    investor_name: "PT BINTANG EXPRESS SARANA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -59935,7 +59935,7 @@ const KSEI_DATA = [
   {
     share_code: "MRAT",
     issuer_name: "MUSTIKA RATU Tbk",
-    investor_name: "PT. CANDRAKIRANA INDAH PERMATA",
+    investor_name: "PT CANDRAKIRANA INDAH PERMATA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -60013,7 +60013,7 @@ const KSEI_DATA = [
   {
     share_code: "MREI",
     issuer_name: "MASKAPAI REASURANSI INDONESIA Tbk",
-    investor_name: "PT. GRAHA SENTOSA PERSADA",
+    investor_name: "PT GRAHA SENTOSA PERSADA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -60119,7 +60119,7 @@ const KSEI_DATA = [
   {
     share_code: "MREI",
     issuer_name: "MASKAPAI REASURANSI INDONESIA Tbk",
-    investor_name: "PT. SELARAS DWIPANTARA PRIMAMUKTI",
+    investor_name: "PT SELARAS DWIPANTARA PRIMAMUKTI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -60171,7 +60171,7 @@ const KSEI_DATA = [
   {
     share_code: "MREI",
     issuer_name: "MASKAPAI REASURANSI INDONESIA Tbk",
-    investor_name: "PT. SING LING PERKASA",
+    investor_name: "PT SING LING PERKASA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -60353,7 +60353,7 @@ const KSEI_DATA = [
   {
     share_code: "MSIN",
     issuer_name: "MNC DIGITAL ENTERTAINMENT Tbk",
-    investor_name: "PT.MEDIA NUSANTARA CITRA TBK",
+    investor_name: "PTMEDIA NUSANTARA CITRA TBK",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -60366,7 +60366,7 @@ const KSEI_DATA = [
   {
     share_code: "MSIN",
     issuer_name: "MNC DIGITAL ENTERTAINMENT Tbk",
-    investor_name: "PT. MNC SEKURITAS",
+    investor_name: "PT MNC SEKURITAS",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -60691,7 +60691,7 @@ const KSEI_DATA = [
   {
     share_code: "MSTI",
     issuer_name: "MASTERSYSTEM INFOTAMA Tbk",
-    investor_name: "PT. AIA FINANCIAL",
+    investor_name: "PT AIA FINANCIAL",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -60795,7 +60795,7 @@ const KSEI_DATA = [
   {
     share_code: "MTDL",
     issuer_name: "METRODATA ELECTRONICS Tbk",
-    investor_name: "PT. HOKI INVESTASI SEJATI",
+    investor_name: "PT HOKI INVESTASI SEJATI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -60977,7 +60977,7 @@ const KSEI_DATA = [
   {
     share_code: "MTFN",
     issuer_name: "CAPITALINC INVESTMENT Tbk",
-    investor_name: "PT. DWINA NATURA",
+    investor_name: "PT DWINA NATURA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -61146,7 +61146,7 @@ const KSEI_DATA = [
   {
     share_code: "MTFN",
     issuer_name: "CAPITALINC INVESTMENT Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -61172,7 +61172,7 @@ const KSEI_DATA = [
   {
     share_code: "MTFN",
     issuer_name: "CAPITALINC INVESTMENT Tbk",
-    investor_name: "PT. Madani Capital Investment",
+    investor_name: "PT Madani Capital Investment",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -61198,7 +61198,7 @@ const KSEI_DATA = [
   {
     share_code: "MTLA",
     issuer_name: "METROPOLITAN LAND Tbk",
-    investor_name: "PT. Ciputra Nusantara",
+    investor_name: "PT Ciputra Nusantara",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -61237,7 +61237,7 @@ const KSEI_DATA = [
   {
     share_code: "MTLA",
     issuer_name: "METROPOLITAN LAND Tbk",
-    investor_name: "PT. INDOLIFE PENSIONTAMA",
+    investor_name: "PT INDOLIFE PENSIONTAMA",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -61289,7 +61289,7 @@ const KSEI_DATA = [
   {
     share_code: "MTLA",
     issuer_name: "METROPOLITAN LAND Tbk",
-    investor_name: "PT. Ciputra Internasional",
+    investor_name: "PT Ciputra Internasional",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -61341,7 +61341,7 @@ const KSEI_DATA = [
   {
     share_code: "MTLA",
     issuer_name: "METROPOLITAN LAND Tbk",
-    investor_name: "PT. Gemaindah Intikarya",
+    investor_name: "PT Gemaindah Intikarya",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -61536,7 +61536,7 @@ const KSEI_DATA = [
   {
     share_code: "MTPS",
     issuer_name: "META EPSI Tbk",
-    investor_name: "PT. ANUGERAH PERKASA SEMESTA",
+    investor_name: "PT ANUGERAH PERKASA SEMESTA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -61549,7 +61549,7 @@ const KSEI_DATA = [
   {
     share_code: "MTPS",
     issuer_name: "META EPSI Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -61679,7 +61679,7 @@ const KSEI_DATA = [
   {
     share_code: "MTSM",
     issuer_name: "METRO REALTY Tbk",
-    investor_name: "PT. YAKIN WISKON",
+    investor_name: "PT YAKIN WISKON",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "",
@@ -61692,7 +61692,7 @@ const KSEI_DATA = [
   {
     share_code: "MTSM",
     issuer_name: "METRO REALTY Tbk",
-    investor_name: "PT. BARA PTE LTD",
+    investor_name: "PT BARA PTE LTD",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "",
@@ -61705,7 +61705,7 @@ const KSEI_DATA = [
   {
     share_code: "MTSM",
     issuer_name: "METRO REALTY Tbk",
-    investor_name: "PT. PT PERKASA MAKMUR AMARA",
+    investor_name: "PT PT PERKASA MAKMUR AMARA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -61718,7 +61718,7 @@ const KSEI_DATA = [
   {
     share_code: "MTSM",
     issuer_name: "METRO REALTY Tbk",
-    investor_name: "PT. SURYASAKTI BUDIMARKARTI, PT",
+    investor_name: "PT SURYASAKTI BUDIMARKARTI, PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -61731,7 +61731,7 @@ const KSEI_DATA = [
   {
     share_code: "MTSM",
     issuer_name: "METRO REALTY Tbk",
-    investor_name: "PT. KADIT DEVELOPMENT LIMITED",
+    investor_name: "PT KADIT DEVELOPMENT LIMITED",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -61744,7 +61744,7 @@ const KSEI_DATA = [
   {
     share_code: "MTSM",
     issuer_name: "METRO REALTY Tbk",
-    investor_name: "PT. PAN MALAYAN SECURITIES PTE, LTD",
+    investor_name: "PT PAN MALAYAN SECURITIES PTE, LTD",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -61757,7 +61757,7 @@ const KSEI_DATA = [
   {
     share_code: "MTSM",
     issuer_name: "METRO REALTY Tbk",
-    investor_name: "PT. PT GROGOL INDAH",
+    investor_name: "PT PT GROGOL INDAH",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -61770,7 +61770,7 @@ const KSEI_DATA = [
   {
     share_code: "MTSM",
     issuer_name: "METRO REALTY Tbk",
-    investor_name: "PT. WINDY WILLIAM",
+    investor_name: "PT WINDY WILLIAM",
     investor_type: "ID",
     local_foreign: "D",
     nationality: "INDONESIAN",
@@ -61783,7 +61783,7 @@ const KSEI_DATA = [
   {
     share_code: "MTSM",
     issuer_name: "METRO REALTY Tbk",
-    investor_name: "PT. VALENCIA VENLY",
+    investor_name: "PT VALENCIA VENLY",
     investor_type: "ID",
     local_foreign: "D",
     nationality: "INDONESIAN",
@@ -61796,7 +61796,7 @@ const KSEI_DATA = [
   {
     share_code: "MTSM",
     issuer_name: "METRO REALTY Tbk",
-    investor_name: "PT. GHO TIE TENG, MR",
+    investor_name: "PT GHO TIE TENG, MR",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -61809,7 +61809,7 @@ const KSEI_DATA = [
   {
     share_code: "MTSM",
     issuer_name: "METRO REALTY Tbk",
-    investor_name: "PT. GOH YEOK BENG",
+    investor_name: "PT GOH YEOK BENG",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -61822,7 +61822,7 @@ const KSEI_DATA = [
   {
     share_code: "MTWI",
     issuer_name: "MALACCA TRUST WUWUNGAN INSURANCE Tbk",
-    investor_name: "PT. BATAVIA PROSPERINDO INTERNASIONAL, TBK",
+    investor_name: "PT BATAVIA PROSPERINDO INTERNASIONAL, TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -62017,7 +62017,7 @@ const KSEI_DATA = [
   {
     share_code: "MYOH",
     issuer_name: "SAMINDO RESOURCES Tbk",
-    investor_name: "PT. STI INDONESIA",
+    investor_name: "PT STI INDONESIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -62472,7 +62472,7 @@ const KSEI_DATA = [
   {
     share_code: "NASA",
     issuer_name: "ANDALAN PERKASA ABADI Tbk",
-    investor_name: "PT.Pacific Indocorpora Indonesia",
+    investor_name: "PTPacific Indocorpora Indonesia",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -62498,7 +62498,7 @@ const KSEI_DATA = [
   {
     share_code: "NASA",
     issuer_name: "ANDALAN PERKASA ABADI Tbk",
-    investor_name: "PT. Sejahtera Mahkota Persada",
+    investor_name: "PT Sejahtera Mahkota Persada",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -62524,7 +62524,7 @@ const KSEI_DATA = [
   {
     share_code: "NASA",
     issuer_name: "ANDALAN PERKASA ABADI Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -62615,7 +62615,7 @@ const KSEI_DATA = [
   {
     share_code: "NASI",
     issuer_name: "WAHANA INTI MAKMUR Tbk",
-    investor_name: "PT. MODIS CIPTA KREASI",
+    investor_name: "PT MODIS CIPTA KREASI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -62862,7 +62862,7 @@ const KSEI_DATA = [
   {
     share_code: "NATO",
     issuer_name: "SURYA PERMATA ANDALAN Tbk",
-    investor_name: "PT. ALANA CIPTA SELARAS",
+    investor_name: "PT ALANA CIPTA SELARAS",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -62927,7 +62927,7 @@ const KSEI_DATA = [
   {
     share_code: "NAYZ",
     issuer_name: "HASSANA BOGA SEJAHTERA TBK",
-    investor_name: "PT. Asia Intrainvesta",
+    investor_name: "PT Asia Intrainvesta",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -63148,7 +63148,7 @@ const KSEI_DATA = [
   {
     share_code: "NEST",
     issuer_name: "ESTA INDONESIA Tbk",
-    investor_name: "PT. Tilsoft Solusindo Indonesia",
+    investor_name: "PT Tilsoft Solusindo Indonesia",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -63213,7 +63213,7 @@ const KSEI_DATA = [
   {
     share_code: "NETV",
     issuer_name: "MDTV MEDIA TECHNOLOGIES Tbk",
-    investor_name: "PT. KARYA MEDIA INVESTINDO",
+    investor_name: "PT KARYA MEDIA INVESTINDO",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -63278,7 +63278,7 @@ const KSEI_DATA = [
   {
     share_code: "NFCX",
     issuer_name: "NFC INDONESIA Tbk",
-    investor_name: "PT. KRESNA ASSET MANAGEMENT S/A PT. M CASH INTEGRASI TBK",
+    investor_name: "PT KRESNA ASSET MANAGEMENT S/A PT M CASH INTEGRASI TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -63291,7 +63291,7 @@ const KSEI_DATA = [
   {
     share_code: "NFCX",
     issuer_name: "NFC INDONESIA Tbk",
-    investor_name: "PT. 1 INTI DOT COM",
+    investor_name: "PT 1 INTI DOT COM",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -63343,7 +63343,7 @@ const KSEI_DATA = [
   {
     share_code: "NFCX",
     issuer_name: "NFC INDONESIA Tbk",
-    investor_name: "PT. MANDIRI TERANG HARAPAN",
+    investor_name: "PT MANDIRI TERANG HARAPAN",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -63499,7 +63499,7 @@ const KSEI_DATA = [
   {
     share_code: "NICK",
     issuer_name: "CHARNIC CAPITAL Tbk",
-    investor_name: "PT. INDOVEST CENTRAL",
+    investor_name: "PT INDOVEST CENTRAL",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -63512,7 +63512,7 @@ const KSEI_DATA = [
   {
     share_code: "NICK",
     issuer_name: "CHARNIC CAPITAL Tbk",
-    investor_name: "PT. OKANSA INDONESIA",
+    investor_name: "PT OKANSA INDONESIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -63590,7 +63590,7 @@ const KSEI_DATA = [
   {
     share_code: "NICK",
     issuer_name: "CHARNIC CAPITAL Tbk",
-    investor_name: "PT. PROSPERINDO UTAMA",
+    investor_name: "PT PROSPERINDO UTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -63733,7 +63733,7 @@ const KSEI_DATA = [
   {
     share_code: "NIKL",
     issuer_name: "PELAT TIMAH NUSANTARA Tbk",
-    investor_name: "KRAKATAU STEEL (PERSERO) TBK PT.",
+    investor_name: "KRAKATAU STEEL (PERSERO) TBK PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -63746,7 +63746,7 @@ const KSEI_DATA = [
   {
     share_code: "NIKL",
     issuer_name: "PELAT TIMAH NUSANTARA Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -64032,7 +64032,7 @@ const KSEI_DATA = [
   {
     share_code: "NOBU",
     issuer_name: "BANK NATIONALNOBU Tbk",
-    investor_name: "PT. PRIMA CAKRAWALA SENTOSA",
+    investor_name: "PT PRIMA CAKRAWALA SENTOSA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -64097,7 +64097,7 @@ const KSEI_DATA = [
   {
     share_code: "NOBU",
     issuer_name: "BANK NATIONALNOBU Tbk",
-    investor_name: "GRAHAPUTRA MANDIRIKHARISMA, PT.",
+    investor_name: "GRAHAPUTRA MANDIRIKHARISMA, PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -64409,7 +64409,7 @@ const KSEI_DATA = [
   {
     share_code: "NTBK",
     issuer_name: "NUSATAMA BERKAH Tbk",
-    investor_name: "PT. REBORN CAPITAL",
+    investor_name: "PT REBORN CAPITAL",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -64553,7 +64553,7 @@ const KSEI_DATA = [
   {
     share_code: "NUSA",
     issuer_name: "SINERGI MEGAH INTERNUSA Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -64683,7 +64683,7 @@ const KSEI_DATA = [
   {
     share_code: "NUSA",
     issuer_name: "SINERGI MEGAH INTERNUSA Tbk",
-    investor_name: "PT. VICTORIA MANAJEMEN INVESTASI",
+    investor_name: "PT VICTORIA MANAJEMEN INVESTASI",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -64839,7 +64839,7 @@ const KSEI_DATA = [
   {
     share_code: "OASA",
     issuer_name: "MAHARAKSA BIRU ENERGI Tbk",
-    investor_name: "AND INDONESIA KAPITAL PT.",
+    investor_name: "AND INDONESIA KAPITAL PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -64891,7 +64891,7 @@ const KSEI_DATA = [
   {
     share_code: "OASA",
     issuer_name: "MAHARAKSA BIRU ENERGI Tbk",
-    investor_name: "PT. GRAHA ADIKA NIAGA",
+    investor_name: "PT GRAHA ADIKA NIAGA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -64982,7 +64982,7 @@ const KSEI_DATA = [
   {
     share_code: "OASA",
     issuer_name: "MAHARAKSA BIRU ENERGI Tbk",
-    investor_name: "PT. KB VALBURY SEKURITAS",
+    investor_name: "PT KB VALBURY SEKURITAS",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -65164,7 +65164,7 @@ const KSEI_DATA = [
   {
     share_code: "OBMD",
     issuer_name: "OBM DRILCHEM Tbk",
-    investor_name: "PT. SURYAPRANA NUTRISINDO",
+    investor_name: "PT SURYAPRANA NUTRISINDO",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -65346,7 +65346,7 @@ const KSEI_DATA = [
   {
     share_code: "OKAS",
     issuer_name: "ANCORA INDONESIA RESOURCES Tbk",
-    investor_name: "PT. MULTI BERKAT ENERGI",
+    investor_name: "PT MULTI BERKAT ENERGI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -65541,7 +65541,7 @@ const KSEI_DATA = [
   {
     share_code: "OMRE",
     issuer_name: "INDONESIA PRIMA PROPERTY Tbk",
-    investor_name: "MANNING DEVELOPMENT, PT.",
+    investor_name: "MANNING DEVELOPMENT, PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -65554,7 +65554,7 @@ const KSEI_DATA = [
   {
     share_code: "OMRE",
     issuer_name: "INDONESIA PRIMA PROPERTY Tbk",
-    investor_name: "PT. KMI WIRE AND CABLE TBK",
+    investor_name: "PT KMI WIRE AND CABLE TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -65567,7 +65567,7 @@ const KSEI_DATA = [
   {
     share_code: "OMRE",
     issuer_name: "INDONESIA PRIMA PROPERTY Tbk",
-    investor_name: "PT. POLYCHEM INDONESIA TBK",
+    investor_name: "PT POLYCHEM INDONESIA TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -66204,7 +66204,7 @@ const KSEI_DATA = [
   {
     share_code: "PANR",
     issuer_name: "PANORAMA SENTRAWISATA Tbk",
-    investor_name: "PT. SENTRA ANUGRAH NUSANTARA",
+    investor_name: "PT SENTRA ANUGRAH NUSANTARA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -66217,7 +66217,7 @@ const KSEI_DATA = [
   {
     share_code: "PANR",
     issuer_name: "PANORAMA SENTRAWISATA Tbk",
-    investor_name: "PT.GOLDEN SPICE",
+    investor_name: "PTGOLDEN SPICE",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -66282,7 +66282,7 @@ const KSEI_DATA = [
   {
     share_code: "PANS",
     issuer_name: "PANIN SEKURITAS Tbk",
-    investor_name: "PT. PATRIA NUSA ADAMAS",
+    investor_name: "PT PATRIA NUSA ADAMAS",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -66321,7 +66321,7 @@ const KSEI_DATA = [
   {
     share_code: "PANS",
     issuer_name: "PANIN SEKURITAS Tbk",
-    investor_name: "PT. PATRIA INVESTAMA",
+    investor_name: "PT PATRIA INVESTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -66893,7 +66893,7 @@ const KSEI_DATA = [
   {
     share_code: "PCAR",
     issuer_name: "PRIMA CAKRAWALA ABADI Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -67166,7 +67166,7 @@ const KSEI_DATA = [
   {
     share_code: "PDES",
     issuer_name: "DESTINASI TIRTA NUSANTARA Tbk",
-    investor_name: "PT.GOLDEN SPICE",
+    investor_name: "PTGOLDEN SPICE",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -67179,7 +67179,7 @@ const KSEI_DATA = [
   {
     share_code: "PDES",
     issuer_name: "DESTINASI TIRTA NUSANTARA Tbk",
-    investor_name: "PT. SENTRA ANUGRAH NUSANTARA",
+    investor_name: "PT SENTRA ANUGRAH NUSANTARA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -67205,7 +67205,7 @@ const KSEI_DATA = [
   {
     share_code: "PDES",
     issuer_name: "DESTINASI TIRTA NUSANTARA Tbk",
-    investor_name: "PT. CARTERA INVESTAMA INDONESIA",
+    investor_name: "PT CARTERA INVESTAMA INDONESIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -67452,7 +67452,7 @@ const KSEI_DATA = [
   {
     share_code: "PEGE",
     issuer_name: "PANCA GLOBAL KAPITAL Tbk",
-    investor_name: "PT. MANDIRI TERANG HARAPAN",
+    investor_name: "PT MANDIRI TERANG HARAPAN",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -67478,7 +67478,7 @@ const KSEI_DATA = [
   {
     share_code: "PEGE",
     issuer_name: "PANCA GLOBAL KAPITAL Tbk",
-    investor_name: "PT. ANUGERAH INTI KARISMA",
+    investor_name: "PT ANUGERAH INTI KARISMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -67556,7 +67556,7 @@ const KSEI_DATA = [
   {
     share_code: "PEHA",
     issuer_name: "PHAPROS Tbk",
-    investor_name: "PT. KIMIA FARMA",
+    investor_name: "PT KIMIA FARMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -67608,7 +67608,7 @@ const KSEI_DATA = [
   {
     share_code: "PEVE",
     issuer_name: "PENTA VALENT Tbk",
-    investor_name: "PT. MULIA PRIMA TUNGGAL",
+    investor_name: "PT MULIA PRIMA TUNGGAL",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -67738,7 +67738,7 @@ const KSEI_DATA = [
   {
     share_code: "PGEO",
     issuer_name: "PERTAMINA GEOTHERMAL ENERGY Tbk",
-    investor_name: "PT. PERTAMINA DANA VENTURA",
+    investor_name: "PT PERTAMINA DANA VENTURA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -68011,7 +68011,7 @@ const KSEI_DATA = [
   {
     share_code: "PICO",
     issuer_name: "PELANGI INDAH CANINDO Tbk",
-    investor_name: "PT. CITRAJAYA PERKASAMULIA",
+    investor_name: "PT CITRAJAYA PERKASAMULIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -68245,7 +68245,7 @@ const KSEI_DATA = [
   {
     share_code: "PKPK",
     issuer_name: "PARAGON KARYA PERKASA Tbk",
-    investor_name: "PT. DELI PUTRA BANGSA",
+    investor_name: "PT DELI PUTRA BANGSA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -68362,7 +68362,7 @@ const KSEI_DATA = [
   {
     share_code: "PLAS",
     issuer_name: "POLARIS INVESTAMA TBK",
-    investor_name: "PT. Kencana Langit Biru",
+    investor_name: "PT Kencana Langit Biru",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -68414,7 +68414,7 @@ const KSEI_DATA = [
   {
     share_code: "PLAS",
     issuer_name: "POLARIS INVESTAMA TBK",
-    investor_name: "PT. GRAHA NUSA ADIPRANA",
+    investor_name: "PT GRAHA NUSA ADIPRANA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -68479,7 +68479,7 @@ const KSEI_DATA = [
   {
     share_code: "PLAS",
     issuer_name: "POLARIS INVESTAMA TBK",
-    investor_name: "PT. ASURANSI JIWA IFG",
+    investor_name: "PT ASURANSI JIWA IFG",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -68532,7 +68532,7 @@ const KSEI_DATA = [
   {
     share_code: "PLAS",
     issuer_name: "POLARIS INVESTAMA TBK",
-    investor_name: "PT PT.ANDALAN ARTHA ADVISINDO SEKURITAS",
+    investor_name: "PT PTANDALAN ARTHA ADVISINDO SEKURITAS",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -68597,7 +68597,7 @@ const KSEI_DATA = [
   {
     share_code: "PLAS",
     issuer_name: "POLARIS INVESTAMA TBK",
-    investor_name: "PT. CAPITAL ASSET MANAGEMENT",
+    investor_name: "PT CAPITAL ASSET MANAGEMENT",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -68623,7 +68623,7 @@ const KSEI_DATA = [
   {
     share_code: "PMJS",
     issuer_name: "PUTRA MANDIRI JEMBAR Tbk",
-    investor_name: "PT. PAHALAMAS SEJAHTERA",
+    investor_name: "PT PAHALAMAS SEJAHTERA",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -68662,7 +68662,7 @@ const KSEI_DATA = [
   {
     share_code: "PMJS",
     issuer_name: "PUTRA MANDIRI JEMBAR Tbk",
-    investor_name: "PT. GRAHA PRIMA WISESA",
+    investor_name: "PT GRAHA PRIMA WISESA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -68740,7 +68740,7 @@ const KSEI_DATA = [
   {
     share_code: "PMMP",
     issuer_name: "PANCA MITRA MULTIPERDANA Tbk",
-    investor_name: "PT. HARAPAN BANGSA KITA",
+    investor_name: "PT HARAPAN BANGSA KITA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -68883,7 +68883,7 @@ const KSEI_DATA = [
   {
     share_code: "PNBN",
     issuer_name: "BANK PAN INDONESIA Tbk",
-    investor_name: "PT. PANIN FINANCIAL Tbk",
+    investor_name: "PT PANIN FINANCIAL Tbk",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -69403,7 +69403,7 @@ const KSEI_DATA = [
   {
     share_code: "PNSE",
     issuer_name: "PUDJIADI AND SONS Tbk",
-    investor_name: "PT. ISTANA KUTA RATU PRESTIGE",
+    investor_name: "PT ISTANA KUTA RATU PRESTIGE",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -69533,7 +69533,7 @@ const KSEI_DATA = [
   {
     share_code: "POLA",
     issuer_name: "POOL ADVISTA FINANCE Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -69911,7 +69911,7 @@ const KSEI_DATA = [
   {
     share_code: "POOL",
     issuer_name: "POOL ADVISTA INDONESIA Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -69924,7 +69924,7 @@ const KSEI_DATA = [
   {
     share_code: "POOL",
     issuer_name: "POOL ADVISTA INDONESIA Tbk",
-    investor_name: "PT. ASURANSI JIWA IFG",
+    investor_name: "PT ASURANSI JIWA IFG",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -70211,7 +70211,7 @@ const KSEI_DATA = [
   {
     share_code: "POSA",
     issuer_name: "BLISS PROPERTI INDONESIA Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -70224,7 +70224,7 @@ const KSEI_DATA = [
   {
     share_code: "POWR",
     issuer_name: "CIKARANG LISTRINDO Tbk",
-    investor_name: "PT. UDINDA WAHANATAMA",
+    investor_name: "PT UDINDA WAHANATAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -70237,7 +70237,7 @@ const KSEI_DATA = [
   {
     share_code: "POWR",
     issuer_name: "CIKARANG LISTRINDO Tbk",
-    investor_name: "PT. PENTAKENCANA PAKARPERDANA",
+    investor_name: "PT PENTAKENCANA PAKARPERDANA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -70393,7 +70393,7 @@ const KSEI_DATA = [
   {
     share_code: "PPRE",
     issuer_name: "PP PRESISI Tbk",
-    investor_name: "PT.PEMBANGUNAN PERUMAHAN(PERSERO) TBK",
+    investor_name: "PTPEMBANGUNAN PERUMAHAN(PERSERO) TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -70406,7 +70406,7 @@ const KSEI_DATA = [
   {
     share_code: "PPRE",
     issuer_name: "PP PRESISI Tbk",
-    investor_name: "KARYAWAN PEMEGANG SAHAM PT.PEMBANGUNAN (KKPSPP)",
+    investor_name: "KARYAWAN PEMEGANG SAHAM PTPEMBANGUNAN (KKPSPP)",
     investor_type: "OT",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -70549,7 +70549,7 @@ const KSEI_DATA = [
   {
     share_code: "PPRO",
     issuer_name: "PP Properti Tbk",
-    investor_name: "PT. ASURANSI JIWA IFG",
+    investor_name: "PT ASURANSI JIWA IFG",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -70562,7 +70562,7 @@ const KSEI_DATA = [
   {
     share_code: "PPRO",
     issuer_name: "PP Properti Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -70601,7 +70601,7 @@ const KSEI_DATA = [
   {
     share_code: "PRAY",
     issuer_name: "FAMON AWAL BROS SEDAYA Tbk",
-    investor_name: "PT. FAMON OBOR MAJU",
+    investor_name: "PT FAMON OBOR MAJU",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -70666,7 +70666,7 @@ const KSEI_DATA = [
   {
     share_code: "PRDA",
     issuer_name: "PRODIA WIDYAHUSADA Tbk",
-    investor_name: "PT. PRODIA UTAMA",
+    investor_name: "PT PRODIA UTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -70887,7 +70887,7 @@ const KSEI_DATA = [
   {
     share_code: "PSAT",
     issuer_name: "PANCARAN SAMUDERA TRANSPORT Tbk",
-    investor_name: "PT. BENTUK KARYA NUSANTARA",
+    investor_name: "PT BENTUK KARYA NUSANTARA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -71134,7 +71134,7 @@ const KSEI_DATA = [
   {
     share_code: "PSKT",
     issuer_name: "RED PLANET INDONESIA Tbk",
-    investor_name: "PT. TRAJECTIVE MITRA INDONESIA",
+    investor_name: "PT TRAJECTIVE MITRA INDONESIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -71173,7 +71173,7 @@ const KSEI_DATA = [
   {
     share_code: "PSKT",
     issuer_name: "RED PLANET INDONESIA Tbk",
-    investor_name: "PT. CIPTA KOMUNIKA KHATULISTIWA",
+    investor_name: "PT CIPTA KOMUNIKA KHATULISTIWA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -71434,7 +71434,7 @@ const KSEI_DATA = [
   {
     share_code: "PTMP",
     issuer_name: "MITRA PACK Tbk",
-    investor_name: "PT. DIGITAL KODING SOLUSINDO",
+    investor_name: "PT DIGITAL KODING SOLUSINDO",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -71460,7 +71460,7 @@ const KSEI_DATA = [
   {
     share_code: "PTMP",
     issuer_name: "MITRA PACK Tbk",
-    investor_name: "PT. MITRA TRI INVESTAMA",
+    investor_name: "PT MITRA TRI INVESTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -71486,7 +71486,7 @@ const KSEI_DATA = [
   {
     share_code: "PTMR",
     issuer_name: "MASTER PRINT Tbk",
-    investor_name: "PT. MITRA TRI INVESTAMA",
+    investor_name: "PT MITRA TRI INVESTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -71512,7 +71512,7 @@ const KSEI_DATA = [
   {
     share_code: "PTMR",
     issuer_name: "MASTER PRINT Tbk",
-    investor_name: "PT. KURNIA SEMESTA PERSADA",
+    investor_name: "PT KURNIA SEMESTA PERSADA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -71630,7 +71630,7 @@ const KSEI_DATA = [
   {
     share_code: "PTPP",
     issuer_name: "PP (PERSERO) Tbk",
-    investor_name: "PT. MITRACOMM EKASARANA",
+    investor_name: "PT MITRACOMM EKASARANA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -71669,7 +71669,7 @@ const KSEI_DATA = [
   {
     share_code: "PTPS",
     issuer_name: "PULAU SUBUR Tbk",
-    investor_name: "PT. SEKAWAN KONTRINDO",
+    investor_name: "PT SEKAWAN KONTRINDO",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -71747,7 +71747,7 @@ const KSEI_DATA = [
   {
     share_code: "PTPW",
     issuer_name: "PRATAMA WIDYA Tbk",
-    investor_name: "PT. ROYAL STRATEGIS KAPITAL",
+    investor_name: "PT ROYAL STRATEGIS KAPITAL",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -71760,7 +71760,7 @@ const KSEI_DATA = [
   {
     share_code: "PTPW",
     issuer_name: "PRATAMA WIDYA Tbk",
-    investor_name: "PT. INVESTASI BERSAMA MANDIRI",
+    investor_name: "PT INVESTASI BERSAMA MANDIRI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -71773,7 +71773,7 @@ const KSEI_DATA = [
   {
     share_code: "PTRO",
     issuer_name: "PETROSEA Tbk",
-    investor_name: "PT. KREASI JASA PERSADA",
+    investor_name: "PT KREASI JASA PERSADA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -71929,7 +71929,7 @@ const KSEI_DATA = [
   {
     share_code: "PTSP",
     issuer_name: "PIONEERINDO GOURMET INTERNATIONAL Tbk",
-    investor_name: "PT. GRAHA SENTOSA PERSADA",
+    investor_name: "PT GRAHA SENTOSA PERSADA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -71968,7 +71968,7 @@ const KSEI_DATA = [
   {
     share_code: "PTSP",
     issuer_name: "PIONEERINDO GOURMET INTERNATIONAL Tbk",
-    investor_name: "PT. Bayu Buana Tbk",
+    investor_name: "PT Bayu Buana Tbk",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -72074,7 +72074,7 @@ const KSEI_DATA = [
   {
     share_code: "PUDP",
     issuer_name: "PUDJIADI PRESTIGE Tbk",
-    investor_name: "PT. ISTANA KUTA RATU PRESTIGE",
+    investor_name: "PT ISTANA KUTA RATU PRESTIGE",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -72503,7 +72503,7 @@ const KSEI_DATA = [
   {
     share_code: "PURI",
     issuer_name: "PURI GLOBAL SUKSES Tbk",
-    investor_name: "PT. BUMI KREASI BARU",
+    investor_name: "PT BUMI KREASI BARU",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -72620,7 +72620,7 @@ const KSEI_DATA = [
   {
     share_code: "PYFA",
     issuer_name: "PYRIDAM FARMA Tbk",
-    investor_name: "PT. ALDIRACITA SEKURITAS INDONESIA",
+    investor_name: "PT ALDIRACITA SEKURITAS INDONESIA",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -72725,7 +72725,7 @@ const KSEI_DATA = [
   {
     share_code: "RAAM",
     issuer_name: "TRIPAR MULTIVSION PLUS Tbk",
-    investor_name: "PT. MNC DIGITAL ENTERTAINMENT TBK",
+    investor_name: "PT MNC DIGITAL ENTERTAINMENT TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -73011,7 +73011,7 @@ const KSEI_DATA = [
   {
     share_code: "RALS",
     issuer_name: "RAMAYANA LESTARI SENTOSA Tbk",
-    investor_name: "PT. RAMAYANA LESTARI SENTOSA",
+    investor_name: "PT RAMAYANA LESTARI SENTOSA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -73141,7 +73141,7 @@ const KSEI_DATA = [
   {
     share_code: "RANC",
     issuer_name: "SUPRA BOGA LESTARI Tbk",
-    investor_name: "PT. EKAPUTRI MANDIRI",
+    investor_name: "PT EKAPUTRI MANDIRI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -73245,7 +73245,7 @@ const KSEI_DATA = [
   {
     share_code: "RBMS",
     issuer_name: "RISTIA BINTANG MAHKOTASEJATI Tbk",
-    investor_name: "PT. RISTIA BMS CAPITAL",
+    investor_name: "PT RISTIA BMS CAPITAL",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -73271,7 +73271,7 @@ const KSEI_DATA = [
   {
     share_code: "RBMS",
     issuer_name: "RISTIA BINTANG MAHKOTASEJATI Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -73323,7 +73323,7 @@ const KSEI_DATA = [
   {
     share_code: "RCCC",
     issuer_name: "UTAMA RADAR CAHAYA Tbk",
-    investor_name: "PT. GELORA RIMBA JAYA",
+    investor_name: "PT GELORA RIMBA JAYA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -73622,7 +73622,7 @@ const KSEI_DATA = [
   {
     share_code: "RELF",
     issuer_name: "GRAHA MITRA ASIA Tbk",
-    investor_name: "PT. RELIFE PROPERTY",
+    investor_name: "PT RELIFE PROPERTY",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -73635,7 +73635,7 @@ const KSEI_DATA = [
   {
     share_code: "RELF",
     issuer_name: "GRAHA MITRA ASIA Tbk",
-    investor_name: "PT. Asia Intrainvesta",
+    investor_name: "PT Asia Intrainvesta",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -73674,7 +73674,7 @@ const KSEI_DATA = [
   {
     share_code: "RELF",
     issuer_name: "GRAHA MITRA ASIA Tbk",
-    investor_name: "PT. RELIFE REALTY INDONESIA",
+    investor_name: "PT RELIFE REALTY INDONESIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -73869,7 +73869,7 @@ const KSEI_DATA = [
   {
     share_code: "RGAS",
     issuer_name: "KIAN SANTANG MULIATAMA Tbk",
-    investor_name: "PT. LIMA PALING UTAMA",
+    investor_name: "PT LIMA PALING UTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -74064,7 +74064,7 @@ const KSEI_DATA = [
   {
     share_code: "RIGS",
     issuer_name: "RIG TENDERS INDONESIA Tbk",
-    investor_name: "PT. SURYA INDAH MUARA PANTAI",
+    investor_name: "PT SURYA INDAH MUARA PANTAI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -74182,7 +74182,7 @@ const KSEI_DATA = [
   {
     share_code: "RIMO",
     issuer_name: "RIMO INTERNATIONAL LESTARI Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -74364,7 +74364,7 @@ const KSEI_DATA = [
   {
     share_code: "RIMO",
     issuer_name: "RIMO INTERNATIONAL LESTARI Tbk",
-    investor_name: "PT. Victoria Investama Tbk",
+    investor_name: "PT Victoria Investama Tbk",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -74650,7 +74650,7 @@ const KSEI_DATA = [
   {
     share_code: "RMKE",
     issuer_name: "RMK ENERGY Tbk",
-    investor_name: "PT. ALPHA INVESTASI ASIA",
+    investor_name: "PT ALPHA INVESTASI ASIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -75092,7 +75092,7 @@ const KSEI_DATA = [
   {
     share_code: "ROTI",
     issuer_name: "NIPPON INDOSARI CORPINDO Tbk",
-    investor_name: "PT. INDORITEL MAKMUR INTERNASIONAL TBK",
+    investor_name: "PT INDORITEL MAKMUR INTERNASIONAL TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -75131,7 +75131,7 @@ const KSEI_DATA = [
   {
     share_code: "ROTI",
     issuer_name: "NIPPON INDOSARI CORPINDO Tbk",
-    investor_name: "NIPPON INDOSARI CORPINDO TBK, PT.",
+    investor_name: "NIPPON INDOSARI CORPINDO TBK, PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -75196,7 +75196,7 @@ const KSEI_DATA = [
   {
     share_code: "RSCH",
     issuer_name: "CHARLIE HOSPITAL SEMARANG Tbk",
-    investor_name: "PT. WAHYU AGUNG",
+    investor_name: "PT WAHYU AGUNG",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -75287,7 +75287,7 @@ const KSEI_DATA = [
   {
     share_code: "RSGK",
     issuer_name: "KEDOYA ADYARAYA Tbk",
-    investor_name: "PT. BESTAMA MEDIKACENTER INVESTAMA",
+    investor_name: "PT BESTAMA MEDIKACENTER INVESTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -75300,7 +75300,7 @@ const KSEI_DATA = [
   {
     share_code: "RSGK",
     issuer_name: "KEDOYA ADYARAYA Tbk",
-    investor_name: "PT. INTIMANUNGGAL MULTI DEVELOPMENT",
+    investor_name: "PT INTIMANUNGGAL MULTI DEVELOPMENT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -75404,7 +75404,7 @@ const KSEI_DATA = [
   {
     share_code: "RUIS",
     issuer_name: "RADIANT UTAMA INTERINSCO Tbk",
-    investor_name: "PT. BUANA INTI SINERGI",
+    investor_name: "PT BUANA INTI SINERGI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -75651,7 +75651,7 @@ const KSEI_DATA = [
   {
     share_code: "SAGE",
     issuer_name: "SAPTAUSAHA GEMILANGINDAH Tbk",
-    investor_name: "PT. BENTENG TERANG SEJAHTERA",
+    investor_name: "PT BENTENG TERANG SEJAHTERA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -75742,7 +75742,7 @@ const KSEI_DATA = [
   {
     share_code: "SAMF",
     issuer_name: "SARASWANTI ANUGERAH MAKMUR Tbk",
-    investor_name: "PT. SARASWANTI UTAMA",
+    investor_name: "PT SARASWANTI UTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -75794,7 +75794,7 @@ const KSEI_DATA = [
   {
     share_code: "SAMF",
     issuer_name: "SARASWANTI ANUGERAH MAKMUR Tbk",
-    investor_name: "PT. ANUGERAH BANDA SAGARA",
+    investor_name: "PT ANUGERAH BANDA SAGARA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -76249,7 +76249,7 @@ const KSEI_DATA = [
   {
     share_code: "SCCO",
     issuer_name: "SUPREME CABLE MANUFACTURING & COMMERCE Tbk",
-    investor_name: "PT. MODA SUKSES MAKMUR",
+    investor_name: "PT MODA SUKSES MAKMUR",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -76548,7 +76548,7 @@ const KSEI_DATA = [
   {
     share_code: "SDMU",
     issuer_name: "SIDOMULYO SELARAS Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -76639,7 +76639,7 @@ const KSEI_DATA = [
   {
     share_code: "SDPC",
     issuer_name: "MILLENNIUM PHARMACON INTERNATIONAL Tbk",
-    investor_name: "PT. INDOLIFE PENSIONTAMA",
+    investor_name: "PT INDOLIFE PENSIONTAMA",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -76730,7 +76730,7 @@ const KSEI_DATA = [
   {
     share_code: "SEMA",
     issuer_name: "SEMACOM INTEGRATED Tbk",
-    investor_name: "PT. SEMACOM GLOBAL MANDIRI",
+    investor_name: "PT SEMACOM GLOBAL MANDIRI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -76990,7 +76990,7 @@ const KSEI_DATA = [
   {
     share_code: "SGER",
     issuer_name: "SUMBER GLOBAL ENERGY Tbk",
-    investor_name: "PT. Victoria Investama Tbk",
+    investor_name: "PT Victoria Investama Tbk",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -77003,7 +77003,7 @@ const KSEI_DATA = [
   {
     share_code: "SGER",
     issuer_name: "SUMBER GLOBAL ENERGY Tbk",
-    investor_name: "PT. BINTANG MITRA SEMESTARAYA TBK",
+    investor_name: "PT BINTANG MITRA SEMESTARAYA TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -77250,7 +77250,7 @@ const KSEI_DATA = [
   {
     share_code: "SICO",
     issuer_name: "SIGMA ENERGY COMPRESSINDO Tbk",
-    investor_name: "PT. SIGMA ENERGY UTAMA",
+    investor_name: "PT SIGMA ENERGY UTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -77315,7 +77315,7 @@ const KSEI_DATA = [
   {
     share_code: "SIDO",
     issuer_name: "INDUSTRI JAMU DAN FARMASI SIDO MUNCUL Tbk",
-    investor_name: "PT. INDUSTRI JAMU DAN FARMASI SIDO MUNCUL, TBK",
+    investor_name: "PT INDUSTRI JAMU DAN FARMASI SIDO MUNCUL, TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -77380,7 +77380,7 @@ const KSEI_DATA = [
   {
     share_code: "SILO",
     issuer_name: "SILOAM INTERNATIONAL HOSPITALS Tbk",
-    investor_name: "NILAM BIRU BERSINAR, PT.",
+    investor_name: "NILAM BIRU BERSINAR, PT",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -77393,7 +77393,7 @@ const KSEI_DATA = [
   {
     share_code: "SILO",
     issuer_name: "SILOAM INTERNATIONAL HOSPITALS Tbk",
-    investor_name: "SAFIRA PRIMA UTAMA, PT.",
+    investor_name: "SAFIRA PRIMA UTAMA, PT",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -77446,7 +77446,7 @@ const KSEI_DATA = [
   {
     share_code: "SIMA",
     issuer_name: "SIWANI MAKMUR Tbk",
-    investor_name: "PT. ASURANSI JIWA IFG",
+    investor_name: "PT ASURANSI JIWA IFG",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -77550,7 +77550,7 @@ const KSEI_DATA = [
   {
     share_code: "SIMA",
     issuer_name: "SIWANI MAKMUR Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -77628,7 +77628,7 @@ const KSEI_DATA = [
   {
     share_code: "SINI",
     issuer_name: "SINGARAJA PUTRA Tbk",
-    investor_name: "PT. AUTUM PRIMA INDONESIA",
+    investor_name: "PT AUTUM PRIMA INDONESIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -77641,7 +77641,7 @@ const KSEI_DATA = [
   {
     share_code: "SINI",
     issuer_name: "SINGARAJA PUTRA Tbk",
-    investor_name: "PT. KREASI JASA PERSADA",
+    investor_name: "PT KREASI JASA PERSADA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -77914,7 +77914,7 @@ const KSEI_DATA = [
   {
     share_code: "SKLT",
     issuer_name: "SEKAR LAUT Tbk",
-    investor_name: "PT. SEKAR LAUT TBK",
+    investor_name: "PT SEKAR LAUT TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -78057,7 +78057,7 @@ const KSEI_DATA = [
   {
     share_code: "SKRN",
     issuer_name: "SUPERKRANE MITRA UTAMA Tbk",
-    investor_name: "PT. SUPERKRANE MITRA UTAMA TBK",
+    investor_name: "PT SUPERKRANE MITRA UTAMA TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -78265,7 +78265,7 @@ const KSEI_DATA = [
   {
     share_code: "SKYB",
     issuer_name: "NORTHCLIFF CITRANUSA INDONESIA Tbk",
-    investor_name: "PT. NARADA ADIKARA INDONESIA",
+    investor_name: "PT NARADA ADIKARA INDONESIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -78408,7 +78408,7 @@ const KSEI_DATA = [
   {
     share_code: "SMBR",
     issuer_name: "SEMEN BATURAJA Tbk",
-    investor_name: "PT. ASURANSI JIWA IFG",
+    investor_name: "PT ASURANSI JIWA IFG",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -78421,7 +78421,7 @@ const KSEI_DATA = [
   {
     share_code: "SMBR",
     issuer_name: "SEMEN BATURAJA Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -78799,7 +78799,7 @@ const KSEI_DATA = [
   {
     share_code: "SMKL",
     issuer_name: "SATYAMITRA KEMAS LESTARI Tbk",
-    investor_name: "PT. SATYAMITRA INVESTINDO PRATAMA",
+    investor_name: "PT SATYAMITRA INVESTINDO PRATAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -78943,7 +78943,7 @@ const KSEI_DATA = [
   {
     share_code: "SMKM",
     issuer_name: "SUMBER MAS KONSTRUKSI Tbk",
-    investor_name: "PT. KITA TUMBUH BERSAMA",
+    investor_name: "PT KITA TUMBUH BERSAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -78969,7 +78969,7 @@ const KSEI_DATA = [
   {
     share_code: "SMLE",
     issuer_name: "SINERGI MULTI LESTARINDO Tbk",
-    investor_name: "PT. SINERGI ASIA CORPORINDO",
+    investor_name: "PT SINERGI ASIA CORPORINDO",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -79125,7 +79125,7 @@ const KSEI_DATA = [
   {
     share_code: "SMMA",
     issuer_name: "SINAR MAS MULTIARTHA Tbk",
-    investor_name: "PT. SUMMIT AUTO GROUP",
+    investor_name: "PT SUMMIT AUTO GROUP",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -79360,7 +79360,7 @@ const KSEI_DATA = [
   {
     share_code: "SMRA",
     issuer_name: "SUMMARECON AGUNG Tbk",
-    investor_name: "PT. INTIMAX INTRACO",
+    investor_name: "PT INTIMAX INTRACO",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -79438,7 +79438,7 @@ const KSEI_DATA = [
   {
     share_code: "SMRU",
     issuer_name: "SMR UTAMA Tbk",
-    investor_name: "PT. ASURANSI JIWA IFG",
+    investor_name: "PT ASURANSI JIWA IFG",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -79451,7 +79451,7 @@ const KSEI_DATA = [
   {
     share_code: "SMRU",
     issuer_name: "SMR UTAMA Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -79635,7 +79635,7 @@ const KSEI_DATA = [
   {
     share_code: "SMSM",
     issuer_name: "SELAMAT SEMPURNA Tbk",
-    investor_name: "PT. SELARAS NUSANTARA CEMERLANG",
+    investor_name: "PT SELARAS NUSANTARA CEMERLANG",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -79974,7 +79974,7 @@ const KSEI_DATA = [
   {
     share_code: "SOCI",
     issuer_name: "SOECHI LINES Tbk",
-    investor_name: "PT. DARMA PERTIWI RAYA",
+    investor_name: "PT DARMA PERTIWI RAYA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -80065,7 +80065,7 @@ const KSEI_DATA = [
   {
     share_code: "SOFA",
     issuer_name: "SOLUSI ENVIRONMENT ASIA Tbk",
-    investor_name: "PT. Sembilan Sembilan Berkat",
+    investor_name: "PT Sembilan Sembilan Berkat",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -80312,7 +80312,7 @@ const KSEI_DATA = [
   {
     share_code: "SOSS",
     issuer_name: "SHIELD ON SERVICE Tbk",
-    investor_name: "PT. Alsok Bass Indonesia Security Services",
+    investor_name: "PT Alsok Bass Indonesia Security Services",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -80546,7 +80546,7 @@ const KSEI_DATA = [
   {
     share_code: "SPMA",
     issuer_name: "SUPARMA Tbk",
-    investor_name: "PT. GLORIAJAYA GEMPITA",
+    investor_name: "PT GLORIAJAYA GEMPITA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -80598,7 +80598,7 @@ const KSEI_DATA = [
   {
     share_code: "SPRE",
     issuer_name: "SORAYA BERJAYA INDONESIA Tbk",
-    investor_name: "PT. GALAKSI INVESTAMA CORPORA",
+    investor_name: "PT GALAKSI INVESTAMA CORPORA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -80962,7 +80962,7 @@ const KSEI_DATA = [
   {
     share_code: "SRAJ",
     issuer_name: "SEJAHTERARAYA ANUGRAHJAYA Tbk",
-    investor_name: ", PT   PT SURYA CIPTA INTI CEMERLANG",
+    investor_name: "PT SURYA CIPTA INTI CEMERLANG",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -80975,7 +80975,7 @@ const KSEI_DATA = [
   {
     share_code: "SRAJ",
     issuer_name: "SEJAHTERARAYA ANUGRAHJAYA Tbk",
-    investor_name: ", PT   HIGH PRO INVESTMENTS LIMITED",
+    investor_name: "PTHIGH PRO INVESTMENTS LIMITED",
     investor_type: "OT",
     local_foreign: "F",
     nationality: "VIRGIN ISLANDS, BRITISH",
@@ -80988,7 +80988,7 @@ const KSEI_DATA = [
   {
     share_code: "SRAJ",
     issuer_name: "SEJAHTERARAYA ANUGRAHJAYA Tbk",
-    investor_name: ", PT   BCSS BORON A I, LP",
+    investor_name: "PTBCSS BORON A I, LP",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "UNITED STATES",
@@ -81001,7 +81001,7 @@ const KSEI_DATA = [
   {
     share_code: "SRAJ",
     issuer_name: "SEJAHTERARAYA ANUGRAHJAYA Tbk",
-    investor_name: ", PT   WING HARVEST LIMITED",
+    investor_name: "PTWING HARVEST LIMITED",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "VIRGIN ISLANDS, BRITISH",
@@ -81014,7 +81014,7 @@ const KSEI_DATA = [
   {
     share_code: "SRAJ",
     issuer_name: "SEJAHTERARAYA ANUGRAHJAYA Tbk",
-    investor_name: ", PT   CGS INTERNATIONAL SECURITIES SINGAPORE PTE LTD",
+    investor_name: "PTCGS INTERNATIONAL SECURITIES SINGAPORE PTE LTD",
     investor_type: "IB",
     local_foreign: "F",
     nationality: "SINGAPORE",
@@ -81027,7 +81027,7 @@ const KSEI_DATA = [
   {
     share_code: "SRAJ",
     issuer_name: "SEJAHTERARAYA ANUGRAHJAYA Tbk",
-    investor_name: ", PT   UNITY RISE LIMITED",
+    investor_name: "PTUNITY RISE LIMITED",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "VIRGIN ISLANDS, BRITISH",
@@ -81040,7 +81040,7 @@ const KSEI_DATA = [
   {
     share_code: "SRAJ",
     issuer_name: "SEJAHTERARAYA ANUGRAHJAYA Tbk",
-    investor_name: ", PT   HARRY WANGIDJAJA",
+    investor_name: "PTHARRY WANGIDJAJA",
     investor_type: "ID",
     local_foreign: "D",
     nationality: "INDONESIAN",
@@ -81053,7 +81053,7 @@ const KSEI_DATA = [
   {
     share_code: "SRAJ",
     issuer_name: "SEJAHTERARAYA ANUGRAHJAYA Tbk",
-    investor_name: ", PT   BCSS MAVERICK (A) I, LP",
+    investor_name: "PTBCSS MAVERICK (A) I, LP",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "UNITED STATES",
@@ -81066,7 +81066,7 @@ const KSEI_DATA = [
   {
     share_code: "SRAJ",
     issuer_name: "SEJAHTERARAYA ANUGRAHJAYA Tbk",
-    investor_name: ", PT   DJONI JONATHAN L DRS",
+    investor_name: "PTDJONI JONATHAN L DRS",
     investor_type: "ID",
     local_foreign: "D",
     nationality: "INDONESIAN",
@@ -81079,7 +81079,7 @@ const KSEI_DATA = [
   {
     share_code: "SRAJ",
     issuer_name: "SEJAHTERARAYA ANUGRAHJAYA Tbk",
-    investor_name: ", PT   RANDY LASMANA",
+    investor_name: "PTRANDY LASMANA",
     investor_type: "ID",
     local_foreign: "D",
     nationality: "INDONESIAN",
@@ -81483,7 +81483,7 @@ const KSEI_DATA = [
   {
     share_code: "SSMS",
     issuer_name: "SAWIT SUMBERMAS SARANA Tbk",
-    investor_name: "PT.CITRA BORNEO INDAH",
+    investor_name: "PTCITRA BORNEO INDAH",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "",
@@ -81588,7 +81588,7 @@ const KSEI_DATA = [
   {
     share_code: "SSMS",
     issuer_name: "SAWIT SUMBERMAS SARANA Tbk",
-    investor_name: "PT. TRICULA BANGUN BALGA",
+    investor_name: "PT TRICULA BANGUN BALGA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -81783,7 +81783,7 @@ const KSEI_DATA = [
   {
     share_code: "STAA",
     issuer_name: "SUMBER TANI AGUNG RESOURCES Tbk",
-    investor_name: "PT. LAJU BERSAMA SEJATI",
+    investor_name: "PT LAJU BERSAMA SEJATI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -81809,7 +81809,7 @@ const KSEI_DATA = [
   {
     share_code: "STAA",
     issuer_name: "SUMBER TANI AGUNG RESOURCES Tbk",
-    investor_name: "PT. INTAN PELITA LESTARI",
+    investor_name: "PT INTAN PELITA LESTARI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -81822,7 +81822,7 @@ const KSEI_DATA = [
   {
     share_code: "STAA",
     issuer_name: "SUMBER TANI AGUNG RESOURCES Tbk",
-    investor_name: "PT. TIGA UNGGUL BERSAMA",
+    investor_name: "PT TIGA UNGGUL BERSAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -81861,7 +81861,7 @@ const KSEI_DATA = [
   {
     share_code: "STAR",
     issuer_name: "BUANA ARTHA ANUGERAH Tbk",
-    investor_name: "PT. Sejahtera Mahkota Persada",
+    investor_name: "PT Sejahtera Mahkota Persada",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -81978,7 +81978,7 @@ const KSEI_DATA = [
   {
     share_code: "STAR",
     issuer_name: "BUANA ARTHA ANUGERAH Tbk",
-    investor_name: "PT. CAPITAL ASSET MANAGEMENT",
+    investor_name: "PT CAPITAL ASSET MANAGEMENT",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -81991,7 +81991,7 @@ const KSEI_DATA = [
   {
     share_code: "STAR",
     issuer_name: "BUANA ARTHA ANUGERAH Tbk",
-    investor_name: "PT. ALANA CIPTA SELARAS",
+    investor_name: "PT ALANA CIPTA SELARAS",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -82056,7 +82056,7 @@ const KSEI_DATA = [
   {
     share_code: "STAR",
     issuer_name: "BUANA ARTHA ANUGERAH Tbk",
-    investor_name: "PT. BARA SEJAHTERA SUKSES",
+    investor_name: "PT BARA SEJAHTERA SUKSES",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -82290,7 +82290,7 @@ const KSEI_DATA = [
   {
     share_code: "STTP",
     issuer_name: "SIANTAR TOP Tbk",
-    investor_name: "PT. HARAPAN CAHAYA NUSANTARA",
+    investor_name: "PT HARAPAN CAHAYA NUSANTARA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -82316,7 +82316,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: "PT.ASIACITI TRUST SINGAPORE PTE.LTD",
+    investor_name: "PTASIACITI TRUST SINGAPORE PTE.LTD",
     investor_type: "OT",
     local_foreign: "F",
     nationality: "SINGAPORE",
@@ -82329,7 +82329,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: "PT.DANA PENSIUN PERTAMINA",
+    investor_name: "PTDANA PENSIUN PERTAMINA",
     investor_type: "PF",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -82342,7 +82342,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: "PT.INTERVENTURES CAPITAL PTE. LTD",
+    investor_name: "PTINTERVENTURES CAPITAL PTE. LTD",
     investor_type: "OT",
     local_foreign: "F",
     nationality: "SINGAPORE",
@@ -82355,7 +82355,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: "PT.SUNRISE ASSETS GROUP LIMITED",
+    investor_name: "PTSUNRISE ASSETS GROUP LIMITED",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "VIRGIN ISLANDS, BRITISH",
@@ -82368,7 +82368,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: "PT.HORIZONTE OPPORTUNITIES FUND SPC",
+    investor_name: "PTHORIZONTE OPPORTUNITIES FUND SPC",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "CAYMAN ISLANDS",
@@ -82381,7 +82381,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: "PT.GLENN RAHAYU ADLI ARIFF",
+    investor_name: "PTGLENN RAHAYU ADLI ARIFF",
     investor_type: "ID",
     local_foreign: "D",
     nationality: "INDONESIAN",
@@ -82394,7 +82394,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: "PT.PT. ASURANSI JIWA IFG",
+    investor_name: "PT. ASURANSI JIWA IFG",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -82407,7 +82407,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: "PT.BUMI SUMBER SWARNA PT",
+    investor_name: "PTBUMI SUMBER SWARNA PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -82420,7 +82420,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: "PT.AJB BUMI PUTERA 1912",
+    investor_name: "PTAJB BUMI PUTERA 1912",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -82434,7 +82434,7 @@ const KSEI_DATA = [
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
     investor_name:
-      "PT.JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
+      "PTJAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
     investor_type: "OT",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -82447,7 +82447,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: "PT.ORTUS HOLDING LTD WM CLIENT",
+    investor_name: "PTORTUS HOLDING LTD WM CLIENT",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "VIRGIN ISLANDS, BRITISH",
@@ -82460,7 +82460,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: "PT.REKSA DANA OSO FLORES EQUITY FUND",
+    investor_name: "PTREKSA DANA OSO FLORES EQUITY FUND",
     investor_type: "MF",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -82473,7 +82473,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: "PT.Effie Agustina S",
+    investor_name: "PTEffie Agustina S",
     investor_type: "ID",
     local_foreign: "D",
     nationality: "INDONESIAN",
@@ -82486,7 +82486,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: "PT.PT. ALDIRACITA SEKURITAS INDONESIA",
+    investor_name: "PT. ALDIRACITA SEKURITAS INDONESIA",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -82500,7 +82500,7 @@ const KSEI_DATA = [
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
     investor_name:
-      "PT.CREDIT SUISSE SEC (EUROPE) LIMITED-94644000",
+      "PTCREDIT SUISSE SEC (EUROPE) LIMITED-94644000",
     investor_type: "SC",
     local_foreign: "F",
     nationality: "UNITED KINGDOM",
@@ -82513,7 +82513,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: "PT.REKSA DANA NARADA SAHAM INDONESIA",
+    investor_name: "PTREKSA DANA NARADA SAHAM INDONESIA",
     investor_type: "MF",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -82526,7 +82526,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: "PT. GOLDMAN SACHS INTERNATIONAL",
+    investor_name: "PT GOLDMAN SACHS INTERNATIONAL",
     investor_type: "SC",
     local_foreign: "F",
     nationality: "UNITED KINGDOM",
@@ -82539,7 +82539,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: "PT.Louisa.DM",
+    investor_name: "PTLouisa.DM",
     investor_type: "ID",
     local_foreign: "D",
     nationality: "INDONESIAN",
@@ -83033,7 +83033,7 @@ const KSEI_DATA = [
   {
     share_code: "SWAT",
     issuer_name: "SRIWAHANA ADITYAKARTA Tbk",
-    investor_name: "PT. SUMBER MAKMUR LUMINTU",
+    investor_name: "PT SUMBER MAKMUR LUMINTU",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "",
@@ -83475,7 +83475,7 @@ const KSEI_DATA = [
   {
     share_code: "TAPG",
     issuer_name: "TRIPUTRA AGRO PERSADA Tbk",
-    investor_name: "PT. DAYA ADICIPTA MUSTIKA",
+    investor_name: "PT DAYA ADICIPTA MUSTIKA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -83527,7 +83527,7 @@ const KSEI_DATA = [
   {
     share_code: "TARA",
     issuer_name: "AGUNG SEMESTA SEJAHTERA Tbk",
-    investor_name: "PT.SURYA BUANA MAKMUR",
+    investor_name: "PTSURYA BUANA MAKMUR",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -83553,7 +83553,7 @@ const KSEI_DATA = [
   {
     share_code: "TARA",
     issuer_name: "AGUNG SEMESTA SEJAHTERA Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -83579,7 +83579,7 @@ const KSEI_DATA = [
   {
     share_code: "TARA",
     issuer_name: "AGUNG SEMESTA SEJAHTERA Tbk",
-    investor_name: "PT.Pacific Indocorpora Indonesia",
+    investor_name: "PTPacific Indocorpora Indonesia",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -83605,7 +83605,7 @@ const KSEI_DATA = [
   {
     share_code: "TARA",
     issuer_name: "AGUNG SEMESTA SEJAHTERA Tbk",
-    investor_name: "PT. Askar Pelangi Abadi",
+    investor_name: "PT Askar Pelangi Abadi",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -83644,7 +83644,7 @@ const KSEI_DATA = [
   {
     share_code: "TARA",
     issuer_name: "AGUNG SEMESTA SEJAHTERA Tbk",
-    investor_name: "PT. MEGAH ANGKASA PERKASA",
+    investor_name: "PT MEGAH ANGKASA PERKASA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -83657,7 +83657,7 @@ const KSEI_DATA = [
   {
     share_code: "TARA",
     issuer_name: "AGUNG SEMESTA SEJAHTERA Tbk",
-    investor_name: "PT. ALANA CIPTA SELARAS",
+    investor_name: "PT ALANA CIPTA SELARAS",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -83696,7 +83696,7 @@ const KSEI_DATA = [
   {
     share_code: "TARA",
     issuer_name: "AGUNG SEMESTA SEJAHTERA Tbk",
-    investor_name: "PT. BARA SEJAHTERA SUKSES",
+    investor_name: "PT BARA SEJAHTERA SUKSES",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -83904,7 +83904,7 @@ const KSEI_DATA = [
   {
     share_code: "TAXI",
     issuer_name: "EXPRESS TRANSINDO UTAMA Tbk",
-    investor_name: "PT. HP CAPITAL RESOURCES",
+    investor_name: "PT HP CAPITAL RESOURCES",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -84684,7 +84684,7 @@ const KSEI_DATA = [
   {
     share_code: "TEBE",
     issuer_name: "DANA BRATA LUHUR Tbk",
-    investor_name: "PT. DUA SAMUDERA PERKASA",
+    investor_name: "PT DUA SAMUDERA PERKASA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -84736,7 +84736,7 @@ const KSEI_DATA = [
   {
     share_code: "TECH",
     issuer_name: "INDOSTERLING TECHNOMEDIA Tbk",
-    investor_name: "PT. INDOSTERLING SARANA INVESTA",
+    investor_name: "PT INDOSTERLING SARANA INVESTA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -84827,7 +84827,7 @@ const KSEI_DATA = [
   {
     share_code: "TECH",
     issuer_name: "INDOSTERLING TECHNOMEDIA Tbk",
-    investor_name: "PT. Bahtera Agung Sarana",
+    investor_name: "PT Bahtera Agung Sarana",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -84853,7 +84853,7 @@ const KSEI_DATA = [
   {
     share_code: "TELE",
     issuer_name: "OMNI INOVASI INDONESIA Tbk",
-    investor_name: "UPAYA CIPTA SEJAHTERA PT.",
+    investor_name: "UPAYA CIPTA SEJAHTERA PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -84866,7 +84866,7 @@ const KSEI_DATA = [
   {
     share_code: "TELE",
     issuer_name: "OMNI INOVASI INDONESIA Tbk",
-    investor_name: "PT.PINS Indonesia",
+    investor_name: "PTPINS Indonesia",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -84931,7 +84931,7 @@ const KSEI_DATA = [
   {
     share_code: "TFAS",
     issuer_name: "TELEFAST INDONESIA Tbk",
-    investor_name: "PT. KRESNA ASSET MANAGEMENT S/A PT. M CASH INTEGRASI TBK",
+    investor_name: "PT KRESNA ASSET MANAGEMENT S/A PT M CASH INTEGRASI TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -84957,7 +84957,7 @@ const KSEI_DATA = [
   {
     share_code: "TFAS",
     issuer_name: "TELEFAST INDONESIA Tbk",
-    investor_name: "PT. TELEFAST INVESTAMA INDONESIA",
+    investor_name: "PT TELEFAST INVESTAMA INDONESIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -84983,7 +84983,7 @@ const KSEI_DATA = [
   {
     share_code: "TFAS",
     issuer_name: "TELEFAST INDONESIA Tbk",
-    investor_name: "PT. DIGITAL MEDIATAMA MAXIMA TBK",
+    investor_name: "PT DIGITAL MEDIATAMA MAXIMA TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -85009,7 +85009,7 @@ const KSEI_DATA = [
   {
     share_code: "TFAS",
     issuer_name: "TELEFAST INDONESIA Tbk",
-    investor_name: "PT. DIGITAL CONSUMER ENGAGEMENT",
+    investor_name: "PT DIGITAL CONSUMER ENGAGEMENT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -85035,7 +85035,7 @@ const KSEI_DATA = [
   {
     share_code: "TFCO",
     issuer_name: "TIFICO FIBER INDONESIA Tbk",
-    investor_name: "PT. HERMAWAN SENTRAL INVESTAMA",
+    investor_name: "PT HERMAWAN SENTRAL INVESTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -85178,7 +85178,7 @@ const KSEI_DATA = [
   {
     share_code: "TGKA",
     issuer_name: "TIGARAKSA SATRIA Tbk",
-    investor_name: "PT. SARANA LEDAUN",
+    investor_name: "PT SARANA LEDAUN",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -85204,7 +85204,7 @@ const KSEI_DATA = [
   {
     share_code: "TGKA",
     issuer_name: "TIGARAKSA SATRIA Tbk",
-    investor_name: "PT. EKATRIADI KUSUMA",
+    investor_name: "PT EKATRIADI KUSUMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -86167,7 +86167,7 @@ const KSEI_DATA = [
   {
     share_code: "TMPO",
     issuer_name: "TEMPO INTI MEDIA Tbk",
-    investor_name: "PT.Grafiti Pers",
+    investor_name: "PTGrafiti Pers",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -86180,7 +86180,7 @@ const KSEI_DATA = [
   {
     share_code: "TMPO",
     issuer_name: "TEMPO INTI MEDIA Tbk",
-    investor_name: ". YAYASAN 21 JUNI 1994",
+    investor_name: "YAYASAN 21 JUNI 1994",
     investor_type: "FD",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -86271,7 +86271,7 @@ const KSEI_DATA = [
   {
     share_code: "TMPO",
     issuer_name: "TEMPO INTI MEDIA Tbk",
-    investor_name: "PT. Persaudaraan Bersatu Esa",
+    investor_name: "PT Persaudaraan Bersatu Esa",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -86323,7 +86323,7 @@ const KSEI_DATA = [
   {
     share_code: "TNCA",
     issuer_name: "TRIMUDA NUANSA CITRA Tbk",
-    investor_name: "PT. Asuransi Intra Asia",
+    investor_name: "PT Asuransi Intra Asia",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -86401,7 +86401,7 @@ const KSEI_DATA = [
   {
     share_code: "TOBA",
     issuer_name: "TBS ENERGI UTAMA Tbk",
-    investor_name: "PT. SINERGI SUKSES UTAMA",
+    investor_name: "PT SINERGI SUKSES UTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -86830,7 +86830,7 @@ const KSEI_DATA = [
   {
     share_code: "TOWR",
     issuer_name: "SARANA MENARA NUSANTARA Tbk",
-    investor_name: "PT. LINGKARMULIA INDAH",
+    investor_name: "PT LINGKARMULIA INDAH",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -86934,7 +86934,7 @@ const KSEI_DATA = [
   {
     share_code: "TOYS",
     issuer_name: "SUNINDO ADIPERSADA Tbk",
-    investor_name: "PT. HOEKEL BANGUN ABADI",
+    investor_name: "PT HOEKEL BANGUN ABADI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -87235,7 +87235,7 @@ const KSEI_DATA = [
   {
     share_code: "TRAM",
     issuer_name: "TRADA ALAM MINERA Tbk",
-    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT. ASABRI",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT ASABRI",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -87313,7 +87313,7 @@ const KSEI_DATA = [
   {
     share_code: "TRAM",
     issuer_name: "TRADA ALAM MINERA Tbk",
-    investor_name: "PT. ASURANSI JIWA IFG",
+    investor_name: "PT ASURANSI JIWA IFG",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -87469,7 +87469,7 @@ const KSEI_DATA = [
   {
     share_code: "TRIL",
     issuer_name: "TRIWIRA INSANLESTARI Tbk",
-    investor_name: "PT. HENGTRACO PROTECSINDO",
+    investor_name: "PT HENGTRACO PROTECSINDO",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -87625,7 +87625,7 @@ const KSEI_DATA = [
   {
     share_code: "TRIM",
     issuer_name: "TRIMEGAH SEKURITAS INDONESIA Tbk",
-    investor_name: "PT. SUKSES PERDANA MANDIRI",
+    investor_name: "PT SUKSES PERDANA MANDIRI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -87638,7 +87638,7 @@ const KSEI_DATA = [
   {
     share_code: "TRIM",
     issuer_name: "TRIMEGAH SEKURITAS INDONESIA Tbk",
-    investor_name: "PT. PURI DAMAI SEJAHTERA",
+    investor_name: "PT PURI DAMAI SEJAHTERA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -87768,7 +87768,7 @@ const KSEI_DATA = [
   {
     share_code: "TRIM",
     issuer_name: "TRIMEGAH SEKURITAS INDONESIA Tbk",
-    investor_name: "PT. BALI BINTANG SEJAHTERA",
+    investor_name: "PT BALI BINTANG SEJAHTERA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -87859,7 +87859,7 @@ const KSEI_DATA = [
   {
     share_code: "TRIN",
     issuer_name: "PERINTIS TRINITI PROPERTI Tbk",
-    investor_name: "PT. SUKSES SEJATI SEJAHTERA",
+    investor_name: "PT SUKSES SEJATI SEJAHTERA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -88002,7 +88002,7 @@ const KSEI_DATA = [
   {
     share_code: "TRIO",
     issuer_name: "TRIKOMSEL OKE Tbk",
-    investor_name: "PT. HUAWEI TECH INVESTMENT",
+    investor_name: "PT HUAWEI TECH INVESTMENT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -88015,7 +88015,7 @@ const KSEI_DATA = [
   {
     share_code: "TRIS",
     issuer_name: "TRISULA INTERNATIONAL Tbk",
-    investor_name: "PT. INTI NUSA DAMAI",
+    investor_name: "PT INTI NUSA DAMAI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -88054,7 +88054,7 @@ const KSEI_DATA = [
   {
     share_code: "TRIS",
     issuer_name: "TRISULA INTERNATIONAL Tbk",
-    investor_name: "PT. KARYA DWIMANUNGGAL SEJAHTERA",
+    investor_name: "PT KARYA DWIMANUNGGAL SEJAHTERA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -88106,7 +88106,7 @@ const KSEI_DATA = [
   {
     share_code: "TRIS",
     issuer_name: "TRISULA INTERNATIONAL Tbk",
-    investor_name: "PT.TRITIRTA INTI MANDIRI",
+    investor_name: "PTTRITIRTA INTI MANDIRI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -88184,7 +88184,7 @@ const KSEI_DATA = [
   {
     share_code: "TRJA",
     issuer_name: "TRANSKON JAYA Tbk",
-    investor_name: "PT. DAMAI INVESTAMA SUKSES",
+    investor_name: "PT DAMAI INVESTAMA SUKSES",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -88314,7 +88314,7 @@ const KSEI_DATA = [
   {
     share_code: "TRST",
     issuer_name: "TRIAS SENTOSA Tbk",
-    investor_name: "PT. K AND L CAPITAL",
+    investor_name: "PT K AND L CAPITAL",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -88340,7 +88340,7 @@ const KSEI_DATA = [
   {
     share_code: "TRST",
     issuer_name: "TRIAS SENTOSA Tbk",
-    investor_name: "PT. KILO LIMA INTI PERKASA",
+    investor_name: "PT KILO LIMA INTI PERKASA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -88353,7 +88353,7 @@ const KSEI_DATA = [
   {
     share_code: "TRST",
     issuer_name: "TRIAS SENTOSA Tbk",
-    investor_name: "PRIMA POLYCON INDAH, PT.",
+    investor_name: "PRIMA POLYCON INDAH, PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -88366,7 +88366,7 @@ const KSEI_DATA = [
   {
     share_code: "TRST",
     issuer_name: "TRIAS SENTOSA Tbk",
-    investor_name: "PT. KILO BRAVO INTI PERKASA",
+    investor_name: "PT KILO BRAVO INTI PERKASA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -88822,7 +88822,7 @@ const KSEI_DATA = [
   {
     share_code: "TSPC",
     issuer_name: "TEMPO SCAN PACIFIC Tbk",
-    investor_name: "PT. BOGAMULIA NAGADI",
+    investor_name: "PT BOGAMULIA NAGADI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -88965,7 +88965,7 @@ const KSEI_DATA = [
   {
     share_code: "TYRE",
     issuer_name: "KING TIRE INDONESIA Tbk",
-    investor_name: "PT. SEMESTA RAYA PERMAI",
+    investor_name: "PT SEMESTA RAYA PERMAI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -88978,7 +88978,7 @@ const KSEI_DATA = [
   {
     share_code: "TYRE",
     issuer_name: "KING TIRE INDONESIA Tbk",
-    investor_name: "PT. SENTRA NIAGA ABADI",
+    investor_name: "PT SENTRA NIAGA ABADI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -89487,7 +89487,7 @@ const KSEI_DATA = [
   {
     share_code: "ULTJ",
     issuer_name: "ULTRAJAYA MILK INDUSTRY AND TRADING COMPANY Tbk",
-    investor_name: "PT. INDOLIFE PENSIONTAMA",
+    investor_name: "PT INDOLIFE PENSIONTAMA",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -89552,7 +89552,7 @@ const KSEI_DATA = [
   {
     share_code: "UNIC",
     issuer_name: "UNGGUL INDAH CAHAYA Tbk",
-    investor_name: "PT. SALIM CHEMICALS CORPORA",
+    investor_name: "PT SALIM CHEMICALS CORPORA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -89825,7 +89825,7 @@ const KSEI_DATA = [
   {
     share_code: "UNIT",
     issuer_name: "CAHAYA PERMATA SEJAHTERA Tbk",
-    investor_name: "PT. LENOVO WORLDWIDE CORPORATION",
+    investor_name: "PT LENOVO WORLDWIDE CORPORATION",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "VIRGIN ISLANDS, BRITISH",
@@ -89851,7 +89851,7 @@ const KSEI_DATA = [
   {
     share_code: "UNIT",
     issuer_name: "CAHAYA PERMATA SEJAHTERA Tbk",
-    investor_name: "PT. Suge Talesta Guna",
+    investor_name: "PT Suge Talesta Guna",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -89877,7 +89877,7 @@ const KSEI_DATA = [
   {
     share_code: "UNIT",
     issuer_name: "CAHAYA PERMATA SEJAHTERA Tbk",
-    investor_name: "PT. DUNIA SURYA BAKTI",
+    investor_name: "PT DUNIA SURYA BAKTI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -89903,7 +89903,7 @@ const KSEI_DATA = [
   {
     share_code: "UNIT",
     issuer_name: "CAHAYA PERMATA SEJAHTERA Tbk",
-    investor_name: "PT. Sandi Usaha Jaya",
+    investor_name: "PT Sandi Usaha Jaya",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -89929,7 +89929,7 @@ const KSEI_DATA = [
   {
     share_code: "UNIT",
     issuer_name: "CAHAYA PERMATA SEJAHTERA Tbk",
-    investor_name: "PT. Damar Jayastu Putra",
+    investor_name: "PT Damar Jayastu Putra",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -90424,7 +90424,7 @@ const KSEI_DATA = [
   {
     share_code: "URBN",
     issuer_name: "URBAN JAKARTA PROPERTINDO Tbk",
-    investor_name: "PT. Nusa Wijaya Propertindo",
+    investor_name: "PT Nusa Wijaya Propertindo",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -90463,7 +90463,7 @@ const KSEI_DATA = [
   {
     share_code: "URBN",
     issuer_name: "URBAN JAKARTA PROPERTINDO Tbk",
-    investor_name: "PT. Urban Jakarta Propertindo TBK.",
+    investor_name: "PT Urban Jakarta Propertindo TBK.",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -90619,7 +90619,7 @@ const KSEI_DATA = [
   {
     share_code: "VAST",
     issuer_name: "VASTLAND INDONESIA Tbk",
-    investor_name: "PT. TEMBESU ELANG PERKASA",
+    investor_name: "PT TEMBESU ELANG PERKASA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -90827,7 +90827,7 @@ const KSEI_DATA = [
   {
     share_code: "VICI",
     issuer_name: "VICTORIA CARE INDONESIA Tbk",
-    investor_name: "PT. SUKSES SEJATI SEJAHTERA",
+    investor_name: "PT SUKSES SEJATI SEJAHTERA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -90931,7 +90931,7 @@ const KSEI_DATA = [
   {
     share_code: "VICO",
     issuer_name: "VICTORIA INVESTAMA Tbk",
-    investor_name: "PT. BINTANG MITRA SEMESTARAYA TBK",
+    investor_name: "PT BINTANG MITRA SEMESTARAYA TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -91009,7 +91009,7 @@ const KSEI_DATA = [
   {
     share_code: "VICO",
     issuer_name: "VICTORIA INVESTAMA Tbk",
-    investor_name: "PT. REGIS PRATAMA INDONESIA",
+    investor_name: "PT REGIS PRATAMA INDONESIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -91022,7 +91022,7 @@ const KSEI_DATA = [
   {
     share_code: "VINS",
     issuer_name: "VICTORIA INSURANCE Tbk",
-    investor_name: "PT. Victoria Investama Tbk",
+    investor_name: "PT Victoria Investama Tbk",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -91074,7 +91074,7 @@ const KSEI_DATA = [
   {
     share_code: "VINS",
     issuer_name: "VICTORIA INSURANCE Tbk",
-    investor_name: "PT. Askar Pelangi Abadi",
+    investor_name: "PT Askar Pelangi Abadi",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -91191,7 +91191,7 @@ const KSEI_DATA = [
   {
     share_code: "VIVA",
     issuer_name: "VISI MEDIA ASIA Tbk",
-    investor_name: "PT. Bakrie Global Ventura",
+    investor_name: "PT Bakrie Global Ventura",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -91490,7 +91490,7 @@ const KSEI_DATA = [
   {
     share_code: "VKTR",
     issuer_name: "VKTR TEKNOLOGI MOBILITAS Tbk",
-    investor_name: "PT. GRAHA ADIKA NIAGA",
+    investor_name: "PT GRAHA ADIKA NIAGA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -91529,7 +91529,7 @@ const KSEI_DATA = [
   {
     share_code: "VKTR",
     issuer_name: "VKTR TEKNOLOGI MOBILITAS Tbk",
-    investor_name: "PT. MANDALA RAYA YUWANA",
+    investor_name: "PT MANDALA RAYA YUWANA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -91594,7 +91594,7 @@ const KSEI_DATA = [
   {
     share_code: "VKTR",
     issuer_name: "VKTR TEKNOLOGI MOBILITAS Tbk",
-    investor_name: "PT. KB VALBURY SEKURITAS",
+    investor_name: "PT KB VALBURY SEKURITAS",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -91698,7 +91698,7 @@ const KSEI_DATA = [
   {
     share_code: "VRNA",
     issuer_name: "MIZUHO LEASING INDONESIA Tbk",
-    investor_name: "PT. Verena Kapital",
+    investor_name: "PT Verena Kapital",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -91841,7 +91841,7 @@ const KSEI_DATA = [
   {
     share_code: "WAPO",
     issuer_name: "WAHANA PRONATURAL Tbk",
-    investor_name: "HIJAU SARI PT.",
+    investor_name: "HIJAU SARI PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -91854,7 +91854,7 @@ const KSEI_DATA = [
   {
     share_code: "WAPO",
     issuer_name: "WAHANA PRONATURAL Tbk",
-    investor_name: "PT. Mitra Niaga Sakti",
+    investor_name: "PT Mitra Niaga Sakti",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -91867,7 +91867,7 @@ const KSEI_DATA = [
   {
     share_code: "WAPO",
     issuer_name: "WAHANA PRONATURAL Tbk",
-    investor_name: "PT. SURYA PELANGI MANDIRI",
+    investor_name: "PT SURYA PELANGI MANDIRI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -91880,7 +91880,7 @@ const KSEI_DATA = [
   {
     share_code: "WAPO",
     issuer_name: "WAHANA PRONATURAL Tbk",
-    investor_name: "PT. PESONA BANGUN MANDIRI",
+    investor_name: "PT PESONA BANGUN MANDIRI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -92049,7 +92049,7 @@ const KSEI_DATA = [
   {
     share_code: "WEHA",
     issuer_name: "WEHA TRANSPORTASI INDONESIA Tbk",
-    investor_name: "PT. CARTERA INVESTAMA INDONESIA",
+    investor_name: "PT CARTERA INVESTAMA INDONESIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -92075,7 +92075,7 @@ const KSEI_DATA = [
   {
     share_code: "WEHA",
     issuer_name: "WEHA TRANSPORTASI INDONESIA Tbk",
-    investor_name: "PT.GOLDEN SPICE",
+    investor_name: "PTGOLDEN SPICE",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -92166,7 +92166,7 @@ const KSEI_DATA = [
   {
     share_code: "WGSH",
     issuer_name: "WIRA GLOBAL SOLUSI Tbk",
-    investor_name: "PT. PUSAKA MAS PERSADA",
+    investor_name: "PT PUSAKA MAS PERSADA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -92348,7 +92348,7 @@ const KSEI_DATA = [
   {
     share_code: "WIFI",
     issuer_name: "SOLUSI SINERGI DIGITAL Tbk",
-    investor_name: "PT. INVESTASI SUKSES BERSAMA",
+    investor_name: "PT INVESTASI SUKSES BERSAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -92583,7 +92583,7 @@ const KSEI_DATA = [
   {
     share_code: "WINE",
     issuer_name: "HATTEN BALI Tbk",
-    investor_name: "PT. BELINDA MAKMUR PRATAMA",
+    investor_name: "PT BELINDA MAKMUR PRATAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -92609,7 +92609,7 @@ const KSEI_DATA = [
   {
     share_code: "WINR",
     issuer_name: "WINNER NUSANTARA JAYA Tbk",
-    investor_name: "PT. PEMENANG NUSANTARA INTERNASIONAL",
+    investor_name: "PT PEMENANG NUSANTARA INTERNASIONAL",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -92622,7 +92622,7 @@ const KSEI_DATA = [
   {
     share_code: "WINS",
     issuer_name: "WINTERMAR OFFSHORE MARINE Tbk",
-    investor_name: "WINTERMARJAYA LESTARI PT.",
+    investor_name: "WINTERMARJAYA LESTARI PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -93207,7 +93207,7 @@ const KSEI_DATA = [
   {
     share_code: "WOMF",
     issuer_name: "WAHANA OTTOMITRA MULTIARTHA Tbk",
-    investor_name: "PT. WAHANA MAKMUR SEJATI",
+    investor_name: "PT WAHANA MAKMUR SEJATI",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -93311,7 +93311,7 @@ const KSEI_DATA = [
   {
     share_code: "WOWS",
     issuer_name: "GINTING JAYA ENERGI Tbk",
-    investor_name: "PT. Ginting Jaya",
+    investor_name: "PT Ginting Jaya",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -93363,7 +93363,7 @@ const KSEI_DATA = [
   {
     share_code: "WSBP",
     issuer_name: "WASKITA BETON PRECAST Tbk",
-    investor_name: "PT. Waskita Karya A/C MESA",
+    investor_name: "PT Waskita Karya A/C MESA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -93428,7 +93428,7 @@ const KSEI_DATA = [
   {
     share_code: "WSBP",
     issuer_name: "WASKITA BETON PRECAST Tbk",
-    investor_name: "PT. MULTI WELINDO",
+    investor_name: "PT MULTI WELINDO",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -93767,7 +93767,7 @@ const KSEI_DATA = [
   {
     share_code: "YULE",
     issuer_name: "YULIE SEKURITAS INDONESIA Tbk",
-    investor_name: "PT. Gema Buana Indonesia",
+    investor_name: "PT Gema Buana Indonesia",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -94378,7 +94378,7 @@ const KSEI_DATA = [
   {
     share_code: "ZONE",
     issuer_name: "MEGA PERINTIS Tbk",
-    investor_name: "PT. JABAYA ADI KRIYA",
+    investor_name: "PT JABAYA ADI KRIYA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -94391,7 +94391,7 @@ const KSEI_DATA = [
   {
     share_code: "ZONE",
     issuer_name: "MEGA PERINTIS Tbk",
-    investor_name: "PT. JABAYA ADI INVESTAMA",
+    investor_name: "PT JABAYA ADI INVESTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -94430,7 +94430,7 @@ const KSEI_DATA = [
   {
     share_code: "ZYRX",
     issuer_name: "ZYREXINDO MANDIRI BUANA Tbk",
-    investor_name: "PT. BUNDA INVESTAMA INDONESIA",
+    investor_name: "PT BUNDA INVESTAMA INDONESIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -94469,7 +94469,7 @@ const KSEI_DATA = [
   {
     share_code: "ZYRX",
     issuer_name: "ZYREXINDO MANDIRI BUANA Tbk",
-    investor_name: "PT. BERKSHIRE MULTI INVESTAMA",
+    investor_name: "PT BERKSHIRE MULTI INVESTAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
