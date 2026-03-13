@@ -1,0 +1,276 @@
+// ============================================================
+// KONGLO GROUP DATA — Conglomerate stock groupings
+// Categories: main (large cap), small_micro (small/micro cap), investor_sharing (shared investors)
+// ============================================================
+const KONGLO_GROUPS = [
+  {
+    name: "Salim Group",
+    main: ["INDF", "ICBP", "INET", "AMMN", "BINA"],
+    small_micro: ["LSIP", "SIMP", "IMAS", "IMJS"],
+    investor_sharing: ["DCII", "PANI", "MEDC", "EMTK", "MEGA", "BUMI", "BRMS", "DEWA", "UNIC", "FAST", "JECC"]
+  },
+  {
+    name: "Barito Group (Prajogo Pangestu)",
+    main: ["BRPT", "BREN", "TPIA", "CUAN", "PTRO", "CDIA"],
+    small_micro: [],
+    investor_sharing: ["RATU", "SSIA"]
+  },
+  {
+    name: "Agung Sedayu Group",
+    main: ["PANI", "CBDK"],
+    small_micro: ["ERAA", "ERAL"],
+    investor_sharing: ["PDPP", "INPC", "JIHD"]
+  },
+  {
+    name: "Sinarmas Group",
+    main: ["DSSA", "GEMS", "SMMA", "BSDE", "INKP", "TKIM", "EXCL", "SMAR", "LIFE", "BSIM"],
+    small_micro: ["DUTI", "SMDM", "PYFA", "DMAS"],
+    investor_sharing: ["PLIN"]
+  },
+  {
+    name: "TNT-Saratoga-Adaro",
+    main: ["ADRO", "AADI", "ADMR", "MDKA", "MBMA", "EMAS", "ESSA", "SRTG", "TBIG"],
+    small_micro: ["BFIN", "TRIM", "MPMX"],
+    investor_sharing: ["WOMF", "GOTO", "PALM", "GHON", "GOLD"]
+  },
+  {
+    name: "Djarum Group (Hartono Brothers)",
+    main: ["BBCA", "TOWR", "BELI", "SUPR"],
+    small_micro: ["RANC", "IBST"],
+    investor_sharing: ["DATA", "SSIA", "HEAL", "ARKO"]
+  },
+  {
+    name: "Astra \u2013 Jardine Matheson Corp.",
+    main: ["ASII", "UNTR", "AALI", "AUTO"],
+    small_micro: ["ASGR", "ACST", "HERO"],
+    investor_sharing: ["HEAL", "ARKO"]
+  },
+  {
+    name: "Bayan Resources Group",
+    main: ["BYAN"],
+    small_micro: ["TRJA", "MYOH"],
+    investor_sharing: ["VOKS", "TOTL"]
+  },
+  {
+    name: "Lippo Group",
+    main: ["MLPT"],
+    small_micro: ["MLPL", "LPPF", "MPPA", "KBLV", "LPIN", "LPLI", "LPPS", "LPCK", "LPKR", "GMTD", "LPIN"],
+    investor_sharing: ["LPGI", "NOBU", "SILO"]
+  },
+  {
+    name: "Medco \u2013 Amman Mineral",
+    main: ["MEDC", "AMMN"],
+    small_micro: [],
+    investor_sharing: []
+  },
+  {
+    name: "Harita Group",
+    main: ["NCKL", "CITA"],
+    small_micro: ["TIRT"],
+    investor_sharing: []
+  },
+  {
+    name: "Emtek Group (Elang Mahkota Teknologi)",
+    main: ["EMTK", "SCMA", "BUKA"],
+    small_micro: ["ANJT", "CASS"],
+    investor_sharing: []
+  },
+  {
+    name: "Raja Garuda Mas | Royal Golden Eagle Group",
+    main: [],
+    small_micro: ["INRU"],
+    investor_sharing: []
+  },
+  {
+    name: "Gajah Tunggal \u2013 MAP Group",
+    main: ["MAPA", "MAPI"],
+    small_micro: ["BGTG", "GJTL", "GSMF", "MAPB", "ADMG"],
+    investor_sharing: []
+  },
+  {
+    name: "Wings Group",
+    main: [],
+    small_micro: ["MASB"],
+    investor_sharing: []
+  },
+  {
+    name: "Pakuwon Group",
+    main: ["PWON"],
+    small_micro: [],
+    investor_sharing: ["SAME"]
+  },
+  {
+    name: "Mayapada Group",
+    main: ["SRAJ", "MPRO"],
+    small_micro: ["MAYA", "SONA"],
+    investor_sharing: []
+  },
+  {
+    name: "Karunia Prima Nastari (KPN) \u2013 Wilmar Corp.",
+    main: ["CMNT"],
+    small_micro: ["CEKA"],
+    investor_sharing: []
+  },
+  {
+    name: "First Resources",
+    main: ["FAPA"],
+    small_micro: ["ANJT"],
+    investor_sharing: []
+  },
+  {
+    name: "Rajawali Corp",
+    main: ["ARCI"],
+    small_micro: ["BWPT", "FORU"],
+    investor_sharing: []
+  },
+  {
+    name: "Mandiri Coal Group",
+    main: ["MCOL"],
+    small_micro: ["MAHA"],
+    investor_sharing: []
+  },
+  {
+    name: "Harum Energy Group",
+    main: ["HRUM"],
+    small_micro: [],
+    investor_sharing: []
+  },
+  {
+    name: "Mayora Group",
+    main: ["MYOR"],
+    small_micro: [],
+    investor_sharing: []
+  },
+  {
+    name: "Alfa Corp",
+    main: ["AMRT", "MIDI"],
+    small_micro: ["BLOG"],
+    investor_sharing: ["BANK", "LAJU"]
+  },
+  {
+    name: "Triputra Group \u2013 Adaro Group",
+    main: ["TAPG", "ADRO"],
+    small_micro: ["ASSA", "ESSA", "KMTR", "DAYA", "ASLC"],
+    investor_sharing: []
+  },
+  {
+    name: "Summarecon Group",
+    main: ["SMRA"],
+    small_micro: [],
+    investor_sharing: []
+  },
+  {
+    name: "Sampoerna Group",
+    main: [],
+    small_micro: ["SGRO"],
+    investor_sharing: []
+  },
+  {
+    name: "Trakindo Group",
+    main: ["ABMM"],
+    small_micro: ["HDFA"],
+    investor_sharing: ["GEMS"]
+  },
+  {
+    name: "Ciputra Group",
+    main: ["CTRA"],
+    small_micro: [],
+    investor_sharing: []
+  },
+  {
+    name: "Sungai Budi Group",
+    main: [],
+    small_micro: ["TBLA", "BUDI"],
+    investor_sharing: []
+  },
+  {
+    name: "FKS Group",
+    main: ["FISH"],
+    small_micro: ["AISA"],
+    investor_sharing: []
+  },
+  {
+    name: "Indika Group",
+    main: ["INDY"],
+    small_micro: [],
+    investor_sharing: []
+  },
+  {
+    name: "Kawan Lama Group",
+    main: [],
+    small_micro: ["ACES"],
+    investor_sharing: []
+  },
+  {
+    name: "Gunung Sewu Group | Sequis",
+    main: [],
+    small_micro: ["SIPD"],
+    investor_sharing: []
+  },
+  {
+    name: "Charoen Pokphand Group",
+    main: ["CPIN"],
+    small_micro: ["CPRO"],
+    investor_sharing: []
+  },
+  {
+    name: "Japfa Group",
+    main: ["JPFA"],
+    small_micro: [],
+    investor_sharing: []
+  },
+  {
+    name: "Aneka Kimia Raya Group (AKR)",
+    main: ["AKRA"],
+    small_micro: [],
+    investor_sharing: []
+  },
+  {
+    name: "Garuda Food",
+    main: ["GOOD"],
+    small_micro: ["KEJU"],
+    investor_sharing: []
+  },
+  {
+    name: "Rukun Raharja Group (Happy Hapsoro)",
+    main: ["RAJA", "RATU", "BUVA"],
+    small_micro: ["ARCI", "PSKT", "PADI", "MINA", "SINI"],
+    investor_sharing: ["PTRO", "CBRE"]
+  },
+  {
+    name: "Meratus Line",
+    main: [],
+    small_micro: ["KARW"],
+    investor_sharing: []
+  },
+  {
+    name: "Tempo Scan Pacific",
+    main: ["TSPC"],
+    small_micro: [],
+    investor_sharing: []
+  },
+  {
+    name: "Artha Graha Group",
+    main: [],
+    small_micro: ["INPC", "JIHD", "ECII", "TRUS"],
+    investor_sharing: []
+  },
+  {
+    name: "Tanoko Group",
+    main: ["RISE", "AVIA"],
+    small_micro: ["CAKK", "PEVE", "CLEO", "DEPO"],
+    investor_sharing: ["ABMM", "MERI", "BLES", "ZONE"]
+  },
+  {
+    name: "Bakrie Group",
+    main: ["BUMI", "BRMS", "VKTR", "BNBR", "ENRG", "DEWA"],
+    small_micro: ["MDIA", "VIVA", "UNSP", "BTEL", "ELTY"],
+    investor_sharing: []
+  },
+  {
+    name: "CT Corp (Chairul Tanjung)",
+    main: ["MEGA", "BBHI"],
+    small_micro: [],
+    investor_sharing: ["GIAA"]
+  }
+];
