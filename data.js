@@ -61679,7 +61679,7 @@ const KSEI_DATA = [
   {
     share_code: "MTSM",
     issuer_name: "METRO REALTY Tbk",
-    investor_name: ", PT                   YAKIN WISKON",
+    investor_name: "PT. YAKIN WISKON",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "",
@@ -61692,7 +61692,7 @@ const KSEI_DATA = [
   {
     share_code: "MTSM",
     issuer_name: "METRO REALTY Tbk",
-    investor_name: ", PT                   BARA PTE LTD",
+    investor_name: "PT. BARA PTE LTD",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "",
@@ -61705,7 +61705,7 @@ const KSEI_DATA = [
   {
     share_code: "MTSM",
     issuer_name: "METRO REALTY Tbk",
-    investor_name: ", PT                   PT PERKASA MAKMUR AMARA",
+    investor_name: "PT. PT PERKASA MAKMUR AMARA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -61718,7 +61718,7 @@ const KSEI_DATA = [
   {
     share_code: "MTSM",
     issuer_name: "METRO REALTY Tbk",
-    investor_name: ", PT                   SURYASAKTI BUDIMARKARTI, PT",
+    investor_name: "PT. SURYASAKTI BUDIMARKARTI, PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -61731,7 +61731,7 @@ const KSEI_DATA = [
   {
     share_code: "MTSM",
     issuer_name: "METRO REALTY Tbk",
-    investor_name: ", PT                   KADIT DEVELOPMENT LIMITED",
+    investor_name: "PT. KADIT DEVELOPMENT LIMITED",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -61744,7 +61744,7 @@ const KSEI_DATA = [
   {
     share_code: "MTSM",
     issuer_name: "METRO REALTY Tbk",
-    investor_name: ", PT                   PAN MALAYAN SECURITIES PTE, LTD",
+    investor_name: "PT. PAN MALAYAN SECURITIES PTE, LTD",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -61757,7 +61757,7 @@ const KSEI_DATA = [
   {
     share_code: "MTSM",
     issuer_name: "METRO REALTY Tbk",
-    investor_name: ", PT                   PT GROGOL INDAH",
+    investor_name: "PT. PT GROGOL INDAH",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -61770,7 +61770,7 @@ const KSEI_DATA = [
   {
     share_code: "MTSM",
     issuer_name: "METRO REALTY Tbk",
-    investor_name: ", PT                   WINDY WILLIAM",
+    investor_name: "PT. WINDY WILLIAM",
     investor_type: "ID",
     local_foreign: "D",
     nationality: "INDONESIAN",
@@ -61783,7 +61783,7 @@ const KSEI_DATA = [
   {
     share_code: "MTSM",
     issuer_name: "METRO REALTY Tbk",
-    investor_name: ", PT                   VALENCIA VENLY",
+    investor_name: "PT. VALENCIA VENLY",
     investor_type: "ID",
     local_foreign: "D",
     nationality: "INDONESIAN",
@@ -61796,7 +61796,7 @@ const KSEI_DATA = [
   {
     share_code: "MTSM",
     issuer_name: "METRO REALTY Tbk",
-    investor_name: ", PT                   GHO TIE TENG, MR",
+    investor_name: "PT. GHO TIE TENG, MR",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -61809,7 +61809,7 @@ const KSEI_DATA = [
   {
     share_code: "MTSM",
     issuer_name: "METRO REALTY Tbk",
-    investor_name: ", PT                   GOH YEOK BENG",
+    investor_name: "PT. GOH YEOK BENG",
     investor_type: "",
     local_foreign: "",
     nationality: "",
@@ -82316,7 +82316,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: ", PT                  ASIACITI TRUST SINGAPORE PTE.LTD",
+    investor_name: "PT.ASIACITI TRUST SINGAPORE PTE.LTD",
     investor_type: "OT",
     local_foreign: "F",
     nationality: "SINGAPORE",
@@ -82329,7 +82329,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: ", PT                  DANA PENSIUN PERTAMINA",
+    investor_name: "PT.DANA PENSIUN PERTAMINA",
     investor_type: "PF",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -82342,7 +82342,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: ", PT                  INTERVENTURES CAPITAL PTE. LTD",
+    investor_name: "PT.INTERVENTURES CAPITAL PTE. LTD",
     investor_type: "OT",
     local_foreign: "F",
     nationality: "SINGAPORE",
@@ -82355,7 +82355,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: ", PT                  SUNRISE ASSETS GROUP LIMITED",
+    investor_name: "PT.SUNRISE ASSETS GROUP LIMITED",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "VIRGIN ISLANDS, BRITISH",
@@ -82368,7 +82368,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: ", PT                  HORIZONTE OPPORTUNITIES FUND SPC",
+    investor_name: "PT.HORIZONTE OPPORTUNITIES FUND SPC",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "CAYMAN ISLANDS",
@@ -82381,7 +82381,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: ", PT                  GLENN RAHAYU ADLI ARIFF",
+    investor_name: "PT.GLENN RAHAYU ADLI ARIFF",
     investor_type: "ID",
     local_foreign: "D",
     nationality: "INDONESIAN",
@@ -82394,7 +82394,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: ", PT                  PT. ASURANSI JIWA IFG",
+    investor_name: "PT.PT. ASURANSI JIWA IFG",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -82407,7 +82407,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: ", PT                  BUMI SUMBER SWARNA PT",
+    investor_name: "PT.BUMI SUMBER SWARNA PT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -82420,7 +82420,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: ", PT                  AJB BUMI PUTERA 1912",
+    investor_name: "PT.AJB BUMI PUTERA 1912",
     investor_type: "IS",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -82434,7 +82434,7 @@ const KSEI_DATA = [
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
     investor_name:
-      ", PT                  JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
+      "PT.JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
     investor_type: "OT",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -82447,7 +82447,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: ", PT                  ORTUS HOLDING LTD WM CLIENT",
+    investor_name: "PT.ORTUS HOLDING LTD WM CLIENT",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "VIRGIN ISLANDS, BRITISH",
@@ -82460,7 +82460,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: ", PT                  REKSA DANA OSO FLORES EQUITY FUND",
+    investor_name: "PT.REKSA DANA OSO FLORES EQUITY FUND",
     investor_type: "MF",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -82473,7 +82473,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: ", PT                  Effie Agustina S",
+    investor_name: "PT.Effie Agustina S",
     investor_type: "ID",
     local_foreign: "D",
     nationality: "INDONESIAN",
@@ -82486,7 +82486,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: ", PT                  PT. ALDIRACITA SEKURITAS INDONESIA",
+    investor_name: "PT.PT. ALDIRACITA SEKURITAS INDONESIA",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -82500,7 +82500,7 @@ const KSEI_DATA = [
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
     investor_name:
-      ", PT                  CREDIT SUISSE SEC (EUROPE) LIMITED-94644000",
+      "PT.CREDIT SUISSE SEC (EUROPE) LIMITED-94644000",
     investor_type: "SC",
     local_foreign: "F",
     nationality: "UNITED KINGDOM",
@@ -82513,7 +82513,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: ", PT                  REKSA DANA NARADA SAHAM INDONESIA",
+    investor_name: "PT.REKSA DANA NARADA SAHAM INDONESIA",
     investor_type: "MF",
     local_foreign: "D",
     nationality: "INDONESIA",
@@ -82526,7 +82526,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: ", PT                  GOLDMAN SACHS INTERNATIONAL",
+    investor_name: "PT. GOLDMAN SACHS INTERNATIONAL",
     investor_type: "SC",
     local_foreign: "F",
     nationality: "UNITED KINGDOM",
@@ -82539,7 +82539,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk",
-    investor_name: ", PT                  Louisa.DM",
+    investor_name: "PT.Louisa.DM",
     investor_type: "ID",
     local_foreign: "D",
     nationality: "INDONESIAN",
