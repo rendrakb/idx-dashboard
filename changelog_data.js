@@ -2,7 +2,7 @@ const CHANGELOG_DATA = {
   new_stocks: [
     {
       share_code: "CARS",
-      issuer_name: "INDUSTRI DAN PERDAGANGAN BINTRACO DHARMA Tbk",
+      issuer_name: "INDUSTRI DAN PERDAGANGAN BINTRACO DHARMA TBK",
       investors: [
         {
           investor_name: "PT BERJAYA TRIMAKMUR SEJAHTERA",
@@ -104,7 +104,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: "PT. BALI BINTANG SEJAHTERA",
+          investor_name: "PT BALI BINTANG SEJAHTERA",
           shares: 447286300,
           percentage: 2.98,
           holdings_scripless: 447286300,
@@ -185,7 +185,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: "PT. MITRA PERDANA CITRA",
+          investor_name: "PT MITRA PERDANA CITRA",
           shares: 248774600,
           percentage: 1.66,
           holdings_scripless: 248774600,
@@ -260,7 +260,7 @@ const CHANGELOG_DATA = {
     },
     {
       share_code: "CCSI",
-      issuer_name: "COMMUNICATION CABLE SYSTEMS INDONESIA Tbk",
+      issuer_name: "COMMUNICATION CABLE SYSTEMS INDONESIA TBK",
       investors: [
         {
           investor_name: "GRAHATAMA KREASIBARU",
@@ -281,7 +281,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: "SAPTADAYA BUMITAMA PERSADA PT.",
+          investor_name: "SAPTADAYA BUMITAMA PERSADA PT",
           shares: 244639718,
           percentage: 18.35,
           holdings_scripless: 0,
@@ -320,7 +320,7 @@ const CHANGELOG_DATA = {
     },
     {
       share_code: "ELPI",
-      issuer_name: "PELAYARAN NASIONAL EKALYA PURNAMASARI Tbk",
+      issuer_name: "PELAYARAN NASIONAL EKALYA PURNAMASARI TBK",
       investors: [
         {
           investor_name: "KREASI CIPTA TIMUR",
@@ -332,7 +332,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: "PT. CITRA PRIMA LOKA",
+          investor_name: "PT CITRA PRIMA LOKA",
           shares: 339048200,
           percentage: 4.57,
           holdings_scripless: 339048200,
@@ -341,7 +341,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: "PT. GLOBAL BERKAT SOLUSINDO",
+          investor_name: "PT GLOBAL BERKAT SOLUSINDO",
           shares: 337029600,
           percentage: 4.55,
           holdings_scripless: 337029600,
@@ -380,7 +380,7 @@ const CHANGELOG_DATA = {
     },
     {
       share_code: "JIHD",
-      issuer_name: "JAKARTA INTERNATIONAL HOTELS & DEVELOPMENT Tbk",
+      issuer_name: "JAKARTA INTERNATIONAL HOTELS & DEVELOPMENT TBK",
       investors: [
         {
           investor_name: "PT KRESNA AJI SEMBADA",
@@ -503,7 +503,7 @@ const CHANGELOG_DATA = {
     },
     {
       share_code: "MCOR",
-      issuer_name: "BANK CHINA CONSTRUCTION BANK INDONESIA Tbk",
+      issuer_name: "BANK CHINA CONSTRUCTION BANK INDONESIA TBK",
       investors: [
         {
           investor_name: "CHINA CONSTRUCTION BANK CORPORATION",
@@ -551,7 +551,7 @@ const CHANGELOG_DATA = {
           local_foreign: "F",
         },
         {
-          investor_name: "PT.TIMUR SUBUR",
+          investor_name: "PTTIMUR SUBUR",
           shares: 1012500000,
           percentage: 2.67,
           holdings_scripless: 1012500000,
@@ -581,10 +581,10 @@ const CHANGELOG_DATA = {
     },
     {
       share_code: "SCCO",
-      issuer_name: "SUPREME CABLE MANUFACTURING & COMMERCE Tbk",
+      issuer_name: "SUPREME CABLE MANUFACTURING & COMMERCE TBK",
       investors: [
         {
-          investor_name: "PT. MODA SUKSES MAKMUR",
+          investor_name: "PT MODA SUKSES MAKMUR",
           shares: 276303000,
           percentage: 33.6,
           holdings_scripless: 32303000,
@@ -659,7 +659,7 @@ const CHANGELOG_DATA = {
     },
     {
       share_code: "SIDO",
-      issuer_name: "INDUSTRI JAMU DAN FARMASI SIDO MUNCUL Tbk",
+      issuer_name: "INDUSTRI JAMU DAN FARMASI SIDO MUNCUL TBK",
       investors: [
         {
           investor_name: "PT HOTEL CANDI BARU",
@@ -680,7 +680,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: "PT. INDUSTRI JAMU DAN FARMASI SIDO MUNCUL, TBK",
+          investor_name: "PT INDUSTRI JAMU DAN FARMASI SIDO MUNCUL TBK",
           shares: 564800000,
           percentage: 1.88,
           holdings_scripless: 564800000,
@@ -701,7 +701,7 @@ const CHANGELOG_DATA = {
     },
     {
       share_code: "SMAR",
-      issuer_name: "SINAR MAS AGRO RESOURCES AND TECHNOLOGY Tbk",
+      issuer_name: "SINAR MAS AGRO RESOURCES AND TECHNOLOGY TBK",
       investors: [
         {
           investor_name: "PT PURIMAS SASMITA",
@@ -734,7 +734,7 @@ const CHANGELOG_DATA = {
     },
     {
       share_code: "ULTJ",
-      issuer_name: "ULTRAJAYA MILK INDUSTRY AND TRADING COMPANY Tbk",
+      issuer_name: "ULTRAJAYA MILK INDUSTRY AND TRADING COMPANY TBK",
       investors: [
         {
           investor_name: "SABANA PRAWIRA WIDJAJA",
@@ -773,7 +773,7 @@ const CHANGELOG_DATA = {
           local_foreign: "",
         },
         {
-          investor_name: "PT. INDOLIFE PENSIONTAMA",
+          investor_name: "PT INDOLIFE PENSIONTAMA",
           shares: 247679200,
           percentage: 2.38,
           holdings_scripless: 247679200,
@@ -806,7 +806,7 @@ const CHANGELOG_DATA = {
   changes: [
     {
       share_code: "ADHI",
-      issuer_name: "ADHI KARYA (PERSERO) Tbk",
+      issuer_name: "ADHI KARYA (PERSERO) TBK",
       new_investors: [
         {
           investor_name:
@@ -824,7 +824,7 @@ const CHANGELOG_DATA = {
     },
     {
       share_code: "BBNI",
-      issuer_name: "BANK NEGARA INDONESIA Tbk",
+      issuer_name: "BANK NEGARA INDONESIA TBK",
       new_investors: [
         {
           investor_name:
@@ -842,7 +842,7 @@ const CHANGELOG_DATA = {
     },
     {
       share_code: "BBRI",
-      issuer_name: "BANK RAKYAT INDONESIA (PERSERO) Tbk",
+      issuer_name: "BANK RAKYAT INDONESIA (PERSERO) TBK",
       new_investors: [
         {
           investor_name:
@@ -860,7 +860,7 @@ const CHANGELOG_DATA = {
     },
     {
       share_code: "BBTN",
-      issuer_name: "BANK TABUNGAN NEGARA (PERSERO) Tbk",
+      issuer_name: "BANK TABUNGAN NEGARA (PERSERO) TBK",
       new_investors: [
         {
           investor_name:
@@ -878,10 +878,10 @@ const CHANGELOG_DATA = {
     },
     {
       share_code: "CNTX",
-      issuer_name: "CENTEX Tbk",
+      issuer_name: "CENTEX TBK",
       new_investors: [
         {
-          investor_name: "SERI A PREFEREN           BUDIMAN KENCANA LESTARI",
+          investor_name: "SERI A PREFEREN BUDIMAN KENCANA LESTARI",
           shares: 3310000,
           percentage: 4.73,
           holdings_scripless: 3310000,
@@ -890,7 +890,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: "SERI A PREFEREN           PENFABRIC SDN BERHAD",
+          investor_name: "SERI A PREFEREN PENFABRIC SDN BERHAD",
           shares: 11546054,
           percentage: 16.49,
           holdings_scripless: 11546054,
@@ -899,7 +899,7 @@ const CHANGELOG_DATA = {
           local_foreign: "F",
         },
         {
-          investor_name: "SERI A PREFEREN           PT EASTERNTEX",
+          investor_name: "SERI A PREFEREN PT EASTERNTEX",
           shares: 20298000,
           percentage: 29.0,
           holdings_scripless: 0,
@@ -908,7 +908,7 @@ const CHANGELOG_DATA = {
           local_foreign: "",
         },
         {
-          investor_name: "SERI A PREFEREN           PT PROSPECT MOTOR",
+          investor_name: "SERI A PREFEREN PT PROSPECT MOTOR",
           shares: 23941000,
           percentage: 34.2,
           holdings_scripless: 23941000,
@@ -917,7 +917,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: "SERI A PREFEREN           TORAY INDUSTRIES INC",
+          investor_name: "SERI A PREFEREN TORAY INDUSTRIES INC",
           shares: 4000000,
           percentage: 5.71,
           holdings_scripless: 0,
@@ -926,7 +926,7 @@ const CHANGELOG_DATA = {
           local_foreign: "",
         },
         {
-          investor_name: "SERI A PREFEREN           USMAN",
+          investor_name: "SERI A PREFEREN USMAN",
           shares: 1807800,
           percentage: 2.58,
           holdings_scripless: 1807800,
@@ -977,10 +977,10 @@ const CHANGELOG_DATA = {
     },
     {
       share_code: "GOLD",
-      issuer_name: "VISI TELEKOMUNIKASI INFRASTRUKTUR Tbk",
+      issuer_name: "VISI TELEKOMUNIKASI INFRASTRUKTUR TBK",
       new_investors: [
         {
-          investor_name: ", PT   MULIA SUKSES MANDIRI, PT",
+          investor_name: "PT MULIA SUKSES MANDIRI",
           shares: 108175444,
           percentage: 8.47,
           holdings_scripless: 108175444,
@@ -989,7 +989,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: ", PT   PT LANCAR DISTRINDO",
+          investor_name: "PT LANCAR DISTRINDO",
           shares: 31298200,
           percentage: 2.45,
           holdings_scripless: 31298200,
@@ -998,7 +998,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: ", PT   PT TRIMEGAH SEKURITAS INDONESIA TBK",
+          investor_name: "PT TRIMEGAH SEKURITAS INDONESIA TBK",
           shares: 102659927,
           percentage: 8.04,
           holdings_scripless: 102659927,
@@ -1007,7 +1007,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: ", PT   PT. AMANDA CIPTA PERSADA",
+          investor_name: "PT AMANDA CIPTA PERSADA",
           shares: 280101700,
           percentage: 21.93,
           holdings_scripless: 280101700,
@@ -1016,7 +1016,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: ", PT   SCAVINO VENTURES LIMITED",
+          investor_name: "PT SCAVINO VENTURES LIMITED",
           shares: 63214200,
           percentage: 4.95,
           holdings_scripless: 63214200,
@@ -1025,7 +1025,7 @@ const CHANGELOG_DATA = {
           local_foreign: "F",
         },
         {
-          investor_name: ", PT   SUKSES PRIMA SAKTI, PT",
+          investor_name: "PT SUKSES PRIMA SAKTI",
           shares: 20590800,
           percentage: 1.61,
           holdings_scripless: 20590800,
@@ -1034,7 +1034,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: ", PT   TOWER BERSAMA INFRASTRUCTURE, TBK, PT",
+          investor_name: "TOWER BERSAMA INFRASTRUCTURE TBK",
           shares: 652576009,
           percentage: 51.09,
           holdings_scripless: 652576009,
@@ -1045,7 +1045,7 @@ const CHANGELOG_DATA = {
       ],
       removed_investors: [
         {
-          investor_name: "MULIA SUKSES MANDIRI, PT",
+          investor_name: "PT MULIA SUKSES MANDIRI",
           shares: 108175444,
           percentage: 8.47,
           investor_type: "CP",
@@ -1063,7 +1063,7 @@ const CHANGELOG_DATA = {
           investor_type: "SC",
         },
         {
-          investor_name: "PT. AMANDA CIPTA PERSADA",
+          investor_name: "PT AMANDA CIPTA PERSADA",
           shares: 280101700,
           percentage: 21.93,
           investor_type: "CP",
@@ -1075,13 +1075,13 @@ const CHANGELOG_DATA = {
           investor_type: "CP",
         },
         {
-          investor_name: "SUKSES PRIMA SAKTI, PT",
+          investor_name: "PT SUKSES PRIMA SAKTI",
           shares: 20590800,
           percentage: 1.61,
           investor_type: "CP",
         },
         {
-          investor_name: "TOWER BERSAMA INFRASTRUCTURE, TBK, PT",
+          investor_name: "TOWER BERSAMA INFRASTRUCTURE TBK, PT",
           shares: 652576009,
           percentage: 51.09,
           investor_type: "CP",
@@ -1091,7 +1091,7 @@ const CHANGELOG_DATA = {
     },
     {
       share_code: "MRAT",
-      issuer_name: "MUSTIKA RATU Tbk",
+      issuer_name: "MUSTIKA RATU TBK",
       new_investors: [
         {
           investor_name: "WILSON",
@@ -1115,10 +1115,10 @@ const CHANGELOG_DATA = {
     },
     {
       share_code: "MTSM",
-      issuer_name: "METRO REALTY Tbk",
+      issuer_name: "METRO REALTY TBK",
       new_investors: [
         {
-          investor_name: ", PT                   BARA PTE LTD",
+          investor_name: "PT BARA PTE LTD",
           shares: 48131932,
           percentage: 20.67,
           holdings_scripless: 0,
@@ -1127,7 +1127,7 @@ const CHANGELOG_DATA = {
           local_foreign: "F",
         },
         {
-          investor_name: ", PT                   GHO TIE TENG, MR",
+          investor_name: "PT GHO TIE TENG, MR",
           shares: 3303600,
           percentage: 1.42,
           holdings_scripless: 0,
@@ -1136,7 +1136,7 @@ const CHANGELOG_DATA = {
           local_foreign: "",
         },
         {
-          investor_name: ", PT                   GOH YEOK BENG",
+          investor_name: "PT GOH YEOK BENG",
           shares: 3057200,
           percentage: 1.31,
           holdings_scripless: 0,
@@ -1145,7 +1145,7 @@ const CHANGELOG_DATA = {
           local_foreign: "",
         },
         {
-          investor_name: ", PT                   KADIT DEVELOPMENT LIMITED",
+          investor_name: "PT KADIT DEVELOPMENT LIMITED",
           shares: 7472800,
           percentage: 3.21,
           holdings_scripless: 0,
@@ -1154,8 +1154,7 @@ const CHANGELOG_DATA = {
           local_foreign: "",
         },
         {
-          investor_name:
-            ", PT                   PAN MALAYAN SECURITIES PTE, LTD",
+          investor_name: "PT PAN MALAYAN SECURITIES PTE, LTD",
           shares: 5174400,
           percentage: 2.22,
           holdings_scripless: 0,
@@ -1164,7 +1163,7 @@ const CHANGELOG_DATA = {
           local_foreign: "",
         },
         {
-          investor_name: ", PT                   PT GROGOL INDAH",
+          investor_name: "PT GROGOL INDAH",
           shares: 4804476,
           percentage: 2.06,
           holdings_scripless: 4804476,
@@ -1173,7 +1172,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: ", PT                   PT PERKASA MAKMUR AMARA",
+          investor_name: "PT PERKASA MAKMUR AMARA",
           shares: 44674876,
           percentage: 19.19,
           holdings_scripless: 44674876,
@@ -1182,7 +1181,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: ", PT                   SURYASAKTI BUDIMARKARTI, PT",
+          investor_name: "PT SURYASAKTI BUDIMARKARTI, PT",
           shares: 15271872,
           percentage: 6.56,
           holdings_scripless: 15271872,
@@ -1191,7 +1190,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: ", PT                   VALENCIA VENLY",
+          investor_name: "PT VALENCIA VENLY",
           shares: 4068096,
           percentage: 1.75,
           holdings_scripless: 4068096,
@@ -1200,7 +1199,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: ", PT                   WINDY WILLIAM",
+          investor_name: "PTWINDY WILLIAM",
           shares: 4450056,
           percentage: 1.91,
           holdings_scripless: 4450056,
@@ -1209,7 +1208,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: ", PT                   YAKIN WISKON",
+          investor_name: "PT YAKIN WISKON",
           shares: 80396044,
           percentage: 34.53,
           holdings_scripless: 0,
@@ -1290,7 +1289,7 @@ const CHANGELOG_DATA = {
     },
     {
       share_code: "PTPW",
-      issuer_name: "PRATAMA WIDYA Tbk",
+      issuer_name: "PRATAMA WIDYA TBK",
       new_investors: [
         {
           investor_name: "YOSEPH WIKATAMA",
@@ -1307,10 +1306,10 @@ const CHANGELOG_DATA = {
     },
     {
       share_code: "SRAJ",
-      issuer_name: "SEJAHTERARAYA ANUGRAHJAYA Tbk",
+      issuer_name: "SEJAHTERARAYA ANUGRAHJAYA TBK",
       new_investors: [
         {
-          investor_name: ", PT   BCSS BORON A I, LP",
+          investor_name: "PT BCSS BORON A I, LP",
           shares: 1046836254,
           percentage: 8.55,
           holdings_scripless: 1046836254,
@@ -1319,7 +1318,7 @@ const CHANGELOG_DATA = {
           local_foreign: "F",
         },
         {
-          investor_name: ", PT   BCSS MAVERICK (A) I, LP",
+          investor_name: "PT BCSS MAVERICK (A) I, LP",
           shares: 238254545,
           percentage: 1.95,
           holdings_scripless: 238254545,
@@ -1328,8 +1327,7 @@ const CHANGELOG_DATA = {
           local_foreign: "F",
         },
         {
-          investor_name:
-            ", PT   CGS INTERNATIONAL SECURITIES SINGAPORE PTE LTD",
+          investor_name: "CGS INTERNATIONAL SECURITIES SINGAPORE PTE LTD",
           shares: 600001100,
           percentage: 4.9,
           holdings_scripless: 600001100,
@@ -1338,7 +1336,7 @@ const CHANGELOG_DATA = {
           local_foreign: "F",
         },
         {
-          investor_name: ", PT   DJONI JONATHAN L DRS",
+          investor_name: "PT DJONI JONATHAN L DRS",
           shares: 175516500,
           percentage: 1.43,
           holdings_scripless: 175516500,
@@ -1347,7 +1345,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: ", PT   HARRY WANGIDJAJA",
+          investor_name: "PT HARRY WANGIDJAJA",
           shares: 255904100,
           percentage: 2.09,
           holdings_scripless: 255904100,
@@ -1356,7 +1354,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: ", PT   HIGH PRO INVESTMENTS LIMITED",
+          investor_name: "HIGH PRO INVESTMENTS LIMITED",
           shares: 2179993002,
           percentage: 17.81,
           holdings_scripless: 2179993002,
@@ -1467,10 +1465,10 @@ const CHANGELOG_DATA = {
     },
     {
       share_code: "SUGI",
-      issuer_name: "SUGIH ENERGY Tbk",
+      issuer_name: "SUGIH ENERGY TBK",
       new_investors: [
         {
-          investor_name: ", PT                  AJB BUMI PUTERA 1912",
+          investor_name: "PT AJB BUMI PUTERA 1912",
           shares: 620990100,
           percentage: 2.5,
           holdings_scripless: 620990100,
@@ -1479,8 +1477,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name:
-            ", PT                  ASIACITI TRUST SINGAPORE PTE.LTD",
+          investor_name: "PT ASIACITI TRUST SINGAPORE PTE.LTD",
           shares: 2857994407,
           percentage: 11.52,
           holdings_scripless: 2857994407,
@@ -1489,7 +1486,7 @@ const CHANGELOG_DATA = {
           local_foreign: "F",
         },
         {
-          investor_name: ", PT                  BUMI SUMBER SWARNA PT",
+          investor_name: "PT BUMI SUMBER SWARNA",
           shares: 793166486,
           percentage: 3.2,
           holdings_scripless: 793166486,
@@ -1498,8 +1495,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name:
-            ", PT                  CREDIT SUISSE SEC (EUROPE) LIMITED-94644000",
+          investor_name: "PT CREDIT SUISSE SEC (EUROPE) LIMITED-94644000",
           shares: 393285300,
           percentage: 1.59,
           holdings_scripless: 393285300,
@@ -1508,7 +1504,7 @@ const CHANGELOG_DATA = {
           local_foreign: "F",
         },
         {
-          investor_name: ", PT                  DANA PENSIUN PERTAMINA",
+          investor_name: "PT DANA PENSIUN PERTAMINA",
           shares: 1997328440,
           percentage: 8.05,
           holdings_scripless: 1997328440,
@@ -1517,7 +1513,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: ", PT                  Effie Agustina S",
+          investor_name: "PT Effie Agustina S",
           shares: 428169038,
           percentage: 1.73,
           holdings_scripless: 428169038,
@@ -1526,7 +1522,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: ", PT                  GLENN RAHAYU ADLI ARIFF",
+          investor_name: "PT GLENN RAHAYU ADLI ARIFF",
           shares: 1152022299,
           percentage: 4.64,
           holdings_scripless: 1152022299,
@@ -1535,7 +1531,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: ", PT                  GOLDMAN SACHS INTERNATIONAL",
+          investor_name: "PT GOLDMAN SACHS INTERNATIONAL",
           shares: 357868850,
           percentage: 1.44,
           holdings_scripless: 357868850,
@@ -1544,8 +1540,7 @@ const CHANGELOG_DATA = {
           local_foreign: "F",
         },
         {
-          investor_name:
-            ", PT                  HORIZONTE OPPORTUNITIES FUND SPC",
+          investor_name: "PT HORIZONTE OPPORTUNITIES FUND SPC",
           shares: 1197156233,
           percentage: 4.82,
           holdings_scripless: 1197156233,
@@ -1554,7 +1549,7 @@ const CHANGELOG_DATA = {
           local_foreign: "F",
         },
         {
-          investor_name: ", PT                  INTERVENTURES CAPITAL PTE. LTD",
+          investor_name: "INTERVENTURES CAPITAL PTE. LTD",
           shares: 1912283046,
           percentage: 7.71,
           holdings_scripless: 1912283046,
@@ -1564,7 +1559,7 @@ const CHANGELOG_DATA = {
         },
         {
           investor_name:
-            ", PT                  JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
+            "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
           shares: 511628140,
           percentage: 2.06,
           holdings_scripless: 511628140,
@@ -1573,7 +1568,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: ", PT                  Louisa.DM",
+          investor_name: "PT Louisa.DM",
           shares: 255656619,
           percentage: 1.03,
           holdings_scripless: 255656619,
@@ -1582,7 +1577,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: ", PT                  ORTUS HOLDING LTD WM CLIENT",
+          investor_name: "PT ORTUS HOLDING LTD WM CLIENT",
           shares: 488750000,
           percentage: 1.97,
           holdings_scripless: 488750000,
@@ -1591,8 +1586,7 @@ const CHANGELOG_DATA = {
           local_foreign: "F",
         },
         {
-          investor_name:
-            ", PT                  PT. ALDIRACITA SEKURITAS INDONESIA",
+          investor_name: "PT ALDIRACITA SEKURITAS INDONESIA",
           shares: 410148500,
           percentage: 1.65,
           holdings_scripless: 410148500,
@@ -1601,7 +1595,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: ", PT                  PT. ASURANSI JIWA IFG",
+          investor_name: "PT ASURANSI JIWA IFG",
           shares: 969305073,
           percentage: 3.91,
           holdings_scripless: 969305073,
@@ -1610,8 +1604,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name:
-            ", PT                  REKSA DANA NARADA SAHAM INDONESIA",
+          investor_name: "PT REKSA DANA NARADA SAHAM INDONESIA",
           shares: 379068800,
           percentage: 1.53,
           holdings_scripless: 379068800,
@@ -1620,8 +1613,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name:
-            ", PT                  REKSA DANA OSO FLORES EQUITY FUND",
+          investor_name: "PT REKSA DANA OSO FLORES EQUITY FUND",
           shares: 477645200,
           percentage: 1.93,
           holdings_scripless: 477645200,
@@ -1630,7 +1622,7 @@ const CHANGELOG_DATA = {
           local_foreign: "D",
         },
         {
-          investor_name: ", PT                  SUNRISE ASSETS GROUP LIMITED",
+          investor_name: "PT SUNRISE ASSETS GROUP LIMITED",
           shares: 1609680300,
           percentage: 6.49,
           holdings_scripless: 1609680300,
@@ -1653,7 +1645,7 @@ const CHANGELOG_DATA = {
           investor_type: "OT",
         },
         {
-          investor_name: "BUMI SUMBER SWARNA PT",
+          investor_name: "BUMI SUMBER SWARNA",
           shares: 793166486,
           percentage: 3.2,
           investor_type: "CP",
@@ -1689,7 +1681,7 @@ const CHANGELOG_DATA = {
           investor_type: "SC",
         },
         {
-          investor_name: "HORIZONTE OPPORTUNITIES FUND SPC",
+          investor_name: "PT HORIZONTE OPPORTUNITIES FUND SPC",
           shares: 1197156233,
           percentage: 4.82,
           investor_type: "CP",
@@ -1708,25 +1700,25 @@ const CHANGELOG_DATA = {
           investor_type: "OT",
         },
         {
-          investor_name: "Louisa.DM",
+          investor_name: "PT Louisa.DM",
           shares: 255656619,
           percentage: 1.03,
           investor_type: "ID",
         },
         {
-          investor_name: "ORTUS HOLDING LTD WM CLIENT",
+          investor_name: "PT ORTUS HOLDING LTD WM CLIENT",
           shares: 488750000,
           percentage: 1.97,
           investor_type: "CP",
         },
         {
-          investor_name: "PT. ALDIRACITA SEKURITAS INDONESIA",
+          investor_name: "PT ALDIRACITA SEKURITAS INDONESIA",
           shares: 410148500,
           percentage: 1.65,
           investor_type: "SC",
         },
         {
-          investor_name: "PT. ASURANSI JIWA IFG",
+          investor_name: "PT ASURANSI JIWA IFG",
           shares: 969305073,
           percentage: 3.91,
           investor_type: "IS",
@@ -1821,7 +1813,7 @@ const INV_CHANGES = {
     shares: 491534500,
     percentage: 3.28,
   },
-  "CARS|PT. BALI BINTANG SEJAHTERA": {
+  "CARS|PT BALI BINTANG SEJAHTERA": {
     is_new: true,
     is_new_stock: true,
     shares: 447286300,
@@ -1875,7 +1867,7 @@ const INV_CHANGES = {
     shares: 275763700,
     percentage: 1.84,
   },
-  "CARS|PT. MITRA PERDANA CITRA": {
+  "CARS|PT MITRA PERDANA CITRA": {
     is_new: true,
     is_new_stock: true,
     shares: 248774600,
@@ -1935,7 +1927,7 @@ const INV_CHANGES = {
     shares: 244639718,
     percentage: 18.35,
   },
-  "CCSI|SAPTADAYA BUMITAMA PERSADA PT.": {
+  "CCSI|SAPTADAYA BUMITAMA PERSADA PT": {
     is_new: true,
     is_new_stock: true,
     shares: 244639718,
@@ -1965,13 +1957,13 @@ const INV_CHANGES = {
     shares: 6104700000,
     percentage: 82.36,
   },
-  "ELPI|PT. CITRA PRIMA LOKA": {
+  "ELPI|PT CITRA PRIMA LOKA": {
     is_new: true,
     is_new_stock: true,
     shares: 339048200,
     percentage: 4.57,
   },
-  "ELPI|PT. GLOBAL BERKAT SOLUSINDO": {
+  "ELPI|PT GLOBAL BERKAT SOLUSINDO": {
     is_new: true,
     is_new_stock: true,
     shares: 337029600,
@@ -2103,7 +2095,7 @@ const INV_CHANGES = {
     shares: 1671076228,
     percentage: 4.41,
   },
-  "MCOR|PT.TIMUR SUBUR": {
+  "MCOR|PTTIMUR SUBUR": {
     is_new: true,
     is_new_stock: true,
     shares: 1012500000,
@@ -2121,7 +2113,7 @@ const INV_CHANGES = {
     shares: 489559002,
     percentage: 1.29,
   },
-  "SCCO|PT. MODA SUKSES MAKMUR": {
+  "SCCO|PT MODA SUKSES MAKMUR": {
     is_new: true,
     is_new_stock: true,
     shares: 276303000,
@@ -2181,7 +2173,7 @@ const INV_CHANGES = {
     shares: 678519900,
     percentage: 2.26,
   },
-  "SIDO|PT. INDUSTRI JAMU DAN FARMASI SIDO MUNCUL, TBK": {
+  "SIDO|PT INDUSTRI JAMU DAN FARMASI SIDO MUNCUL TBK": {
     is_new: true,
     is_new_stock: true,
     shares: 564800000,
@@ -2235,7 +2227,7 @@ const INV_CHANGES = {
     shares: 375000000,
     percentage: 3.61,
   },
-  "ULTJ|PT. INDOLIFE PENSIONTAMA": {
+  "ULTJ|PT INDOLIFE PENSIONTAMA": {
     is_new: true,
     is_new_stock: true,
     shares: 247679200,
@@ -2273,261 +2265,261 @@ const INV_CHANGES = {
     shares: 8420666647,
     percentage: 60.0,
   },
-  "CNTX|SERI A PREFEREN           BUDIMAN KENCANA LESTARI": {
+  "CNTX|SERI A PREFEREN BUDIMAN KENCANA LESTARI": {
     is_new: true,
     shares: 3310000,
     percentage: 4.73,
   },
-  "CNTX|SERI A PREFEREN           PENFABRIC SDN BERHAD": {
+  "CNTX|SERI A PREFEREN PENFABRIC SDN BERHAD": {
     is_new: true,
     shares: 11546054,
     percentage: 16.49,
   },
-  "CNTX|SERI A PREFEREN           PT EASTERNTEX": {
+  "CNTX|SERI A PREFEREN PT EASTERNTEX": {
     is_new: true,
     shares: 20298000,
     percentage: 29.0,
   },
-  "CNTX|SERI A PREFEREN           PT PROSPECT MOTOR": {
+  "CNTX|SERI A PREFEREN PT PROSPECT MOTOR": {
     is_new: true,
     shares: 23941000,
     percentage: 34.2,
   },
-  "CNTX|SERI A PREFEREN           TORAY INDUSTRIES INC": {
+  "CNTX|SERI A PREFEREN TORAY INDUSTRIES INC": {
     is_new: true,
     shares: 4000000,
     percentage: 5.71,
   },
-  "CNTX|SERI A PREFEREN           USMAN": {
+  "CNTX|SERI A PREFEREN USMAN": {
     is_new: true,
     shares: 1807800,
     percentage: 2.58,
   },
-  "GOLD|, PT   MULIA SUKSES MANDIRI, PT": {
+  "GOLD|PT MULIA SUKSES MANDIRI": {
     is_new: true,
     shares: 108175444,
     percentage: 8.47,
   },
-  "GOLD|, PT   PT LANCAR DISTRINDO": {
+  "GOLD|PT LANCAR DISTRINDO": {
     is_new: true,
     shares: 31298200,
     percentage: 2.45,
   },
-  "GOLD|, PT   PT TRIMEGAH SEKURITAS INDONESIA TBK": {
+  "GOLD|PT TRIMEGAH SEKURITAS INDONESIA TBK": {
     is_new: true,
     shares: 102659927,
     percentage: 8.04,
   },
-  "GOLD|, PT   PT. AMANDA CIPTA PERSADA": {
+  "GOLD|PT AMANDA CIPTA PERSADA": {
     is_new: true,
     shares: 280101700,
     percentage: 21.93,
   },
-  "GOLD|, PT   SCAVINO VENTURES LIMITED": {
+  "GOLD|PT SCAVINO VENTURES LIMITED": {
     is_new: true,
     shares: 63214200,
     percentage: 4.95,
   },
-  "GOLD|, PT   SUKSES PRIMA SAKTI, PT": {
+  "GOLD|PT SUKSES PRIMA SAKTI": {
     is_new: true,
     shares: 20590800,
     percentage: 1.61,
   },
-  "GOLD|, PT   TOWER BERSAMA INFRASTRUCTURE, TBK, PT": {
+  "GOLD|TOWER BERSAMA INFRASTRUCTURE TBK": {
     is_new: true,
     shares: 652576009,
     percentage: 51.09,
   },
   "MRAT|WILSON": { is_new: true, shares: 10852400, percentage: 2.54 },
-  "MTSM|, PT                   BARA PTE LTD": {
+  "MTSM|PT BARA PTE LTD": {
     is_new: true,
     shares: 48131932,
     percentage: 20.67,
   },
-  "MTSM|, PT                   GHO TIE TENG, MR": {
+  "MTSM|PT GHO TIE TENG, MR": {
     is_new: true,
     shares: 3303600,
     percentage: 1.42,
   },
-  "MTSM|, PT                   GOH YEOK BENG": {
+  "MTSM|PT GOH YEOK BENG": {
     is_new: true,
     shares: 3057200,
     percentage: 1.31,
   },
-  "MTSM|, PT                   KADIT DEVELOPMENT LIMITED": {
+  "MTSM|PT KADIT DEVELOPMENT LIMITED": {
     is_new: true,
     shares: 7472800,
     percentage: 3.21,
   },
-  "MTSM|, PT                   PAN MALAYAN SECURITIES PTE, LTD": {
+  "MTSM|PT PAN MALAYAN SECURITIES PTE, LTD": {
     is_new: true,
     shares: 5174400,
     percentage: 2.22,
   },
-  "MTSM|, PT                   PT GROGOL INDAH": {
+  "MTSM|PT GROGOL INDAH": {
     is_new: true,
     shares: 4804476,
     percentage: 2.06,
   },
-  "MTSM|, PT                   PT PERKASA MAKMUR AMARA": {
+  "MTSM|PT PERKASA MAKMUR AMARA": {
     is_new: true,
     shares: 44674876,
     percentage: 19.19,
   },
-  "MTSM|, PT                   SURYASAKTI BUDIMARKARTI, PT": {
+  "MTSM|PT SURYASAKTI BUDIMARKARTI, PT": {
     is_new: true,
     shares: 15271872,
     percentage: 6.56,
   },
-  "MTSM|, PT                   VALENCIA VENLY": {
+  "MTSM|PT VALENCIA VENLY": {
     is_new: true,
     shares: 4068096,
     percentage: 1.75,
   },
-  "MTSM|, PT                   WINDY WILLIAM": {
+  "MTSM|PT WINDY WILLIAM": {
     is_new: true,
     shares: 4450056,
     percentage: 1.91,
   },
-  "MTSM|, PT                   YAKIN WISKON": {
+  "MTSM|PT YAKIN WISKON": {
     is_new: true,
     shares: 80396044,
     percentage: 34.53,
   },
   "PTPW|YOSEPH WIKATAMA": { is_new: true, shares: 79125000, percentage: 9.01 },
-  "SRAJ|, PT   BCSS BORON A I, LP": {
+  "SRAJ|PT BCSS BORON A I, LP": {
     is_new: true,
     shares: 1046836254,
     percentage: 8.55,
   },
-  "SRAJ|, PT   BCSS MAVERICK (A) I, LP": {
+  "SRAJ|PT BCSS MAVERICK (A) I, LP": {
     is_new: true,
     shares: 238254545,
     percentage: 1.95,
   },
-  "SRAJ|, PT   CGS INTERNATIONAL SECURITIES SINGAPORE PTE LTD": {
+  "SRAJ|CGS INTERNATIONAL SECURITIES SINGAPORE PTE LTD": {
     is_new: true,
     shares: 600001100,
     percentage: 4.9,
   },
-  "SRAJ|, PT   DJONI JONATHAN L DRS": {
+  "SRAJ|PT DJONI JONATHAN L DRS": {
     is_new: true,
     shares: 175516500,
     percentage: 1.43,
   },
-  "SRAJ|, PT   HARRY WANGIDJAJA": {
+  "SRAJ|PT HARRY WANGIDJAJA": {
     is_new: true,
     shares: 255904100,
     percentage: 2.09,
   },
-  "SRAJ|, PT   HIGH PRO INVESTMENTS LIMITED": {
+  "SRAJ|HIGH PRO INVESTMENTS LIMITED": {
     is_new: true,
     shares: 2179993002,
     percentage: 17.81,
   },
-  "SRAJ|, PT   PT SURYA CIPTA INTI CEMERLANG": {
+  "SRAJ|PT SURYA CIPTA INTI CEMERLANG": {
     is_new: true,
     shares: 6152378489,
     percentage: 50.27,
   },
-  "SRAJ|, PT   RANDY LASMANA": {
+  "SRAJ|PT RANDY LASMANA": {
     is_new: true,
     shares: 134770100,
     percentage: 1.1,
   },
-  "SRAJ|, PT   UNITY RISE LIMITED": {
+  "SRAJ|UNITY RISE LIMITED": {
     is_new: true,
     shares: 580000000,
     percentage: 4.74,
   },
-  "SRAJ|, PT   WING HARVEST LIMITED": {
+  "SRAJ|WING HARVEST LIMITED": {
     is_new: true,
     shares: 675665754,
     percentage: 5.52,
   },
-  "SUGI|, PT                  AJB BUMI PUTERA 1912": {
+  "SUGI|PT AJB BUMI PUTERA 1912": {
     is_new: true,
     shares: 620990100,
     percentage: 2.5,
   },
-  "SUGI|, PT                  ASIACITI TRUST SINGAPORE PTE.LTD": {
+  "SUGI|PT ASIACITI TRUST SINGAPORE PTE.LTD": {
     is_new: true,
     shares: 2857994407,
     percentage: 11.52,
   },
-  "SUGI|, PT                  BUMI SUMBER SWARNA PT": {
+  "SUGI|PT BUMI SUMBER SWARNA": {
     is_new: true,
     shares: 793166486,
     percentage: 3.2,
   },
-  "SUGI|, PT                  CREDIT SUISSE SEC (EUROPE) LIMITED-94644000": {
+  "SUGI|PT CREDIT SUISSE SEC (EUROPE) LIMITED-94644000": {
     is_new: true,
     shares: 393285300,
     percentage: 1.59,
   },
-  "SUGI|, PT                  DANA PENSIUN PERTAMINA": {
+  "SUGI|PT DANA PENSIUN PERTAMINA": {
     is_new: true,
     shares: 1997328440,
     percentage: 8.05,
   },
-  "SUGI|, PT                  Effie Agustina S": {
+  "SUGI|PT Effie Agustina S": {
     is_new: true,
     shares: 428169038,
     percentage: 1.73,
   },
-  "SUGI|, PT                  GLENN RAHAYU ADLI ARIFF": {
+  "SUGI|PT GLENN RAHAYU ADLI ARIFF": {
     is_new: true,
     shares: 1152022299,
     percentage: 4.64,
   },
-  "SUGI|, PT                  GOLDMAN SACHS INTERNATIONAL": {
+  "SUGI|PT GOLDMAN SACHS INTERNATIONAL": {
     is_new: true,
     shares: 357868850,
     percentage: 1.44,
   },
-  "SUGI|, PT                  HORIZONTE OPPORTUNITIES FUND SPC": {
+  "SUGI|PT HORIZONTE OPPORTUNITIES FUND SPC": {
     is_new: true,
     shares: 1197156233,
     percentage: 4.82,
   },
-  "SUGI|, PT                  INTERVENTURES CAPITAL PTE. LTD": {
+  "SUGI|INTERVENTURES CAPITAL PTE. LTD": {
     is_new: true,
     shares: 1912283046,
     percentage: 7.71,
   },
-  "SUGI|, PT                  JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA":
+  "SUGI|JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA":
     { is_new: true, shares: 511628140, percentage: 2.06 },
-  "SUGI|, PT                  Louisa.DM": {
+  "SUGI|PT Louisa.DM": {
     is_new: true,
     shares: 255656619,
     percentage: 1.03,
   },
-  "SUGI|, PT                  ORTUS HOLDING LTD WM CLIENT": {
+  "SUGI|PT ORTUS HOLDING LTD WM CLIENT": {
     is_new: true,
     shares: 488750000,
     percentage: 1.97,
   },
-  "SUGI|, PT                  PT. ALDIRACITA SEKURITAS INDONESIA": {
+  "SUGI|PT ALDIRACITA SEKURITAS INDONESIA": {
     is_new: true,
     shares: 410148500,
     percentage: 1.65,
   },
-  "SUGI|, PT                  PT. ASURANSI JIWA IFG": {
+  "SUGI|PT ASURANSI JIWA IFG": {
     is_new: true,
     shares: 969305073,
     percentage: 3.91,
   },
-  "SUGI|, PT                  REKSA DANA NARADA SAHAM INDONESIA": {
+  "SUGI|PT REKSA DANA NARADA SAHAM INDONESIA": {
     is_new: true,
     shares: 379068800,
     percentage: 1.53,
   },
-  "SUGI|, PT                  REKSA DANA OSO FLORES EQUITY FUND": {
+  "SUGI|PT REKSA DANA OSO FLORES EQUITY FUND": {
     is_new: true,
     shares: 477645200,
     percentage: 1.93,
   },
-  "SUGI|, PT                  SUNRISE ASSETS GROUP LIMITED": {
+  "SUGI|PT SUNRISE ASSETS GROUP LIMITED": {
     is_new: true,
     shares: 1609680300,
     percentage: 6.49,
