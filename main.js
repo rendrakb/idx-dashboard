@@ -28,7 +28,7 @@ let state = {
   expandAll: false,
   ffMin: 0,
   ffMax: 100,
-  sortKey: "ticker", // 'ticker' | 'freefloat' | 'hhi'
+  sortKey: "ticker", // 'ticker' | 'freefloat' | 'hhi' | 'marketcap'
   sortDir: "asc", // 'asc' | 'desc'
   sectorFilter: "", // '' = all, or specific sector name
 };
@@ -94,6 +94,9 @@ function buildGroups(data) {
       typeof SECTOR_DATA !== "undefined" ? SECTOR_DATA[g.share_code] : null;
     g.sector = sd ? sd.sector : "";
     g.industry = sd ? sd.industry : "";
+    // Market cap from PRICE_DATA
+    const pi = getPriceInfo(g.share_code);
+    g.marketCap = pi ? pi.mc : 0;
   }
   return Array.from(map.values()).sort((a, b) =>
     a.share_code.localeCompare(b.share_code),
@@ -135,6 +138,12 @@ function applySorting() {
       cmp = a.share_code.localeCompare(b.share_code);
     } else if (sortKey === "hhi") {
       cmp = a.hhi - b.hhi;
+    } else if (sortKey === "marketcap") {
+      // Sort by market cap, but put stocks without data (0) at the end
+      if (a.marketCap === 0 && b.marketCap === 0) cmp = 0;
+      else if (a.marketCap === 0) cmp = 1; // a goes after b
+      else if (b.marketCap === 0) cmp = -1; // a goes before b
+      else cmp = a.marketCap - b.marketCap;
     } else {
       cmp = a.freeFloat - b.freeFloat;
     }
@@ -779,7 +788,8 @@ function initSort() {
   const sortTicker = document.getElementById("sortTicker");
   const sortFF = document.getElementById("sortFF");
   const sortHHI = document.getElementById("sortHHI");
-  const buttons = [sortTicker, sortFF, sortHHI];
+  const sortMCap = document.getElementById("sortMCap");
+  const buttons = [sortTicker, sortFF, sortHHI, sortMCap];
 
   function refreshSortUI() {
     buttons.forEach((btn) => {
@@ -813,6 +823,7 @@ function initSort() {
   sortTicker.addEventListener("click", () => doSort("ticker"));
   sortFF.addEventListener("click", () => doSort("freefloat"));
   if (sortHHI) sortHHI.addEventListener("click", () => doSort("hhi"));
+  if (sortMCap) sortMCap.addEventListener("click", () => doSort("marketcap"));
 
   refreshSortUI();
 }
