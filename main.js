@@ -2038,6 +2038,132 @@ function renderMetricsTab(data) {
     }),
   );
 
+  // Chart 2b: AUM by Local vs Foreign doughnut
+  const aumByLF = { D: 0, F: 0, other: 0 };
+  for (const rec of data) {
+    const price = PRICE_DATA[rec.share_code]?.p || 0;
+    const value = rec.total_holding_shares * price;
+    const lf = rec.local_foreign || 'other';
+    aumByLF[lf] += value;
+  }
+  const aumLFData = [
+    { label: "Lokal", value: aumByLF.D, color: colors.accent },
+    { label: "Asing", value: aumByLF.F, color: colors.foreign },
+    { label: "Tidak Terklasifikasi", value: aumByLF.other, color: colors.unclass },
+  ].filter(d => d.value > 0).sort((a, b) => b.value - a.value);
+  const totalAUM = aumLFData.reduce((sum, d) => sum + d.value, 0);
+  
+  const ctx2b = document.getElementById("chartAUMDistribution");
+  metricsCharts.push(
+    new Chart(ctx2b, {
+      type: "doughnut",
+      data: {
+        labels: aumLFData.map((d) => d.label),
+        datasets: [
+          {
+            data: aumLFData.map((d) => d.value),
+            backgroundColor: aumLFData.map((d) => d.color),
+            borderWidth: 2,
+            borderColor: colors.bgCard,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        cutout: "45%",
+        plugins: {
+          legend: {
+            position: "bottom",
+            labels: {
+              color: colors.textSecondary,
+              font: { size: 11, family: "'Inter', sans-serif" },
+              padding: 12,
+              usePointStyle: true,
+              pointStyleWidth: 8,
+            },
+          },
+          tooltip: {
+            backgroundColor: colors.bgCard,
+            titleColor: colors.textPrimary,
+            bodyColor: colors.textSecondary,
+            borderColor: colors.gridColor,
+            borderWidth: 1,
+            callbacks: {
+              label: function (ctx) {
+                const val = ctx.parsed;
+                const pct = ((val / totalAUM) * 100).toFixed(1).replace(".", ",");
+                return ` ${ctx.label}: ${fmtNum(val)} IDR (${pct}%)`;
+              },
+            },
+          },
+        },
+      },
+    }),
+  );
+
+  // Chart 2c: AUM by Investor Type doughnut
+  const aumByType = {};
+  for (const rec of data) {
+    const price = PRICE_DATA[rec.share_code]?.p || 0;
+    const value = rec.total_holding_shares * price;
+    const t = rec.investor_type || "OT";
+    aumByType[t] = (aumByType[t] || 0) + value;
+  }
+  const aumTypeEntries = Object.entries(aumByType).sort((a, b) => b[1] - a[1]);
+  const aumTypeLabels = aumTypeEntries.map(([k]) => TYPE_LABELS[k] || k);
+  const aumTypeValues = aumTypeEntries.map(([, v]) => v);
+  const totalAUMType = aumTypeValues.reduce((sum, v) => sum + v, 0);
+
+  const ctx2c = document.getElementById("chartAUMCategories");
+  metricsCharts.push(
+    new Chart(ctx2c, {
+      type: "doughnut",
+      data: {
+        labels: aumTypeLabels,
+        datasets: [
+          {
+            data: aumTypeValues,
+            backgroundColor: colors.typeColors.slice(0, aumTypeEntries.length),
+            borderWidth: 2,
+            borderColor: colors.bgCard,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        cutout: "45%",
+        plugins: {
+          legend: {
+            position: "bottom",
+            labels: {
+              color: colors.textSecondary,
+              font: { size: 10, family: "'Inter', sans-serif" },
+              padding: 8,
+              usePointStyle: true,
+              pointStyleWidth: 8,
+            },
+          },
+          tooltip: {
+            backgroundColor: colors.bgCard,
+            titleColor: colors.textPrimary,
+            bodyColor: colors.textSecondary,
+            borderColor: colors.gridColor,
+            borderWidth: 1,
+            callbacks: {
+              label: function (ctx) {
+                const val = ctx.parsed;
+                const pct = ((val / totalAUMType) * 100).toFixed(1).replace(".", ",");
+                return ` ${ctx.label}: ${fmtNum(val)} IDR (${pct}%)`;
+              },
+            },
+          },
+        },
+      },
+    }),
+  );
+
   // Chart 3: Top 20 Investors - horizontal bar (with tooltip stock codes + click + hover cursor)
   const investorStockCounts = new Map();
   for (const rec of data) {
@@ -3818,7 +3944,7 @@ function renderInvestorCard(group) {
           <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <span class="issuer-name" style="font-weight:500;color:var(--text-primary)" title="${esc(group.investor_name)}">${esc(group.investor_name)}${pepBadge(group.investor_name)}</span>
-        <span class="stock-count-pill">${group.stockCount} saham</span>
+        <span class="stock-count-pill">${group.stockCount} Emiten</span>
       </div>
       <div class="card-header-right inv-header-badges">
         ${group.totalAUM > 0 ? `<span class="aum-pill" title="Estimasi nilai total kepemilikan: Rp ${fmtNum(Math.round(group.totalAUM))}">Rp ${fmtMoney(group.totalAUM)}</span>` : ""}
@@ -4726,7 +4852,7 @@ function renderKongloGroupCard(group) {
           <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <span class="konglo-group-name">${esc(group.name)}</span>
-        <span class="konglo-ticker-count">${group.tickerCount} saham</span>
+        <span class="konglo-ticker-count">${group.tickerCount} Emiten</span>
       </div>
       <div class="konglo-header-right">
         <span class="konglo-stat">
