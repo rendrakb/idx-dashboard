@@ -4525,6 +4525,10 @@ function buildKongloGroups() {
       (s, t) => s + t.totalListedShares,
       0,
     );
+    const totalMcap = tickerDetails.reduce((s, t) => {
+      const priceInfo = getPriceInfo(t.ticker);
+      return s + (priceInfo ? priceInfo.mc : 0);
+    }, 0);
 
     return {
       name: g.name,
@@ -4533,6 +4537,7 @@ function buildKongloGroups() {
       foundCount,
       totalHolders,
       totalShares,
+      totalMcap,
     };
   });
 
@@ -4590,6 +4595,8 @@ function applyKongloSorting() {
       cmp = a.name.localeCompare(b.name);
     } else if (sortKey === "stockcount") {
       cmp = a.tickerCount - b.tickerCount;
+    } else if (sortKey === "mcap") {
+      cmp = a.totalMcap - b.totalMcap;
     } else {
       cmp = a.foundCount - b.foundCount;
     }
@@ -4654,10 +4661,11 @@ function renderKongloGroupCard(group) {
           : '<span class="konglo-cat-badge konglo-cat-badge--sharing">Sharing</span>';
     tableRows += `
         <tr class="konglo-ticker-header">
-          <td colspan="5">
+          <td colspan="6">
             <div class="konglo-ticker-header-inner">
               <span class="ticker-badge ticker-link" onclick="event.stopPropagation(); navigateToStock('${esc(t.ticker)}', '${escOnclick(t.issuer_name)}')" style="font-size:10px;padding:2px 5px;cursor:pointer">${esc(t.ticker)}</span>
               <span class="konglo-ticker-issuer inv-name-link" onclick="event.stopPropagation(); navigateToStock('${esc(t.ticker)}', '${escOnclick(t.issuer_name)}')">${esc(t.issuer_name)}</span>${catLabel}
+              <span class="konglo-ticker-mcap"><strong>MCap: ${fmtMcap(getPriceInfo(t.ticker)?.mc || 0)}</strong></span>
               <span class="konglo-ticker-total"><strong class="konglo-ticker-pct">${fmtPctSum(t.pctSum)}</strong> kepemilikan · ${t.holderCount} pemegang saham</span>
             </div>
           </td>
@@ -4683,6 +4691,7 @@ function renderKongloGroupCard(group) {
           <td class="status-col">${lfBadge(rec.local_foreign, rec.nationality, rec.domicile)}</td>
           <td class="right">${sharesHtml}</td>
           <td class="pct-col"><span class="pct-num">${fmtPct(rec.percentage)}</span></td>
+          <td></td>
         </tr>`;
     });
 
@@ -4691,6 +4700,7 @@ function renderKongloGroupCard(group) {
       <div style="display:flex;align-items:center;gap:var(--sp-2);flex-wrap:wrap">
         <span class="ticker-badge ticker-link" onclick="event.stopPropagation(); navigateToStock('${esc(t.ticker)}', '${escOnclick(t.issuer_name)}')" style="font-size:10px;padding:2px 5px;cursor:pointer">${esc(t.ticker)}</span>
         <span class="inv-name-link" onclick="event.stopPropagation(); navigateToStock('${esc(t.ticker)}', '${escOnclick(t.issuer_name)}')" style="font-size:var(--text-xs);color:var(--text-secondary)">${esc(t.issuer_name)}</span>${catLabel}
+        <span class="konglo-ticker-mcap-mobile"><strong>${fmtMcap(getPriceInfo(t.ticker)?.mc || 0)}</strong></span>
         <strong style="font-size:var(--text-sm);font-weight:700;color:var(--accent);margin-left:auto">${fmtPctSum(t.pctSum)}</strong>
       </div>
     </div>`;
@@ -4722,6 +4732,9 @@ function renderKongloGroupCard(group) {
         <span class="konglo-stat">
           <strong>${fmtNum(group.totalHolders)}</strong> pemegang saham · <strong>${fmtNum(group.totalShares)}</strong> lembar
         </span>
+        <span class="konglo-mcap">
+          Market Cap: <strong>${fmtMcap(group.totalMcap)}</strong>
+        </span>
       </div>
     </div>
     <div class="konglo-body">
@@ -4738,6 +4751,7 @@ function renderKongloGroupCard(group) {
               <th>Status</th>
               <th class="right">Saham</th>
               <th class="right">%</th>
+              <th class="right">Market Cap</th>
             </tr>
           </thead>
           <tbody>${tableRows}</tbody>
@@ -4810,7 +4824,8 @@ function initKongloFilters() {
   const resetBtn = document.getElementById("kongloFilterReset");
   const sortNameBtn = document.getElementById("kongloSortName");
   const sortStockCountBtn = document.getElementById("kongloSortStockCount");
-  const sortBtns = [sortNameBtn, sortStockCountBtn];
+  const sortMcapBtn = document.getElementById("kongloSortMcap");
+  const sortBtns = [sortNameBtn, sortStockCountBtn, sortMcapBtn];
 
   const doSearch = debounce(() => {
     kongloState.searchQuery = searchInput.value;
@@ -4865,7 +4880,7 @@ function initKongloFilters() {
     } else {
       kongloState.sortKey = key;
       kongloState.sortDir =
-        key === "found" || key === "stockcount" ? "desc" : "asc";
+        key === "found" || key === "stockcount" || key === "mcap" ? "desc" : "asc";
     }
     refreshKongloSortUI();
     applyKongloFilters();
@@ -4873,6 +4888,7 @@ function initKongloFilters() {
 
   sortNameBtn.addEventListener("click", () => doKongloSort("name"));
   sortStockCountBtn.addEventListener("click", () => doKongloSort("stockcount"));
+  sortMcapBtn.addEventListener("click", () => doKongloSort("mcap"));
 
   resetBtn.addEventListener("click", () => {
     searchInput.value = "";

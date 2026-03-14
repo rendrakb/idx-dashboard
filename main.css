@@ -2829,6 +2829,17 @@ table.inv-table {
   font-weight: 600;
 }
 
+.konglo-mcap {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  white-space: nowrap;
+  text-align: right;
+}
+.konglo-mcap strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 .konglo-notes-btn {
   display: flex;
   align-items: center;
@@ -3036,6 +3047,16 @@ table.inv-table {
   align-items: baseline;
   gap: 4px;
 }
+.konglo-ticker-mcap {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  font-weight: 500;
+  white-space: nowrap;
+}
+.konglo-ticker-mcap strong {
+  color: var(--accent);
+  font-weight: 600;
+}
 .konglo-ticker-pct {
   font-size: var(--text-md);
   font-weight: 700;
@@ -3067,7 +3088,11 @@ table.inv-table {
     gap: var(--sp-2);
   }
   .konglo-header-right {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: var(--sp-1);
+    font-size: 10px;
   }
   .konglo-group-name {
     font-size: var(--text-sm);
@@ -3111,11 +3136,23 @@ table.inv-table {
   .konglo-ticker-total {
     font-size: 10px;
   }
+  .konglo-ticker-mcap {
+    font-size: 10px;
+  }
   .konglo-ticker-pct {
     font-size: var(--text-sm);
   }
   .konglo-ticker-header-mobile {
     padding: 6px var(--sp-2);
+  }
+  .konglo-ticker-mcap-mobile {
+    font-size: 10px;
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+  .konglo-ticker-mcap-mobile strong {
+    color: var(--accent);
+    font-weight: 600;
   }
 }
 
