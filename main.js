@@ -2453,7 +2453,7 @@ function renderMetricsTab(data) {
     }),
   );
 
-  // Chart 6: Top 10 Saham Paling Banyak Investor — horizontal bar
+  // Chart 6: Top 20 Saham Paling Banyak Investor — horizontal bar
   const stockInvestorCounts = new Map();
   for (const rec of data) {
     stockInvestorCounts.set(
@@ -2463,10 +2463,10 @@ function renderMetricsTab(data) {
   }
   const top10stocks = [...stockInvestorCounts.entries()]
     .sort((a, b) => b[1] - a[1])
-    .slice(0, 10)
+    .slice(0, 20)
     .reverse();
 
-  const ctx6 = document.getElementById("chartTop10Stocks");
+  const ctx6 = document.getElementById("chartTop20Stocks");
   metricsCharts.push(
     new Chart(ctx6, {
       type: "bar",
