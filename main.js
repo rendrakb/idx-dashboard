@@ -96,7 +96,7 @@ function buildGroups(data) {
     g.industry = sd ? sd.industry : "";
     // Market cap from PRICE_DATA
     const pi = getPriceInfo(g.share_code);
-    g.marketCap = pi ? pi.mc : 0;
+    g.marketCap = pi && pi.mc ? pi.mc : 0;
   }
   return Array.from(map.values()).sort((a, b) =>
     a.share_code.localeCompare(b.share_code),
@@ -139,11 +139,10 @@ function applySorting() {
     } else if (sortKey === "hhi") {
       cmp = a.hhi - b.hhi;
     } else if (sortKey === "marketcap") {
-      // Sort by market cap, but put stocks without data (0) at the end
-      if (a.marketCap === 0 && b.marketCap === 0) cmp = 0;
-      else if (a.marketCap === 0) cmp = 1; // a goes after b
-      else if (b.marketCap === 0) cmp = -1; // a goes before b
-      else cmp = a.marketCap - b.marketCap;
+      // Sort by market cap, but treat stocks without data (0) as having the lowest value
+      const aVal = a.marketCap || 0;
+      const bVal = b.marketCap || 0;
+      cmp = aVal - bVal;
     } else {
       cmp = a.freeFloat - b.freeFloat;
     }
@@ -363,9 +362,9 @@ function renderGroupCard(group) {
       <div class="card-header-right">
         ${(() => {
           const pi = getPriceInfo(group.share_code);
-          return pi
-            ? `<span class="price-pill"><span class="pill-label">Harga:</span> ${fmtPrice(pi.p)}</span><span class="mcap-pill"><span class="pill-label">MCap:</span> ${fmtMcap(pi.mc)}</span>`
-            : "";
+          const hasPrice = pi && pi.p;
+          const hasMCap = pi && pi.mc;
+          return `<span class="price-pill"><span class="pill-label">Harga:</span> ${hasPrice ? fmtPrice(pi.p) : '<span class="no-data">no data</span>'}</span><span class="mcap-pill"><span class="pill-label">MCap:</span> ${hasMCap ? fmtMcap(pi.mc) : '<span class="no-data">no data</span>'}</span>`;
         })()}
         ${group.sector ? `<span class="sector-badge" title="${esc(group.industry || group.sector)}">${esc(group.sector)}</span>` : ""}
         ${hhiPill(group.hhi, group)}
@@ -378,9 +377,9 @@ function renderGroupCard(group) {
       <div class="mobile-card-meta">
         ${(() => {
           const pi = getPriceInfo(group.share_code);
-          return pi
-            ? `<span class="price-pill"><span class="pill-label">Harga:</span> ${fmtPrice(pi.p)}</span><span class="mcap-pill"><span class="pill-label">MCap:</span> ${fmtMcap(pi.mc)}</span>`
-            : "";
+          const hasPrice = pi && pi.p;
+          const hasMCap = pi && pi.mc;
+          return `<span class="price-pill"><span class="pill-label">Harga:</span> ${hasPrice ? fmtPrice(pi.p) : '<span class="no-data">no price data</span>'}</span><span class="mcap-pill"><span class="pill-label">MCap:</span> ${hasMCap ? fmtMcap(pi.mc) : '<span class="no-data">no mcap data</span>'}</span>`;
         })()}
         ${group.sector ? `<span class="sector-badge" title="${esc(group.industry || group.sector)}">${esc(group.sector)}</span>` : ""}
         ${hhiPill(group.hhi, group)}
@@ -3748,7 +3747,10 @@ function applyInvSorting() {
     if (sortKey === "name") {
       cmp = a.investor_name.localeCompare(b.investor_name);
     } else if (sortKey === "aum") {
-      cmp = a.totalAUM - b.totalAUM;
+      // Sort by AUM, treat investors without data (0) as having the lowest value
+      const aVal = a.totalAUM || 0;
+      const bVal = b.totalAUM || 0;
+      cmp = aVal - bVal;
     } else {
       cmp = a.stockCount - b.stockCount;
     }

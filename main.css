@@ -1841,6 +1841,14 @@ table.inv-table {
   font-weight: 500;
 }
 
+/* No data indicator in price/mcap pills */
+.price-pill .no-data,
+.mcap-pill .no-data {
+  opacity: 0.6;
+  font-style: italic;
+  font-weight: 400;
+}
+
 /* Sector badge on card header */
 .sector-badge {
   display: inline-flex;
