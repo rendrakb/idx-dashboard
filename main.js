@@ -4475,7 +4475,8 @@ function renderChangelogTab() {
         html += `<div class="changelog-change-group">`;
         html += `<div class="changelog-change-group-title">Investor Baru (${newInv.length})</div>`;
         newInv.forEach((inv) => {
-          html += `<div class="changelog-inv-row">`;
+          const pctWidth = Math.min(100, inv.percentage || 0).toFixed(1);
+          html += `<div class="changelog-inv-row" style="--row-pct:${pctWidth}%">`;
           html += `<span class="changelog-badge-new">New</span>`;
           html += `<span class="changelog-inv-name">${esc(inv.investor_name)}</span>`;
           html += `<span class="changelog-inv-detail">${fmtNum(inv.shares)} saham (${fmtPct(inv.percentage)})</span>`;
@@ -4489,7 +4490,8 @@ function renderChangelogTab() {
         html += `<div class="changelog-change-group">`;
         html += `<div class="changelog-change-group-title">Investor Keluar (${removedInv.length})</div>`;
         removedInv.forEach((inv) => {
-          html += `<div class="changelog-inv-row">`;
+          const pctWidth = Math.min(100, inv.percentage || 0).toFixed(1);
+          html += `<div class="changelog-inv-row" style="--row-pct:${pctWidth}%">`;
           html += `<span class="changelog-badge-removed">Keluar</span>`;
           html += `<span class="changelog-inv-name">${esc(inv.investor_name)}</span>`;
           html += `<span class="changelog-inv-detail">${fmtNum(inv.shares)} saham (${fmtPct(inv.percentage)})</span>`;
@@ -4508,7 +4510,8 @@ function renderChangelogTab() {
           const cls =
             diff >= 0 ? "changelog-diff-plus" : "changelog-diff-minus";
           const sign = diff >= 0 ? "+" : "";
-          html += `<div class="changelog-inv-row">`;
+          const newPctWidth = Math.min(100, inv.new_percentage || 0).toFixed(1);
+          html += `<div class="changelog-inv-row" style="--row-pct:${newPctWidth}%">`;
           html += `<span class="changelog-inv-name">${esc(inv.investor_name)}</span>`;
           html += `<span class="${cls}">${sign}${fmtNum(diff)} saham (${sign}${fmtPct(pctDiff)})</span>`;
           html += `<span class="changelog-inv-detail">${fmtNum(inv.old_shares)} → ${fmtNum(inv.new_shares)}</span>`;
@@ -4863,8 +4866,8 @@ function renderKongloGroupCard(group) {
         </span>
       </div>
     </div>
+    <div class="konglo-tickers-row">${chipHtml}</div>
     <div class="konglo-body">
-      <div class="konglo-tickers-row">${chipHtml}</div>
       ${
         foundTickers.length > 0
           ? `

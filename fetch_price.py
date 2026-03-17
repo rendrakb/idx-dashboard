@@ -20,6 +20,10 @@ if not match:
     raise ValueError("Could not find PRICE_DATA in the file")
 
 price_data_str = match.group(1)
+# Convert JavaScript object notation to JSON by quoting keys
+price_data_str = re.sub(r'(\w+):', r'"\1":', price_data_str)
+# Remove trailing commas before closing braces or brackets
+price_data_str = re.sub(r',\s*([}\]])', r'\1', price_data_str)
 price_data = json.loads(price_data_str)
 
 # Get the list of tickers
