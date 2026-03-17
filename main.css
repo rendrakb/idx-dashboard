@@ -4957,6 +4957,34 @@ table.inv-table {
   padding: 4px 0;
   font-size: var(--text-sm);
   flex-wrap: wrap;
+  position: relative;
+  --bar-color: rgba(74, 222, 128, 0.16);
+  --bar-solid-end: calc(var(--row-pct, 0%) - 3%);
+  --bar-fade-end: calc(var(--row-pct, 0%) + 2%);
+  background: linear-gradient(
+    to right,
+    var(--bar-color) 0%,
+    var(--bar-color) var(--bar-solid-end),
+    transparent var(--bar-fade-end),
+    transparent 100%
+  );
+  transition: background 120ms;
+}
+.changelog-inv-row:hover {
+  --bar-hover: rgba(74, 222, 128, 0.26);
+  background: linear-gradient(
+    to right,
+    var(--bar-hover) 0%,
+    var(--bar-hover) var(--bar-solid-end),
+    transparent var(--bar-fade-end),
+    transparent 100%
+  );
+}
+[data-theme="light"] .changelog-inv-row {
+  --bar-color: rgba(21, 128, 61, 0.14);
+}
+[data-theme="light"] .changelog-inv-row:hover {
+  --bar-hover: rgba(21, 128, 61, 0.22);
 }
 .changelog-inv-name {
   font-weight: 500;

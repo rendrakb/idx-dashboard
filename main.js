@@ -352,9 +352,6 @@ function renderGroupCard(group) {
   card.innerHTML = `
     <div class="card-header" role="button" aria-expanded="${isOpen}" tabindex="0">
       <div class="card-header-left">
-        <svg class="chevron" viewBox="0 0 16 16" fill="none">
-          <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
         <span class="ticker-badge">${esc(group.share_code)}</span>
         ${isNewStock ? '<span class="card-new-stock-badge">New</span>' : ""}
         <span class="issuer-name" title="${esc(group.issuer_name)}">${esc(group.issuer_name)}</span>
@@ -3940,9 +3937,6 @@ function renderInvestorCard(group) {
   card.innerHTML = `
     <div class="card-header inv-card-header" role="button" aria-expanded="${isOpen}" tabindex="0">
       <div class="card-header-left">
-        <svg class="chevron" viewBox="0 0 16 16" fill="none">
-          <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
         <span class="issuer-name" style="font-weight:500;color:var(--text-primary)" title="${esc(group.investor_name)}">${esc(group.investor_name)}${pepBadge(group.investor_name)}</span>
         <span class="stock-count-pill">${group.stockCount} Emiten</span>
       </div>
@@ -4463,7 +4457,6 @@ function renderChangelogTab() {
 
       html += `<div class="changelog-stock-card" data-code="${esc(s.share_code)}">`;
       html += `<div class="changelog-stock-header" onclick="this.parentElement.classList.toggle('open')">`;
-      html += `<svg class="chevron" viewBox="0 0 16 16" fill="none"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
       html += `<span class="ticker-badge">${esc(s.share_code)}</span>`;
       html += `<span class="issuer-name">${esc(s.issuer_name)}</span>`;
       html += `<span class="change-summary">${summaryParts.join(" · ")}</span>`;
@@ -4851,15 +4844,12 @@ function renderKongloGroupCard(group) {
   card.innerHTML = `
     <div class="konglo-header" role="button" aria-expanded="${isOpen}" tabindex="0">
       <div class="konglo-header-left">
-        <svg class="chevron" viewBox="0 0 16 16" fill="none">
-          <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
         <span class="konglo-group-name">${esc(group.name)}</span>
         <span class="konglo-ticker-count">${group.tickerCount} Emiten</span>
       </div>
       <div class="konglo-header-right">
         <span class="konglo-stat">
-          <strong>${fmtNum(group.totalHolders)}</strong> pemegang saham · <strong>${fmtNum(group.totalShares)}</strong> lembar
+          <strong>${fmtNum(group.totalHolders)}</strong> pemegang<br><strong>${fmtNum(group.totalShares)}</strong> lembar
         </span>
         <span class="konglo-mcap">
           Market Cap: <strong>${fmtMcap(group.totalMcap)}</strong>
