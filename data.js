@@ -16576,7 +16576,7 @@ const KSEI_DATA = [
   {
     share_code: "BREN",
     issuer_name: "BARITO RENEWABLES ENERGY TBK",
-    investor_name: "PT Barito Pacific TBK",
+    investor_name: "BARITO PACIFIC TBK",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "INDONESIA",
