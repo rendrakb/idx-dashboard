@@ -3434,6 +3434,12 @@ function refreshMetricsChartColors() {
 function init() {
   initTheme();
   initTabs();
+  
+  // Update date-info with price data fetch time
+  const dateInfoEl = document.getElementById("dateInfo");
+  if (dateInfoEl && typeof PRICE_DATA_META !== "undefined") {
+    dateInfoEl.textContent = `Sumber: KSEI \u00A0·\u00A0 Harga: ${PRICE_DATA_META.fetchTime}`;
+  }
 
   requestAnimationFrame(() => {
     state.allGroups = buildGroups(KSEI_DATA);
