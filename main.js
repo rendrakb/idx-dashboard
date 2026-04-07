@@ -2181,7 +2181,7 @@ function renderMetricsTab(data) {
             data: top20.map((d) => d.count),
             backgroundColor: colors.accent,
             borderRadius: 3,
-            barThickness: 12,
+            barPercentage: 0.95,
           },
         ],
       },
@@ -2280,7 +2280,7 @@ function renderMetricsTab(data) {
             data: top20AUM.map((d) => d.aum),
             backgroundColor: colors.accent,
             borderRadius: 3,
-            barThickness: 12,
+            barPercentage: 0.95,
           },
         ],
       },
@@ -2437,7 +2437,7 @@ function renderMetricsTab(data) {
               d[0] === "Indonesia" ? colors.accent : colors.accent + "99",
             ),
             borderRadius: 3,
-            barThickness: 12,
+            barPercentage: 0.95,
           },
         ],
       },
@@ -2599,6 +2599,7 @@ function renderMetricsTab(data) {
             data: top10stocks.map((d) => d[1]),
             backgroundColor: colors.accent,
             borderRadius: 3,
+            barPercentage: 0.95,
           },
         ],
       },
@@ -2623,6 +2624,7 @@ function renderMetricsTab(data) {
         },
         scales: {
           x: {
+            reverse: true,
             grid: { color: colors.gridColor },
             ticks: {
               color: colors.textMuted,
@@ -2633,6 +2635,7 @@ function renderMetricsTab(data) {
             },
           },
           y: {
+            position: 'right',
             grid: { display: false },
             ticks: {
               color: colors.textSecondary,
@@ -2733,8 +2736,7 @@ function renderMetricsTab(data) {
         .map(([code, pct]) => ({ code, pct })),
     }))
     .sort((a, b) => b.stockCount - a.stockCount)
-    .slice(0, 20)
-    .reverse(); // reverse for horizontal bar (biggest at top)
+    .slice(0, 20);
 
   const ctx7 = document.getElementById("chartCongloPepFootprint");
   metricsCharts.push(
@@ -2754,6 +2756,7 @@ function renderMetricsTab(data) {
             ),
             borderWidth: 1,
             borderRadius: 3,
+            barPercentage: 0.95,
           },
         ],
       },
@@ -2796,6 +2799,7 @@ function renderMetricsTab(data) {
         },
         scales: {
           x: {
+            reverse: true,
             title: {
               display: true,
               text: "Jumlah Saham",
@@ -2806,6 +2810,7 @@ function renderMetricsTab(data) {
             ticks: { color: colors.textMuted, font: { size: 10 }, stepSize: 1 },
           },
           y: {
+            position: 'right',
             grid: { display: false },
             ticks: {
               color: footprintData.map((d) =>
@@ -3001,6 +3006,7 @@ function renderMetricsTab(data) {
               data: topKongloStocks.map((d) => d.totalPct),
               backgroundColor: colors.accent,
               borderRadius: 3,
+              barPercentage: 0.95,
             },
           ],
         },
@@ -3041,6 +3047,7 @@ function renderMetricsTab(data) {
           },
           scales: {
             x: {
+              reverse: true,
               title: {
                 display: true,
                 text: "Total Kepemilikan Konglo/PEP (%)",
@@ -3055,6 +3062,7 @@ function renderMetricsTab(data) {
               },
             },
             y: {
+              position: 'right',
               grid: { display: false },
               ticks: {
                 color: colors.textSecondary,
@@ -3099,6 +3107,7 @@ function renderMetricsTab(data) {
               ),
               borderWidth: 1,
               borderRadius: 3,
+              barPercentage: 0.95,
             },
           ],
         },
@@ -3131,6 +3140,7 @@ function renderMetricsTab(data) {
           },
           scales: {
             x: {
+              reverse: true,
               title: {
                 display: true,
                 text: "Total Kepemilikan (%)",
@@ -3145,6 +3155,7 @@ function renderMetricsTab(data) {
               },
             },
             y: {
+              position: 'right',
               grid: { display: false },
               ticks: {
                 color: kongloOwnershipData.map((d) =>
@@ -3168,8 +3179,7 @@ function renderMetricsTab(data) {
       sectorCount.set(s, (sectorCount.get(s) || 0) + 1);
     }
     const sectorDistData = [...sectorCount.entries()]
-      .sort((a, b) => b[1] - a[1])
-      .reverse(); // biggest at top
+      .sort((a, b) => b[1] - a[1]);
 
     const sectorPalette = [
       colors.accent,
@@ -3200,6 +3210,7 @@ function renderMetricsTab(data) {
                 (_, i) => sectorPalette[i % sectorPalette.length],
               ),
               borderRadius: 3,
+              barPercentage: 0.95,
             },
           ],
         },
@@ -3228,10 +3239,12 @@ function renderMetricsTab(data) {
           },
           scales: {
             x: {
+              reverse: true,
               grid: { color: colors.gridColor },
               ticks: { color: colors.textMuted, font: { size: 10 } },
             },
             y: {
+              position: 'right',
               grid: { display: false },
               ticks: {
                 color: colors.textSecondary,
@@ -3368,6 +3381,7 @@ function renderMetricsTab(data) {
               data: sectorCCSData.map((d) => d.avg),
               backgroundColor: sectorCCSData.map((d) => ccsBarColor(d.avg)),
               borderRadius: 3,
+              barPercentage: 0.95,
             },
           ],
         },
@@ -3401,6 +3415,7 @@ function renderMetricsTab(data) {
           },
           scales: {
             x: {
+              reverse: true,
               title: {
                 display: true,
                 text: "Rata-rata CCS (0\u2013100)",
@@ -3412,6 +3427,7 @@ function renderMetricsTab(data) {
               max: 100,
             },
             y: {
+              position: 'right',
               grid: { display: false },
               ticks: {
                 color: colors.textSecondary,
