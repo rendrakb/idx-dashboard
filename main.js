@@ -2695,12 +2695,14 @@ function renderMetricsTab(data) {
       groupFootprint.set(info.group, {
         stocks: new Set(),
         totalPct: 0,
+        recordCount: 0,
         type: info.type,
         stockPcts: new Map(),
       });
     const entry = groupFootprint.get(info.group);
     entry.stocks.add(rec.share_code);
     entry.totalPct += rec.percentage || 0;
+    entry.recordCount += 1;
     // Accumulate per-stock pct for tooltip
     entry.stockPcts.set(
       rec.share_code,
@@ -2712,7 +2714,7 @@ function renderMetricsTab(data) {
     .map(([group, d]) => ({
       group,
       stockCount: d.stocks.size,
-      totalPct: d.totalPct,
+      totalPct: d.totalPct / (d.recordCount || 1),
       type: d.type,
       stockList: [...d.stockPcts.entries()]
         .sort((a, b) => b[1] - a[1])
@@ -2764,7 +2766,7 @@ function renderMetricsTab(data) {
                 const d = footprintData[ctx.dataIndex];
                 const lines = [
                   `Saham dimiliki: ${d.stockCount}`,
-                  `Total kepemilikan: ${d.totalPct.toFixed(2).replace(".", ",")}%`,
+                  `Rata-rata kepemilikan: ${d.totalPct.toFixed(2).replace(".", ",")}%`,
                   "",
                 ];
                 const maxShow = 15;
