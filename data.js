@@ -16627,7 +16627,7 @@ const KSEI_DATA = [
   {
     share_code: "BREN",
     issuer_name: "BARITO RENEWABLES ENERGY Tbk",
-    investor_name: "PT Barito Pacific Tbk",
+    investor_name: "BARITO PACIFIC Tbk",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "",
@@ -86404,7 +86404,7 @@ const KSEI_DATA = [
   {
     share_code: "TPIA",
     issuer_name: "CHANDRA ASRI PACIFIC Tbk",
-    investor_name: "BARITO PACIFIC TBK",
+    investor_name: "BARITO PACIFIC Tbk",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "",
