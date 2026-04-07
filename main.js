@@ -343,13 +343,13 @@ function renderGroupCard(group) {
         <span class="issuer-name" title="${esc(group.issuer_name)}">${esc(group.issuer_name)}</span>
       </div>
       <div class="card-header-right">
+        ${group.sector ? `<span class="sector-badge" title="${esc(group.industry || group.sector)}">${esc(group.sector)}</span>` : ""}
         ${(() => {
           const pi = getPriceInfo(group.share_code);
           const hasPrice = pi && pi.p;
           const hasMCap = pi && pi.mc;
           return `<span class="price-pill"><span class="pill-label">Harga:</span> ${hasPrice ? fmtPrice(pi.p) : '<span class="no-data">no data</span>'}</span><span class="mcap-pill"><span class="pill-label">MCap:</span> ${hasMCap ? fmtMcap(pi.mc) : '<span class="no-data">no data</span>'}</span>`;
         })()}
-        ${group.sector ? `<span class="sector-badge" title="${esc(group.industry || group.sector)}">${esc(group.sector)}</span>` : ""}
         ${hhiPill(group.hhi, group)}
         <span class="holder-count">${fmtNum(group.holderCount)} pemegang saham</span>
         <span class="pct-sum">${fmtPctSum(group.pctSum)}</span>
@@ -358,13 +358,13 @@ function renderGroupCard(group) {
     </div>
     <div class="card-body">
       <div class="mobile-card-meta">
+        ${group.sector ? `<span class="sector-badge" title="${esc(group.industry || group.sector)}">${esc(group.sector)}</span>` : ""}
         ${(() => {
           const pi = getPriceInfo(group.share_code);
           const hasPrice = pi && pi.p;
           const hasMCap = pi && pi.mc;
           return `<span class="price-pill"><span class="pill-label">Harga:</span> ${hasPrice ? fmtPrice(pi.p) : '<span class="no-data">no price data</span>'}</span><span class="mcap-pill"><span class="pill-label">MCap:</span> ${hasMCap ? fmtMcap(pi.mc) : '<span class="no-data">no mcap data</span>'}</span>`;
         })()}
-        ${group.sector ? `<span class="sector-badge" title="${esc(group.industry || group.sector)}">${esc(group.sector)}</span>` : ""}
         ${hhiPill(group.hhi, group)}
       </div>
       <div class="card-body-inner">
