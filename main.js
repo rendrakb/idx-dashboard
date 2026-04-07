@@ -153,12 +153,31 @@ function applySorting() {
 // ============================================================
 // NUMBER FORMATTING (Indonesian locale)
 // ============================================================
+function fmtAbbrevValue(value) {
+  const formatted = value.toFixed(1).replace(/\.0$/, "");
+  return formatted.replace(".", ",");
+}
+
+function fmtAbbrev(n) {
+  if (n === null || n === undefined || n === "") return "—";
+  const num = Number(n);
+  if (!Number.isFinite(num)) return "—";
+  if (num === 0) return "0";
+
+  const abs = Math.abs(num);
+  const sign = num < 0 ? "-" : "";
+
+  if (abs >= 1e12) return sign + fmtAbbrevValue(abs / 1e12) + "t";
+  if (abs >= 1e9) return sign + fmtAbbrevValue(abs / 1e9) + "b";
+  if (abs >= 1e6) return sign + fmtAbbrevValue(abs / 1e6) + "m";
+  if (abs >= 1e3) return sign + fmtAbbrevValue(abs / 1e3) + "k";
+
+  return sign + Math.round(abs).toString();
+}
+
 function fmtNum(n) {
   if (n === null || n === undefined || n === "") return "—";
-  if (n === 0) return "0";
-  return Math.round(n)
-    .toString()
-    .replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  return fmtAbbrev(n);
 }
 
 function fmtPct(p) {
@@ -170,35 +189,22 @@ function fmtPctSum(p) {
   return p.toFixed(2).replace(".", ",") + "%";
 }
 
-// Format IDR price (Rp 1.234)
+// Format IDR price (Rp 1k, Rp 1m, etc.)
 function fmtPrice(n) {
   if (n === null || n === undefined) return "—";
-  return (
-    "Rp " +
-    Math.round(n)
-      .toString()
-      .replace(/\B(?=(\d{3})+(?!\d))/g, ".")
-  );
+  return "Rp " + fmtAbbrev(n);
 }
 
-// Format large IDR amounts with T (Triliun), B (Miliar), M (Juta) suffixes
+// Format large IDR amounts with t, b, m, k suffixes
 function fmtMoney(n) {
   if (n === null || n === undefined || n === 0) return "—";
-  const abs = Math.abs(n);
-  if (abs >= 1e12) return (n / 1e12).toFixed(2).replace(".", ",") + "T";
-  if (abs >= 1e9) return (n / 1e9).toFixed(2).replace(".", ",") + "B";
-  if (abs >= 1e6) return (n / 1e6).toFixed(1).replace(".", ",") + "M";
-  return fmtNum(Math.round(n));
+  return "Rp " + fmtAbbrev(n);
 }
 
-// Format market cap (shorter: 851,2T)
+// Format market cap (shorter: 851,2t)
 function fmtMcap(n) {
   if (n === null || n === undefined || n === 0) return "—";
-  const abs = Math.abs(n);
-  if (abs >= 1e12) return (n / 1e12).toFixed(1).replace(".", ",") + " T";
-  if (abs >= 1e9) return (n / 1e9).toFixed(1).replace(".", ",") + " B";
-  if (abs >= 1e6) return (n / 1e6).toFixed(0).replace(".", ",") + " M";
-  return fmtNum(Math.round(n));
+  return fmtAbbrev(n);
 }
 
 // Get price data for a ticker
@@ -241,7 +247,7 @@ function hhiPill(ccs, group) {
     tip +=
       "\nCR1: " + fmtPct(group.cr1) + "% · CR3: " + fmtPct(group.cr3) + "%";
     tip += "\nHHI klasik: " + fmtNum(group.hhiRaw);
-    tip += "\nHolder 1%+: " + group.holderCount;
+    tip += "\nHolder 1%+: " + fmtNum(group.holderCount);
   }
   return (
     '<span class="hhi-pill ' +
@@ -345,7 +351,7 @@ function renderGroupCard(group) {
         })()}
         ${group.sector ? `<span class="sector-badge" title="${esc(group.industry || group.sector)}">${esc(group.sector)}</span>` : ""}
         ${hhiPill(group.hhi, group)}
-        <span class="holder-count">${group.holderCount} pemegang saham</span>
+        <span class="holder-count">${fmtNum(group.holderCount)} pemegang saham</span>
         <span class="pct-sum">${fmtPctSum(group.pctSum)}</span>
         <span class="remaining-float-pill" title="Sisa float = 100% − ${fmtPctSum(group.pctSum)}">Float ${fmtPctSum(group.freeFloat)}</span>
       </div>
@@ -2162,8 +2168,7 @@ function renderMetricsTab(data) {
       codes: [...codes].sort(),
     }))
     .sort((a, b) => b.count - a.count)
-    .slice(0, 20)
-    .reverse(); // reverse for horizontal bar (bottom to top)
+    .slice(0, 20);
 
   const ctx3 = document.getElementById("chartTop20Investors");
   metricsCharts.push(
@@ -2176,6 +2181,7 @@ function renderMetricsTab(data) {
             data: top20.map((d) => d.count),
             backgroundColor: colors.accent,
             borderRadius: 3,
+            barThickness: 12,
           },
         ],
       },
@@ -2223,6 +2229,7 @@ function renderMetricsTab(data) {
         },
         scales: {
           x: {
+            reverse: true,
             grid: { color: colors.gridColor },
             ticks: {
               color: colors.textMuted,
@@ -2230,6 +2237,7 @@ function renderMetricsTab(data) {
             },
           },
           y: {
+            position: 'right',
             grid: { display: false },
             ticks: {
               color: colors.textSecondary,
@@ -2259,8 +2267,7 @@ function renderMetricsTab(data) {
       codes: [...data.codes].sort(),
     }))
     .sort((a, b) => b.aum - a.aum)
-    .slice(0, 20)
-    .reverse(); // reverse for horizontal bar (bottom to top)
+    .slice(0, 20);
 
   const ctx3b = document.getElementById("chartTop20InvestorsAUM");
   metricsCharts.push(
@@ -2273,6 +2280,7 @@ function renderMetricsTab(data) {
             data: top20AUM.map((d) => d.aum),
             backgroundColor: colors.accent,
             borderRadius: 3,
+            barThickness: 12,
           },
         ],
       },
@@ -2320,6 +2328,7 @@ function renderMetricsTab(data) {
         },
         scales: {
           x: {
+            reverse: true,
             grid: { color: colors.gridColor },
             ticks: {
               color: colors.textMuted,
@@ -2330,6 +2339,7 @@ function renderMetricsTab(data) {
             },
           },
           y: {
+            position: 'right',
             grid: { display: false },
             ticks: {
               color: colors.textSecondary,
@@ -2412,8 +2422,7 @@ function renderMetricsTab(data) {
   }
   const top15countries = [...countryCounts.entries()]
     .sort((a, b) => b[1] - a[1])
-    .slice(0, 15)
-    .reverse();
+    .slice(0, 15);
 
   const ctx4 = document.getElementById("chartCountryBreakdown");
   metricsCharts.push(
@@ -2428,6 +2437,7 @@ function renderMetricsTab(data) {
               d[0] === "Indonesia" ? colors.accent : colors.accent + "99",
             ),
             borderRadius: 3,
+            barThickness: 12,
           },
         ],
       },
@@ -2459,6 +2469,8 @@ function renderMetricsTab(data) {
         },
         scales: {
           x: {
+            type: 'logarithmic',
+            reverse: true,
             grid: { color: colors.gridColor },
             ticks: {
               color: colors.textMuted,
@@ -2469,6 +2481,7 @@ function renderMetricsTab(data) {
             },
           },
           y: {
+            position: 'right',
             grid: { display: false },
             ticks: {
               color: colors.textSecondary,
@@ -2573,8 +2586,7 @@ function renderMetricsTab(data) {
   }
   const top10stocks = [...stockInvestorCounts.entries()]
     .sort((a, b) => b[1] - a[1])
-    .slice(0, 20)
-    .reverse();
+    .slice(0, 20);
 
   const ctx6 = document.getElementById("chartTop20Stocks");
   metricsCharts.push(
@@ -2975,8 +2987,7 @@ function renderMetricsTab(data) {
       }))
       .filter((d) => d.totalPct > 0)
       .sort((a, b) => b.totalPct - a.totalPct)
-      .slice(0, 20)
-      .reverse(); // biggest at top for horizontal bar
+      .slice(0, 20);
 
     const ctx9 = document.getElementById("chartTopKongloStocks");
     metricsCharts.push(
@@ -3066,8 +3077,7 @@ function renderMetricsTab(data) {
         type: d.type,
       }))
       .sort((a, b) => b.totalPct - a.totalPct)
-      .slice(0, 20)
-      .reverse(); // reverse for horizontal bar (biggest at top)
+      .slice(0, 20);
 
     const ctx10 = document.getElementById("chartKongloTotalOwnership");
     metricsCharts.push(
@@ -3338,8 +3348,7 @@ function renderMetricsTab(data) {
         min: Math.min(...d.values),
         max: Math.max(...d.values),
       }))
-      .sort((a, b) => b.avg - a.avg)
-      .reverse();
+      .sort((a, b) => b.avg - a.avg);
 
     function ccsBarColor(avg) {
       if (avg <= 25) return "#16a34a";
@@ -4393,7 +4402,7 @@ function renderKongloGroupCard(group) {
           sharedHtml = ` <span class="konglo-shared-label" data-tip-html="<div style='font-size:11px;font-weight:600;margin-bottom:3px'>Juga di grup:</div><ul style='margin:0;padding-left:16px'>${tipItems}</ul>">shared</span>`;
         }
         const title = t.found
-          ? `${t.issuer_name} — ${t.holderCount} pemegang saham, ${fmtPctSum(t.pctSum)} kepemilikan`
+          ? `${t.issuer_name} — ${fmtNum(t.holderCount)} pemegang saham, ${fmtPctSum(t.pctSum)} kepemilikan`
           : "Tidak ditemukan di data KSEI";
         return `<span class="konglo-chip ${cls}" title="${esc(title)}">${t.ticker}${sharedHtml}</span>`;
       })
@@ -4426,7 +4435,7 @@ function renderKongloGroupCard(group) {
               <span class="ticker-badge ticker-link" onclick="event.stopPropagation(); navigateToStock('${esc(t.ticker)}', '${escOnclick(t.issuer_name)}')" style="font-size:10px;padding:2px 5px;cursor:pointer">${esc(t.ticker)}</span>
               <span class="konglo-ticker-issuer inv-name-link" onclick="event.stopPropagation(); navigateToStock('${esc(t.ticker)}', '${escOnclick(t.issuer_name)}')">${esc(t.issuer_name)}</span>${catLabel}
               <span class="konglo-ticker-mcap"><strong>MCap: ${fmtMcap(getPriceInfo(t.ticker)?.mc || 0)}</strong></span>
-              <span class="konglo-ticker-total"><strong class="konglo-ticker-pct">${fmtPctSum(t.pctSum)}</strong> kepemilikan · ${t.holderCount} pemegang saham</span>
+              <span class="konglo-ticker-total"><strong class="konglo-ticker-pct">${fmtPctSum(t.pctSum)}</strong> kepemilikan · ${fmtNum(t.holderCount)} pemegang saham</span>
             </div>
           </td>
         </tr>`;
@@ -4483,7 +4492,7 @@ function renderKongloGroupCard(group) {
     <div class="konglo-header" role="button" aria-expanded="${isOpen}" tabindex="0">
       <div class="konglo-header-left">
         <span class="konglo-group-name">${esc(group.name)}</span>
-        <span class="konglo-ticker-count">${group.tickerCount} Emiten</span>
+        <span class="konglo-ticker-count">${fmtNum(group.tickerCount)} Emiten</span>
       </div>
       <div class="konglo-header-right">
         <span class="konglo-stat">
