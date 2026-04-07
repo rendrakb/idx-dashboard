@@ -290,24 +290,8 @@ function renderGroupCard(group) {
   group.records.forEach((rec, i) => {
     const pctWidth = Math.min(100, rec.percentage).toFixed(1);
 
-    // Changelog badge lookup
     let invChangeBadge = "";
     let invChangeBadgeMobile = "";
-    if (typeof INV_CHANGES !== "undefined") {
-      const key = group.share_code + "|" + rec.investor_name;
-      const ch = INV_CHANGES[key];
-      if (ch) {
-        if (ch.is_new) {
-          invChangeBadge = `<span class="inv-new-badge">New</span>`;
-          invChangeBadgeMobile = invChangeBadge;
-        } else if (ch.share_diff && ch.share_diff !== 0) {
-          const sign = ch.share_diff > 0 ? "+" : "";
-          const cls = ch.share_diff > 0 ? "plus" : "minus";
-          invChangeBadge = `<span class="inv-share-diff ${cls}">${sign}${fmtNum(ch.share_diff)}</span>`;
-          invChangeBadgeMobile = invChangeBadge;
-        }
-      }
-    }
 
     // Combined shares column with labeled Scripless/Scrip lines
     let sharesHtml = `<div class="shares-combined">${fmtNum(rec.total_holding_shares)}`;
@@ -343,17 +327,13 @@ function renderGroupCard(group) {
       </div>`;
   });
 
-  // Check if this is a new stock
-  const isNewStock =
-    typeof CHANGELOG_DATA !== "undefined" &&
-    CHANGELOG_DATA.new_stocks &&
-    CHANGELOG_DATA.new_stocks.some((s) => s.share_code === group.share_code);
+  const isNewStock = false;
 
   card.innerHTML = `
     <div class="card-header" role="button" aria-expanded="${isOpen}" tabindex="0">
       <div class="card-header-left">
         <span class="ticker-badge">${esc(group.share_code)}</span>
-        ${isNewStock ? '<span class="card-new-stock-badge">New</span>' : ""}
+
         <span class="issuer-name" title="${esc(group.issuer_name)}">${esc(group.issuer_name)}</span>
       </div>
       <div class="card-header-right">
@@ -1087,8 +1067,6 @@ function getCurrentTab() {
     return "konglo";
   if (!document.getElementById("tabMetrics").classList.contains("hidden"))
     return "metrics";
-  if (!document.getElementById("tabChangelog").classList.contains("hidden"))
-    return "changelog";
   return "summary";
 }
 
@@ -1236,7 +1214,6 @@ function initKeyboardShortcuts() {
       else if (e.key === "2") switchTab("investor");
       else if (e.key === "3") switchTab("konglo");
       else if (e.key === "4") switchTab("metrics");
-      else if (e.key === "5") switchTab("changelog");
       updateHash();
       return;
     }
@@ -2040,16 +2017,22 @@ function renderMetricsTab(data) {
   for (const rec of data) {
     const price = PRICE_DATA[rec.share_code]?.p || 0;
     const value = rec.total_holding_shares * price;
-    const lf = rec.local_foreign || 'other';
+    const lf = rec.local_foreign || "other";
     aumByLF[lf] += value;
   }
   const aumLFData = [
     { label: "Lokal", value: aumByLF.D, color: colors.accent },
     { label: "Asing", value: aumByLF.F, color: colors.foreign },
-    { label: "Tidak Terklasifikasi", value: aumByLF.other, color: colors.unclass },
-  ].filter(d => d.value > 0).sort((a, b) => b.value - a.value);
+    {
+      label: "Tidak Terklasifikasi",
+      value: aumByLF.other,
+      color: colors.unclass,
+    },
+  ]
+    .filter((d) => d.value > 0)
+    .sort((a, b) => b.value - a.value);
   const totalAUM = aumLFData.reduce((sum, d) => sum + d.value, 0);
-  
+
   const ctx2b = document.getElementById("chartAUMDistribution");
   metricsCharts.push(
     new Chart(ctx2b, {
@@ -2089,7 +2072,9 @@ function renderMetricsTab(data) {
             callbacks: {
               label: function (ctx) {
                 const val = ctx.parsed;
-                const pct = ((val / totalAUM) * 100).toFixed(1).replace(".", ",");
+                const pct = ((val / totalAUM) * 100)
+                  .toFixed(1)
+                  .replace(".", ",");
                 return ` ${ctx.label}: ${fmtNum(val)} IDR (${pct}%)`;
               },
             },
@@ -2151,7 +2136,9 @@ function renderMetricsTab(data) {
             callbacks: {
               label: function (ctx) {
                 const val = ctx.parsed;
-                const pct = ((val / totalAUMType) * 100).toFixed(1).replace(".", ",");
+                const pct = ((val / totalAUMType) * 100)
+                  .toFixed(1)
+                  .replace(".", ",");
                 return ` ${ctx.label}: ${fmtNum(val)} IDR (${pct}%)`;
               },
             },
@@ -3548,186 +3535,6 @@ function initInvScrollObserver() {
 document.addEventListener("DOMContentLoaded", init);
 
 // ============================================================
-// CHANGELOG NOTIFICATION
-// ============================================================
-const CHANGELOG_DATA_DATE = "12 Maret 2026";
-const CHANGELOG_PREV_DATE = "3 Maret 2026";
-let _clNotifDismissed = false;
-
-function dismissChangelogNotif() {
-  try {
-    const overlay = document.getElementById("clNotifOverlay");
-    if (overlay) overlay.classList.remove("open");
-    _clNotifDismissed = true;
-  } catch (e) {}
-}
-
-function showChangelogNotif() {
-  try {
-    if (typeof CHANGELOG_DATA === "undefined") return;
-    var data = CHANGELOG_DATA;
-    var newStocks = data.new_stocks || [];
-    var removedStocks = data.removed_stocks || [];
-    var changedStocks = data.changes || [];
-
-    var totalNewInv = 0,
-      totalRemovedInv = 0,
-      totalShareChanges = 0;
-    changedStocks.forEach(function (s) {
-      totalNewInv += (s.new_investors || []).length;
-      totalRemovedInv += (s.removed_investors || []).length;
-      totalShareChanges += (s.share_changes || []).length;
-    });
-    newStocks.forEach(function (s) {
-      totalNewInv += (s.investors || []).length;
-    });
-
-    // Date
-    document.getElementById("clNotifDate").textContent =
-      CHANGELOG_DATA_DATE + " vs " + CHANGELOG_PREV_DATE;
-
-    // KPI row
-    var kpiHtml = "";
-    kpiHtml +=
-      '<div class="cl-notif-kpi"><div class="cl-notif-kpi-val green">' +
-      newStocks.length +
-      '</div><div class="cl-notif-kpi-label">Saham Baru</div></div>';
-    kpiHtml +=
-      '<div class="cl-notif-kpi"><div class="cl-notif-kpi-val neutral">' +
-      changedStocks.length +
-      '</div><div class="cl-notif-kpi-label">Berubah</div></div>';
-    kpiHtml +=
-      '<div class="cl-notif-kpi"><div class="cl-notif-kpi-val green">+' +
-      totalNewInv +
-      '</div><div class="cl-notif-kpi-label">Investor Baru</div></div>';
-    document.getElementById("clNotifKpiRow").innerHTML = kpiHtml;
-
-    // Body detail rows
-    var html = "";
-
-    // New stocks section
-    if (newStocks.length > 0) {
-      html += '<div class="cl-notif-section">';
-      html += '<div class="cl-notif-section-title">Saham Baru</div>';
-      html += '<div class="cl-notif-detail-row">';
-      html +=
-        '<div class="cl-notif-detail-icon green"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>';
-      html +=
-        '<div class="cl-notif-detail-text"><strong>' +
-        newStocks.length +
-        " saham</strong> baru masuk KSEI</div>";
-      html += "</div>";
-      html += '<div class="cl-notif-tickers">';
-      newStocks.forEach(function (s) {
-        html += '<span class="ticker-badge">' + s.share_code + "</span>";
-      });
-      html += "</div></div>";
-    }
-
-    // Removed stocks
-    if (removedStocks.length > 0) {
-      html += '<div class="cl-notif-section">';
-      html += '<div class="cl-notif-section-title">Saham Dihapus</div>';
-      html += '<div class="cl-notif-detail-row">';
-      html +=
-        '<div class="cl-notif-detail-icon red"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg></div>';
-      html +=
-        '<div class="cl-notif-detail-text"><strong>' +
-        removedStocks.length +
-        " saham</strong> dihapus dari KSEI</div>";
-      html += "</div>";
-      html += '<div class="cl-notif-tickers">';
-      removedStocks.forEach(function (s) {
-        html +=
-          '<span class="ticker-badge removed">' + s.share_code + "</span>";
-      });
-      html += "</div></div>";
-    }
-
-    // Investor changes
-    if (totalNewInv > 0 || totalRemovedInv > 0 || totalShareChanges > 0) {
-      html += '<div class="cl-notif-section">';
-      html +=
-        '<div class="cl-notif-section-title">Perubahan Pemegang Saham</div>';
-
-      if (totalNewInv > 0) {
-        html += '<div class="cl-notif-detail-row">';
-        html +=
-          '<div class="cl-notif-detail-icon green"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg></div>';
-        html +=
-          '<div class="cl-notif-detail-text"><strong>+' +
-          totalNewInv +
-          "</strong> investor baru masuk</div>";
-        html += "</div>";
-      }
-
-      if (totalRemovedInv > 0) {
-        html += '<div class="cl-notif-detail-row">';
-        html +=
-          '<div class="cl-notif-detail-icon red"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="23" y1="11" x2="17" y2="11"/></svg></div>';
-        html +=
-          '<div class="cl-notif-detail-text"><strong>-' +
-          totalRemovedInv +
-          "</strong> investor keluar</div>";
-        html += "</div>";
-      }
-
-      if (totalShareChanges > 0) {
-        html += '<div class="cl-notif-detail-row">';
-        html +=
-          '<div class="cl-notif-detail-icon amber"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>';
-        html +=
-          '<div class="cl-notif-detail-text"><strong>' +
-          totalShareChanges +
-          "</strong> perubahan jumlah kepemilikan</div>";
-        html += "</div>";
-      }
-
-      html += "</div>";
-    }
-
-    document.getElementById("clNotifBody").innerHTML = html;
-    document.getElementById("clNotifOverlay").classList.add("open");
-  } catch (e) {
-    // Silent fail
-  }
-}
-
-// Auto-show on every page load after DOM + data ready
-// In sandboxed iframe, cookies/storage don't persist, so show every fresh load
-// The in-memory flag prevents re-showing within the same session if dismissed
-setTimeout(function () {
-  try {
-    if (!_clNotifDismissed && typeof CHANGELOG_DATA !== "undefined") {
-      showChangelogNotif();
-    }
-  } catch (e) {}
-}, 1500);
-
-// Also allow closing with Escape
-document.addEventListener("keydown", function (e) {
-  try {
-    if (
-      e.key === "Escape" &&
-      document.getElementById("clNotifOverlay") &&
-      document.getElementById("clNotifOverlay").classList.contains("open")
-    ) {
-      dismissChangelogNotif();
-    }
-  } catch (ex) {}
-});
-
-// Close on overlay click (outside panel)
-try {
-  var _clOverlayEl = document.getElementById("clNotifOverlay");
-  if (_clOverlayEl) {
-    _clOverlayEl.addEventListener("click", function (e) {
-      if (e.target === e.currentTarget) dismissChangelogNotif();
-    });
-  }
-} catch (e) {}
-
-// ============================================================
 // INVESTOR TAB — STATE
 // ============================================================
 let invState = {
@@ -4256,31 +4063,26 @@ function initInvFilters() {
 let invInitialized = false;
 let kongloInitialized = false;
 let metricsInitialized = false;
-let changelogInitialized = false;
 
 function switchTab(tab) {
   const summaryEl = document.getElementById("tabSummary");
   const investorEl = document.getElementById("tabInvestor");
   const kongloEl = document.getElementById("tabKonglo");
   const metricsEl = document.getElementById("tabMetrics");
-  const changelogEl = document.getElementById("tabChangelog");
   const btnSummary = document.getElementById("tabBtnSummary");
   const btnInvestor = document.getElementById("tabBtnInvestor");
   const btnKonglo = document.getElementById("tabBtnKonglo");
   const btnMetrics = document.getElementById("tabBtnMetrics");
-  const btnChangelog = document.getElementById("tabBtnChangelog");
 
   // Hide all
   summaryEl.classList.add("hidden");
   investorEl.classList.add("hidden");
   kongloEl.classList.add("hidden");
   metricsEl.classList.add("hidden");
-  changelogEl.classList.add("hidden");
   btnSummary.classList.remove("active");
   btnInvestor.classList.remove("active");
   btnKonglo.classList.remove("active");
   btnMetrics.classList.remove("active");
-  btnChangelog.classList.remove("active");
 
   // Fade-in helper for main content
   const fadeInMain = (tabId) => {
@@ -4339,16 +4141,6 @@ function switchTab(tab) {
       metricsInitialized = true;
       renderMetricsTab(KSEI_DATA);
     }
-  } else if (tab === "changelog") {
-    changelogEl.classList.remove("hidden");
-    btnChangelog.classList.add("active");
-    fadeInMain("tabChangelog");
-
-    // Lazy-init changelog tab on first switch
-    if (!changelogInitialized) {
-      changelogInitialized = true;
-      renderChangelogTab();
-    }
   }
   updateHash();
 }
@@ -4366,168 +4158,6 @@ function initTabs() {
   document
     .getElementById("tabBtnMetrics")
     .addEventListener("click", () => switchTab("metrics"));
-  document
-    .getElementById("tabBtnChangelog")
-    .addEventListener("click", () => switchTab("changelog"));
-}
-
-// ============================================================
-// CHANGELOG TAB — RENDER
-// ============================================================
-function renderChangelogTab() {
-  const container = document.getElementById("changelogContent");
-  if (typeof CHANGELOG_DATA === "undefined") {
-    container.innerHTML =
-      '<div class="changelog-empty">Tidak ada data changelog.</div>';
-    return;
-  }
-  const data = CHANGELOG_DATA;
-  const newStocks = data.new_stocks || [];
-  const removedStocks = data.removed_stocks || [];
-  const changedStocks = data.changes || [];
-
-  // Count totals
-  let totalNewInv = 0,
-    totalRemovedInv = 0,
-    totalShareChanges = 0;
-  changedStocks.forEach((s) => {
-    totalNewInv += (s.new_investors || []).length;
-    totalRemovedInv += (s.removed_investors || []).length;
-    totalShareChanges += (s.share_changes || []).length;
-  });
-  // New stocks also have investors (all new)
-  newStocks.forEach((s) => {
-    totalNewInv += (s.investors || []).length;
-  });
-
-  let html = "";
-
-  // Header
-  html += `<div class="changelog-header">`;
-  html += `<h2>Changelog</h2>`;
-  html += `<p>Perbandingan data KSEI periode sebelumnya vs saat ini. Menampilkan saham baru, saham yang dihapus, serta perubahan pemegang saham di setiap emiten.</p>`;
-  html += `</div>`;
-
-  // KPI bar
-  html += `<div class="changelog-kpi-bar">`;
-  html += `<div class="changelog-kpi"><div class="changelog-kpi-label">Saham Baru</div><div class="changelog-kpi-value green">${newStocks.length}</div></div>`;
-  html += `<div class="changelog-kpi"><div class="changelog-kpi-label">Saham Dihapus</div><div class="changelog-kpi-value red">${removedStocks.length}</div></div>`;
-  html += `<div class="changelog-kpi"><div class="changelog-kpi-label">Saham Berubah</div><div class="changelog-kpi-value">${changedStocks.length}</div></div>`;
-  html += `<div class="changelog-kpi"><div class="changelog-kpi-label">Investor Baru</div><div class="changelog-kpi-value green">+${totalNewInv}</div></div>`;
-  html += `<div class="changelog-kpi"><div class="changelog-kpi-label">Investor Keluar</div><div class="changelog-kpi-value red">-${totalRemovedInv}</div></div>`;
-  html += `</div>`;
-
-  // Section 1: New Stocks — clickable pills that navigate to Ringkasan Saham
-  if (newStocks.length > 0) {
-    html += `<div class="changelog-section">`;
-    html += `<div class="changelog-section-title">Saham Baru <span class="section-count">${newStocks.length}</span></div>`;
-    html += `<div class="changelog-new-stocks-grid">`;
-    newStocks.forEach((s) => {
-      const invCount = (s.investors || []).length;
-      html += `<div class="changelog-new-stock-pill" style="cursor:pointer" onclick="navigateToStock('${esc(s.share_code)}', '${escOnclick(s.issuer_name)}')"><span class="ticker-badge">${esc(s.share_code)}</span><span class="issuer">${esc(s.issuer_name)}</span><span class="changelog-inv-detail">${invCount} investor</span></div>`;
-    });
-    html += `</div>`;
-    html += `</div>`;
-  }
-
-  // Section 2: Removed Stocks
-  if (removedStocks.length > 0) {
-    html += `<div class="changelog-section">`;
-    html += `<div class="changelog-section-title">Saham Dihapus <span class="section-count">${removedStocks.length}</span></div>`;
-    html += `<div class="changelog-new-stocks-grid">`;
-    removedStocks.forEach((s) => {
-      html += `<div class="changelog-new-stock-pill"><span class="ticker-badge" style="background:#fee2e2;color:#991b1b">${esc(s.share_code)}</span><span class="issuer">${esc(s.issuer_name)}</span></div>`;
-    });
-    html += `</div></div>`;
-  }
-
-  // Section 3: Changed Stocks (investor changes)
-  if (changedStocks.length > 0) {
-    html += `<div class="changelog-section">`;
-    html += `<div class="changelog-section-title">Perubahan Pemegang Saham <span class="section-count">${changedStocks.length}</span></div>`;
-    changedStocks.forEach((s) => {
-      const newInv = s.new_investors || [];
-      const removedInv = s.removed_investors || [];
-      const shareChanges = s.share_changes || [];
-      const summaryParts = [];
-      if (newInv.length) summaryParts.push(`+${newInv.length} baru`);
-      if (removedInv.length) summaryParts.push(`-${removedInv.length} keluar`);
-      if (shareChanges.length)
-        summaryParts.push(`${shareChanges.length} berubah`);
-
-      html += `<div class="changelog-stock-card" data-code="${esc(s.share_code)}">`;
-      html += `<div class="changelog-stock-header" onclick="this.parentElement.classList.toggle('open')">`;
-      html += `<span class="ticker-badge">${esc(s.share_code)}</span>`;
-      html += `<span class="issuer-name">${esc(s.issuer_name)}</span>`;
-      html += `<span class="change-summary">${summaryParts.join(" · ")}</span>`;
-      html += `</div>`;
-      html += `<div class="changelog-stock-body">`;
-
-      // New investors
-      if (newInv.length > 0) {
-        html += `<div class="changelog-change-group">`;
-        html += `<div class="changelog-change-group-title">Investor Baru (${newInv.length})</div>`;
-        newInv.forEach((inv) => {
-          const pctWidth = Math.min(100, inv.percentage || 0).toFixed(1);
-          html += `<div class="changelog-inv-row" style="--row-pct:${pctWidth}%">`;
-          html += `<span class="changelog-badge-new">New</span>`;
-          html += `<span class="changelog-inv-name">${esc(inv.investor_name)}</span>`;
-          html += `<span class="changelog-inv-detail">${fmtNum(inv.shares)} saham (${fmtPct(inv.percentage)})</span>`;
-          html += `</div>`;
-        });
-        html += `</div>`;
-      }
-
-      // Removed investors
-      if (removedInv.length > 0) {
-        html += `<div class="changelog-change-group">`;
-        html += `<div class="changelog-change-group-title">Investor Keluar (${removedInv.length})</div>`;
-        removedInv.forEach((inv) => {
-          const pctWidth = Math.min(100, inv.percentage || 0).toFixed(1);
-          html += `<div class="changelog-inv-row" style="--row-pct:${pctWidth}%">`;
-          html += `<span class="changelog-badge-removed">Keluar</span>`;
-          html += `<span class="changelog-inv-name">${esc(inv.investor_name)}</span>`;
-          html += `<span class="changelog-inv-detail">${fmtNum(inv.shares)} saham (${fmtPct(inv.percentage)})</span>`;
-          html += `</div>`;
-        });
-        html += `</div>`;
-      }
-
-      // Share value changes
-      if (shareChanges.length > 0) {
-        html += `<div class="changelog-change-group">`;
-        html += `<div class="changelog-change-group-title">Perubahan Kepemilikan (${shareChanges.length})</div>`;
-        shareChanges.forEach((inv) => {
-          const diff = inv.share_diff || 0;
-          const pctDiff = inv.pct_diff || 0;
-          const cls =
-            diff >= 0 ? "changelog-diff-plus" : "changelog-diff-minus";
-          const sign = diff >= 0 ? "+" : "";
-          const newPctWidth = Math.min(100, inv.new_percentage || 0).toFixed(1);
-          html += `<div class="changelog-inv-row" style="--row-pct:${newPctWidth}%">`;
-          html += `<span class="changelog-inv-name">${esc(inv.investor_name)}</span>`;
-          html += `<span class="${cls}">${sign}${fmtNum(diff)} saham (${sign}${fmtPct(pctDiff)})</span>`;
-          html += `<span class="changelog-inv-detail">${fmtNum(inv.old_shares)} → ${fmtNum(inv.new_shares)}</span>`;
-          html += `</div>`;
-        });
-        html += `</div>`;
-      }
-
-      html += `</div></div>`;
-    });
-    html += `</div>`;
-  }
-
-  if (
-    newStocks.length === 0 &&
-    removedStocks.length === 0 &&
-    changedStocks.length === 0
-  ) {
-    html +=
-      '<div class="changelog-empty">Tidak ada perubahan terdeteksi antara dua periode.</div>';
-  }
-
-  container.innerHTML = html;
 }
 
 // ============================================================
@@ -4999,7 +4629,9 @@ function initKongloFilters() {
     } else {
       kongloState.sortKey = key;
       kongloState.sortDir =
-        key === "found" || key === "stockcount" || key === "mcap" ? "desc" : "asc";
+        key === "found" || key === "stockcount" || key === "mcap"
+          ? "desc"
+          : "asc";
     }
     refreshKongloSortUI();
     applyKongloFilters();
