@@ -548,8 +548,7 @@ const KSEI_DATA = [
   {
     share_code: "ADHI",
     issuer_name: "ADHI KARYA (PERSERO) Tbk",
-    investor_name:
-      "PERUSAHAAN PERSEROAN (PERSERO) PT DANANTARA ASSET MANAGEMENT",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT DANANTARA ASSET MANAGEMENT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "",
@@ -3396,8 +3395,7 @@ const KSEI_DATA = [
   {
     share_code: "AMRT",
     issuer_name: "SUMBER ALFARIA TRIJAYA Tbk",
-    investor_name:
-      "FIDELITY INVESTMENT TRUST: FIDELITY SERIES EMERGING MARKETS OPPORTUNITIES FUND",
+    investor_name: "FIDELITY INVESTMENT TRUST: FIDELITY SERIES EMERGING MARKETS OPPORTUNITIES FUND",
     investor_type: "MF",
     local_foreign: "F",
     nationality: "",
@@ -3605,8 +3603,7 @@ const KSEI_DATA = [
   {
     share_code: "ANTM",
     issuer_name: "ANEKA TAMBANG Tbk",
-    investor_name:
-      "PERUSAHAAN PERSEROAN (PERSERO) PT MINERAL INDUSTRI INDONESIA",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT MINERAL INDUSTRI INDONESIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "",
@@ -4906,8 +4903,7 @@ const KSEI_DATA = [
   {
     share_code: "ARMY",
     issuer_name: "ARMIDIAN KARYATAMA Tbk",
-    investor_name:
-      "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
+    investor_name: "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
     investor_type: "OT",
     local_foreign: "D",
     nationality: "",
@@ -8950,8 +8946,7 @@ const KSEI_DATA = [
   {
     share_code: "BAYU",
     issuer_name: "BAYU BUANA Tbk",
-    investor_name:
-      "STANDARD CHARTERED BANK SG S/A VP BANK A/C SAPPHIRE LINK LTD (ID005464400008)",
+    investor_name: "STANDARD CHARTERED BANK SG S/A VP BANK A/C SAPPHIRE LINK LTD (ID005464400008)",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "",
@@ -9003,8 +8998,7 @@ const KSEI_DATA = [
   {
     share_code: "BAYU",
     issuer_name: "BAYU BUANA Tbk",
-    investor_name:
-      "STANDARD CHARTERED BANK SG S/A VP BANK A/C DIAMOND MILLENIUM LTD (ID005464400003)",
+    investor_name: "STANDARD CHARTERED BANK SG S/A VP BANK A/C DIAMOND MILLENIUM LTD (ID005464400003)",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "",
@@ -9459,8 +9453,7 @@ const KSEI_DATA = [
   {
     share_code: "BBNI",
     issuer_name: "BANK NEGARA INDONESIA Tbk",
-    investor_name:
-      "PERUSAHAAN PERSEROAN (PERSERO) PT DANANTARA ASSET MANAGEMENT",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT DANANTARA ASSET MANAGEMENT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "",
@@ -9525,8 +9518,7 @@ const KSEI_DATA = [
   {
     share_code: "BBRI",
     issuer_name: "BANK RAKYAT INDONESIA (PERSERO) Tbk",
-    investor_name:
-      "PERUSAHAAN PERSEROAN (PERSERO) PT DANANTARA ASSET MANAGEMENT",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT DANANTARA ASSET MANAGEMENT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "",
@@ -9682,8 +9674,7 @@ const KSEI_DATA = [
   {
     share_code: "BBSI",
     issuer_name: "KROM BANK INDONESIA Tbk",
-    investor_name:
-      "HSBC LTD-SINGAPORE BRANCH PRIVATE BANKING DIVISION ACCOUNT CLIENTS",
+    investor_name: "HSBC LTD-SINGAPORE BRANCH PRIVATE BANKING DIVISION ACCOUNT CLIENTS",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "",
@@ -9787,8 +9778,7 @@ const KSEI_DATA = [
   {
     share_code: "BBTN",
     issuer_name: "BANK TABUNGAN NEGARA (PERSERO) Tbk",
-    investor_name:
-      "PERUSAHAAN PERSEROAN (PERSERO) PT DANANTARA ASSET MANAGEMENT",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT DANANTARA ASSET MANAGEMENT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "",
@@ -16080,8 +16070,7 @@ const KSEI_DATA = [
   {
     share_code: "BOLT",
     issuer_name: "GARUDA METALINDO Tbk",
-    investor_name:
-      "DAIWA CAPITAL MARKETS SINGAPORE LIMITED-SUB A/C MEIJI SANGYO COMPANY",
+    investor_name: "DAIWA CAPITAL MARKETS SINGAPORE LIMITED-SUB A/C MEIJI SANGYO COMPANY",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "",
@@ -18044,8 +18033,7 @@ const KSEI_DATA = [
   {
     share_code: "BTEL",
     issuer_name: "BAKRIE TELECOM Tbk",
-    investor_name:
-      "RAIFFEISEN BANK INTERNATIONAL AG, SINGAPORE BRANCH S/A BEST QUALITY GLOBAL LIMITED",
+    investor_name: "RAIFFEISEN BANK INTERNATIONAL AG, SINGAPORE BRANCH S/A BEST QUALITY GLOBAL LIMITED",
     investor_type: "OT",
     local_foreign: "F",
     nationality: "",
@@ -18084,8 +18072,7 @@ const KSEI_DATA = [
   {
     share_code: "BTEL",
     issuer_name: "BAKRIE TELECOM Tbk",
-    investor_name:
-      "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
+    investor_name: "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
     investor_type: "OT",
     local_foreign: "D",
     nationality: "",
@@ -18150,8 +18137,7 @@ const KSEI_DATA = [
   {
     share_code: "BTEL",
     issuer_name: "BAKRIE TELECOM Tbk",
-    investor_name:
-      "PT Recapital Sekuritas Indonesia (REKENING TAMPUNGAN KSEI UNTUK CLOSED MEMBER-LK001)",
+    investor_name: "PT Recapital Sekuritas Indonesia (REKENING TAMPUNGAN KSEI UNTUK CLOSED MEMBER-LK001)",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "",
@@ -18281,8 +18267,7 @@ const KSEI_DATA = [
   {
     share_code: "BTON",
     issuer_name: "BETONJAYA MANUNGGAL Tbk",
-    investor_name:
-      "MAYBANK GLOBAL GROWTH FUND VCC - MAYBANK GLOBAL GROWTH FUND 2",
+    investor_name: "MAYBANK GLOBAL GROWTH FUND VCC - MAYBANK GLOBAL GROWTH FUND 2",
     investor_type: "IB",
     local_foreign: "F",
     nationality: "",
@@ -20869,8 +20854,7 @@ const KSEI_DATA = [
   {
     share_code: "CBUT",
     issuer_name: "CITRA BORNEO UTAMA Tbk",
-    investor_name:
-      "MAYBANK GLOBAL GROWTH FUND VCC - MAYBANK GLOBAL GROWTH FUND 1",
+    investor_name: "MAYBANK GLOBAL GROWTH FUND VCC - MAYBANK GLOBAL GROWTH FUND 1",
     investor_type: "IB",
     local_foreign: "F",
     nationality: "",
@@ -22690,8 +22674,7 @@ const KSEI_DATA = [
   {
     share_code: "CMRY",
     issuer_name: "CISARUA MOUNTAIN DAIRY Tbk",
-    investor_name:
-      "MITSUBISHI UFJ MORGAN STANLEY SECURITIES CO LTD-CLIENT ACCOUNT",
+    investor_name: "MITSUBISHI UFJ MORGAN STANLEY SECURITIES CO LTD-CLIENT ACCOUNT",
     investor_type: "SC",
     local_foreign: "F",
     nationality: "",
@@ -24251,8 +24234,7 @@ const KSEI_DATA = [
   {
     share_code: "CTBN",
     issuer_name: "CITRA TUBINDO Tbk",
-    investor_name:
-      "BNP PARIBAS SECURITIES SERVICES JERSEY S/A NON TAX TREATY CLIENTS/TAXABLE (EUR)",
+    investor_name: "BNP PARIBAS SECURITIES SERVICES JERSEY S/A NON TAX TREATY CLIENTS/TAXABLE (EUR)",
     investor_type: "IB",
     local_foreign: "F",
     nationality: "",
@@ -24460,8 +24442,7 @@ const KSEI_DATA = [
   {
     share_code: "CTTH",
     issuer_name: "CITATAH Tbk",
-    investor_name:
-      "KANTOR PUSAT DJKN DITJEN KEKAYAAN NEGARA KEMENTRIAN KEUANGAN",
+    investor_name: "KANTOR PUSAT DJKN DITJEN KEKAYAAN NEGARA KEMENTRIAN KEUANGAN",
     investor_type: "OT",
     local_foreign: "D",
     nationality: "",
@@ -24526,8 +24507,7 @@ const KSEI_DATA = [
   {
     share_code: "CUAN",
     issuer_name: "PETRINDO JAYA KREASI Tbk",
-    investor_name:
-      "HSBC LTD-SINGAPORE BRANCH PRIVATE BANKING DIVISION ACCOUNT CLIENTS",
+    investor_name: "HSBC LTD-SINGAPORE BRANCH PRIVATE BANKING DIVISION ACCOUNT CLIENTS",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "",
@@ -27374,8 +27354,7 @@ const KSEI_DATA = [
   {
     share_code: "DPNS",
     issuer_name: "DUTA PERTIWI NUSANTARA",
-    investor_name:
-      "HSBC LTD-SINGAPORE BRANCH PRIVATE BANKING DIVISION ACCOUNT CLIENTS",
+    investor_name: "HSBC LTD-SINGAPORE BRANCH PRIVATE BANKING DIVISION ACCOUNT CLIENTS",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "",
@@ -27648,8 +27627,7 @@ const KSEI_DATA = [
   {
     share_code: "DRMA",
     issuer_name: "DHARMA POLIMETAL Tbk",
-    investor_name:
-      "STANDARD CHARTERED BANK SINGAPORE S/A SIXTEENTH STREET ASIAN GEMS FUND ID134041400003",
+    investor_name: "STANDARD CHARTERED BANK SINGAPORE S/A SIXTEENTH STREET ASIAN GEMS FUND ID134041400003",
     investor_type: "OT",
     local_foreign: "F",
     nationality: "",
@@ -28117,8 +28095,7 @@ const KSEI_DATA = [
   {
     share_code: "DUCK",
     issuer_name: "JAYA BERSAMA INDO Tbk",
-    investor_name:
-      "UNIVERSAL-INVESTMENT- GESSELLSCHAFT MBH FOR AVH EMERGING MARKETS FONDS UI",
+    investor_name: "UNIVERSAL-INVESTMENT- GESSELLSCHAFT MBH FOR AVH EMERGING MARKETS FONDS UI",
     investor_type: "OT",
     local_foreign: "F",
     nationality: "",
@@ -28768,8 +28745,7 @@ const KSEI_DATA = [
   {
     share_code: "EAST",
     issuer_name: "EASTPARC HOTEL Tbk",
-    investor_name:
-      "GUSTI SABAH BINTE ZAKARIA (GUSTI SABAH BINTE ZAKARIA BAGHARIB)",
+    investor_name: "GUSTI SABAH BINTE ZAKARIA (GUSTI SABAH BINTE ZAKARIA BAGHARIB)",
     investor_type: "ID",
     local_foreign: "F",
     nationality: "SINGAPOREAN",
@@ -30459,8 +30435,7 @@ const KSEI_DATA = [
   {
     share_code: "ERAA",
     issuer_name: "ERAJAYA SWASEMBADA Tbk",
-    investor_name:
-      "HSBC LTD-SINGAPORE BRANCH PRIVATE BANKING DIVISION ACCOUNT CLIENTS",
+    investor_name: "HSBC LTD-SINGAPORE BRANCH PRIVATE BANKING DIVISION ACCOUNT CLIENTS",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "",
@@ -33372,8 +33347,7 @@ const KSEI_DATA = [
   {
     share_code: "GDST",
     issuer_name: "GUNAWAN DIANJAYA STEEL Tbk",
-    investor_name:
-      "MAYBANK GLOBAL GROWTH FUND VCC - MAYBANK GLOBAL GROWTH FUND 2",
+    investor_name: "MAYBANK GLOBAL GROWTH FUND VCC - MAYBANK GLOBAL GROWTH FUND 2",
     investor_type: "IB",
     local_foreign: "F",
     nationality: "",
@@ -33802,8 +33776,7 @@ const KSEI_DATA = [
   {
     share_code: "GGRP",
     issuer_name: "GUNUNG RAJA PAKSI Tbk",
-    investor_name:
-      "HSBC LTD-SINGAPORE BRANCH PRIVATE BANKING DIVISION ACCOUNT CLIENTS",
+    investor_name: "HSBC LTD-SINGAPORE BRANCH PRIVATE BANKING DIVISION ACCOUNT CLIENTS",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "",
@@ -33972,8 +33945,7 @@ const KSEI_DATA = [
   {
     share_code: "GJTL",
     issuer_name: "GAJAH TUNGGAL Tbk",
-    investor_name:
-      "CITIBANK LONDON S/A POLUNIN EMERGING MARKETS SMALL CAP FUND, LLC",
+    investor_name: "CITIBANK LONDON S/A POLUNIN EMERGING MARKETS SMALL CAP FUND, LLC",
     investor_type: "MF",
     local_foreign: "F",
     nationality: "",
@@ -37613,8 +37585,7 @@ const KSEI_DATA = [
   {
     share_code: "HERO",
     issuer_name: "DFI RETAIL NUSANTARA Tbk",
-    investor_name:
-      "JPMCB NA AIF CLT RE-THE SCOTTISH ORIENTAL SMALLER COMPANIES TRUST PLC",
+    investor_name: "JPMCB NA AIF CLT RE-THE SCOTTISH ORIENTAL SMALLER COMPANIES TRUST PLC",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "",
@@ -38043,8 +38014,7 @@ const KSEI_DATA = [
   {
     share_code: "HKMU",
     issuer_name: "HK METALS UTAMA Tbk",
-    investor_name:
-      "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
+    investor_name: "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
     investor_type: "OT",
     local_foreign: "D",
     nationality: "",
@@ -38148,8 +38118,7 @@ const KSEI_DATA = [
   {
     share_code: "HOME",
     issuer_name: "HOTEL MANDARINE REGENCY Tbk",
-    investor_name:
-      "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
+    investor_name: "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
     investor_type: "OT",
     local_foreign: "D",
     nationality: "",
@@ -40073,8 +40042,7 @@ const KSEI_DATA = [
   {
     share_code: "IIKP",
     issuer_name: "INTI AGRI RESOURCES Tbk",
-    investor_name:
-      "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
+    investor_name: "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
     investor_type: "OT",
     local_foreign: "D",
     nationality: "",
@@ -41205,8 +41173,7 @@ const KSEI_DATA = [
   {
     share_code: "INCO",
     issuer_name: "VALE INDONESIA Tbk",
-    investor_name:
-      "PERUSAHAAN PERSEROAN (PERSERO) PT MINERAL INDUSTRI INDONESIA",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT MINERAL INDUSTRI INDONESIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "",
@@ -43754,8 +43721,7 @@ const KSEI_DATA = [
   {
     share_code: "ISSP",
     issuer_name: "STEEL PIPE INDUSTRY OF INDONESIA Tbk",
-    investor_name:
-      "HSBC LTD-SINGAPORE BRANCH PRIVATE BANKING DIVISION ACCOUNT CLIENTS",
+    investor_name: "HSBC LTD-SINGAPORE BRANCH PRIVATE BANKING DIVISION ACCOUNT CLIENTS",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "",
@@ -45393,8 +45359,7 @@ const KSEI_DATA = [
   {
     share_code: "JSKY",
     issuer_name: "SKY ENERGY INDONESIA Tbk",
-    investor_name:
-      "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
+    investor_name: "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
     investor_type: "OT",
     local_foreign: "D",
     nationality: "",
@@ -46447,8 +46412,7 @@ const KSEI_DATA = [
   {
     share_code: "KBRI",
     issuer_name: "KERTAS BASUKI RACHMAT INDONESIA Tbk",
-    investor_name:
-      "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
+    investor_name: "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
     investor_type: "OT",
     local_foreign: "D",
     nationality: "",
@@ -50166,8 +50130,7 @@ const KSEI_DATA = [
   {
     share_code: "LCGP",
     issuer_name: "EUREKA PRIMA JAKARTA Tbk",
-    investor_name:
-      "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
+    investor_name: "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
     investor_type: "OT",
     local_foreign: "D",
     nationality: "",
@@ -50843,8 +50806,7 @@ const KSEI_DATA = [
   {
     share_code: "LMAS",
     issuer_name: "LIMAS INDONESIA MAKMUR Tbk",
-    investor_name:
-      "UOB KAY HIAN (HONG KONG) LTD (PLEDGE ACCOUNT) - MADISON PACIFIC TRUST LTD OBO ITEK BACHTIAR",
+    investor_name: "UOB KAY HIAN (HONG KONG) LTD (PLEDGE ACCOUNT) - MADISON PACIFIC TRUST LTD OBO ITEK BACHTIAR",
     investor_type: "ID",
     local_foreign: "D",
     nationality: "INDONESIAN",
@@ -51130,8 +51092,7 @@ const KSEI_DATA = [
   {
     share_code: "LMPI",
     issuer_name: "LANGGENG MAKMUR INDUSTRI Tbk",
-    investor_name:
-      "KANTOR PUSAT DJKN DITJEN KEKAYAAN NEGARA KEMENTRIAN KEUANGAN",
+    investor_name: "KANTOR PUSAT DJKN DITJEN KEKAYAAN NEGARA KEMENTRIAN KEUANGAN",
     investor_type: "OT",
     local_foreign: "D",
     nationality: "",
@@ -51508,8 +51469,7 @@ const KSEI_DATA = [
   {
     share_code: "LPGI",
     issuer_name: "LIPPO GENERAL INSURANCE Tbk",
-    investor_name:
-      "BANK JULIUS BAER CO. LTD. S/A PT INTI ANUGRAH PROPERTINDO PLEDGED ACC",
+    investor_name: "BANK JULIUS BAER CO. LTD. S/A PT INTI ANUGRAH PROPERTINDO PLEDGED ACC",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "",
@@ -51600,8 +51560,7 @@ const KSEI_DATA = [
   {
     share_code: "LPKR",
     issuer_name: "LIPPO KARAWACI Tbk",
-    investor_name:
-      "BANK JULIUS BAER CO. LTD. S/A PT INTI ANUGRAH PROPERTINDO PLEDGED ACC",
+    investor_name: "BANK JULIUS BAER CO. LTD. S/A PT INTI ANUGRAH PROPERTINDO PLEDGED ACC",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "",
@@ -51796,8 +51755,7 @@ const KSEI_DATA = [
   {
     share_code: "LPLI",
     issuer_name: "STAR PACIFIC Tbk",
-    investor_name:
-      "BANK JULIUS BAER CO. LTD. S/A PT INTI ANUGRAH PROPERTINDO PLEDGED ACC",
+    investor_name: "BANK JULIUS BAER CO. LTD. S/A PT INTI ANUGRAH PROPERTINDO PLEDGED ACC",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "",
@@ -52044,8 +52002,7 @@ const KSEI_DATA = [
   {
     share_code: "LPPS",
     issuer_name: "LENOX PASIFIK INVESTAMA Tbk",
-    investor_name:
-      "BANK JULIUS BAER CO. LTD. S/A PT INTI ANUGRAH PROPERTINDO PLEDGED ACC",
+    investor_name: "BANK JULIUS BAER CO. LTD. S/A PT INTI ANUGRAH PROPERTINDO PLEDGED ACC",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "",
@@ -52617,8 +52574,7 @@ const KSEI_DATA = [
   {
     share_code: "MABA",
     issuer_name: "MARGA ABHINAYA ABADI Tbk",
-    investor_name:
-      "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
+    investor_name: "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
     investor_type: "OT",
     local_foreign: "D",
     nationality: "",
@@ -52631,8 +52587,7 @@ const KSEI_DATA = [
   {
     share_code: "MABA",
     issuer_name: "MARGA ABHINAYA ABADI Tbk",
-    investor_name:
-      "BP2S SINGAPORE/BNP PARIBAS SINGAPORE BRANCH WEALTH MANAGEMENT/PT SALIGADING BERSAMA",
+    investor_name: "BP2S SINGAPORE/BNP PARIBAS SINGAPORE BRANCH WEALTH MANAGEMENT/PT SALIGADING BERSAMA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "",
@@ -54868,8 +54823,7 @@ const KSEI_DATA = [
   {
     share_code: "MDIA",
     issuer_name: "INTERMEDIA CAPITAL Tbk",
-    investor_name:
-      "PT Recapital Sekuritas Indonesia (REKENING TAMPUNGAN KSEI UNTUK CLOSED MEMBER-LK001)",
+    investor_name: "PT Recapital Sekuritas Indonesia (REKENING TAMPUNGAN KSEI UNTUK CLOSED MEMBER-LK001)",
     investor_type: "SC",
     local_foreign: "D",
     nationality: "",
@@ -55311,8 +55265,7 @@ const KSEI_DATA = [
   {
     share_code: "MDLA",
     issuer_name: "MEDELA POTENTIA Tbk",
-    investor_name:
-      "ZEDRA TRUST COMPANY (SINGAPORE) LTD AS TRUSTEE OF UNITY GROWTH FUND",
+    investor_name: "ZEDRA TRUST COMPANY (SINGAPORE) LTD AS TRUSTEE OF UNITY GROWTH FUND",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "",
@@ -58185,8 +58138,7 @@ const KSEI_DATA = [
   {
     share_code: "MLPL",
     issuer_name: "MULTIPOLAR Tbk",
-    investor_name:
-      "BANK JULIUS BAER CO. LTD. S/A PT INTI ANUGRAH PROPERTINDO PLEDGED ACC",
+    investor_name: "BANK JULIUS BAER CO. LTD. S/A PT INTI ANUGRAH PROPERTINDO PLEDGED ACC",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "",
@@ -59720,8 +59672,7 @@ const KSEI_DATA = [
   {
     share_code: "MREI",
     issuer_name: "MASKAPAI REASURANSI INDONESIA Tbk",
-    investor_name:
-      "STANDARD CHARTERED BANK SG S/A VP BANK A/C SAPPHIRE LINK LTD (ID005464400008)",
+    investor_name: "STANDARD CHARTERED BANK SG S/A VP BANK A/C SAPPHIRE LINK LTD (ID005464400008)",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "",
@@ -59747,8 +59698,7 @@ const KSEI_DATA = [
   {
     share_code: "MREI",
     issuer_name: "MASKAPAI REASURANSI INDONESIA Tbk",
-    investor_name:
-      "STANDARD CHARTERED BANK SG S/A VP BANK A/C DIAMOND MILLENIUM LTD (ID005464400003)",
+    investor_name: "STANDARD CHARTERED BANK SG S/A VP BANK A/C DIAMOND MILLENIUM LTD (ID005464400003)",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "",
@@ -64129,8 +64079,7 @@ const KSEI_DATA = [
   {
     share_code: "NUSA",
     issuer_name: "SINERGI MEGAH INTERNUSA Tbk",
-    investor_name:
-      "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
+    investor_name: "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
     investor_type: "OT",
     local_foreign: "D",
     nationality: "",
@@ -68160,8 +68109,7 @@ const KSEI_DATA = [
   {
     share_code: "PLAS",
     issuer_name: "POLARIS INVESTAMA TBK",
-    investor_name:
-      "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
+    investor_name: "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
     investor_type: "OT",
     local_foreign: "D",
     nationality: "",
@@ -69539,8 +69487,7 @@ const KSEI_DATA = [
   {
     share_code: "POOL",
     issuer_name: "POOL ADVISTA INDONESIA Tbk",
-    investor_name:
-      "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
+    investor_name: "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
     investor_type: "OT",
     local_foreign: "D",
     nationality: "",
@@ -69683,8 +69630,7 @@ const KSEI_DATA = [
   {
     share_code: "PORT",
     issuer_name: "NUSANTARA PELABUHAN HANDAL Tbk",
-    investor_name:
-      "CHINA MERCHANTS INTERNATIONAL PORT-INTEGRATED DEVELOPMENT (HONG KONG) COMPANY LIMITED",
+    investor_name: "CHINA MERCHANTS INTERNATIONAL PORT-INTEGRATED DEVELOPMENT (HONG KONG) COMPANY LIMITED",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "",
@@ -70932,8 +70878,7 @@ const KSEI_DATA = [
   {
     share_code: "PTBA",
     issuer_name: "BUKIT ASAM (PERSERO) Tbk",
-    investor_name:
-      "PERUSAHAAN PERSEROAN (PERSERO) PT MINERAL INDUSTRI INDONESIA",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT MINERAL INDUSTRI INDONESIA",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "",
@@ -71245,8 +71190,7 @@ const KSEI_DATA = [
   {
     share_code: "PTPP",
     issuer_name: "PP (PERSERO) Tbk",
-    investor_name:
-      "PERUSAHAAN PERSEROAN (PERSERO) PT DANANTARA ASSET MANAGEMENT",
+    investor_name: "PERUSAHAAN PERSEROAN (PERSERO) PT DANANTARA ASSET MANAGEMENT",
     investor_type: "CP",
     local_foreign: "D",
     nationality: "",
@@ -71662,8 +71606,7 @@ const KSEI_DATA = [
   {
     share_code: "PTSP",
     issuer_name: "PIONEERINDO GOURMET INTERNATIONAL Tbk",
-    investor_name:
-      "STANDARD CHARTERED BANK SG S/A VP BANK A/C SAPPHIRE LINK LTD (ID005464400008)",
+    investor_name: "STANDARD CHARTERED BANK SG S/A VP BANK A/C SAPPHIRE LINK LTD (ID005464400008)",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "",
@@ -71676,8 +71619,7 @@ const KSEI_DATA = [
   {
     share_code: "PTSP",
     issuer_name: "PIONEERINDO GOURMET INTERNATIONAL Tbk",
-    investor_name:
-      "STANDARD CHARTERED BANK SG S/A VP BANK A/C DIAMOND MILLENIUM LTD (ID005464400003)",
+    investor_name: "STANDARD CHARTERED BANK SG S/A VP BANK A/C DIAMOND MILLENIUM LTD (ID005464400003)",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "",
@@ -72340,8 +72282,7 @@ const KSEI_DATA = [
   {
     share_code: "PZZA",
     issuer_name: "SARIMELATI KENCANA Tbk",
-    investor_name:
-      "JPMCB NA AIF CLT RE-THE SCOTTISH ORIENTAL SMALLER COMPANIES TRUST PLC",
+    investor_name: "JPMCB NA AIF CLT RE-THE SCOTTISH ORIENTAL SMALLER COMPANIES TRUST PLC",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "",
@@ -73836,8 +73777,7 @@ const KSEI_DATA = [
   {
     share_code: "RIMO",
     issuer_name: "RIMO INTERNATIONAL LESTARI Tbk",
-    investor_name:
-      "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
+    investor_name: "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
     investor_type: "OT",
     local_foreign: "D",
     nationality: "",
@@ -76957,8 +76897,7 @@ const KSEI_DATA = [
   {
     share_code: "SIMA",
     issuer_name: "SIWANI MAKMUR Tbk",
-    investor_name:
-      "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
+    investor_name: "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
     investor_type: "OT",
     local_foreign: "D",
     nationality: "",
@@ -78349,8 +78288,7 @@ const KSEI_DATA = [
   {
     share_code: "SMKL",
     issuer_name: "SATYAMITRA KEMAS LESTARI Tbk",
-    investor_name:
-      "JPMCB NA RE - SHINHAN BANK ACTING AS CUSTODY OF HONORS ASIA IPO PRIVATE INVESTMENT FUND",
+    investor_name: "JPMCB NA RE - SHINHAN BANK ACTING AS CUSTODY OF HONORS ASIA IPO PRIVATE INVESTMENT FUND",
     investor_type: "OT",
     local_foreign: "F",
     nationality: "",
@@ -78675,8 +78613,7 @@ const KSEI_DATA = [
   {
     share_code: "SMMA",
     issuer_name: "SINAR MAS MULTIARTHA Tbk",
-    investor_name:
-      "HSBC LTD-SINGAPORE BRANCH PRIVATE BANKING DIVISION ACCOUNT CLIENTS",
+    investor_name: "HSBC LTD-SINGAPORE BRANCH PRIVATE BANKING DIVISION ACCOUNT CLIENTS",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "",
@@ -79118,8 +79055,7 @@ const KSEI_DATA = [
   {
     share_code: "SMSM",
     issuer_name: "SELAMAT SEMPURNA Tbk",
-    investor_name:
-      "FIDELITY INVESTMENT TRUST:FIDELITY INTERNATIONAL SMALL CAP FUND",
+    investor_name: "FIDELITY INVESTMENT TRUST:FIDELITY INTERNATIONAL SMALL CAP FUND",
     investor_type: "MF",
     local_foreign: "F",
     nationality: "",
@@ -79145,8 +79081,7 @@ const KSEI_DATA = [
   {
     share_code: "SMSM",
     issuer_name: "SELAMAT SEMPURNA Tbk",
-    investor_name:
-      "JPMCB NA AIF CLT RE-THE SCOTTISH ORIENTAL SMALLER COMPANIES TRUST PLC",
+    investor_name: "JPMCB NA AIF CLT RE-THE SCOTTISH ORIENTAL SMALLER COMPANIES TRUST PLC",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "",
@@ -79289,8 +79224,7 @@ const KSEI_DATA = [
   {
     share_code: "SMSM",
     issuer_name: "SELAMAT SEMPURNA Tbk",
-    investor_name:
-      "FIDELITY INVESTMENT TRUST: FIDELITY SERIES INTERNATIONAL SMALL CAP FUND",
+    investor_name: "FIDELITY INVESTMENT TRUST: FIDELITY SERIES INTERNATIONAL SMALL CAP FUND",
     investor_type: "MF",
     local_foreign: "F",
     nationality: "",
@@ -80941,8 +80875,7 @@ const KSEI_DATA = [
   {
     share_code: "SSIA",
     issuer_name: "SURYA SEMESTA INTERNUSA Tbk",
-    investor_name:
-      "MORGAN STANLEY SMITH BARNEY LLC S/A MSSB LLC SECURITIES CLEARANCE",
+    investor_name: "MORGAN STANLEY SMITH BARNEY LLC S/A MSSB LLC SECURITIES CLEARANCE",
     investor_type: "SC",
     local_foreign: "F",
     nationality: "",
@@ -81046,8 +80979,7 @@ const KSEI_DATA = [
   {
     share_code: "SSMS",
     issuer_name: "SAWIT SUMBERMAS SARANA Tbk",
-    investor_name:
-      "MAYBANK GLOBAL GROWTH FUND VCC - MAYBANK GLOBAL GROWTH FUND 1",
+    investor_name: "MAYBANK GLOBAL GROWTH FUND VCC - MAYBANK GLOBAL GROWTH FUND 1",
     investor_type: "IB",
     local_foreign: "F",
     nationality: "",
@@ -81879,8 +81811,7 @@ const KSEI_DATA = [
   {
     share_code: "SUGI",
     issuer_name: "SUGIH ENERGY Tbk, PT",
-    investor_name:
-      "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
+    investor_name: "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
     investor_type: "OT",
     local_foreign: "D",
     nationality: "",
@@ -86586,8 +86517,7 @@ const KSEI_DATA = [
   {
     share_code: "TRAM",
     issuer_name: "TRADA ALAM MINERA Tbk",
-    investor_name:
-      "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
+    investor_name: "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
     investor_type: "OT",
     local_foreign: "D",
     nationality: "",
@@ -87822,8 +87752,7 @@ const KSEI_DATA = [
   {
     share_code: "TRST",
     issuer_name: "TRIAS SENTOSA Tbk",
-    investor_name:
-      "THE EMERGING MARKETS SMALL CAP SERIES OF THE DFA INVESTMENT TRUST COMPANY",
+    investor_name: "THE EMERGING MARKETS SMALL CAP SERIES OF THE DFA INVESTMENT TRUST COMPANY",
     investor_type: "MF",
     local_foreign: "F",
     nationality: "",
@@ -88473,8 +88402,7 @@ const KSEI_DATA = [
   {
     share_code: "UCID",
     issuer_name: "UNI-CHARM INDONESIA Tbk",
-    investor_name:
-      "JPMCB NA AIF CLT RE-THE SCOTTISH ORIENTAL SMALLER COMPANIES TRUST PLC",
+    investor_name: "JPMCB NA AIF CLT RE-THE SCOTTISH ORIENTAL SMALLER COMPANIES TRUST PLC",
     investor_type: "CP",
     local_foreign: "F",
     nationality: "",
@@ -88526,8 +88454,7 @@ const KSEI_DATA = [
   {
     share_code: "UCID",
     issuer_name: "UNI-CHARM INDONESIA Tbk",
-    investor_name:
-      "UNIVERSAL-INVESTMENT- GESSELLSCHAFT MBH FOR AVH EMERGING MARKETS FONDS UI",
+    investor_name: "UNIVERSAL-INVESTMENT- GESSELLSCHAFT MBH FOR AVH EMERGING MARKETS FONDS UI",
     investor_type: "OT",
     local_foreign: "F",
     nationality: "",
@@ -89294,8 +89221,7 @@ const KSEI_DATA = [
   {
     share_code: "UNIT",
     issuer_name: "CAHAYA PERMATA SEJAHTERA Tbk",
-    investor_name:
-      "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
+    investor_name: "JAKSA AGUNG MUDA BIDANG TINDAK PIDANA KHUSUS KEJAKSAAN REPUBLIK INDONESIA KEJAKSAAN REPUBLIK INDONESIA",
     investor_type: "OT",
     local_foreign: "D",
     nationality: "",
