@@ -1,154 +1,107 @@
-"""Generate data.js from the dirty test.txt export.
-
-Usage:
-    python update_data_from_test.py
-    python update_data_from_test.py test.txt data.js
-"""
-
-import argparse
 import json
-from pathlib import Path
+import re
 
-FIELD_ORDER = [
-    "share_code",
-    "issuer_name",
-    "investor_name",
-    "investor_type",
-    "local_foreign",
-    "nationality",
-    "domicile",
-    "holdings_scripless",
-    "holdings_scrip",
-    "total_holding_shares",
-    "percentage",
-]
+# Investor type mapping: full string (from test.txt) → abbreviation (used in data.js)
+INVESTOR_TYPE_MAP = {
+    "CORPORATE": "CP",
+    "INDIVIDUAL": "ID",
+    "STATE OWNED ENTERPRISES": "IS",
+    "FINANCIAL INSTITUTIONAL": "IB",
+    "PRIVATE EQUITY": "CP",
+    "SECURITIES COMPANY": "SC",
+    "": "",
+}
 
+def map_investor_type(full_type: str) -> str:
+    mapped = INVESTOR_TYPE_MAP.get(full_type)
+    if mapped is None:
+        print(f"  [WARN] Unknown investor_type: '{full_type}' — keeping as-is")
+        return full_type
+    return mapped
 
-def parse_js_string(text: str, start_index: int) -> str:
-    if text[start_index] != '"':
-        raise ValueError('Expected opening quote at start_index')
+def js_value(v) -> str:
+    """Format a Python value as a JS literal."""
+    if isinstance(v, bool):
+        return "true" if v else "false"
+    if isinstance(v, str):
+        escaped = v.replace("\\", "\\\\").replace('"', '\\"')
+        return f'"{escaped}"'
+    if v is None:
+        return "null"
+    return str(v)
 
-    i = start_index + 1
-    escape = False
-    while i < len(text):
-        ch = text[i]
-        if escape:
-            escape = False
-        elif ch == "\\":
-            escape = True
-        elif ch == '"':
-            return text[start_index + 1 : i]
-        i += 1
-
-    raise ValueError('No closing quote found for JS string')
-
-
-def find_embedded_json(text: str) -> str:
-    # The payload is wrapped inside a quoted string, e.g. "5:[\"$\",...null,{\"stockGroups\":[...}]")
-    marker = '"5:['
-    quote_start = text.find(marker)
-    if quote_start != -1:
-        quote_start = text.rfind('"', 0, quote_start + 1)
-    else:
-        quote_start = text.find('null,{\\"stockGroups\\"')
-        if quote_start != -1:
-            quote_start = text.rfind('"', 0, quote_start + 1)
-
-    if quote_start == -1:
-        raise ValueError('Could not locate the wrapped JSON payload in test.txt')
-
-    raw_string = parse_js_string(text, quote_start)
-    return raw_string.encode('utf-8').decode('unicode_escape')
-
-
-def extract_stock_groups(unescaped: str) -> dict:
-    start = unescaped.find('{"stockGroups"')
-    if start == -1:
-        raise ValueError('Could not find top-level {"stockGroups" in unescaped text')
-
-    depth = 0
-    in_str = False
-    escape = False
-    end_index = None
-
-    for i, ch in enumerate(unescaped[start:], start=start):
-        if in_str:
-            if escape:
-                escape = False
-            elif ch == "\\":
-                escape = True
-            elif ch == '"':
-                in_str = False
-        else:
-            if ch == '"':
-                in_str = True
-            elif ch == '{':
-                depth += 1
-            elif ch == '}':
-                depth -= 1
-                if depth == 0:
-                    end_index = i + 1
-                    break
-
-    if end_index is None:
-        raise ValueError('Could not find matching closing brace for stockGroups JSON object')
-
-    return json.loads(unescaped[start:end_index])
-
-
-def flatten_records(stock_groups: list) -> list:
-    rows = []
-    for group in stock_groups:
-        for record in group.get("records", []):
-            row = {key: record.get(key, "") for key in FIELD_ORDER}
-            rows.append(row)
-    return rows
-
-
-def render_js_data(records: list) -> str:
-    lines = ["const KSEI_DATA = ["]
-    for record in records:
-        lines.append("  {")
-        for key in FIELD_ORDER:
-            value = record[key]
-            if isinstance(value, str):
-                value_text = json.dumps(value, ensure_ascii=False)
-            elif value is None:
-                value_text = "null"
-            elif isinstance(value, bool):
-                value_text = "true" if value else "false"
-            else:
-                value_text = str(value)
-            lines.append(f"    {key}: {value_text},")
-        lines.append("  },")
-    lines.append("];\n")
+def record_to_js(rec: dict) -> str:
+    fields = [
+        "share_code", "issuer_name", "investor_name", "investor_type",
+        "local_foreign", "nationality", "domicile",
+        "holdings_scripless", "holdings_scrip", "total_holding_shares", "percentage",
+    ]
+    lines = ["  {"]
+    for field in fields:
+        val = rec.get(field, "")
+        lines.append(f"    {field}: {js_value(val)},")
+    lines.append("  },")
     return "\n".join(lines)
 
+def main():
+    print("Reading test.txt...")
+    with open("/mnt/user-data/uploads/test.txt", "r", encoding="utf-8") as f:
+        raw = f.read().strip()
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description="Build data.js from dirty test.txt export.")
-    parser.add_argument("test_file", nargs="?", default="test.txt", help="Path to the dirty input file")
-    parser.add_argument("output_file", nargs="?", default="data.js", help="Path to the output JS file")
-    args = parser.parse_args()
+    # The file content is double-escaped JSON. Decode outer layer first,
+    # then use raw_decode to handle any trailing data.
+    try:
+        decoded = json.loads('"' + raw + '"')  # outer unescape
+        decoder = json.JSONDecoder()
+        data, _ = decoder.raw_decode(decoded)
+    except json.JSONDecodeError as e:
+        print(f"JSON parse error: {e}")
+        return
 
-    test_path = Path(args.test_file)
-    output_path = Path(args.output_file)
-
-    if not test_path.exists():
-        raise FileNotFoundError(f'Test file not found: {test_path}')
-
-    raw_text = test_path.read_text(encoding="utf-8", errors="replace")
-    unescaped = find_embedded_json(raw_text)
-    data = extract_stock_groups(unescaped)
-
+    # Navigate to stockGroups
     stock_groups = data.get("stockGroups", [])
-    records = flatten_records(stock_groups)
+    print(f"Found {len(stock_groups)} stock groups.")
 
-    with output_path.open("w", encoding="utf-8") as f:
-        f.write(render_js_data(records))
+    records = []
+    unknown_types = set()
 
-    print(f"Wrote {len(records)} records to {output_path}")
+    for group in stock_groups:
+        for rec in group.get("records", []):
+            full_type = rec.get("investor_type", "")
+            mapped_type = map_investor_type(full_type)
+            if mapped_type == full_type and full_type not in INVESTOR_TYPE_MAP:
+                unknown_types.add(full_type)
 
+            records.append({
+                "share_code": rec.get("share_code", ""),
+                "issuer_name": rec.get("issuer_name", ""),
+                "investor_name": rec.get("investor_name", ""),
+                "investor_type": mapped_type,
+                "local_foreign": rec.get("local_foreign", ""),
+                "nationality": rec.get("nationality", ""),
+                "domicile": rec.get("domicile", ""),
+                "holdings_scripless": rec.get("holdings_scripless", 0),
+                "holdings_scrip": rec.get("holdings_scrip", 0),
+                "total_holding_shares": rec.get("total_holding_shares", 0),
+                "percentage": rec.get("percentage", 0),
+            })
+
+    print(f"Total records extracted: {len(records)}")
+    if unknown_types:
+        print(f"Unknown investor_type values (kept as-is): {unknown_types}")
+
+    # Build data.js content
+    js_lines = ["const KSEI_DATA = ["]
+    for rec in records:
+        js_lines.append(record_to_js(rec))
+    js_lines.append("];")
+    js_content = "\n".join(js_lines) + "\n"
+
+    out_path = "/mnt/user-data/outputs/data.js"
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(js_content)
+
+    print(f"Done! Written to {out_path}")
 
 if __name__ == "__main__":
     main()

@@ -1918,16 +1918,7 @@ function renderMetricsTab(data) {
         maintainAspectRatio: true,
         cutout: "45%",
         plugins: {
-          legend: {
-            position: "bottom",
-            labels: {
-              color: colors.textSecondary,
-              font: { size: 11, family: "'Inter', sans-serif" },
-              padding: 12,
-              usePointStyle: true,
-              pointStyleWidth: 8,
-            },
-          },
+          legend: { display: false },
           tooltip: {
             backgroundColor: colors.bgCard,
             titleColor: colors.textPrimary,
@@ -1989,16 +1980,7 @@ function renderMetricsTab(data) {
         maintainAspectRatio: true,
         cutout: "45%",
         plugins: {
-          legend: {
-            position: "bottom",
-            labels: {
-              color: colors.textSecondary,
-              font: { size: 10, family: "'Inter', sans-serif" },
-              padding: 8,
-              usePointStyle: true,
-              pointStyleWidth: 8,
-            },
-          },
+          legend: { display: false },
           tooltip: {
             backgroundColor: colors.bgCard,
             titleColor: colors.textPrimary,
@@ -2059,16 +2041,7 @@ function renderMetricsTab(data) {
         maintainAspectRatio: true,
         cutout: "45%",
         plugins: {
-          legend: {
-            position: "bottom",
-            labels: {
-              color: colors.textSecondary,
-              font: { size: 11, family: "'Inter', sans-serif" },
-              padding: 12,
-              usePointStyle: true,
-              pointStyleWidth: 8,
-            },
-          },
+          legend: { display: false },
           tooltip: {
             backgroundColor: colors.bgCard,
             titleColor: colors.textPrimary,
@@ -2123,16 +2096,7 @@ function renderMetricsTab(data) {
         maintainAspectRatio: true,
         cutout: "45%",
         plugins: {
-          legend: {
-            position: "bottom",
-            labels: {
-              color: colors.textSecondary,
-              font: { size: 10, family: "'Inter', sans-serif" },
-              padding: 8,
-              usePointStyle: true,
-              pointStyleWidth: 8,
-            },
-          },
+          legend: { display: false },
           tooltip: {
             backgroundColor: colors.bgCard,
             titleColor: colors.textPrimary,
