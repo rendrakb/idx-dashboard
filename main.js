@@ -3,18 +3,47 @@
 // ============================================================
 const BATCH_SIZE = 30;
 
-const INVESTOR_TYPE_MAP = {
-  CP: { label: "Corporate", cls: "badge-cp" },
-  ID: { label: "Individual", cls: "badge-id" },
-  IB: { label: "Bank", cls: "badge-ib" },
-  IS: { label: "Insurance", cls: "badge-is" },
-  OT: { label: "Other", cls: "badge-ot" },
-  MF: { label: "Mutual Fund", cls: "badge-mf" },
-  PF: { label: "Pension Fund", cls: "badge-pf" },
-  SC: { label: "Securities", cls: "badge-sc" },
-  FD: { label: "Foundation", cls: "badge-fd" },
-  "": { label: "Unknown", cls: "badge-unknown" },
-};
+const INVESTOR_TYPES = [
+  "Association Social Org",
+  "Bank",
+  "Brokerage Firms",
+  "Capital Market Supporting Institutions And Professions",
+  "Central Bank",
+  "Conference",
+  "Congregation",
+  "Cooperatives",
+  "Corporate",
+  "Cv Limited Partnership",
+  "Diocese",
+  "Educational Institution",
+  "Exchange Traded Funds",
+  "Financial Institutional",
+  "Firm",
+  "Foundation",
+  "Government",
+  "Hedge Fund",
+  "Individual",
+  "Insurance",
+  "International Organization",
+  "Investment Advisors",
+  "Investment Fund Selling Agent",
+  "Investment Manager",
+  "Mutual Funds",
+  "Partnership",
+  "Peer To Peer Lending",
+  "Pension Funds",
+  "Permanent Establishment",
+  "Political Parties",
+  "Private Bank",
+  "Private Equity",
+  "Securities Company",
+  "Sole Proprietorship",
+  "Sovereign Wealth Fund",
+  "State Owned Company",
+  "State Owned Enterprises",
+  "Trustee Bank",
+  "Venture Capital",
+];
 
 // ============================================================
 // STATE
@@ -260,9 +289,35 @@ function hhiPill(ccs, group) {
   );
 }
 
-function typeBadge(code) {
-  const t = INVESTOR_TYPE_MAP[code] || INVESTOR_TYPE_MAP[""];
-  return `<span class="type-badge ${t.cls}">${t.label}</span>`;
+function slugifyLabel(s) {
+  return (s || "")
+    .toString()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
+function getInvestorTypeLabel(val) {
+  if (val == null || val === "") return "Unknown";
+  const str = String(val).trim();
+  // If global list contains this label (case-insensitive), return canonical label
+  if (Array.isArray(INVESTOR_TYPES)) {
+    const found = INVESTOR_TYPES.find((l) => l.toLowerCase() === str.toLowerCase());
+    if (found) return found;
+  }
+  // Fallback: return the raw value
+  return str;
+}
+
+function getInvestorTypeClass(val) {
+  const label = getInvestorTypeLabel(val);
+  return "badge-" + slugifyLabel(label);
+}
+
+function typeBadge(codeOrLabel) {
+  const label = getInvestorTypeLabel(codeOrLabel);
+  const cls = getInvestorTypeClass(codeOrLabel);
+  return `<span class="type-badge ${cls}">${label}</span>`;
 }
 
 function lfBadge(lf, nationality, domicile) {
@@ -959,9 +1014,7 @@ function exportStockCsv() {
           csvEscape(r.share_code),
           csvEscape(r.issuer_name),
           csvEscape(r.investor_name),
-          csvEscape(
-            (INVESTOR_TYPE_MAP[r.investor_type] || {}).label || r.investor_type,
-          ),
+          csvEscape(getInvestorTypeLabel(r.investor_type)),
           csvEscape(
             r.local_foreign === "D"
               ? "Lokal"
@@ -1004,9 +1057,7 @@ function exportInvestorCsv() {
       rows.push(
         [
           csvEscape(g.investor_name),
-          csvEscape(
-            (INVESTOR_TYPE_MAP[g.investor_type] || {}).label || g.investor_type,
-          ),
+          csvEscape(getInvestorTypeLabel(g.investor_type)),
           csvEscape(
             g.local_foreign === "D"
               ? "Lokal"
@@ -1639,7 +1690,7 @@ function openComparePanel() {
     html += `<div class="compare-ratio-legend" style="flex-wrap:wrap">`;
     typeEntries.forEach(([k, v]) => {
       const pct = ((v / typeTotal) * 100).toFixed(1).replace(".", ",");
-      const label = (INVESTOR_TYPE_MAP[k] || INVESTOR_TYPE_MAP[""]).label;
+      const label = getInvestorTypeLabel(k);
       html += `<span><span class="compare-ratio-dot compare-type-dot" data-type="${k}"></span>${label} ${pct}%</span>`;
     });
     html += `</div>`;
@@ -1739,9 +1790,7 @@ function openComparePanel() {
   // Render type pie charts
   body.querySelectorAll(".compare-type-pie").forEach((canvas) => {
     const typeData = JSON.parse(decodeURIComponent(canvas.dataset.types));
-    const labels = typeData.map(
-      (d) => (INVESTOR_TYPE_MAP[d.type] || INVESTOR_TYPE_MAP[""]).label,
-    );
+    const labels = typeData.map((d) => getInvestorTypeLabel(d.type));
     const values = typeData.map((d) => parseFloat(d.pct));
     const colors = typeData.map((d) => _typeColors[d.type] || _typeColors[""]);
     new Chart(canvas, {
@@ -1940,24 +1989,13 @@ function renderMetricsTab(data) {
 
   // Chart 2: Investor Type doughnut
   const typeCounts = {};
-  const TYPE_LABELS = {
-    CP: "Perusahaan",
-    IB: "Bank",
-    IC: "Asuransi",
-    ID: "Individu",
-    IS: "Sekuritas",
-    MF: "Reksa Dana",
-    PF: "Dana Pensiun",
-    SC: "Kustodian",
-    FD: "Yayasan",
-    OT: "Lainnya",
-  };
+  // Use global `INVESTOR_TYPES` list and helper functions for labels/classes
   for (const rec of data) {
     const t = rec.investor_type || "OT";
     typeCounts[t] = (typeCounts[t] || 0) + 1;
   }
   const typeEntries = Object.entries(typeCounts).sort((a, b) => b[1] - a[1]);
-  const typeLabels = typeEntries.map(([k]) => TYPE_LABELS[k] || k);
+  const typeLabels = typeEntries.map(([k]) => getInvestorTypeLabel(k));
   const typeValues = typeEntries.map(([, v]) => v);
 
   const ctx2 = document.getElementById("chartInvestorType");
@@ -2072,7 +2110,7 @@ function renderMetricsTab(data) {
     aumByType[t] = (aumByType[t] || 0) + value;
   }
   const aumTypeEntries = Object.entries(aumByType).sort((a, b) => b[1] - a[1]);
-  const aumTypeLabels = aumTypeEntries.map(([k]) => TYPE_LABELS[k] || k);
+  const aumTypeLabels = aumTypeEntries.map(([k]) => getInvestorTypeLabel(k));
   const aumTypeValues = aumTypeEntries.map(([, v]) => v);
   const totalAUMType = aumTypeValues.reduce((sum, v) => sum + v, 0);
 
@@ -3651,8 +3689,23 @@ function applyInvFilters() {
     }
     // Investor type filter (multi-select)
     if (invState.typeFilter.size > 0) {
-      const gType = (g.investor_type || "").toUpperCase();
-      if (!invState.typeFilter.has(gType)) return false;
+      const gVal = g.investor_type || "";
+      const gCode = (gVal || "").toUpperCase();
+      const gLabel = getInvestorTypeLabel(gVal);
+      // typeFilter may contain legacy codes (e.g. 'CP') or full labels; accept either
+      let matched = false;
+      for (const sel of invState.typeFilter) {
+        if (!sel) continue;
+        if (String(sel).toUpperCase() === gCode) {
+          matched = true;
+          break;
+        }
+        if (String(sel).toLowerCase() === String(gLabel).toLowerCase()) {
+          matched = true;
+          break;
+        }
+      }
+      if (!matched) return false;
     }
     // Local/Foreign origin filter
     if (invState.originFilter !== "all") {
