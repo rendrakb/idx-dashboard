@@ -2256,7 +2256,8 @@ table.inv-table {
   position: absolute;
   top: calc(100% + 4px);
   left: 0;
-  min-width: 160px;
+  min-width: 280px;
+  max-width: 480px;
   background: var(--bg-card);
   border: 1px solid var(--border-md);
   border-radius: var(--r-md);
@@ -2264,6 +2265,10 @@ table.inv-table {
   z-index: 200;
   padding: var(--sp-1) 0;
   display: none;
+  max-height: 320px;
+  overflow: auto;
+  box-sizing: border-box;
+  white-space: nowrap;
 }
 .multi-select-panel.open {
   display: block;
@@ -2277,6 +2282,9 @@ table.inv-table {
   color: var(--text-primary);
   cursor: pointer;
   transition: background 120ms;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .multi-select-option:hover {
   background: var(--bg-hover);

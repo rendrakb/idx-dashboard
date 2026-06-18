@@ -3966,9 +3966,16 @@ function initInvFilters() {
   // Investor type filter (multi-select dropdown)
   const typeBtn = document.getElementById("invTypeBtn");
   const typePanel = document.getElementById("invTypePanel");
-  const typeOptions = Array.from(
-    typePanel.querySelectorAll(".multi-select-option"),
-  );
+  // Render type options from INVESTOR_TYPES (use full labels as data-type)
+  typePanel.innerHTML = "";
+  INVESTOR_TYPES.forEach((label) => {
+    const div = document.createElement("div");
+    div.className = "multi-select-option";
+    div.dataset.type = label;
+    div.innerHTML = `<span class="ms-check"></span>${esc(label)}`;
+    typePanel.appendChild(div);
+  });
+  const typeOptions = Array.from(typePanel.querySelectorAll(".multi-select-option"));
 
   function updateTypeBtnLabel() {
     if (invState.typeFilter.size === 0) {
